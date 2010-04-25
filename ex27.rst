@@ -88,7 +88,7 @@ True or False  True
 -------------- -----
 True or True   True
 -------------- -----
-False or True  False
+False or True  True
 -------------- -----
 False or False False
 ============== =====
@@ -113,7 +113,7 @@ False and False False
 ================== =====
 not True or False  False
 ------------------ -----
-not True or True   False
+not True or True   True
 ------------------ -----
 not False or True  True
 ------------------ -----
