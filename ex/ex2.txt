@@ -1,0 +1,4 @@
+$ python ex2.py 
+I could have code like this.
+This will run.
+$

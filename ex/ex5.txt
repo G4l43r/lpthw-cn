@@ -1,0 +1,9 @@
+$ python ex5.py
+Let's talk about Zed A. Shaw.
+He's 74 inches tall.
+He's 180 pounds heavy.
+Actually that's not too heavy.
+He's got Blue eyes and Brown hair.
+His teeth are usually Brown depending on the coffee.
+If I add 35, 74, and 180 I get 289.
+$
