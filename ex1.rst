@@ -1,7 +1,7 @@
 Exercise 1: A Good First Program
 ********************************
 
-Remember, you should have spent a good amount of time in Excersize 0 learning
+Remember, you should have spent a good amount of time in Exercise 0 learning
 how to install a text editor, run the text editor, run the Terminal, and
 work with both of them.  If you haven't done that then don't go on, you'll
 not have a good time.  This is the only time I'll start an exercise with a 
