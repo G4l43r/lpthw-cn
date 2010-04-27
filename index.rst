@@ -20,6 +20,9 @@ Contents:
    ex5
    ex6
    ex7
+   ex8
+   ex9
+   ex10
    ex27
    advice
 

@@ -63,3 +63,12 @@ differences, and by doing this you'll train yourself to notice your mistakes,
 bugs, and other problems caused by them.
 
 
+Do Not Copy-Paste
+=================
+
+The last thing I'll say before we begin is that you *must* type each of these
+exercises in manually.  If you copy and paste you might as well just not even
+do them.  The point of these exercises is to train your hands, your brain, and
+your mind in how to read, write, and see code.  If you copy-paste you are cheating
+yourself out of the effectiveness of the lessons.
+
