@@ -1,3 +1,11 @@
-$ python ex.py
+$ python ex9.py
+Here's the days:  Mon Tue Wed Thu Fri Sat Sun
+Here's the months:  Jan Feb Mar Apr May Jun Jul Aug
+['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug']
+
+There's something going on here.
+With the three double-quotes.
+We'll be able to type as much as we like.
 
 $
