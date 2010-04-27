@@ -41,7 +41,7 @@ things to advance those disciplines.
 Of course, all of this advice is pointless.  If you liked learning to write
 software with this book then you should try to use it to improve your life
 anyway you can.  You should go out and explore this weird wonderful new
-intellectual persuit that barely anyone in the last 50 years has been able to
+intellectual pursuit that barely anyone in the last 50 years has been able to
 explore.  Might as well enjoy it while you can.
 
 Finally, I will say that learning to create software changes you and makes you
