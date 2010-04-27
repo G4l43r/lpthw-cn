@@ -1,12 +1,44 @@
-Exercise
-********
+Exercise 10: What Was That?
+***************************
+
+In Exercise 9 I threw you some new stuff you haven't seen yet, just to keep
+you on your toes.  In that exercise I showed you two ways to make a string
+that goes across multiple lines.  In the first way, I put the characters
+\n (back-slash ``n``) between the names of the months.  What these two characters
+do is put a ``new line character`` into the string at that point.
+
+This use of the \ (back-slash) character is a way we can put difficult to type
+characters into a string.  There's plenty of these "escape sequences" available
+for different characters you might want to put in, but there's a special one,
+the ``double back-slash`` which is just two of them ``\\``.  These two characters
+will print just one back-slash.  We'll try a few of these sequences so you can
+see what I mean.
+
+The second way is by doing the triple-quotes, which is just ``"""`` and works
+like a string, but what it does you can put as many lines of text you want
+until you type ``"""`` again.  We'll also play with these some too.
+
+
+
+.. literalinclude:: ex/ex10.py
+    :linenos:
 
 
 What You Should See
 ===================
 
+Look for the tab characters that you made.  In this exercise the spacing is
+important to get right.
+
+.. literalinclude:: ex/ex10.txt
+
 
 Extra Credit
 ============
+
+1. Go search online to see what other escape sequences are available.
+2. Try using ``'''`` instead.  Can you see why you might use that instead of ``"""``?
+3. Try to combine escape sequences and format strings to create a more complex format.
+
 
 
