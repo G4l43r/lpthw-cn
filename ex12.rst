@@ -1,12 +1,38 @@
-Exercise
-********
+Exercise 12: Prompting People
+*****************************
+
+When you typed ``raw_input()`` you were typing the ``(`` and ``)`` characters
+which are parenthesis.  This is similar to when you used them to do a format
+with extra variables, as in ``"%s %s" % (x, y)``.  For ``raw_input`` you can
+also put in a prompt to show to a person.  You put a string that you want
+for the prompt inside the ``()`` so that it looks like this:
+
+.. code-block:: python
+    y = raw_input("Name? ")
+
+Which prompts the user with "Name?" and puts the result into the variable ``y``.
+
+This means we can completely rewrite our previous exercise using just
+``raw_input`` to do all the prompting.
+
+
+.. literalinclude:: ex/ex12.py
 
 
 What You Should See
 ===================
 
 
+.. literalinclude:: ex/ex12.txt
+
+
 Extra Credit
 ============
 
+1. In Terminal where you normally run ``python`` to run your scripts, 
+   type: ``pydoc raw_input``.  Read what it says.
+2. Go look online for what the ``pydoc`` command does.
+3. Do pydoc for ``open``, ``file``, ``os``, and ``sys``.  It's alright if you
+   don't understand those, just read through and take notes about interesting
+   things.
 

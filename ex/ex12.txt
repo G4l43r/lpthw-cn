@@ -1,3 +1,6 @@
 $ python ex.py
-
+How old are you? 35
+How many tall are you? 6'2"
+How much do you weight? 180lbs
+So, you're '35' old, '6\'2"' tall and '180lbs' heavy.
 $
