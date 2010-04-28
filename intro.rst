@@ -37,7 +37,7 @@ Attention To Detail
 ===================
 
 The one skill that separates bad programmers from good programmers is attention
-to detail.  In fact, it's what separate the good from the bad in any profession.
+to detail.  In fact, it's what separates the good from the bad in any profession.
 Without an attention to the tiniest details of your work you'll miss key
 important elements of what you create.  In programming this is how you end up
 with bugs and difficult to use systems.

@@ -11,7 +11,7 @@ but instead just the simple basic logic that makes real programs work and that
 real programmers need every day.
 
 However, learning logic has to come after you do some memorization.  I want you
-to do this exercise for an entire week.  Do not faulter.  Even if you are bored
+to do this exercise for an entire week.  Do not falter.  Even if you are bored
 out of your mind, keep doing it.  This exercise has a set of logic tables you
 must memorize to make it easier for you to do the later exercises.
 
@@ -47,8 +47,8 @@ The Truth Terms
 ===============
 
 In python we have the following terms (characters and phrases) for determining
-is something is "True" or "False".  Logic on a computer is all about
-determining if some combination of these characters and some variables is True
+if something is "True" or "False".  Logic on a computer is all about
+seeing if some combination of these characters and some variables is True
 at that point in the program.
 
 * ``and``
@@ -61,7 +61,7 @@ at that point in the program.
 * True
 * False
 
-You actually have ran into these characters before, but maybe not the phrases.
+You actually have run into these characters before, but maybe not the phrases.
 The phrases (and, or, not) actually work the way you expect them to, just like
 in English.
 

@@ -4,5 +4,5 @@ There are only 30 drivers available.
 There will be 70 empty cars today.
 We can transport 120.0 people today.
 We have 90 to carpool today.
-We need to put about 1.33333333333 in each car.
+We need to put about 3 in each car.
 $
