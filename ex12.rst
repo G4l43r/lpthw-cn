@@ -17,6 +17,7 @@ This means we can completely rewrite our previous exercise using just
 
 
 .. literalinclude:: ex/ex12.py
+    :linenos:
 
 
 What You Should See

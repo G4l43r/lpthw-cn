@@ -1,6 +1,14 @@
 Exercise 11: Asking Questions
 *****************************
 
+It's now time to pick up the pace a bit.  I've got you doing a lot of
+printing so that you get used to typing simple things, but those simple
+things are fairly boring.  What we want to do now is get you getting
+data into your programs.  This though is a little tricky so we have to
+have you learn to do two things that may not make sense right away,
+but if you stick with it they should click suddenly a few exercises 
+from now.
+
 Most of what software does is the following:
 
 1. Take some kind of input from a person.
@@ -14,6 +22,7 @@ it.  Next exercise we'll do more to explain it.
 
 
 .. literalinclude:: ex/ex11.py
+    :linenos:
 
 .. note::
 
