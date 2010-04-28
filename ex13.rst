@@ -3,7 +3,7 @@ Exercise 13: Parameters, Unpacking, Variables
 
 We're slowly building up your first few input operations, so we want to
 cover one more input method you can use to pass variables to a script
-(script being another name for you ``.py`` files).  You know how you
+(script being another name for your ``.py`` files).  You know how you
 type ``python ex13.py`` to run the ``ex13.py`` file?  Well the ``ex13.py``
 part of the command is called a "parameter".  What we'll
 do now is write a script that also accepts parameters.

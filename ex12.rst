@@ -8,6 +8,7 @@ also put in a prompt to show to a person.  You put a string that you want
 for the prompt inside the ``()`` so that it looks like this:
 
 .. code-block:: python
+
     y = raw_input("Name? ")
 
 Which prompts the user with "Name?" and puts the result into the variable ``y``.
