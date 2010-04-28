@@ -1,5 +1,5 @@
-Exercise 16: Reading And Writing Files
-**************************************
+Reading And Writing Files
+*************************
 
 If you did the extra credit from the last exercise you should have seen all 
 sorts of commands (methods/functions) you can give to files.  Here's the

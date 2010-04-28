@@ -1,5 +1,5 @@
-Exercise 6: Strings And Text
-****************************
+Strings And Text
+****************
 
 You have already been writing strings but haven't really known what they do.
 In this exercise we create a bunch of variables with complex strings so you can

@@ -1,5 +1,5 @@
-Exercise 12: Prompting People
-*****************************
+Prompting People
+****************
 
 When you typed ``raw_input()`` you were typing the ``(`` and ``)`` characters
 which are parenthesis.  This is similar to when you used them to do a format

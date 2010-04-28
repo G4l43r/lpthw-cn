@@ -1,5 +1,5 @@
-Exercise 5: More Variables And Printing
-***************************************
+More Variables And Printing
+***************************
 
 We'll now do even more typing of variables and printing them out.  This
 time though we'll use something called a "format string".  You might

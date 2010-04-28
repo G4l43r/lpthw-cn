@@ -1,5 +1,5 @@
-Exercise 4: Variables And Names
-*******************************
+Variables And Names
+*******************
 
 You can print things out with ``print`` and you can do math.  The next step
 is to learn about variables.  In programming a variable is nothing more than

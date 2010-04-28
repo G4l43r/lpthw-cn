@@ -182,12 +182,23 @@ latex_documents = [
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
-#latex_use_parts = False
+# latex_use_parts = False
 
 # Additional stuff for the LaTeX preamble.
-latex_preamble = """
+latex_preamble = r"""
 \setcounter{page}{1}
+\setcounter{chapter}{-1}
 \usepackage{upquote}
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+\vspace*{50 pt}%
+{\setlength{\parindent}{0pt} \raggedright \normalfont
+\bfseries\Huge
+\ifnum \value{secnumdepth}>1
+   \if@mainmatter Exercise \thechapter.\ \fi%
+\fi
+#1\par\nobreak\vspace{40 pt}}}
+\makeatother
 """
 
 # Documents to append as an appendix to all manuals.

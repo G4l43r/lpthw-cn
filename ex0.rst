@@ -1,5 +1,5 @@
-Exercise 0: The Setup
-*********************
+The Setup
+*********
 
 This exercise has no code.  It is simply the exercise you complete in order
 to get your computer setup to run Python.  Because this is a simple book

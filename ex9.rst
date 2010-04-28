@@ -1,5 +1,5 @@
-Exercise 9: Printing, Printing
-******************************
+Printing, Printing, Printing
+****************************
 
 .. literalinclude:: ex/ex9.py
     :linenos:

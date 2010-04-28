@@ -1,5 +1,5 @@
-Exercise 7: More Printing
-*************************
+More Printing
+*************
 
 We are now going to do a bunch of exercises where you just type code in
 and make them run.  There won't be much talking since it's just more of

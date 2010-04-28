@@ -1,5 +1,5 @@
-Exercise 8: Printing, Printing
-******************************
+Printing, Printing
+******************
 
 .. literalinclude:: ex/ex8.py
     :linenos:
