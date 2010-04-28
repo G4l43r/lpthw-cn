@@ -28,7 +28,7 @@ get to play with this more and see what happens.
 Line 3 "unpacks" ``argv`` so that, rather than holding all the parameters, it
 gets assigned to four variables you can work with: ``script``, ``first``,
 ``second``, and ``third``.  This may look strange, but "unpack" is probably the
-best work to describe what it does.  It just says, "Take whatever is in argv,
+best word to describe what it does.  It just says, "Take whatever is in argv,
 unpack it, and assign it to all of these variables on the left in order."
 
 After that we just print them out like normal.
