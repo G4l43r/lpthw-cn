@@ -108,30 +108,30 @@ False and False False
 
 
 
-================== =====
-     NOT OR        True?
-================== =====
-not True or False  False
------------------- -----
-not True or True   True
------------------- -----
-not False or True  True
------------------- -----
-not False or False True
-================== =====
+==================== =====
+     NOT OR          True?
+==================== =====
+not (True or False)  False
+-------------------- -----
+not (True or True)   False
+-------------------- -----
+not (False or True)  False
+-------------------- -----
+not (False or False) True
+==================== =====
 
 
-=================== =====
-    NOT AND         True?
-=================== =====
-not True and False  True
-------------------- -----
-not True and True   False
-------------------- -----
-not False and True  True
-------------------- -----
-not False and False True
-=================== =====
+===================== =====
+    NOT AND           True?
+===================== =====
+not (True and False)  True
+--------------------- -----
+not (True and True)   False
+--------------------- -----
+not (False and True)  True
+--------------------- -----
+not (False and False) True
+===================== =====
 
 
 =============== =====
