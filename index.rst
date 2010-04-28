@@ -24,6 +24,7 @@ Contents:
    ex9
    ex10
    ex11
+   ex12
    ex27
    advice
 

@@ -14,6 +14,16 @@ the ``double back-slash`` which is just two of them ``\\``.  These two character
 will print just one back-slash.  We'll try a few of these sequences so you can
 see what I mean.
 
+Another important escape sequence is to escape a single-quote ``'`` or
+double-quote ``"``.  Imagine if you have a string that uses double-quotes
+and you want to put a double-quote in for the output.  If you just put one
+there then it'd end the string and Python would get confused.  Instead
+you escape it and Python knows to include in the string.  Here's an example:
+
+.. code-block:: python
+    "I am 6'2\" tall."  # escape double-quote inside string
+    'I am 6\'2" tall."  # escape single-quote inside string
+
 The second way is by doing the triple-quotes, which is just ``"""`` and works
 like a string, but what it does you can put as many lines of text you want
 until you type ``"""`` again.  We'll also play with these some too.
