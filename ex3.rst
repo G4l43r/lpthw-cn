@@ -14,7 +14,6 @@ feels boring you can stop saying them.  Here's the names:
 * ``-``           minus
 * ``/``           slash
 * ``*``           asterisk
-* ``^``           caret
 * ``%``           percent
 * ``<``           less-than
 * ``>``           greater-than
