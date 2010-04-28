@@ -1,3 +1,14 @@
-$ python ex.py
-
+$ python ex/ex16.py test.txt
+We're going to erase 'test.txt'.
+If you don't want that, hit CTRL-C (^C).
+If you do want that, hit RETURN.
+?
+Opening the file...
+Truncating the file.  Goodbye!
+Now I'm going to ask you for three lines.
+line 1: To all the people out there.
+line 2: I say I don't like my hair.
+line 3: I need to shave it off.
+I'm going to write these to the file.
+And finally, we close it.
 $
