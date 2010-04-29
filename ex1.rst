@@ -69,7 +69,7 @@ each exercise.  For this exercise, try these things:
 
 1. Make your script print another line.
 2. Make your script print only one of the lines.
-3. Put a '#' (pound) character at the beginning of a line.  What did it do?
+3. Put a '#' (octothorpe) character at the beginning of a line.  What did it do?
    Try to find out what this character does.
 
 From now on, I won't explain how each exercise works unless an exercise is
@@ -78,3 +78,6 @@ file, the output you should see when you run the file in terminal, and
 extra credit you should do.
 
 
+.. note::
+
+    An 'octothorpe' is also called a 'pound', 'hash', 'mesh', or any number of names.  Pick the one that makes you chill out.
