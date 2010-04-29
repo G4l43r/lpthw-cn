@@ -24,7 +24,7 @@ What You Should See
 ===================
 
 When you run this one, remember that you have to give the script your
-name for the ``argv`` parameters.
+name for the ``argv`` arguments.
 
 .. literalinclude:: ex/ex14.txt
 
@@ -35,7 +35,7 @@ Extra Credit
 1. Go find out what Zork was, and what Adventure was.
    See if you can find a copy and play it.
 2. Change the ``prompt`` variable to something else entirely.
-3. Add another parameter and use it in your script.
+3. Add another argument and use it in your script.
 4. Make sure you understand how I combined a ``"""`` style multi-line string
    with the ``%`` format activator as the last print.
 
