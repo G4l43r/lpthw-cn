@@ -72,3 +72,12 @@ do them.  The point of these exercises is to train your hands, your brain, and
 your mind in how to read, write, and see code.  If you copy-paste you are cheating
 yourself out of the effectiveness of the lessons.
 
+
+License
+=======
+
+This book is Copyright (C) 2010 by Zed A. Shaw.  You are free to distribute
+this book to anyone you want so long as you do *not* charge anything for it
+*and* it is not altered.  You must give away the book in its entirety or not at
+all.
+
