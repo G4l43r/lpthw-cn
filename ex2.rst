@@ -10,6 +10,13 @@ do comments.
     :language: python
     :linenos:
 
+.. warning::
+
+    This book uses "syntax highlighting", which means that the code looks like
+    it has colors for different symbols and letters.  This helps you read it so
+    that you can see some errors, and your editor should use similar coloring,
+    but maybe not exactly the same.
+
 What You Should See
 ===================
 

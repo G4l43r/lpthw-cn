@@ -195,7 +195,7 @@ latex_preamble = r"""
 {\setlength{\parindent}{0pt} \raggedright \normalfont
 \bfseries\Huge
 \ifnum \value{secnumdepth}>1
-   \if@mainmatter Exercise \thechapter.\ \fi%
+   \if@mainmatter \ \fi%
 \fi
 #1\par\nobreak\vspace{40 pt}}}
 \makeatother

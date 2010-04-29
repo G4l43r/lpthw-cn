@@ -28,9 +28,9 @@ file by typing:
 
     python ex1.py
 
+
 If you did it right then you should see the same output I have below.  If not,
 then you've done something wrong.  No, the computer is not wrong.
-
 
 What You Should See
 ===================
