@@ -1,5 +1,5 @@
-Numbers And Math
-*****************
+Exercise 3: Numbers And Math
+****************************
 
 Every programming language has some kind of way of doing numbers and math.
 Don't worry, programmers lie frequently about being math geniuses when they

@@ -1,5 +1,5 @@
-What Was That?
-**************
+Exercise 10: What Was That?
+***************************
 
 In Exercise 9 I threw you some new stuff you haven't seen yet, just to keep
 you on your toes.  In that exercise I showed you two ways to make a string

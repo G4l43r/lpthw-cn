@@ -1,5 +1,5 @@
-Reading Files
-*************
+Exercise 15: Reading Files
+**************************
 
 Everything about ``raw_input`` and ``argv`` has been so you can start
 reading files.  This exercise will probably be the one you have to play

@@ -1,5 +1,5 @@
-A Good First Program
-********************
+Exercise 1: A Good First Program
+********************************
 
 Remember, you should have spent a good amount of time in Exercise 0 learning
 how to install a text editor, run the text editor, run the Terminal, and

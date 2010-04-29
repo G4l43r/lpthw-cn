@@ -1,5 +1,5 @@
-Asking Questions
-****************
+Exercise 11: Asking Questions
+*****************************
 
 It's now time to pick up the pace a bit.  I've got you doing a lot of
 printing so that you get used to typing simple things, but those simple

@@ -1,5 +1,5 @@
-Prompting And Passing
-*********************
+Exercise 14: Prompting And Passing
+**********************************
 
 Let's do one exercise to put using ``argv`` and ``raw_input`` together to
 ask the user something specific.  You'll need this for the next exercise

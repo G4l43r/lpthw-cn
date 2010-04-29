@@ -1,5 +1,5 @@
-Comments And Pound Characters
-*****************************
+Exercise 2: Comments And Pound Characters
+*****************************************
 
 Comments are very important in your programs.  They are used to tell you
 what something does in English, and they also are used to disable parts
