@@ -186,8 +186,9 @@ latex_documents = [
 
 # Additional stuff for the LaTeX preamble.
 latex_preamble = r"""
+\setcounter{secnumdepth}{-1} 
 \setcounter{page}{1}
-\setcounter{chapter}{-1}
+\setcounter{chapter}{1}
 \usepackage{upquote}
 \makeatletter
 \renewcommand{\@makechapterhead}[1]{%

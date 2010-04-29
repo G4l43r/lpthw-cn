@@ -8,8 +8,8 @@ will have instructions for Windows and Linux computers.
 
 To complete this exercise you have to finish the following tasks:
 
-1. Go to http://learningpythonthehardway.org/wiki/ExerciseZero with your browser and get
-   the ``gedit`` text editor.
+1. Go to http://learningpythonthehardway.org/wiki/ExerciseZero with your browser, get
+   the ``gedit`` text editor, and install it.
 2. Put gedit (your editor) in your Dock so you can reach it easily.
 3. Find your "Terminal" program.  Search for it.  You'll find it.
 4. Put your Terminal in your Dock as well.
