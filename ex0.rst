@@ -12,7 +12,7 @@ Mac OSX
 
 To complete this exercise you have to finish the following tasks:
 
-1. Go to http://learningpythonthehardway.org/wiki/ExerciseZero with your browser, get
+1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
    the ``gedit`` text editor, and install it.
 2. Put gedit (your editor) in your Dock so you can reach it easily.
 3. Find your "Terminal" program.  Search for it.  You'll find it.
@@ -71,7 +71,7 @@ Linux is a varied operating system with a bunch of different ways to install sof
 I'm assuming if you're running Linux then you know how to install packages so here's 
 your instructions:
 
-1. Go to http://learningpythonthehardway.org/wiki/ExerciseZero with your browser, get
+1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
    the ``gedit`` text editor, and install it.
 2. Make sure you can get to ``gedit`` easily by putting it in your window manager's menu.
 3. Find your "Terminal" program.  It could be called ``GNOME Terminal``, ``Konsole``, or ``xterm``.
