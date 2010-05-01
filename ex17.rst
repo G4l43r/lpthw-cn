@@ -6,6 +6,7 @@ Python script to copy one file to another.  It'll be very short but will give
 you some ideas about other things you can do with files.
 
 .. literalinclude:: ex/ex17.py
+    :linenos:
 
 You should right away notice that we ``import`` another handy command
 named ``exists``.  This returns ``True`` if a file exists, based on it's
