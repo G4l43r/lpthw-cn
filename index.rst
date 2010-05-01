@@ -29,6 +29,9 @@ Contents:
    ex14
    ex15
    ex16
+   ex17
+   ex18
+   ex19
    ex27
    advice
 

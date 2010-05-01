@@ -1,3 +1,14 @@
-$ python ex.py
+$ python ex17.py test.txt copied.txt
+Copying from test.txt to copied.txt
+The input file is 81 bytes long
+Does the output file exist? False
+Ready, hit RETURN to continue, CTRL-C to abort.
 
+Alright, all done.
+
+$ cat copied.txt
+To all the people out there.
+I say I don't like my hair.
+I need to shave it off.
 $
+

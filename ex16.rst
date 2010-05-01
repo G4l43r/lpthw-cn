@@ -49,7 +49,7 @@ Extra Credit
    you need to research more.
 2. Write a script similar to the last exercise that uses ``read`` and ``argv`` 
    to read the file you just created.
-3. There's to much repetition in this file.  Use strings, formats, and escapes
+3. There's too much repetition in this file.  Use strings, formats, and escapes
    to print out ``line1``, ``line2``, and ``line3`` with just one ``target.write()``
    command instead of 6.
 4. Find out why we had to pass a ``'w'`` as an extra parameter to ``open``.  Hint:
