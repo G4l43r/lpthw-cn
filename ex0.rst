@@ -61,7 +61,7 @@ Windows
 
 I'm looking for someone to help with the instructions for Windows.  I don't have
 one and I'd like to make the instructions fairly similar to Linux and OSX.  Feel
-free to create a wiki page on http://learnpythonthehardway.com/ with what you think
+free to create a wiki page on http://learnpythonthehardway.org/ with what you think
 are good instructions and expected output.
 
 Linux
