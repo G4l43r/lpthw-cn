@@ -48,6 +48,8 @@ to you in the extra credit.
 What You Should See
 ===================
 
+I made a file called "ex15_sample.txt" and ran my script.
+
 .. literalinclude:: ex/ex15.txt
 
 Extra Credit
