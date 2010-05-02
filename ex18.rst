@@ -80,12 +80,18 @@ of these exercises or until you feel you don't need it:
 6. Did you indent all lines of code you want in the function 4 spaces?  No more, no less.
 7. Did you "end" your function by going back to writing with no indent (dedenting we call it)?
 
-And when you run (aka use, call) a function check these things:
+And when you run (aka "use", "call") a function check these things:
 
-1. Did you call/use this function by typing its name?
-2. Did you put ``(`` character after the name to call it?
+1. Did you call/use/run this function by typing its name?
+2. Did you put ``(`` character after the name to run it?
 3. Did you put the values you want into the parenthesis separated by commas?
 4. Did you end the function call with a ``)`` character.
 
 You will use these two checklists on the remaining lessons until you don't need
 them anymore.
+
+Finally, repeat this a few times:
+
+"To 'run', 'call', or 'use' a function all mean the same thing."
+
+
