@@ -1,4 +1,4 @@
-$ python ex.py
+$ python ex7.py
 Mary had a little lamb.
 It's fleece was white as snow.
 And everywhere that Mary went.

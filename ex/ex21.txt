@@ -1,4 +1,4 @@
-$ python ex.py
+$ python ex21.py
 Let's do some math with just functions!
 ADDING 30 + 5
 SUBTRACTING 78 - 4

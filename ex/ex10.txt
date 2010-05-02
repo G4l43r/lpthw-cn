@@ -1,4 +1,4 @@
-$ python ex.py
+$ python ex10.py
 	I'm tabbed in.
 I'm split
 on a line.

@@ -1,4 +1,4 @@
-$ python ex.py
+$ python ex6.py
 There are 10 types of people.
 Those who know binary and those who don't.
 I said: 'There are 10 types of people.'.

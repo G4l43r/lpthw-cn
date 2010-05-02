@@ -1,4 +1,4 @@
-$ python ex.py test.txt
+$ python ex20.py test.txt
 First let's print the whole file:
 
 To all the people out there.

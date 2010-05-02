@@ -1,4 +1,4 @@
-$ python ex15.py ex/ex15_sample.txt 
+$ python ex15.py ex15_sample.txt 
 Here's your file 'ex15_sample.txt':
 This is stuff I typed into a file.
 It is really cool stuff.
