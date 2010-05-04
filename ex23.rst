@@ -47,7 +47,7 @@ You should then try several three other sites:
 * koders.com
 
 On each of these sites you may find weird files ending in ``.c`` so stick to
-files like the ones you written.
+``.py`` files like the ones you have written in this book.
 
 A final fun thing to do is use the above four sources of Python code and 
 type in topics you're interested in instead of "python".  Search for "journalism",
