@@ -1,12 +1,59 @@
-Exercise
-********
+Exercise 22:  What Do You Know So Far?
+**************************************
+
+There won't be any code in this exercise or the next one, so there's no WYSS or Extra Credit
+either.  In fact, this exercise is like one giant Extra Credit.  I'm going to have you do a
+form of review on what you should know so far in order to help lock in what you've learned
+so far.
+
+First, you should go back through every exercise you've done so far and write down 
+every word and symbol (another name for 'character') that you've used.  Make sure your
+list of symbols is complete and you don't miss any.
 
 
-What You Should See
-===================
+Next to each word or symbol you should write its name, and what it does.  If you can't
+find a name for a symbol in this book, then look online for it.  If you don't know what
+something does, go read about it again and try using it again in some code.  Make sure
+you know.
+
+You may run into a few things you just can't find out or know, so just keep those on
+the list and be ready to look them up when you find them.
+
+Once you have your list, spend a few days rewriting the list and double checking that 
+it's correct.  This may get boring but push through and really nail it down.
+
+If you think you've memorized the list and what they do, then you should step it up
+and do this:
+
+1. Take a blank sheet of paper and try to write down as many symbols and words as you
+   can from memory.
+2. Compare what you could recall from memory to what was listed on your sheet, fill in
+   the rest.
+3. Write down the names from memory of all the symbols you can.
+3. Again go look at your list and compare them, correcting any and filling in the remaining
+   ones you didn't remember.
+4. Finally do the same for what each symbol does:  write them from memory and then fill in
+   the ones you don't remember or get wrong using your sheet.
 
 
-Extra Credit
-============
+What You're Learning
+====================
 
+It's important when you're doing a boring mindless memorization exercise like this that
+you know why.  It helps you focus on a goal and know the purpose of all your efforts.
+
+In this exercise you're learning a vocabulary.  You're learning the names of symbols so
+that you can read source code more easily than if you didn't know them.  It's similar 
+to learning the alphabet, except the alphabet has extra symbols you might not know.
+
+The technique you're also learning will help you memorize things.  A good trick is to
+try to recall what you can from memory, and then fill in the rest of the ones you don't
+know to then memorize again.  Doing it this way you develop memory skills that don't
+require you to have a "trigger" to remember what something is and makes it a more natural
+piece of knowledge.
+
+Finally, just take it slow and don't hurt your brain.  Hopefully by now these symbols are
+natural for you so this isn't a big effort.  It's best to take 15 minutes at a time with
+your list and then take a break.  Giving your brain a rest will help you learn it faster
+with less frustration.
 
