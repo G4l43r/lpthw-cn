@@ -37,6 +37,7 @@ Contents:
    ex22
    ex23
    ex24
+   ex25
    ex27
    advice
 

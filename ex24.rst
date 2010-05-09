@@ -8,6 +8,7 @@ longer and all about building up stamina.  The next exercise will be
 similar.  Do them, get them exactly right, and do your checks.
 
 .. literalinclude:: ex/ex24.py
+    :linenos:
 
 
 What You Should See

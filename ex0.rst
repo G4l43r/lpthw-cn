@@ -15,6 +15,10 @@ To complete this exercise you have to finish the following tasks:
 1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
    the ``gedit`` text editor, and install it.
 2. Put gedit (your editor) in your Dock so you can reach it easily.
+    a. Run gedit so we can fix some stupid defaults it has.
+    b. Open ``Preferences`` from the ``gedit menu`` and select the editor tab.
+    c. Change ``Tab width:`` to 4.
+    d. Check off ``Insert spaces instead of tabs``.
 3. Find your "Terminal" program.  Search for it.  You'll find it.
 4. Put your Terminal in your Dock as well.
 5. Run your Terminal program.  It won't look like much.
@@ -30,6 +34,7 @@ To complete this exercise you have to finish the following tasks:
     up if you can't figure it out.
 13. Back in Terminal see if you can list the directory to see your 
     newly created file.  Search online for how to list a directory.
+
 
 
 OSX: What You Should See
@@ -64,6 +69,10 @@ Windows
 1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
    the ``gedit`` text editor, and install it. You do not need to be administrator to do that.
 2. Make sure you can get to ``gedit`` easily by putting it on your desktop and/or in ``Quick Launch`` - bouth options are available during setup.
+    a. Run gedit so we can fix some stupid defaults it has.
+    b. Open ``Preferences`` select the editor tab.
+    c. Change ``Tab width:`` to 4.
+    d. Check off ``Insert spaces instead of tabs``.
 3. Find your "Terminal" program.  It's called ``Command Prompt``, alternatively just run ``cmd``. 
 4. You may make a shortcut to it on your desktop and/or ``Quick Launch`` for your convenience.
 5. Run your Terminal program.  It won't look like much.
@@ -132,6 +141,10 @@ your instructions:
 1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
    the ``gedit`` text editor, and install it.
 2. Make sure you can get to ``gedit`` easily by putting it in your window manager's menu.
+    a. Run gedit so we can fix some stupid defaults it has.
+    b. Open ``Preferences`` select the editor tab.
+    c. Change ``Tab width:`` to 4.
+    d. Check off ``Insert spaces instead of tabs``.
 3. Find your "Terminal" program.  It could be called ``GNOME Terminal``, ``Konsole``, or ``xterm``.
 4. Put your Terminal in your Dock as well.
 5. Run your Terminal program.  It won't look like much.

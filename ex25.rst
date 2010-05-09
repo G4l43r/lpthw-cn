@@ -1,12 +1,65 @@
-Exercise
-********
+Exercise 25: Even More Practice
+*******************************
+
+We're going to do some more practice involving functions and variables
+to make sure you know them well.  This exercise should be straight forward
+for you to type in and you should be able to break it down and understand
+it.
+
+However, this exercise is a little different.  You won't be running it, but
+instead *you* will import it into your python and run the functions yourself.
+
+.. literalinclude:: ex/ex25.py
+    :linenos:
+
+First thing you should do is run this like normal with ``python ex25.py`` to
+find any errors you've made.  Once you've found all of the errors you can
+this way and fixed them, you'll then want to follow the WYSS section to
+complete the exercise.
 
 
 What You Should See
 ===================
 
+In this exercise we're going to interact with your ``.py`` file inside
+the ``python`` interpreter you used periodically to do calculations.
+
+Here's what it looks like when I do it:
+
+.. literalinclude:: ex/ex25.txt
+    :linenos:
+    :language: pycon
+
+Let's break this down line by line to make sure you know what's going 
+on:
+
+* Line 5 you import *your* ``ex25.py`` python file, just other imports you've done.  Notice you don't need to put the ``.py`` at the end to import it.  When you do this you make a ``module`` that has all your functions in it to use.
+* Line 6 you made a ``sentence`` to work with.
+* Line 7 you use the ``ex25`` module and call your first function ``ex25.break_words``.  The ``.`` (dot, period) symbol is how you tell python, "Hey, inside ``ex25`` there's a function called ``break_words`` and I want to run it."
+* line 8 we just type ``words`` and python will print out what's in that variable (line 9).  It looks weird but this is a ``list``, you'll learn about that later.
+* Lines 10-11 we do the same thing with ``ex25.sort_words`` to get a sorted sentence.
+* Lines 13-16 we use ``ex25.print_first_word`` and ``ex25.print_last_word`` to get the first and last word printed out.
+* Line 17 is interesting.  I made a mistake and typed the ``words`` variable as ``wrods`` so python gave me an error on Lines 18-20.
+* Line 21-22 is where we print the modified words list, notice that since we printed the first and last one those words are now missing.
+
+The remaining lines are for you to figure out and analyze in the extra credit.
+
 
 Extra Credit
 ============
+
+1. Take the remaining lines of the WYSS output and figure out what they're doing.
+   Make sure you understand how you are running your functions in the ``ex25``
+   module.
+2. Try doing this:  ``help(ex25)`` and also ``help(ex25.break_words)``.  Notice how
+   you get help for your module, and also notice how the help is those odd ``"""``
+   strings you put after each function in ex25?  Those special strings are called
+   documentation comments and we'll be seeing more of them.
+3. Type ``ex25.`` is annoying, so a shortcut is do your import like 
+   this:  ``from ex25 import *`` which is like saying, "Import everything
+   from ex25."  Programmers like saying things backwards.  Start a new 
+   session and see how all your functions are right there now.
+4. Try breaking your file and see what it looks like in ``python`` when you use it.
+   You will have to quit python with CTRL-D (CTRL-Z on windows) to be able to reload it.
 
 
