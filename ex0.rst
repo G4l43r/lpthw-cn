@@ -16,7 +16,7 @@ To complete this exercise you have to finish the following tasks:
    the ``gedit`` text editor, and install it.
 2. Put gedit (your editor) in your Dock so you can reach it easily.
     a. Run gedit so we can fix some stupid defaults it has.
-    b. Open ``Preferences`` from the ``gedit menu`` and select the editor tab.
+    b. Open ``Preferences`` from the ``gedit menu`` and select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
     d. Check off ``Insert spaces instead of tabs``.
 3. Find your "Terminal" program.  Search for it.  You'll find it.
@@ -70,7 +70,7 @@ Windows
    the ``gedit`` text editor, and install it. You do not need to be administrator to do that.
 2. Make sure you can get to ``gedit`` easily by putting it on your desktop and/or in ``Quick Launch`` - bouth options are available during setup.
     a. Run gedit so we can fix some stupid defaults it has.
-    b. Open ``Preferences`` select the editor tab.
+    b. Open ``Edit->Preferences`` select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
     d. Check off ``Insert spaces instead of tabs``.
 3. Find your "Terminal" program.  It's called ``Command Prompt``, alternatively just run ``cmd``. 
@@ -142,7 +142,7 @@ your instructions:
    the ``gedit`` text editor, and install it.
 2. Make sure you can get to ``gedit`` easily by putting it in your window manager's menu.
     a. Run gedit so we can fix some stupid defaults it has.
-    b. Open ``Preferences`` select the editor tab.
+    b. Open ``Preferences`` select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
     d. Check off ``Insert spaces instead of tabs``.
 3. Find your "Terminal" program.  It could be called ``GNOME Terminal``, ``Konsole``, or ``xterm``.
