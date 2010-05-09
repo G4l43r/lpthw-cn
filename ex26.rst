@@ -1,12 +1,47 @@
-Exercise
-********
+Exercise 26: Congratulations, Take A Test!
+******************************************
+
+You are almost done with the first half of the book.  The second half will
+start teaching you logic where things become more interesting and you'll
+start to be able to do useful things.
+
+Before you continue though, I have a quiz for you.  This quiz will be *very*
+hard because it requires you to fix someone else's code.  When you're a programmer
+you have to deal with other programmer's code, and also with their arrogance.
+They will very frequently claim that their code is perfect.  Despite all
+of the obvious flaws in what they've written, it couldn't possibly be anything
+they've written.
 
 
-What You Should See
-===================
+These programmers are stupid people who care little for others.  A good
+programmer assumes, like a good scientist, that there's always *some*
+probability their code is wrong.  Good programmers start from the premise that
+their software is broken and then work to rule out all possible ways it could
+be wrong before finally admitting that maybe it really is the other guy's code.
 
+In this exercise, you will practice dealing with a bad programmer by fixing
+a bad programmer's code.  I have poorly copied exercises 24 and 25 into a
+file and then removed random characters and added flaws.  Most of the errors
+are things Python will tell you, some of them are math errors you should find.
+Others are formatting errors or spelling mistakes in the strings.
 
-Extra Credit
-============
+All of them are very common errors programmers make.  Even experienced ones.
+
+Your job in this exercise is to correct this file.  Use all of your skills
+to make this file better.  Analyze it first, maybe printing it out to edit 
+it like you would a school term paper.  Fix each flaw and keep running it
+and fixing it until you can.  Try not to get help, and instead if you get
+stuck take a break and come back to it later.
+
+Even if this takes days to do, bust through it and make it right.
+
+Finally, the point of this exercise isn't to type it in, but to fix
+an existing file.  To do that, you must go to:
+
+* http://learnpythonthehardway.com/wiki/Exercise26
+
+With your web browser, and copy-paste the code into a file to work on
+name ``ex26.py``. 
+
 
 
