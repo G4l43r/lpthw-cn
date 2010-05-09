@@ -36,6 +36,11 @@ and do this:
    the ones you don't remember or get wrong using your sheet.
 
 
+.. warning::
+
+    The most important thing when doing this exercise is: "There is no failure, only trying."
+
+
 What You're Learning
 ====================
 
