@@ -40,7 +40,7 @@ different, so see if you can figure out all the differences between what I did
 and what you should do.  Notice I use a text editor called ``vim``.  You shouldn't
 use it, it's too hard to use for you right now.
 
-.. code-block:: bash
+.. code-block:: console
     
     Last login: Sat Apr 24 00:56:54 on ttys001
     ~ $ python
@@ -59,10 +59,68 @@ use it, it's too hard to use for you right now.
 Windows
 =======
 
-I'm looking for someone to help with the instructions for Windows.  I don't have
-one and I'd like to make the instructions fairly similar to Linux and OSX.  Feel
-free to create a wiki page on http://learnpythonthehardway.org/ with what you think
-are good instructions and expected output.
+.. note:: Contributed by zhmark.
+
+1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
+   the ``gedit`` text editor, and install it. You do not need to be administrator to do that.
+2. Make sure you can get to ``gedit`` easily by putting it on your desktop and/or in ``Quick Launch`` - bouth options are available during setup.
+3. Find your "Terminal" program.  It's called ``Command Prompt``, alternatively just run ``cmd``. 
+4. You may make a shortcut to it on your desktop and/or ``Quick Launch`` for your convenience.
+5. Run your Terminal program.  It won't look like much.
+6. In your Terminal program, run ``python``.  You run
+   things in Terminal by just typing their name and hitting RETURN.
+   a. If you run ``python`` and it's not there (``python is not recognized..``) - install it.  *Make sure you install Python 2 not Python 3.*
+   b. You may be better off with ActiveState python especially when you miss Administrative rights
+7. Hit CTRL-Z (^Z), ``Enter`` and get out of ``python``.
+8. You should be back at a prompt similar to what you had before you typed ``python``.  If not find out why.
+9. Learn how to make a directory in the Terminal.  Search online for help.
+10. Learn how to change into a directory in the Terminal.  Again search online.
+11. Use your editor to create a file in this directory.  Typically you
+    will make the file and then "Save" or "Save As.." and pick this directory.
+12. Go back to Terminal using just the keyboard to switch windows.  Look it
+    up if you can't figure it out.
+13. Back in Terminal see if you can list the directory to see your 
+    newly created file.  Search online for how to list a directory.
+
+Windows: What You Should See
+--------------------------
+
+
+.. code-block:: bat
+
+    C:\Documents and Settings\you>python
+    ActivePython 2.6.5.12 (ActiveState Software Inc.) based on
+    Python 2.6.5 (r265:79063, Mar 20 2010, 14:22:52) [MSC v.1500 32 bit (Intel)] on win32
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> ^Z
+
+
+    C:\Documents and Settings\you>mkdir mystuff
+
+    C:\Documents and Settings\you>cd mystuff
+
+    C:\Documents and Settings\you\mystuff>u:\project\gedit\bin\gedit.exe test.txt
+
+    C:\Documents and Settings\you\mystuff>
+       <bunch of unimportant errors if you istalled it as non-admin - ignore them - hit Enter>
+    C:\Documents and Settings\you\mystuff>dir
+     Volume in drive C is
+     Volume Serial Number is 085C-7E02
+
+     Directory of C:\Documents and Settings\you\mystuff
+
+    04.05.2010  23:32    <DIR>          .
+    04.05.2010  23:32    <DIR>          ..
+    04.05.2010  23:32                 6 test.txt
+                   1 File(s)              6 bytes
+                   2 Dir(s)  14 804 623 360 bytes free
+
+    C:\Documents and Settings\you\mystuff> 
+
+You will probably see a very different prompt, Python information, and other stuff but this is
+the general idea.  If your system is different let us know at http://learnpythonthehardway.org
+and we'll fix it.
+
 
 Linux
 =====
@@ -96,7 +154,7 @@ Linux: What You Should See
 --------------------------
 
 
-.. code-block:: bash
+.. code-block:: console
 
     [~]$ python
     Python 2.6.5 (r265:79063, Apr  1 2010, 05:28:39)
