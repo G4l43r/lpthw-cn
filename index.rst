@@ -46,6 +46,8 @@ Contents:
    ex31
    ex32
    ex33
+   ex34
+   next
    advice
 
 Indices and tables
