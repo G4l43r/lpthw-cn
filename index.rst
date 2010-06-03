@@ -43,6 +43,7 @@ Contents:
    ex28
    ex29
    ex30
+   ex31
    advice
 
 Indices and tables

@@ -1,3 +1,52 @@
-$ python ex.py
+$ python ex31.py 
+You enter a dark room with two doors.  Do you go through door #1 or door #2?
+> 1
+There's a giant bear here eating a cheese cake.  What do you do?
+1. Take the cake.
+2. Scream at the bear.
+> 2
+The bear eats your legs off.  Good job!
 
-$
+$ python ex31.py 
+You enter a dark room with two doors.  Do you go through door #1 or door #2?
+> 1
+There's a giant bear here eating a cheese cake.  What do you do?
+1. Take the cake.
+2. Scream at the bear.
+> 1
+The bear eats your face off.  Good job!
+
+$ python ex31.py 
+You enter a dark room with two doors.  Do you go through door #1 or door #2?
+> 2
+You stare into the endless abyss at Cthuhlu's retina.
+1. Blueberries.
+2. Yellow jacket clothespins.
+3. Understanding revolvers yelling melodies.
+> 1
+Your body survives powered by a mind of jello.  Good job!
+
+$ python ex31.py 
+You enter a dark room with two doors.  Do you go through door #1 or door #2?
+> 2
+You stare into the endless abyss at Cthuhlu's retina.
+1. Blueberries.
+2. Yellow jacket clothespins.
+3. Understanding revolvers yelling melodies.
+> 3
+The insanity rots your eyes into a pool of muck.  Good job!
+
+$ python ex31.py 
+You enter a dark room with two doors.  Do you go through door #1 or door #2?
+> stuff
+You stumble around and fall on a knife and die.  Good job!
+
+$ python ex31.py 
+You enter a dark room with two doors.  Do you go through door #1 or door #2?
+> 1
+There's a giant bear here eating a cheese cake.  What do you do?
+1. Take the cake.
+2. Scream at the bear.
+> apples
+Well, doing apples is probably better.  Bear runs away.
+
