@@ -17,9 +17,9 @@ does that work?  Well, because of the way math works, Python start its
 lists at 0 rather than 1.  It seems weird, but there's many advantages to this,
 even though it is actually mostly arbitrary.
 
-It might help you know why you think differently from a programmer so you can
-better understand what's going on, so I'm going to let you in on a little
-secret.
+The best way to explain why is by showing you the difference between how
+you use numbers and how programmers have to use numbers with a little
+example using the animals above.
 
 Imagine you're watching the four animals in our list above
 (``['bear', 'tiger', 'penguin', 'zeebra']``) run in a race.  Now they win in the *order* we have
