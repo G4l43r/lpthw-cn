@@ -40,7 +40,8 @@ What You Should See
 When you run the
 program run it like this:
 
-.. code-block:: bash
+.. code-block:: console
+
     python ex13.py first 2nd 3rd
 
 This is what you should see when you do a few different runs
@@ -50,6 +51,30 @@ with different arguments:
 
 You can actually replace "first", "2nd", and "3rd" with any three things.
 
+If you don't run it correctly, then you'll get an error like this:
+
+.. code-block:: console
+
+    Traceback (most recent call last):
+      File "ex/ex13.py", line 3, in <module>
+        script, first, second, third = argv
+    ValueError: need more than 3 values to unpack
+
+This happens because you didn't put enough arguments on the command when you
+ran it.  Notice when I run it I gave it ``first 2nd 3rd``, and I could also
+do:
+
+.. code-block:: console
+
+    python ex13.py stuff I like
+    python ex13.py anything 6 7
+
+But if I don't give 3 arguments, I get the error, so if I do:
+
+.. code-block:: console
+
+    python ex13.py bad error
+    python ex13.py wrong
 
 
 Extra Credit
