@@ -40,6 +40,8 @@ Contents:
    ex25
    ex26
    ex27
+   ex28
+   ex29
    advice
 
 Indices and tables

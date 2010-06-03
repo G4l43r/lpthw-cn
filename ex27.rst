@@ -160,5 +160,7 @@ not (False and False) True
 =============== =====
 
 
-Now use these tables to write up your own cards and spend the week memorizing them.
+Now use these tables to write up your own cards and spend the week memorizing them.  Remember though,
+there is no failing in this book, just trying as hard as you can each day, and then a *little* bit more.
+
 

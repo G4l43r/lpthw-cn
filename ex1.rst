@@ -50,7 +50,7 @@ It's important you be able to read these since you'll be making many of
 these mistakes.  Even I make many of these mistakes.  Let's look at this
 line-by-line.
 
-1. Here we ran our command in the shell to run the ``ex1.py`` script.
+1. Here we ran our command in the terminal to run the ``ex1.py`` script.
 2. Python then tells us that the file ``ex1.py`` has an error on line 3.
 3. It then prints this line for us.
 4. Then it puts a ``^`` (caret) character to point at where the problem is.
