@@ -1,12 +1,27 @@
-Exercise
-********
+Exercise 35: Branches and Functions
+********************************
+
+You've learned to do ``if-statements``, and you can do functions.  You
+also know arrays.  Now it's time to bend your mind.  Type this in, and
+see if you can figure out what it's doing.
+
+.. literalinclude:: ex/ex35.py
+    :linenos:
 
 
 What You Should See
 ===================
 
+Here's me taking too much gold:
+
+.. literalinclude:: ex/ex35.txt
+
 
 Extra Credit
 ============
 
+1. Draw a map of the game and how you flow through it.
+2. Fix all of your mistakes, including spelling mistakes.
+3. Write comments for the functions you don't understand.  Remember doc comments?
+4. Add more to the game.  How much can you do to simplify it and still expand it.
 

@@ -51,6 +51,8 @@ penguin.  You have to do this because you've spent your whole life using ordinal
 numbers, and now you have to think in cardinal.  Just subtract 1 and you'll
 be good.
 
+Remember:  ordinal == ordered, 1st; cardinal == cards at random, 0.
+
 Let's practice this.  I've given you a list of animals, and then exercises
 where I tell you to write down what animal you get for that ordinal or cardinal
 number.  Remember if I say "first", "second", etc. then I'm using ordinal, so
@@ -83,3 +85,10 @@ Extra Credit
    really is 2010?  (Hint, you can't pick years at random.)
 3. Write some more lists and work out similar indexes until you can translate them.
 4. Use Python to check your answers to this as well.
+
+.. warning::
+
+    Programmers will tell you to read this guy named "Dijkstra" on this subject.
+    I recommend you avoid his writings on this unless you enjoy being yelled at
+    by someone who stopped programming at the same time programming started.
+

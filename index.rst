@@ -47,6 +47,7 @@ Contents:
    ex32
    ex33
    ex34
+   ex35
    next
    advice
 
