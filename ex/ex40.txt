@@ -1,3 +1,12 @@
-$ python ex.py
-
-$
+$ python ex40.py 
+State? (ENTER to quit) > CA
+San Francisco
+State? (ENTER to quit) > FL
+Jacksonville
+State? (ENTER to quit) > O
+Not found.
+State? (ENTER to quit) > OR
+Portland
+State? (ENTER to quit) > VT
+Not found.
+State? (ENTER to quit) >
