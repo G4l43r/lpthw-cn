@@ -1,3 +1,18 @@
-$ python ex.py
+$ python ex39.py
 
-$
+Wait there's not 10 things in that list, let's fix that.
+Adding:  Boy
+There's 7 items now.
+Adding:  Girl
+There's 8 items now.
+Adding:  Banana
+There's 9 items now.
+Adding:  Corn
+There's 10 items now.
+There we go:  ['Apples', 'Oranges', 'Crows', 'Telephone', 'Light', 'Sugar', 'Boy', 'Girl', 'Banana', 'Corn']
+Let's do some things with stuff.
+Oranges
+Corn
+Corn
+Apples Oranges Crows Telephone Light Sugar Boy Girl Banana
+Telephone#Light

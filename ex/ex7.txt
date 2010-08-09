@@ -1,6 +1,6 @@
-$ python ex7.py
+$ python
 Mary had a little lamb.
-It's fleece was white as snow.
+Its fleece was white as snow.
 And everywhere that Mary went.
 ..........
 Cheese Burger
