@@ -11,11 +11,11 @@ to use a ``for-loop`` in this exercise to build and print various lists.  When
 you do the exercise you'll start to figure out what they are.  I won't tell you
 right now, you have to figure it out.
 
-First thoug, you need a way to *store* the results of loops somewhere, and the
-best way to do that is with a ``list``.  A list is exactly what its name says,
-a container of things that are organized in order.  A list.  It's not
-complicated, you just have to learn a new syntax.  First, there's how you make
-a list:
+Before you can use a for-loop, you need a way to *store* the results of loops
+somewhere, and the best way to do that is with a ``list``.  A list is exactly
+what its name says, a container of things that are organized in order.  A list.
+It's not complicated, you just have to learn a new syntax.  First, there's how
+you make a list:
 
 .. code-block:: python
     
@@ -24,8 +24,8 @@ a list:
     weights = [1, 2, 3, 4]
 
 What you do is start the list with the ``[`` (left-bracket) which "opens" the
-list.  Then you put each item you want in the list separated like commas, just
-like when you did functiona arguments.  Lastly you end the list with a ``]``
+list.  Then you put each item you want in the list separated by commas, just
+like when you did function arguments.  Lastly you end the list with a ``]``
 (right-bracket) to indicate that it's over.  Python then takes this list, and
 all its contents, and assigns them to the variable.
 

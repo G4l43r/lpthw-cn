@@ -9,10 +9,10 @@ A string is usually a bit of text you want to display to someone, or "export"
 out of the program you are writing.  Python knows you want something to be a
 string when you put either ``"`` (double-quotes) or ``'`` (single-quotes)
 around the text.  You saw this many times with your use of ``print`` where you
-would put text you want to go to the string inside ``"`` or ``'`` after the
+would put the text you want to go to the string inside ``"`` or ``'`` after the
 ``print``.  Then Python prints it.
 
-Strings also can contain the format characters you've discovered so far.  You
+Strings can also contain the format characters you've discovered so far.  You
 simply put the formatted variables in the string, and then a ``%`` (percent)
 character, followed by the variable.  The *only* catch is that if you want
 multiple formats in your string to print multiple variables, then you need to

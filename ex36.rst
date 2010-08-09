@@ -63,7 +63,7 @@ You should now write a similar game to the one that I created
 in the last exercise.  It can be any kind of game you want in the
 same flavor, and you should spend a week on it making it as 
 interesting as you can.  For extra credit, you should use lists,
-functions, and modules (remember those?) as much as possible,
+functions, and modules (remember those from Ex. 13?) as much as possible,
 and find as many new pieces of Python as you can to make the game work.
 
 There is one catch though, you should write up your idea for

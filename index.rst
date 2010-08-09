@@ -51,6 +51,7 @@ Contents:
    ex36
    ex37
    ex38
+   ex39
    next
    advice
 

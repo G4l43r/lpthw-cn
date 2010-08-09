@@ -1,7 +1,7 @@
 Exercise 24: More Practice
 **************************
 
-We're coming to the end of this section, where should have enough of
+We're coming to the end of this section, where you should have enough
 Python "under your fingers" to move onto learning about how programming
 really works, but you should do some more practice.  This exercise is
 longer and all about building up stamina.  The next exercise will be

@@ -1,5 +1,5 @@
-Exercise 21: Functions Can Return
-*********************************
+Exercise 21: Functions Can Return Something
+*******************************************
 
 You've been using the ``=`` character to name variables and set them
 to numbers or strings.  We're now going to blow your mind again by

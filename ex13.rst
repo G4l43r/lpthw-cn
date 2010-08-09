@@ -5,7 +5,7 @@ We're slowly building up your first few input operations, so we want to
 cover one more input method you can use to pass variables to a script
 (script being another name for your ``.py`` files).  You know how you
 type ``python ex13.py`` to run the ``ex13.py`` file?  Well the ``ex13.py``
-part of the command is called a "argument".  What we'll
+part of the command is called an "argument".  What we'll
 do now is write a script that also accepts arguments.
 
 Go ahead and type this program and then I'll explain it in detail:
@@ -32,6 +32,20 @@ best word to describe what it does.  It just says, "Take whatever is in argv,
 unpack it, and assign it to all of these variables on the left in order."
 
 After that we just print them out like normal.
+
+Hold Up! Features Have Another Name
+===================================
+
+I call them features here, these little things you ``import`` to make
+your Python program do more.  Nobody else calls them features, I just 
+used that name because I needed to trick you into learning what they
+are without jargon.  But, before you can continue, you need to learn
+their real name:  ``modules``.
+
+We'll be calling these "features" that we ``import`` modules from now on.
+I'll say things like, "You want to import the ``sys`` module."  They are
+also called "libraries" by other programmers, but let's just stick to 
+modules.
 
 
 What You Should See
@@ -86,4 +100,5 @@ Extra Credit
    sure you give the unpacked variables good names.
 3. Combine ``raw_input`` with ``argv`` to make a script that does more
    input from a user.
-
+4. Remember that modules give you features.  Modules.  Modules.  Remember this
+   because we'll need it later.
