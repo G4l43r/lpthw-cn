@@ -1,12 +1,89 @@
-Exercise
-********
+Exercise 42: Getting Classy
+***************************
+
+While it's fun to put functions inside of dictionaries, you'd think there'd
+be something in Python that does this for you.  There is and it's the ``class``
+keyword.  Using ``class`` is how you create an even more awesome "dict with functions"
+than the one you made in the last exercise.  Classes have all sorts of powerful
+features and uses that I could never go into in this book.  Instead, you'll just
+use them like they're fancy dictionaries with functions.
+
+The concept of a class is present in many different programming languages that use
+the name "Object Oriented Programming".  This is an old style of programming where
+you make "things" and you "tell" those things to do work.  You've been doing 
+a lot of this.  A whole lot.  You just didn't know it.  Remember when you were doing
+this:
 
 
-What You Should See
-===================
+.. code-block:: python
+
+    stuff = ['Test', 'This', 'Out']
+    print ' '.join(stuff)
+
+You were actually using classes.  The variable ``stuff`` is a ``list class``.
+The ``' '.join(stuff)`` is calling the ``join`` function of the string ``' '``
+which is just an empty space.  That string is *also* a class.  It's all classes!
+
+Well, and objects, but let's just skip that word for now.  You'll learn what
+those are after you make some classes.  How do you make classes?  Very similar
+to how you made the ``ROOMS`` dict, but with a better syntax.  You can easily
+see how this is better:
+
+.. literalinclude:: ex/ex42.py
+    :linenos:
+
+You see that ``self`` in the parameters.  You know what that is?  That's right! It's
+the "extra" parameter that Python creates so you can type ``a.some_function()`` and
+then it will translate *that* to really be ``some_function(a)``.  Why use ``self``?
+Your function has no idea what you are calling any one "instance" of ``TheThing``
+or another, so you just use a generic name ``self`` that way you can write your
+function and it will always work.
+
+You actually could use another name than ``self`` but then every Python programmer
+on the planet would hate you, so don't.  Only jerks change things like that and
+I taught you better.  Be nice to people who have to read what you write because
+ten years later all code is horrible.
+
+Classes are very powerful, so you should go read about them.  Read everything
+you can and play with them.  You actually know how to use them, you just have
+to try it.  In fact, I want to go play some guitar right now so I'm not going
+to give you an exercise to type.  You're going to go write an exercise
+using classes.
 
 
-Extra Credit
-============
+Your First Big Project
+======================
+
+You need to start learning to feed yourself.  Hopefully as you've done this
+book you've learned that all the information you need is there, you just have
+to go search for it.  The only thing you've been missing is the right words
+and what to look for when you search.  Now you should have a sense of it, so
+it's about time you struggled through a big project and tried to get it 
+working.
+
+What you are to do is create a game like we did in the last exercise, except
+you have to use classes.  Whether you figured out how to use "doc comments" for
+the room descriptions or not doesn't matter.  What matters is that you create a
+class for the ``Map`` (don't call it ``Rooms``, classes are *singular* always).
+
+You will also write another class that runs your ``Map`` class, and call it ``Game``.
+
+Other than that I leave it to you.  You should spend a whole week on this and
+make it the best game you can.  Use classes, functions, dicts, lists anything
+you can to make it nice.
+
+Remember, I'm not telling you *exactly* how to do this because you have to
+do this yourself.  Go figure it out.  Programming is problem solving, and
+that means trying things, experimenting, failing, scrapping your work, and
+trying again.  When you get stuck, ask for help and show people your code.
+If they are mean to you, ignore them, focus on the people who are not mean
+and offer to help.  Keep working it and cleaning it until it's good, then
+show it some more.
+
+Don't be afraid to show your code, because if you want to do this you'll
+eventually have to show your code to someone.  Might as well get some
+confidence at it now.
+
+Alright, good luck, and see you in a week with your game.
 
 

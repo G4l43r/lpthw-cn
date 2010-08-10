@@ -1,12 +1,12 @@
-Exercise 41: A Room With A View
-*******************************
+Exercise 41: A Room With A View Of A Bear With A Broadsword
+***********************************************************
 
 Did you figure out the secret of the function in the dict from the
 last exercise?  Could you explain it to yourself?  Let me explain it
 and you can compare your explanation with mine.  Here's the lines of
 code we're talking about:
 
-.. code-block:  python
+.. code-block::  python
     
     cities['_find'] = find_city
     city_found = cities['_find'](cities, state)
