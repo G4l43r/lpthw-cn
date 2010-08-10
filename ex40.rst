@@ -1,4 +1,4 @@
-Exercise: Dictionaries, Oh Lovely Dictionaries
+Exercise 40: Dictionaries, Oh Lovely Dictionaries
 **********************************************
 
 Well, I now have to hurt you with another container you can use, because once

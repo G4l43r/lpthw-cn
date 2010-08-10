@@ -1,12 +1,101 @@
-Exercise
-********
+Exercise 41: A Room With A View
+*******************************
+
+Did you figure out the secret of the function in the dict from the
+last exercise?  Could you explain it to yourself?  Let me explain it
+and you can compare your explanation with mine.  Here's the lines of
+code we're talking about:
+
+.. code-block:  python
+    
+    cities['_find'] = find_city
+    city_found = cities['_find'](cities, state)
+
+Remember that functions can be variables too.  The ``def find_city`` just makes
+another variable name in your current module that you can then use anywhere.  In
+this code first we are putting the function ``find_city`` into the dict ``cities``
+as ``'_find'``.  This is the same as all the others where we set states to some
+cities, but in this case it's actually the function we put in there.
+
+Alright, so once we know that ``find_city`` is in the dict at ``_find`` that means
+we can do work with it.  The 2nd line of code (used later in the previous 
+exercise) can be broken down like this:
+
+1. Python sees ``city_found =`` and knows we want to make a new variable.
+2. It then reads ``cities`` and finds that variable, it's a dict.
+3. Then there's ``['_find']`` which will *index* into the ``cities`` dict and pull
+   out whatever is at ``_find``.
+4. What is at ``['_find']`` is our function ``find_city`` so Python *then* knows
+   it's got a function, and when it hits ``(`` it does the function call.
+5. The parameters ``cities, state`` are passed to this function ``find_city``, and
+   it runs because it's called.
+6. ``find_city`` then tries to lookup ``states`` inside ``cities``, and returns
+   what it finds or a message saying it didn't find anything.
+7. Python takes what ``find_city`` returned, and *finally* that is what is assigned
+   to ``city_found`` all the way at the beginning.
+
+I'm going to teach you a trick.  Sometimes these things read better in English
+if you read the code backwards, so let's try that.  Here's how I would do
+it for that same line (remember *backwards*):
+
+1. ``state`` and ``city`` are...
+2. passed as parameters to...
+3. a function at...
+4. ``'_find'`` inside...
+5. the dict ``cities``...
+6. and finally assigned to ``city_found``.
+
+Here's another way to read it, this time "inside-out".
+
+1. Find the center item of the expression, in this case ``['_find']``.
+2. Go counter-clock-wise and you have a dict ``cities``, so this finds the element
+   ``_find`` in cities.
+3. That gives us a function.  Keep going counter-clock-wise and you get to the parameters.
+4. The parameters are passed to the function, and that returns a result.  Go counter-clock-wise again.
+5. Finally, we are at the ``city_found =`` assignment and we have our end result.
+
+After decades of programming I don't even think about these three ways to read
+code.  I just glance at it and I know what it means, and I can even glance at a whole
+screen of code and all the bugs and errors jump out at me.  That took an incredibly
+long time and quite a bit more study than is sane.  To get that way, I learned these
+three ways of reading most any programming language:
+
+1. Front to back.
+2. Back to front.
+3. Counter-clock-wise.
+
+Try them out when you have a difficult statement to figure out.
+
+Let's now type in your next exercise, and then go over after that.
+This one is gonna be fun.
+
+.. literalinclude:: ex/ex41.py
+    :linenos:
+
+It's a lot of code, but go through it, make sure it works, play it.
 
 
 What You Should See
 ===================
 
+Here's me playing the game.  Bears are cool.
+
+.. literalinclude:: ex/ex41.txt
+
+
 
 Extra Credit
 ============
 
+1.  Explain how returning the next room works.
+2.  Create more rooms making the game bigger.
+3.  Instead of having each function print itself, learn about "doc comments".  See if you 
+    can write the room description as doc comments, and change the runner to print
+    them.
+4.  Once you have doc comments as the room description, do you need to have the
+    function prompt even?  Have the runner prompt the user, and pass that in to
+    each function.  You functions should just be if-statements printing the
+    result and returning the next room.
+5.  This is actually a small version of something called a "finite state machine".
+    Go read about them.  They might not make sense but try anyway.
 
