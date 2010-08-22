@@ -53,9 +53,8 @@ A very important skill -- that most programmers develop over time -- is the abil
 visually notice differences between things.  An experienced programmer can take
 two pieces of code that are slightly different and immediately start pointing
 out the differences.  In fact, programmers have invented tools to make this even
-easier.  Of course, the invention of these tools means that the differences themselves
-are now fewer and farther between.  So, even with years of training,
-finding little differences, in lots of code, remains difficult.
+easier, but we won't be using any of these tools.  You first have to train your
+brain the hard way, then you can use the tools.
 
 While you do these exercises, typing each one in, you'll be making mistakes.
 It's inevitable; even seasoned programmers would make a few.  Your
