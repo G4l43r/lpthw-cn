@@ -8,11 +8,11 @@ than the one you made in the last exercise.  Classes have all sorts of powerful
 features and uses that I could never go into in this book.  Instead, you'll just
 use them like they're fancy dictionaries with functions.
 
-The concept of a class is present in many different programming languages that use
-the name "Object Oriented Programming".  This is an old style of programming where
-you make "things" and you "tell" those things to do work.  You've been doing 
-a lot of this.  A whole lot.  You just didn't know it.  Remember when you were doing
-this:
+The concept of a class is in many different programming languages that use the
+name "Object Oriented Programming".  This is an old style of programming where
+you make "things" and you "tell" those things to do work.  You've been doing a
+lot of this.  A whole lot.  You just didn't know it.  Remember when you were
+doing this:
 
 
 .. code-block:: python
@@ -22,7 +22,7 @@ this:
 
 You were actually using classes.  The variable ``stuff`` is a ``list class``.
 The ``' '.join(stuff)`` is calling the ``join`` function of the string ``' '``
-which is just an empty space.  That string is *also* a class.  It's all classes!
+(just an empty space) is *also* a class, a string class.  It's all classes!
 
 Well, and objects, but let's just skip that word for now.  You'll learn what
 those are after you make some classes.  How do you make classes?  Very similar

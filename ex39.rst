@@ -1,4 +1,4 @@
-Exercise: Doing Things To Lists
+Exercise 39: Doing Things To Lists
 *******************************
 
 You learned about lists and when you learned about ``while-loops`` you
