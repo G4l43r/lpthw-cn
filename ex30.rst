@@ -11,7 +11,7 @@ credit right?
    creates what is called a "branch" in the code.  It's kind of like those
    choose your own adventure books where you are asked to turn to one page if
    you make one choice, and another if you go a different direction.  The
-   ``if-statement`` tells your script mostly what it sasy, "If this boolean
+   ``if-statement`` tells your script mostly what it says, "If this boolean
    expression is True, then run the code under it, otherwise skip it."
 
 
