@@ -8,41 +8,44 @@ than the one you made in the last exercise.  Classes have all sorts of powerful
 features and uses that I could never go into in this book.  Instead, you'll just
 use them like they're fancy dictionaries with functions.
 
-The concept of a class is in many different programming languages that use the
-name "Object Oriented Programming".  This is an old style of programming where
-you make "things" and you "tell" those things to do work.  You've been doing a
-lot of this.  A whole lot.  You just didn't know it.  Remember when you were
-doing this:
-
+A programming language that uses classes is called an "Object Oriented
+Programming".  This is an old style of programming where you make "things" and
+you "tell" those things to do work.  You've been doing a lot of this.  A whole
+lot.  You just didn't know it.  Remember when you were doing this:
 
 .. code-block:: python
 
     stuff = ['Test', 'This', 'Out']
     print ' '.join(stuff)
 
-You were actually using classes.  The variable ``stuff`` is a ``list class``.
+You were actually using classes.  The variable ``stuff`` is actually a ``list class``.
 The ``' '.join(stuff)`` is calling the ``join`` function of the string ``' '``
 (just an empty space) is *also* a class, a string class.  It's all classes!
 
 Well, and objects, but let's just skip that word for now.  You'll learn what
 those are after you make some classes.  How do you make classes?  Very similar
-to how you made the ``ROOMS`` dict, but with a better syntax.  You can easily
-see how this is better:
+to how you made the ``ROOMS`` dict, but easier:
 
 .. literalinclude:: ex/ex42.py
     :linenos:
 
-You see that ``self`` in the parameters.  You know what that is?  That's right! It's
+You see that ``self`` in the parameters?  You know what that is?  That's right! It's
 the "extra" parameter that Python creates so you can type ``a.some_function()`` and
 then it will translate *that* to really be ``some_function(a)``.  Why use ``self``?
 Your function has no idea what you are calling any one "instance" of ``TheThing``
 or another, so you just use a generic name ``self`` that way you can write your
 function and it will always work.
 
-You actually could use another name than ``self`` but then every Python programmer
-on the planet would hate you, so don't.  Only jerks change things like that and
-I taught you better.  Be nice to people who have to read what you write because
-ten years later all code is horrible.
+You actually could use another name rather than ``self`` but then every Python
+programmer on the planet would hate you, so don't.  Only jerks change things
+like that and I taught you better.  Be nice to people who have to read what you
+write because ten years later all code is horrible.
+
+Next, see the ``__init__`` function?  That is how you setup a Python class with
+internal variables.  You can set them on ``self`` with the ``.`` (period) just
+like I show you here.  See also how we then use this in ``add_me_up()`` later
+which lets you add to the ``self.number`` you created.  Later you can see how
+we use this to add to our number and print it.
 
 Classes are very powerful, so you should go read about them.  Read everything
 you can and play with them.  You actually know how to use them, you just have
@@ -80,8 +83,8 @@ If they are mean to you, ignore them, focus on the people who are not mean
 and offer to help.  Keep working it and cleaning it until it's good, then
 show it some more.
 
-Don't be afraid to show your code, because if you want to do this you'll
-eventually have to show your code to someone.  Might as well get some
+Don't be afraid to show your code, because if you want to do this for real
+you'll eventually have to show your code to someone.  Might as well get some
 confidence at it now.
 
 Alright, good luck, and see you in a week with your game.
