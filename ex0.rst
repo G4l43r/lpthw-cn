@@ -34,6 +34,9 @@ To complete this exercise you have to finish the following tasks:
     up if you can't figure it out.
 13. Back in Terminal see if you can list the directory to see your 
     newly created file.  Search online for how to list a directory.
+14. In gedit, go to Preferences>Editor and turn on "Automatic indentation",
+    set Tab width to 4 spaces, and set "Insert spaces instead of tabs".  Next
+    go to the View tab in Preferences and turn on "Display line numbers".
 
 
 
