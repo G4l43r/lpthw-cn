@@ -37,7 +37,7 @@ Line 7 we print a little line, but on line 8 we have something very new and
 exciting.  We call a function on ``txt``.  You see, what you got back from
 open is a ``file`` and it's also got commands you can give it.  You give a
 file a command by using the ``.`` (dot or period), the name of the command,
-and and parameters.  Just like with ``open`` and ``raw_input``.  The difference
+and parameters.  Just like with ``open`` and ``raw_input``.  The difference
 is that when you say ``txt.read()`` you're saying, "Hey txt! Do your read command
 with no parameters!"
 
