@@ -73,6 +73,50 @@ your mind in how to read, write, and see code.  If you copy-paste, you are cheat
 yourself out of the effectiveness of the lessons.
 
 
+A Note On Practice And Persistence
+==================================
+
+While you are studying programming, I'm studying how to play guitar.  I
+practice it everyday for at least 2 hours a day.  I play scales, chords, and
+arpeggios for an hour at least and then learn music theory, ear training, songs
+anything else I can.  Some days I study guitar and music for 8 hours because I
+feel like it and it's fun.  To me repetitive practice is natural and just how
+to learn something.  I know that to get good at anything you have to practice
+every day, even if I suck that day (which is often) or it's difficult. Keep
+trying and eventually it'll be easier and fun.
+
+As you study this book, and continue with programming, remember that anything
+worth doing is difficult at first.  Maybe you're the kind of person who is
+afraid of failure so you give up right away at the first sign of difficulty.
+Maybe you never learned self-discipline so you can't do anything that's
+"boring".  Maybe you were told that you are "gifted" so you never attempt
+anything that might make you seem stupid or not a prodigy.  Maybe you're
+competitive and unfairly compare yourself to someone like me who's been
+programming for 20+ years.
+
+Whatever your reason for wanting to quit, *keep at it*.  Force yourself to keep
+going.  If you run into an Extra Credit you can't do, or a lesson you just
+don't get, then skip it and come back to it later.  Just keep going because
+with programming there's this very odd thing that happens.
+
+At first, you will not understand anything.  It'll be weird, just like with
+learning any human language.  You'll struggle with words, and not know what
+symbols are what, and it'll all be very confusing.  Then one day *BANG* your
+brain will snap and you'll suddenly "get it".  If you keep doing the exercises
+and keep trying to understand them then you'll get it.  You might not be a master
+coder, but you'll at least understand how programming works.
+
+If you give up, you won't ever reach this point.  You'll hit the first
+confusing thing (which is everything at first) and then stop.  If you keep
+trying, keep typing it in and trying to understand it and reading about it then
+you'll eventually get it.
+
+Obviously though, if you go through this whole book, and you type everything
+in, but you still don't understand how to code, well then you gave it a shot.
+You can then safely say you tried your best and a little more and it didn't
+work out, but at least you tried.  You can be proud of that.
+
+
 License
 =======
 

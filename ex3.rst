@@ -42,7 +42,8 @@ Extra Credit
    again and using the above characters and what you know, use python as a calculator.
 3. Find something you need to calculate and write a new ``.py`` file that does it.
 4. Notice the math seems "wrong"?  There are no fractions, only whole numbers.
-   Find out why by researching what a "floating point" number means.
+   Find out why by researching what a "floating point" number means and how they're
+   actually a decimal number like 1.2 or 10.8.
 5. Rewrite ``ex3.py`` to use floating point numbers so it's more accurate.
 
 
