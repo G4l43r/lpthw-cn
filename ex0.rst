@@ -107,7 +107,7 @@ Windows: What You Should See
 
     C:\Documents and Settings\you>cd mystuff
 
-    C:\Documents and Settings\you\mystuff>u:\project\gedit\bin\gedit.exe test.txt
+    ... Here you would use gedit to make test.txt in mystuff ...
 
     C:\Documents and Settings\you\mystuff>
        <bunch of unimportant errors if you istalled it as non-admin - ignore them - hit Enter>
