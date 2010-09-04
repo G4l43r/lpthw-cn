@@ -26,15 +26,43 @@ Well, and objects, but let's just skip that word for now.  You'll learn what
 those are after you make some classes.  How do you make classes?  Very similar
 to how you made the ``ROOMS`` dict, but easier:
 
-.. literalinclude:: ex/ex42.py
-    :linenos:
+.. code-block:: python
 
-You see that ``self`` in the parameters?  You know what that is?  That's right! It's
-the "extra" parameter that Python creates so you can type ``a.some_function()`` and
-then it will translate *that* to really be ``some_function(a)``.  Why use ``self``?
-Your function has no idea what you are calling any one "instance" of ``TheThing``
-or another, so you just use a generic name ``self`` that way you can write your
-function and it will always work.
+    class TheThing:
+
+        def __init__(self):
+            self.number = 0
+
+        def some_function(self):
+            print "I got called."
+
+        def add_me_up(self, more):
+            self.number += more
+            return self.number
+
+    # two different things
+    a = TheThing()
+    b = TheThing()
+
+    a.some_function()
+    b.some_function()
+
+    print a.add_me_up(20)
+    print a.add_me_up(20)
+    print b.add_me_up(30)
+    print b.add_me_up(30)
+
+    print a.number
+    print b.number
+
+
+You see that ``self`` in the parameters?  You know what that is?  That's right,
+it's the "extra" parameter that Python creates so you can type
+``a.some_function()`` and then it will translate *that* to really be
+``some_function(a)``.  Why use ``self``?  Your function has no idea what you
+are calling any one "instance" of ``TheThing`` or another, so you just use a
+generic name ``self`` that way you can write your function and it will always
+work.
 
 You actually could use another name rather than ``self`` but then every Python
 programmer on the planet would hate you, so don't.  Only jerks change things
@@ -53,40 +81,43 @@ to try it.  In fact, I want to go play some guitar right now so I'm not going
 to give you an exercise to type.  You're going to go write an exercise
 using classes.
 
+Here's how we would do exercise 41 but using classes instead of the thing
+we created:
 
-Your First Big Project
-======================
+.. literalinclude:: ex/ex42.py
+    :linenos:
 
-You need to start learning to feed yourself.  Hopefully as you've done this
-book you've learned that all the information you need is there, you just have
-to go search for it.  The only thing you've been missing is the right words
-and what to look for when you search.  Now you should have a sense of it, so
-it's about time you struggled through a big project and tried to get it 
-working.
 
-What you are to do is create a game like we did in the last exercise, except
-you have to use classes.  Whether you figured out how to use "doc comments" for
-the room descriptions or not doesn't matter.  What matters is that you create a
-class for the ``Map`` (don't call it ``Rooms``, classes are *singular* always).
+What You Should See
+===================
 
-You will also write another class that runs your ``Map`` class, and call it ``Game``.
+The output from this version of the game should be exactly the same as the
+previous version, and in fact you'll notice that some of the code is nearly
+the same.  You should take this new version of the game and compare it to
+the last one so you understand the changes that were made.  Key things to
+really get are:
 
-Other than that I leave it to you.  You should spend a whole week on this and
-make it the best game you can.  Use classes, functions, dicts, lists anything
-you can to make it nice.
+1. How you made a ``class Game`` and put functions inside it.
+2. How ``__ini__`` is a special intialization method that sets up important variables.
+3. How you added functions *to* the class by indenting them so they were deeper under
+   the ``class`` keyword.  This is important so study carefully how indentation creates
+   the class structure.
+4. How you indented again to put the contents of the functions under their names.
+5. How colons are being used.
+6. The concept of ``self`` and how it's being used in ``__init__``, ``play``,
+   and ``death``.
+7. You should go find out what ``getattr`` does inside ``play`` so that you 
+   understand what's going on with the operation of ``play``.  In fact, try
+   doing this by hand inside Python to really get it.
+8. How a ``Game`` was created at the end and then told to ``play()`` and how that
+   got everything started.
 
-Remember, I'm not telling you *exactly* how to do this because you have to
-do this yourself.  Go figure it out.  Programming is problem solving, and
-that means trying things, experimenting, failing, scrapping your work, and
-trying again.  When you get stuck, ask for help and show people your code.
-If they are mean to you, ignore them, focus on the people who are not mean
-and offer to help.  Keep working it and cleaning it until it's good, then
-show it some more.
 
-Don't be afraid to show your code, because if you want to do this for real
-you'll eventually have to show your code to someone.  Might as well get some
-confidence at it now.
+Extra Credit
+============
 
-Alright, good luck, and see you in a week with your game.
-
+1. Go find out what the ``__dict__`` is and figure out how to get at it.
+2. Try adding some rooms to make sure you know how to work with a class.
+3. Create a two-class version of this, where one is the ``Map`` and the other is the ``Engine``.
+   Hint: ``play`` goes in the ``Engine``.
 

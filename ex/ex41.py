@@ -35,7 +35,7 @@ def princess_lives_here():
         return 'gold_koi_pond'
 
     else:
-        print "The princess looks are you confused and just points at the cake."
+        print "The princess looks at you confused and just points at the cake."
         return 'princess_lives_here'
 
 def gold_koi_pond():

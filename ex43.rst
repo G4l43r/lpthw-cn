@@ -1,42 +1,38 @@
-Exercise 43: Evaluating Your Game
-*********************************
+Exercise 43:  You Make A Game
+=============================
 
-In this exercise you're going to evaluate the game you just made.  Maybe you got
-part way through it and you got stuck.  Maybe you got it working but just barely.
-Either way, we're going to go through a bunch of things you should know now and 
-make sure you covered them in your game.  We're going to study how to properly
-format a class, common conventions in using them, and a lot of "textbook" knowledge.
+You need to start learning to feed yourself.  Hopefully as you've worked
+through this book you've learned that all the information you need is on the
+internet, you just have to go search for it.  The only thing you've been
+missing is the right words and what to look for when you search.  Now you
+should have a sense of it, so it's about time you struggled through a big
+project and tried to get it working.
 
-Why would I have you try to do it yourself and then show you how to do it right?
-From now on in the book I'm going to try to make you self-sufficient.  I've been
-holding your hand mostly this whole time, and I can't do that for much longer.
-I'm now instead going to give you things to do, have you do them on your own,
-and then give you ways to improve what you did and make them better.
+Here are your requirements:
 
-Hopefully you'll struggle at first, and probably be very frustrated but stick
-with it and eventually you'll build a mind for solving problems.  You'll start
-to find creative solutions to problems rather than just copy solutions out of
-textbooks.
+1. You have to make a different game from the one I made.
+2. You have to use more than one file, and use ``import`` to use them.  Make
+   sure you know what that is.
+3. You have to use *one class per room* and give the classes names that fit
+   their purpose.  Like ``GoldRoom``, ``KoiPondRoom``.
+4. Your runner will need to know about these rooms, so make a class that runs
+   them and knows about them.  There's plenty of ways to do this, but consider
+   having each room return what room is next or setting a variable of what
+   room is next.
 
+Other than that I leave it to you.  You should spend a whole week on this and
+make it the best game you can.  Use classes, functions, dicts, lists anything
+you can to make it nice.  The purpose of this lesson is to teach you how to 
+structure classes that need other classes inside other files.
 
+Remember, I'm not telling you *exactly* how to do this because you have to
+do this yourself.  Go figure it out.  Programming is problem solving, and
+that means trying things, experimenting, failing, scrapping your work, and
+trying again.  When you get stuck, ask for help and show people your code.
+If they are mean to you, ignore them, focus on the people who are not mean
+and offer to help.  Keep working it and cleaning it until it's good, then
+show it some more.
 
-Properly Formatted Classes
-==========================
-
-
-Evaluating OOP Code
-===================
-
-
-Clean Style And Formatting
-==========================
-
-
-Good Comments
-=============
-
-
-What Not To Do
-==============
+Alright, good luck, and see you in a week with your game.
 
 
