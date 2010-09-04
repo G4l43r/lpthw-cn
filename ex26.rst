@@ -38,7 +38,7 @@ Even if this takes days to do, bust through it and make it right.
 Finally, the point of this exercise isn't to type it in, but to fix
 an existing file.  To do that, you must go to:
 
-* http://learnpythonthehardway.com/wiki/Exercise26
+* http://learnpythonthehardway.com/wiki?name=Exercise26
 
 With your web browser, and copy-paste the code into a file to work on
 name ``ex26.py``. 
