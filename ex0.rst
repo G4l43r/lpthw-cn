@@ -42,8 +42,7 @@ OSX: What You Should See
 
 Here's me doing the above on my computer in Terminal.  Your computer would be
 different, so see if you can figure out all the differences between what I did
-and what you should do.  Notice I use a text editor called ``vim``.  You shouldn't
-use it, it's too hard to use for you right now.
+and what you should do.
 
 .. code-block:: console
     
@@ -56,7 +55,7 @@ use it, it's too hard to use for you right now.
     ~ $ mkdir mystuff
     ~ $ cd mystuff
     mystuff $ ls
-    mystuff $ vim test.txt
+    # ... Use Gedit here to edit test.txt....
     mystuff $ ls
     test.txt
     mystuff $ 
@@ -176,7 +175,7 @@ Linux: What You Should See
     >>>
     [~]$ mkdir mystuff
     [~]$ cd mystuff
-    [mystuff]$ vim test.txt
+    # ... Use gedit here to edit test.txt ...
     [mystuff]$ ls
     test.txt
     [mystuff]$ 
