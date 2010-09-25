@@ -29,7 +29,7 @@ about this question:
 
 Again this is kind of a weird question, but it's a bit easier than the Fish vs.
 Salmon question.  You know that Mary is a Salmon, and so she's not really
-different, she's just a specific "instance" of a Salmon.  Joe and Mary are also
+different, she's just a specific "instance" of a Salmon.  Joe and Frank are also
 instances of Salmon, but what do I mean when I say instance?  I mean, they were
 created from some other Salmon and now represent a real thing that has Salmon-like
 attributes.
