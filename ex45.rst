@@ -28,8 +28,8 @@ about this question:
 ``What is the difference between Mary and a Salmon?``
 
 Again this is kind of a weird question, but it's a bit easier than the Fish vs.
-Salmon question.  You know that Mary is a Salmon, and so he's not really
-different, he's just a specific "instance" of a Salmon.  Joe and Mary are also
+Salmon question.  You know that Mary is a Salmon, and so she's not really
+different, she's just a specific "instance" of a Salmon.  Joe and Mary are also
 instances of Salmon, but what do I mean when I say instance?  I mean, they were
 created from some other Salmon and now represent a real thing that has Salmon-like
 attributes.
