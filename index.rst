@@ -55,6 +55,9 @@ Contents:
    ex40
    ex41
    ex42
+   ex43
+   ex44
+   ex45
    next
    advice
 
