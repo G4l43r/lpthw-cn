@@ -1,3 +1,7 @@
-$ python ex.py
+~/projects/simplegame $ nosetests
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.007s
 
-$
+OK
+
