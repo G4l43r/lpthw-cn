@@ -1,6 +1,23 @@
-Exercise
-********
+Exercise 48: Advanced User Input
+*******************************
 
+Your game probably was coming along great, but I bet how you handled what the
+user typed was becoming tedious.  Each room needed it's own very exact set of
+phrases that only worked if your player typed them perfectly.  What you'd rather
+have is a device that let users type phrases in various ways and the game would
+still work.  For example, we'd like to have all of these phrases work the same:
+
+* open door
+* open the door
+* go THROUGH the door
+* punch bear
+* Punch The Bear in the FACE
+
+It should be alright for a user to write something a lot like English to work
+with your game, and have your game figure out what they mean.  To do this, we're
+going to write a module who's job is just that.  This module will have a few 
+classes that work together to handle use input and convert it into something your
+game can work with reliably.
 
 What You Should See
 ===================

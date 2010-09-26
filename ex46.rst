@@ -1,12 +1,154 @@
-Exercise
-********
+Exercise 46: A Project Skeleton
+*******************************
+
+This will also be where you start learning how to setup a good project "skeleton"
+directory.  This skeleton directory will have all the basics you need to get a
+new project up and running.  It will have your project layout, automated tests,
+modules, and install scripts.  When you go to make a new project, you just copy
+this directory to a new name and edit the files to get started.
+
+Skeleton Contents: Linux/OSX
+============================
+
+You first want to create the structure of your skeleton directory with these 
+commands:
+
+.. code-block:: bash
+
+    ~ $ mkdir -p projects
+    ~ $ cd projects/
+    ~/projects $ mkdir skeleton
+    ~/projects $ cd skeleton
+    ~/projects/skeleton $ mkdir bin NAME tests docs
+
+I use a directory named ``projects`` to store all the various things I'm
+working on.  Inside that directory I have my ``skeleton`` directory that
+I put the basis of my projects into.  The directory ``NAME`` will be 
+renamed to whatever you're calling your project's main module when you 
+use the skeleton.
+
+Next we need to setup some initial 
+files:
 
 
-What You Should See
-===================
+.. code-block:: bash
+
+    ~/projects/skeleton $ touch NAME/__init__.py
+    ~/projects/skeleton $ touch tests/__init__.py
+
+That creates empty Python module directories we can put our code in.
+Then we need to create a ``setup.py`` file we can use to install our
+project later if we want:
 
 
-Extra Credit
-============
+.. literalinclude:: ex/ex46.py
+    :linenos:
+
+You should edit this file so that it has your contact information in it
+and is ready to go for when you copy it.
+
+Finally you'll want a simple skeleton file for tests named ``tests/NAME_tests.py``:
+
+.. literalinclude:: ex/ex46_tests.py
+    :linenos:
+
+
+Skeleton Contents: Windows
+--------------------------
+
+Coming soon...I need a windows computer to test this but it should be similar
+to the Linux/OSX instructions.
+
+
+Installing Python Packages
+--------------------------
+
+You'll want to make sure you have some packages installed that makes
+these things work.  Here's the problem though, you are at a point where it's
+difficult for me to help you do that and keep this book sane and clean.  There
+are so many ways to install software on so many computers that I'd have to spend
+10 pages walking you through every step, and let me tell you I am a lazy guy.
+
+Rather than tell you how to do it exactly, I'm going to tell you what you 
+should install, and then tell you to figure it out and get it working.  This
+will be really good for you since it will open a whole world of software
+you can use that other people have released to the world.
+
+You are now supposed to install the following python packages:
+
+1. pip from http://pypi.python.org/pypi/pip
+2. distribute from http://pypi.python.org/pypi/distribute
+3. nose from http://pypi.python.org/pypi/nose/
+4. virtualenv from http://pypi.python.org/pypi/virtualenv
+
+Don't just download these packages and install them by hand.  Instead see how 
+other people recommend you install these packages and use them for your particular
+system.  The process will be different for most versions of Linux, OSX, and definitely
+different for Windows.
+
+I am warning you, this will be frustrating.  In the business we call this "yak shaving".
+Yak shaving is any activity that is mind numblingly irritatingly boring and tedious
+that you have to do before you can do something else that's more fun.  You want to
+create cool Python projects, but you can't do that until you setup a skeleton 
+directory, but you can't setup a skeleton directory until you install some packages,
+but you can't install pacakages until you install package installers, and you can't
+install package installers until you figure out how your system installs software
+in general, and so on.
+
+Struggle through this anyway.  Consider it your trial by annoyance to get into
+the programmer club.  Every programmer has to do these annoying tedious tasks
+before they can do something cool.
+
+Testing Your Setup
+==================
+
+After you get all that installed you should be able to do this:
+
+.. code-block:: bash
+
+    ~/projects/skeleton $ nosetests
+    .
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.007s
+
+    OK
+
+I'll explain what this ``nosetests`` thing is doing in the next exercise, but
+for now if you don't see that then you probably got something wrong.  Make sure
+you put ``__init__.py`` files in your ``NAME`` and ``tests`` directory and make
+sure you got ``tests/NAME_tests.py`` right.
+
+
+Using The Skeleton
+==================
+
+You are now done with most of your yak shaving.  Whenever you want to start a new
+project, you just do this:
+
+
+1. Make a copy of your skeleton directory.  Name it after your new project.
+2. Rename (move) the NAME module to be the name of your project or whatever you want to call
+   your root module.
+3. Edit your setup.py to have all the information for your project.
+4. Rename ``tests/NAME_tests.py`` to also have your module name.
+5. Double check it's all working using ``nosetests`` again.
+6. Start coding.
+
+
+Required Quiz
+=============
+
+This exercise doesn't have extra credit, it has a quiz you have to complete:
+
+1. Go and read about how to use all of the things you installed.
+2. Read about the ``setup.py`` file and all it has to offer.  Warning, it is not a very
+   well written piece of software, so it will be very strange to use.
+3. Make a project and start putting code into the module you have, then get the 
+   module working.
+4. Put a script in the ``bin`` directory that you can run.  Read about how you can make
+   a Python script that's runnable for your system.
+5. Mention the ``bin`` script you created in your ``setup.py`` so that it gets installed.
+6. Use your ``setup.py`` to install your own module and make sure it works, then use
+   ``pip`` to uninstall it.
 
 
