@@ -1,12 +1,67 @@
-Exercise
-********
+Exercise 51: Reviewing Your Game
+********************************
+
+You have worked hard on your Mafia Alien Slave Ship game.  You made a great story,
+filled out rooms, create a nice game engine, and got it working.  You are now going
+to get your game reviewed by a *real* user and take notes on what they find 
+wrong.  This is called "usability testing" and it helps you get good feedback on your
+game and find new bugs you didn't anticipate.
+
+When you wrote your game you probably only tested the things that you knew about.
+The problem is someone else doesn't know how your game is structured, so they'll
+try weird things you wouldn't have thought they'd do.  The only way to find these
+weird actions is to actually put your game before a human and let them trash it.
+
+What you need to do is find one person, preferably a relative or a friend.  You
+could even get together with a bunch of other people going through this book and
+have a little sharing session to try out your games.  Turn it into a competition
+even.  Anything to get people to try your game in-person.
 
 
-What You Should See
+How To Study A User
 ===================
 
+Studying a user is easy.  You just have to put them in front of your game
+and watch two things:
 
-Extra Credit
-============
+1. The screen while they use it.
+2. Their face while they use it.
+
+Sit at a slight off angle so you can glance at both while they play your game.
+This will help you see how they're reacting to your game by watching their face.
+
+Now what you do is let them play your game, but have them talk out loud about
+your game.  They will probably not give you feedback if you don't tell them to
+talk while they play, but if you get them to talk and play they'll tell you
+all sorts of things.
+
+Once they're playing and talking, take notes on paper and *do not judge or argue*.
+Just write down what they say and continue.  You want their honest feedback to your
+game and taking their comments personally will mean you don't get real feedback.
+
+Let them struggle with parts that they have a problem with, and then help them
+to move things forward.  You should be writing down parts that are too hard,
+broken, too difficult to navigate, and anything that is just plain confusing.
+
+Finally, thank them for helping you out and review what you found with them.
+They'll usually want to do it again if you do that, and it's just polite.
+
+
+Implement The Changes
+=====================
+
+With your list of defects you will make a new list of things you have to
+change.  Then spend one week changing them and try to get your friend(s)
+to review your game one more time.
+
+Whether they enjoyed your game or not doesn't matter.  What does matter
+at the end of Exercise 50 and 51 is you completed a full project with
+vague specifications and got feedback from a person, then fixed your 
+game to meet their demands.  You game can suck hard, but you at least
+wrote one.
+
+Take this lesson seriously as well.  Even though there is no code, it
+is probably the most important less you can have.  It teaches you that
+software is written for people, so caring about their opinions is important.
 
 

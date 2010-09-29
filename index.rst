@@ -62,6 +62,9 @@ Contents:
    ex47
    ex48
    ex49
+   ex50
+   ex51
+   ex52
    next
    advice
 
