@@ -69,14 +69,15 @@ If you don't run it correctly, then you'll get an error like this:
 
 .. code-block:: console
 
+    python ex13.py first 2nd
     Traceback (most recent call last):
       File "ex/ex13.py", line 3, in <module>
         script, first, second, third = argv
     ValueError: need more than 3 values to unpack
 
 This happens because you didn't put enough arguments on the command when you
-ran it.  Notice when I run it I gave it ``first 2nd 3rd``, and I could also
-do:
+ran it (in this case just ``first 2nd``).  Notice when I run it I gave it
+``first 2nd 3rd``, and I could also do:
 
 .. code-block:: console
 
