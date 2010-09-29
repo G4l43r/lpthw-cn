@@ -21,6 +21,7 @@ there then it'd end the string and Python would get confused.  Instead
 you escape it and Python knows to include in the string.  Here's an example:
 
 .. code-block:: python
+
     "I am 6'2\" tall."  # escape double-quote inside string
     'I am 6\'2" tall."  # escape single-quote inside string
 
