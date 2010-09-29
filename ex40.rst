@@ -47,6 +47,7 @@ put new things into the dictionary with strings.  It doesn't have to be strings
 though, we can also do this:
 
 .. code-block:: pycon
+
     >>> stuff[1] = "Wow"
     >>> stuff[2] = "Neato"
     >>> print stuff[1]
