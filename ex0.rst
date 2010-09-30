@@ -70,7 +70,8 @@ Windows
 
 1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
    the ``gedit`` text editor, and install it. You do not need to be administrator to do that.
-2. Make sure you can get to ``gedit`` easily by putting it on your desktop and/or in ``Quick Launch`` - bouth options are available during setup.
+2. Make sure you can get to ``gedit`` easily by putting it on your desktop and/or in
+   ``Quick Launch`` - both options are available during setup.
     a. Run gedit so we can fix some stupid defaults it has.
     b. Open ``Edit->Preferences`` select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
