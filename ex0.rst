@@ -18,7 +18,7 @@ To complete this exercise you have to finish the following tasks:
     a. Run gedit so we can fix some stupid defaults it has.
     b. Open ``Preferences`` from the ``gedit menu`` and select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
-    d. Check off ``Insert spaces instead of tabs``.
+    d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
 3. Find your "Terminal" program.  Search for it.  You'll find it.
 4. Put your Terminal in your Dock as well.
 5. Run your Terminal program.  It won't look like much.
@@ -74,7 +74,7 @@ Windows
     a. Run gedit so we can fix some stupid defaults it has.
     b. Open ``Edit->Preferences`` select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
-    d. Check off ``Insert spaces instead of tabs``.
+    d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
 3. Find your "Terminal" program.  It's called ``Command Prompt``, alternatively just run ``cmd``. 
 4. You may make a shortcut to it on your desktop and/or ``Quick Launch`` for your convenience.
 5. Run your Terminal program.  It won't look like much.
@@ -146,7 +146,7 @@ your instructions:
     a. Run gedit so we can fix some stupid defaults it has.
     b. Open ``Preferences`` select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
-    d. Check off ``Insert spaces instead of tabs``.
+    d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
 3. Find your "Terminal" program.  It could be called ``GNOME Terminal``, ``Konsole``, or ``xterm``.
 4. Put your Terminal in your Dock as well.
 5. Run your Terminal program.  It won't look like much.
