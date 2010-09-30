@@ -1,6 +1,6 @@
-$ python ex1.py
-  File "ex1.py", line 3
+$ python ex/ex1.py 
+  File "ex/ex1.py", line 3
     print "I like typing this.
                              ^
-SyntaxError: EOL while scanning single-quoted string
-$ 
+SyntaxError: EOL while scanning string literal
+
