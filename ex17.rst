@@ -47,8 +47,8 @@ Extra Credit
    more friendly to use by removing features.
 3. See how short you can make the script.  I could make this 1 line long.
 4. Notice at the end of the WYSS I used something called `cat`?  It's an old
-   comman that "con*cat*enates" files together, but mostly it's just an
+   command that "con*cat*enates" files together, but mostly it's just an
    easy way to print a file to the screen.  Type ``man cat`` to read about it.
 5. Windows people, find out what is the alternative to ``cat`` that Linux/OSX
    people have.  Don't worry about ``man`` since there is nothing like that.
-
+6. Find out why you had to do ``output.close()`` in the code.

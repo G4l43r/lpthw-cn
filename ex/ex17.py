@@ -20,4 +20,4 @@ output.write(indata)
 
 print "Alright, all done."
 
-
+output.close()
