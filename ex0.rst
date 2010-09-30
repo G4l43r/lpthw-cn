@@ -82,8 +82,9 @@ Windows
 5. Run your Terminal program.  It won't look like much.
 6. In your Terminal program, run ``python``.  You run
    things in Terminal by just typing their name and hitting RETURN.
-   a. If you run ``python`` and it's not there (``python is not recognized..``) - install it.  *Make sure you install Python 2 not Python 3.*
-   b. You may be better off with ActiveState python especially when you miss Administrative rights
+    a. If you run ``python`` and it's not there (``python is not recognized..``) - install it from http://python.org/download 
+    b. *Make sure you install Python 2 not Python 3.*
+    c. You may be better off with ActiveState python especially when you miss Administrative rights
 7. Hit CTRL-Z (^Z), ``Enter`` and get out of ``python``.
 8. You should be back at a prompt similar to what you had before you typed ``python``.  If not find out why.
 9. Learn how to make a directory in the Terminal.  Search online for help.
