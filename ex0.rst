@@ -19,6 +19,8 @@ To complete this exercise you have to finish the following tasks:
     b. Open ``Preferences`` from the ``gedit menu`` and select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
     d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
+    e. Turn on "Automatic indentation" as well.
+    f. Open the ``View`` tab turn on "Display line numbers".
 3. Find your "Terminal" program.  Search for it.  You'll find it.
 4. Put your Terminal in your Dock as well.
 5. Run your Terminal program.  It won't look like much.
@@ -34,9 +36,6 @@ To complete this exercise you have to finish the following tasks:
     up if you can't figure it out.
 13. Back in Terminal see if you can list the directory to see your 
     newly created file.  Search online for how to list a directory.
-14. In gedit, go to Preferences>Editor and turn on "Automatic indentation",
-    set Tab width to 4 spaces, and set "Insert spaces instead of tabs".  Next
-    go to the View tab in Preferences and turn on "Display line numbers".
 
 
 
@@ -76,6 +75,8 @@ Windows
     b. Open ``Edit->Preferences`` select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
     d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
+    e. Turn on "Automatic indentation" as well.
+    f. Open the ``View`` tab turn on "Display line numbers".
 3. Find your "Terminal" program.  It's called ``Command Prompt``, alternatively just run ``cmd``. 
 4. You may make a shortcut to it on your desktop and/or ``Quick Launch`` for your convenience.
 5. Run your Terminal program.  It won't look like much.
@@ -148,6 +149,8 @@ your instructions:
     b. Open ``Preferences`` select the ``Editor`` tab.
     c. Change ``Tab width:`` to 4.
     d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
+    e. Turn on "Automatic indentation" as well.
+    f. Open the ``View`` tab turn on "Display line numbers".
 3. Find your "Terminal" program.  It could be called ``GNOME Terminal``, ``Konsole``, or ``xterm``.
 4. Put your Terminal in your Dock as well.
 5. Run your Terminal program.  It won't look like much.
