@@ -31,6 +31,14 @@ If you follow these simple rules you will start writing better code than
 most programmers currently coding.  Go back to the last exercise and
 see if I followed all of these rules.  If not, fix it.
 
+.. warning::
+
+    Never be a slave to the rules in real life.  For training purposes
+    you need to follow these rules to make your mind strong, but in 
+    real life sometimes these rules are just stupid.  If you think a 
+    rule is stupid, then try not using it.
+    
+
 
 Rules For Loops
 ===============
