@@ -84,6 +84,33 @@ relationship between Salmon and Gills.
     :linenos:
 
 
+About class Name(object)
+========================
+
+Remember how I was yelling at you to always use ``class Name(object)`` and I couldn't
+tell you why?  Now I can tell you because you just learned about the difference between
+a ``class`` and an ``object``.  I couldn't tell you until now because you would have
+just been confused and couldn't learn to use the technology.
+
+What happened is Python's original rendition of ``class`` was broken in many serious
+ways.  By the time they admitted the fault it was too late, and they had to support 
+it.  In order to fix the problem, they needed some "new class" style so that the
+"old classes" would keep working but you could use the new more correct version.
+
+This is where "class is-a object" comes in.  They decided that they would use the
+word "object", lowercased, to be the "class" that you inherit from to make a class.
+Confusing right?  A class inherits from the class named object to make a class but
+it's not an object really it's a class, but don't forget to inherit from object.
+
+Exactly. The choice of one single word meant that I couldn't teach you about this
+until now.  Now you can try to understand the concept of a class that is an
+object if you like.
+
+However, I would suggest you don't.  Just completely ignore the idea of old style
+vs. new style classes and assume that Python always requires (object) when you
+make a class.  Save your brain power for something important.
+
+
 Extra Credit
 ============
 

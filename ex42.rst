@@ -28,7 +28,7 @@ to how you made the ``ROOMS`` dict, but easier:
 
 .. code-block:: python
 
-    class TheThing:
+    class TheThing(object):
 
         def __init__(self):
             self.number = 0
@@ -55,6 +55,16 @@ to how you made the ``ROOMS`` dict, but easier:
     print a.number
     print b.number
 
+.. warning::
+
+    Alright, this is where you start learning about "warts".  Python is an old
+    language with lots of really ugly obnoxious pieces that were bad decisions.
+    To cover up these bad decisions they make new bad decisions and then yell
+    at people to adopt the new bad decisions.  The phrase ``class
+    TheThing(object)`` is an example of a bad decision.  I won't get into it
+    right here, but  you shouldn't worry about why your class has to have
+    ``(object)`` after its name, just type it this way all the time or other
+    Python programmers will yell at you.  We'll get into why later.
 
 You see that ``self`` in the parameters?  You know what that is?  That's right,
 it's the "extra" parameter that Python creates so you can type
@@ -97,7 +107,7 @@ the same.  You should take this new version of the game and compare it to
 the last one so you understand the changes that were made.  Key things to
 really get are:
 
-1. How you made a ``class Game`` and put functions inside it.
+1. How you made a ``class Game(object)`` and put functions inside it.
 2. How ``__init__`` is a special intialization method that sets up important variables.
 3. How you added functions *to* the class by indenting them so they were deeper under
    the ``class`` keyword.  This is important so study carefully how indentation creates

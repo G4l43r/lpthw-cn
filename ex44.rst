@@ -53,6 +53,7 @@ Class Style
 * A foolish consistency is the hobgoblin of little minds.  Consistency is good, but foolishly
   following some mantra because everyone else does it even though the mantra makes no
   sense in certain situations is bad style.
+* Always, *always* have ``class Name(object)`` format or else you'll be in big trouble.
 
 
 Code Style
