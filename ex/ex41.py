@@ -97,6 +97,9 @@ def bear_with_sword():
         print '"Where the hell did that come from?" You say.'
 
         return 'big_iron_gate'
+    else:
+        print "The bear look puzzled as to why you'd do that."
+        return "bear_with_sword"
 
 def big_iron_gate():
     print "You walk up to the big iron gate and see there's a handle."
