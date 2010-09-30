@@ -1,4 +1,4 @@
-Exercise 45: Is-A, Has-A, ``Object``s, and ``Class``es
+Exercise 45: Is-A, Has-A, Objects, and Classes
 *********************************************
 
 An important concept that you have to understand is the difference between a
