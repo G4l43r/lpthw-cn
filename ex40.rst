@@ -84,6 +84,10 @@ that will hopefully have a big light turn on in your head very soon.
     :linenos:
 
 
+.. warning::  Notice how I use ``themap`` instead of ``map``?  That's because Python
+    has a function called map, so if you try to use that you can have problems later.
+
+
 What You Should See
 ===================
 

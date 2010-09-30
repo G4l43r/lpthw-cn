@@ -4,9 +4,9 @@ cities = {'CA': 'San Francisco', 'MI': 'Detroit',
 cities['NY'] = 'New York'
 cities['OR'] = 'Portland'
 
-def find_city(map, state):
-    if state in map:
-        return map[state]
+def find_city(themap, state):
+    if state in themap:
+        return themap[state]
     else:
         return "Not found."
 
