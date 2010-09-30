@@ -8,7 +8,7 @@ writing ads and social network games to steal people's money.
 
 This exercise has lots of math symbols so let's name them right away so you know
 what they're called.  As you type this one in, say the names.  When saying them
-feels boring you can stop saying them.  Here's the names:
+feels boring you can stop saying them.  Here are the names:
 
 * ``+``           plus
 * ``-``           minus
