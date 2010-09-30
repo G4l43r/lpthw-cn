@@ -98,7 +98,7 @@ the last one so you understand the changes that were made.  Key things to
 really get are:
 
 1. How you made a ``class Game`` and put functions inside it.
-2. How ``__ini__`` is a special intialization method that sets up important variables.
+2. How ``__init__`` is a special intialization method that sets up important variables.
 3. How you added functions *to* the class by indenting them so they were deeper under
    the ``class`` keyword.  This is important so study carefully how indentation creates
    the class structure.
