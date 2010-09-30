@@ -27,7 +27,7 @@ To avoid these problems, there's some rules to follow:
 
 1. Make sure that you use ``while-loops`` sparingly.  Usually a ``for-loop`` is
    better.
-2. Review your while statements and make sure that the thing your testing will
+2. Review your while statements and make sure that the thing you're testing will
    become ``False`` at some point later.
 3. When is doubt, print out your test variable at the top and bottom of the ``while-loop``
    to see what it's doing.
