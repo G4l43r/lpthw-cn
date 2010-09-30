@@ -9,7 +9,8 @@ Adding:  Banana
 There's 9 items now.
 Adding:  Corn
 There's 10 items now.
-There we go:  ['Apples', 'Oranges', 'Crows', 'Telephone', 'Light', 'Sugar', 'Boy', 'Girl', 'Banana', 'Corn']
+There we go:  ['Apples', 'Oranges', 'Crows', 'Telephone', 'Light', 'Sugar',
+      'Boy', 'Girl', 'Banana', 'Corn']
 Let's do some things with stuff.
 Oranges
 Corn
