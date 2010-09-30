@@ -62,7 +62,7 @@ Code Style
   bad programmers who are able to write reasonable code, but who don't add
   *any* spaces.  This is bad style in any language because the human eye and
   brain use space and vertical alignment to scan and separate visual elements.
-  Not having space is the same as giving your code a awesome camouflage paint job.
+  Not having space is the same as giving your code an awesome camouflage paint job.
 * If you can't read it out loud, it's probably hard to read.  If you're having a
   problem making something easy to use, then try reading it out loud.  Not only
   does this force you slow down and really read it, but it also helps you find
