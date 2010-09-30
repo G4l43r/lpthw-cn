@@ -10,7 +10,7 @@ I'm going to ask you to do something intimidating:
 *I want you to teach someone else exercises 1 through 5 of this book.*
 
 That's right, you're going to be a teacher for a day and get a new person
-into programming.  Who knows, mabye they'll become interested and continue
+into programming.  Who knows, maybe they'll become interested and continue
 after you're done.  Maybe they'll think it's stupid and just forget about
 it.
 
