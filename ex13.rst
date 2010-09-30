@@ -77,19 +77,17 @@ If you don't run it correctly, then you'll get an error like this:
 
 This happens because you didn't put enough arguments on the command when you
 ran it (in this case just ``first 2nd``).  Notice when I run it I gave it
-``first 2nd 3rd``, and I could also do:
+``first 2nd 3rd``, which caused it to give an error about "need more than 3
+values to unpack" telling you that you didn't give it enough parameters.
+
+You don't have to give these parameters either, you can give any 3 strings
+you want:
+
 
 .. code-block:: console
 
     python ex13.py stuff I like
     python ex13.py anything 6 7
-
-But if I don't give 3 arguments, I get the error, so if I do:
-
-.. code-block:: console
-
-    python ex13.py bad error
-    python ex13.py wrong
 
 
 Extra Credit
