@@ -57,7 +57,7 @@ to review your game one more time.
 Whether they enjoyed your game or not doesn't matter.  What does matter
 at the end of Exercise 50 and 51 is you completed a full project with
 vague specifications and got feedback from a person, then fixed your 
-game to meet their demands.  You game can suck hard, but you at least
+game to meet their demands.  Your game can suck hard, but you at least
 wrote one.
 
 Take this lesson seriously as well.  Even though there is no code, it
