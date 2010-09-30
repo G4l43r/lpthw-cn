@@ -64,8 +64,10 @@ line-by-line.
 Extra Credit
 ============
 
-You will also have extra credit you should do to make sure you understand
-each exercise.  For this exercise, try these things:
+You will also have ``Extra Credit``. The Extra Credit contains things you
+should *try* to do.  These extra credit questions are optional, so if you hit
+one that you can't solve, mark it for later and skip it for now.  For this
+exercise, try these things:
 
 1. Make your script print another line.
 2. Make your script print only one of the lines.
