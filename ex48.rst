@@ -54,8 +54,8 @@ defined a sentence as "words separated by spaces", so we really just need to do 
 
 .. code-block:: python
 
-    input = raw_input('> ')
-    words = input.split()
+    stuff = raw_input('> ')
+    words = stuff.split()
 
 That's really all we'll worry about for now, but this will work really well for quite
 a while.
