@@ -79,7 +79,7 @@ Extra Credit
    Python does.  For example, ``' '.join(things)`` is ``join(' ', things)``.
 2. Translate these two ways to view the function calls in English.  For example, ``' '.join(things)``
    reads as, "Join things with ' ' between them."  Meanwhile, ``join(' ', things)`` means,
-   "Call join with ' ' and things."  Understand how they're really the same thing.
+   "Call join with ' ' and things."  Understand how they are really the same thing.
 2. Go read about "Object Oriented Programming" online.  Confused?  Yeah I was too.  Do not worry though
    we'll learn enough to be dangerous then you can slowly learn more later.
 3. Read up on what a "class" is in Python.  *Do not read about how other languages use the word "class".* That will only mess you up.

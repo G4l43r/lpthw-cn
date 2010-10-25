@@ -2,7 +2,7 @@ Exercise 28: Boolean Practice
 *****************************
 
 The logic combinations you learned from the last exercise are called "boolean" logic
-expressions.  They're named after George Boole who invented the concepts and they're
+expressions.  They're named after George Boole who invented the concepts and they are
 are used *everywhere* in programming.  They are essential fundamental parts of computation
 and knowing them very well is akin to knowing your scales in music, or knowing your stances
 in Karate.

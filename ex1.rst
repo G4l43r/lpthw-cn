@@ -16,7 +16,7 @@ as python works best with files ending in ``.py``.
 .. warning::
 
     Do not type the numbers on the far left of these lines.  Those are called
-    "line numbers" and they're used by programmers to talk about what part of 
+    "line numbers" and they are used by programmers to talk about what part of 
     a program is wrong.  Python will tell you errors related to these line numbers,
     but *you* do not type them in.
 

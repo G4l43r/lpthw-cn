@@ -62,7 +62,7 @@ best you can before moving on.
 2. If you are not sure ask someone for help or search online.
    Many times searching for "python THING" will find answers
    for what THING does in python.  Try searching for "python open".
-3. I used the name "commands" here, but they're also called "functions"
+3. I used the name "commands" here, but they are also called "functions"
    and "methods".  Search around online to see what other people do
    to define these.  Do not worry if they confuse you, it's normal for
    a programmer to confuse you with their vast extensive knowledge.

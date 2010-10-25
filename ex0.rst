@@ -222,7 +222,7 @@ while you work on the exercises:
 
 1. *Write* exercises using ``gedit``.
 2. *Run* the exercises you wrote.
-3. *Fix* them when they're broken.
+3. *Fix* them when they are broken.
 4. Repeat.
 
 Anything else will only confuse you, so stick to the plan.

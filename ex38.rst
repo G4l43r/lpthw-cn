@@ -25,7 +25,7 @@ following:
 6. Finally, any parts of code that you can't understand for whatever reason.
 
 Third, once you have all of this marked up, try to explain it to yourself
-by writing comments as you go.  Explain the functions, how they're used,
+by writing comments as you go.  Explain the functions, how they are used,
 what variables are involved, anything you can to figure this code out.
 
 Lastly, on all of the difficult parts, trace the values of each variable

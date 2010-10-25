@@ -9,7 +9,7 @@ time.  I will demonstrate by a Zen koan:
 ``What is the difference between a Fish and a Salmon?``
 
 Did that question sort of confuse you? Really sit down and think about it for a
-minute.  I mean, a Fish and a Salmon are different but, wait, they're the same
+minute.  I mean, a Fish and a Salmon are different but, wait, they are the same
 thing right?  A Salmon is a *kind* of Fish, so I mean it's not different.  But
 at the same time, a Salmon is a particular *type* of Fish and so it's actually
 different from all other Fish.  That's what makes it a Salmon and not a

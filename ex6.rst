@@ -3,7 +3,7 @@ Exercise 6: Strings And Text
 
 You have already been writing strings but haven't really known what they do.
 In this exercise we create a bunch of variables with complex strings so you can
-see what they're for.  First an explanation of strings.
+see what they are for.  First an explanation of strings.
 
 A string is usually a bit of text you want to display to someone, or "export"
 out of the program you are writing.  Python knows you want something to be a

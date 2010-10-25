@@ -28,6 +28,6 @@ For these next few exercises you will have the exact same extra credit.
 4. When you go to the next exercise, look at the last mistakes you made and
    try not to make them in this new one.
 5. Remember that everyone makes mistakes.  Programmers are like magicians who
-   like everyone to think they're perfect and never wrong, but it's all an act.
+   like everyone to think they are perfect and never wrong, but it's all an act.
    They make mistakes all the time.
 

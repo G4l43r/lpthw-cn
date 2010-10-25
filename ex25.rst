@@ -48,7 +48,7 @@ The remaining lines are for you to figure out and analyze in the extra credit.
 Extra Credit
 ============
 
-1. Take the remaining lines of the WYSS output and figure out what they're doing.
+1. Take the remaining lines of the WYSS output and figure out what they are doing.
    Make sure you understand how you are running your functions in the ``ex25``
    module.
 2. Try doing this:  ``help(ex25)`` and also ``help(ex25.break_words)``.  Notice how

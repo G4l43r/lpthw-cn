@@ -156,7 +156,7 @@ save it for later.
 
 You should spend about a week on this, but if you finish it faster
 that's great.  The point though is to try to get coverage on all
-these symbols and make sure they're locked in your head.  What's also
+these symbols and make sure they are locked in your head.  What's also
 important is to find out what you *do not* know so you can fix it
 later.
 
