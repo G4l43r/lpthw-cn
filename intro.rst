@@ -103,18 +103,18 @@ At first, you will not understand anything.  It'll be weird, just like with
 learning any human language.  You will struggle with words, and not know what
 symbols are what, and it'll all be very confusing.  Then one day *BANG* your
 brain will snap and you will suddenly "get it".  If you keep doing the exercises
-and keep trying to understand them then you will get it.  You might not be a master
+and keep trying to understand them, you will get it.  You might not be a master
 coder, but you will at least understand how programming works.
 
 If you give up, you won't ever reach this point.  You will hit the first
 confusing thing (which is everything at first) and then stop.  If you keep
-trying, keep typing it in and trying to understand it and reading about it then
+trying, keep typing it in, trying to understand it and reading about it, 
 you will eventually get it.
 
-Obviously though, if you go through this whole book, and you type everything
-in, but you still do not understand how to code, well then you gave it a shot.
-You can then safely say you tried your best and a little more and it didn't
-work out, but at least you tried.  You can be proud of that.
+But, if you go through this whole book, and you still do not understand how to
+code, at least you gave it a shot.  You can say you tried your best and a
+little more and it didn't work out, but at least you tried.  You can be proud
+of that.
 
 
 License
