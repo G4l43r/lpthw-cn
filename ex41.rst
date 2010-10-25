@@ -54,7 +54,7 @@ Here's another way to read it, this time "inside-out".
 4. The parameters are passed to the function, and that returns a result.  Go counter-clock-wise again.
 5. Finally, we are at the ``city_found =`` assignment and we have our end result.
 
-After decades of programming I don't even think about these three ways to read
+After decades of programming I do not even think about these three ways to read
 code.  I just glance at it and I know what it means, and I can even glance at a whole
 screen of code and all the bugs and errors jump out at me.  That took an incredibly
 long time and quite a bit more study than is sane.  To get that way, I learned these

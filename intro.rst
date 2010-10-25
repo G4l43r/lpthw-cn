@@ -53,7 +53,7 @@ A very important skill -- that most programmers develop over time -- is the abil
 visually notice differences between things.  An experienced programmer can take
 two pieces of code that are slightly different and immediately start pointing
 out the differences.  Programmers have invented tools to make this even
-easier, but we won't be using any of these tools.  You first have to train your
+easier, but we won't be using any of these.  You first have to train your
 brain the hard way, then you can use the tools.
 
 While you do these exercises, typing each one in, you will be making mistakes.
@@ -66,20 +66,20 @@ bugs, and other problems.
 Do Not Copy-Paste
 =================
 
-The last thing I'll say before we begin is that you must *type* each of these
-exercises in, manually.  If you copy and paste, you might as well just not even
-do them.  The point of these exercises is to train your hands, your brain, and
-your mind in how to read, write, and see code.  If you copy-paste, you are cheating
-yourself out of the effectiveness of the lessons.
+You must *type* each of these exercises in, manually.  If you copy and paste,
+you might as well just not even do them.  The point of these exercises is to
+train your hands, your brain, and your mind in how to read, write, and see
+code.  If you copy-paste, you are cheating yourself out of the effectiveness of
+the lessons.
 
 
 A Note On Practice And Persistence
 ==================================
 
 While you are studying programming, I'm studying how to play guitar.  I
-practice it everyday for at least 2 hours a day.  I play scales, chords, and
+practice it every day for at least 2 hours a day.  I play scales, chords, and
 arpeggios for an hour at least and then learn music theory, ear training, songs
-anything else I can.  Some days I study guitar and music for 8 hours because I
+and anything else I can.  Some days I study guitar and music for 8 hours because I
 feel like it and it's fun.  To me repetitive practice is natural and just how
 to learn something.  I know that to get good at anything you have to practice
 every day, even if I suck that day (which is often) or it's difficult. Keep
@@ -87,17 +87,17 @@ trying and eventually it'll be easier and fun.
 
 As you study this book, and continue with programming, remember that anything
 worth doing is difficult at first.  Maybe you are the kind of person who is
-afraid of failure so you give up right away at the first sign of difficulty.
+afraid of failure so you give up at the first sign of difficulty.
 Maybe you never learned self-discipline so you can't do anything that's
 "boring".  Maybe you were told that you are "gifted" so you never attempt
 anything that might make you seem stupid or not a prodigy.  Maybe you are
 competitive and unfairly compare yourself to someone like me who's been
 programming for 20+ years.
 
-Whatever your reason for wanting to quit, *keep at it*.  Force yourself to keep
-going.  If you run into an Extra Credit you can't do, or a lesson you just
-don't get, then skip it and come back to it later.  Just keep going because
-with programming there's this very odd thing that happens.
+Whatever your reason for wanting to quit, *keep at it*.  Force yourself.  If
+you run into an Extra Credit you can't do, or a lesson you just do not understand, then
+skip it and come back to it later.  Just keep going because with programming
+there's this very odd thing that happens.
 
 At first, you will not understand anything.  It'll be weird, just like with
 learning any human language.  You will struggle with words, and not know what
@@ -112,7 +112,7 @@ trying, keep typing it in and trying to understand it and reading about it then
 you will eventually get it.
 
 Obviously though, if you go through this whole book, and you type everything
-in, but you still don't understand how to code, well then you gave it a shot.
+in, but you still do not understand how to code, well then you gave it a shot.
 You can then safely say you tried your best and a little more and it didn't
 work out, but at least you tried.  You can be proud of that.
 

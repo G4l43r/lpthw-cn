@@ -24,7 +24,7 @@ that work memorizing the basics pays off big later.
 
 Here's a tip on how to memorize something without going insane:  Do it a little
 tiny bit at a time throughout the day and mark down what you need to work on most.
-Don't try to sit down for 2 hours straight and memorize these tables as that won't
+Do not try to sit down for 2 hours straight and memorize these tables as that won't
 work.  Your brain will really only retain whatever you studied in the first
 15 or 30 minutes anyway.
    
@@ -34,11 +34,11 @@ You should then pull them out, see the "True or False" and be able to immediatel
 say "True!"  Keep practicing until you can do this.
 
 Once you can do that, start writing out your own truth tables each night into
-a notebook.  Don't just copy them, but instead try to do them from memory, and
+a notebook.  Do not just copy them, but instead try to do them from memory, and
 when you get stuck glance quickly at the ones I have here to refresh your 
 memory.  Doing this will train your brain to remember the whole table.
 
-Don't spend more than one week on this, because you will be applying it
+Do not spend more than one week on this, because you will be applying it
 as you go.  You might want to keep your index cards as a "warm up" before
 you sit down to do further exercises though.
 

@@ -8,7 +8,7 @@ keep executing the code block under it...
 Wait, you have been keeping up with the terminology right?  That if we write a 
 line and end it with a ``:`` (colon) then that tells Python to start a new 
 block of code?  Then we indent and that's the new code.  This is all about
-structuring your programs so that Python knows what you mean.  If you don't
+structuring your programs so that Python knows what you mean.  If you do not
 get that idea then go back and do some more work with ``if-statements``, 
 functions, and the ``for-loop`` until you get it.
 
@@ -20,7 +20,7 @@ but instead of running the code block *once* it jumps from back to the "top" whe
 the ``while`` is, and does the check again.  Then it keeps doing this loop until
 the expression is ``False``.
 
-Here's the problem with ``while-loops``: Sometimes they just don't stop.  They're
+Here's the problem with ``while-loops``: Sometimes they just do not stop.  They're
 great if that's your intention, to just keep looping processing things until the 
 end of the universe.  If you want to stop though, then you can cause problems.
 To avoid these problems, there's some rules to follow:
@@ -54,7 +54,7 @@ Extra Credit
    let's you change the ``+ 1`` on line 8 so you can change how much it 
    increments by.
 4. Rewrite the script again to use this function to see what effect that has.
-5. Now, write it to use ``for-loops`` and ``range`` instead.  Do you need the incrementor in the middle anymore?  What happens if you don't get rid of it?
+5. Now, write it to use ``for-loops`` and ``range`` instead.  Do you need the incrementor in the middle anymore?  What happens if you do not get rid of it?
 
 If at any time that you are doing this it goes crazy (it probably will) just
 hold down ``CTRL`` and hit ``c`` (CTRL-c) and the program will abort.

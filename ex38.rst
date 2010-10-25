@@ -34,7 +34,7 @@ write in the margin the value of each variable that you need to "trace".
 
 Once you have a good idea of what the code does, go back to the
 computer and read it again to see if you find new things.  Keep finding
-more code and doing this until you don't need the printouts anymore.
+more code and doing this until you do not need the printouts anymore.
 
 
 Extra Credit

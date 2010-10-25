@@ -22,7 +22,7 @@ Extra Credit
 
 1. Draw a map of the game and how you flow through it.
 2. Fix all of your mistakes, including spelling mistakes.
-3. Write comments for the functions you don't understand.  Remember doc comments?
+3. Write comments for the functions you do not understand.  Remember doc comments?
 4. Add more to the game.  How much can you do to simplify it and still expand it.
 5. The ``gold_room`` has a weird way of getting you to type a number.  What are all
    the bugs in this way of doing it?  Can you make it better than just checking if

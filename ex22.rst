@@ -8,11 +8,11 @@ so far.
 
 First, you should go back through every exercise you have done so far and write down 
 every word and symbol (another name for 'character') that you have used.  Make sure your
-list of symbols is complete and you don't miss any.
+list of symbols is complete and you do not miss any.
 
 
 Next to each word or symbol you should write its name, and what it does.  If you can't
-find a name for a symbol in this book, then look online for it.  If you don't know what
+find a name for a symbol in this book, then look online for it.  If you do not know what
 something does, go read about it again and try using it again in some code.  Make sure
 you know.
 
@@ -33,7 +33,7 @@ and do this:
 3. Again go look at your list and compare them, correcting any and filling in the remaining
    ones you didn't remember.
 4. Finally do the same for what each symbol does:  write them from memory and then fill in
-   the ones you don't remember or get wrong using your sheet.
+   the ones you do not remember or get wrong using your sheet.
 
 
 .. warning::
@@ -52,12 +52,12 @@ that you can read source code more easily than if you didn't know them.  It's si
 to learning the alphabet, except the alphabet has extra symbols you might not know.
 
 The technique you are also learning will help you memorize things.  A good trick is to
-try to recall what you can from memory, and then fill in the rest of the ones you don't
-know to then memorize again.  Doing it this way you develop memory skills that don't
+try to recall what you can from memory, and then fill in the rest of the ones you do not
+know to then memorize again.  Doing it this way you develop memory skills that do not
 require you to have a "trigger" to remember what something is and makes it a more natural
 piece of knowledge.
 
-Finally, just take it slow and don't hurt your brain.  Hopefully by now these symbols are
+Finally, just take it slow and do not hurt your brain.  Hopefully by now these symbols are
 natural for you so this isn't a big effort.  It's best to take 15 minutes at a time with
 your list and then take a break.  Giving your brain a rest will help you learn it faster
 with less frustration.

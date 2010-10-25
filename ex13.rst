@@ -65,7 +65,7 @@ with different arguments:
 
 You can actually replace "first", "2nd", and "3rd" with any three things.
 
-If you don't run it correctly, then you will get an error like this:
+If you do not run it correctly, then you will get an error like this:
 
 .. code-block:: console
 
@@ -80,7 +80,7 @@ ran it (in this case just ``first 2nd``).  Notice when I run it I gave it
 ``first 2nd 3rd``, which caused it to give an error about "need more than 3
 values to unpack" telling you that you didn't give it enough parameters.
 
-You don't have to give these parameters either, you can give any 3 strings
+You do not have to give these parameters either, you can give any 3 strings
 you want:
 
 

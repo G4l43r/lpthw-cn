@@ -14,7 +14,7 @@ three skills:
 2. Reading through the code and looking for files.
 3. Trying to understand code you find.
 
-At your level you really don't have the skills to evaluate the things
+At your level you really do not have the skills to evaluate the things
 you find, but you can benefit from getting exposure to it and seeing how
 things look.
 

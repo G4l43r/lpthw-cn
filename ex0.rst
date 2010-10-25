@@ -4,7 +4,7 @@ Exercise 0: The Setup
 This exercise has no code.  It is simply the exercise you complete in order
 to get your computer setup to run Python.   You should follow these instructions
 as exactly as possible.  For example, Mac OSX computers already have Python 2, so
-don't install Python 3 (or any Python).
+do not install Python 3 (or any Python).
 
 
 Mac OSX

@@ -4,7 +4,7 @@ Exercise 7: More Printing
 We are now going to do a bunch of exercises where you just type code in
 and make them run.  There won't be much talking since it's just more of
 the same.  The purpose is to build up your chops.  See you in a few 
-exercises, and *don't skip!*  Don't *paste!*
+exercises, and *do not skip!*  Do not *paste!*
 
 .. literalinclude:: ex/ex7.py
     :linenos:

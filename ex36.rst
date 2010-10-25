@@ -53,7 +53,7 @@ Tips For Debugging
 ==================
 
 1. Do not use a "debugger".  A debugger is like doing a full-body
-   scan on a sick person.  You don't get any specific useful information,
+   scan on a sick person.  You do not get any specific useful information,
    and you find a whole lot of information that doesn't help and is just
    confusing.
 2. The best way to debug a program is to use ``print`` to print

@@ -35,6 +35,6 @@ Extra Credit
    type: ``pydoc raw_input``.  Read what it says.
 2. Go look online for what the ``pydoc`` command does.
 3. Do pydoc for ``open``, ``file``, ``os``, and ``sys``.  It's alright if you
-   don't understand those, just read through and take notes about interesting
+   do not understand those, just read through and take notes about interesting
    things.
 

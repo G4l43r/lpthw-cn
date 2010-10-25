@@ -33,7 +33,7 @@ Here's what it looks like when I do it:
 Let's break this down line by line to make sure you know what's going 
 on:
 
-* Line 5 you import *your* ``ex25.py`` python file, just other imports you have done.  Notice you don't need to put the ``.py`` at the end to import it.  When you do this you make a ``module`` that has all your functions in it to use.
+* Line 5 you import *your* ``ex25.py`` python file, just other imports you have done.  Notice you do not need to put the ``.py`` at the end to import it.  When you do this you make a ``module`` that has all your functions in it to use.
 * Line 6 you made a ``sentence`` to work with.
 * Line 7 you use the ``ex25`` module and call your first function ``ex25.break_words``.  The ``.`` (dot, period) symbol is how you tell python, "Hey, inside ``ex25`` there's a function called ``break_words`` and I want to run it."
 * line 8 we just type ``words`` and python will print out what's in that variable (line 9).  It looks weird but this is a ``list``, you will learn about that later.

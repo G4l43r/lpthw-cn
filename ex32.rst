@@ -34,7 +34,7 @@ all its contents, and assigns them to the variable.
     Now, this is where things get tricky for people who can't program.  Your
     brain has been taught that the world is flat.  Remember in the last
     exercise where you put ``if-statements`` inside ``if-statements``?  That
-    probably made your brain hurt because most people don't ponder how to
+    probably made your brain hurt because most people do not ponder how to
     "nest" things inside things.  In programming this is all over the place.
     You will find functions that call other functions that have ``if-statements``
     that have lists with lists inside lists.  If you see a structure like this

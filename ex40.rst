@@ -100,7 +100,7 @@ Extra Credit
 
 1. Go find the Python documentation for dictionaries (a.k.a. dicts, dict) and try to do
    even more things to them.
-2. Find out what you *can't* do with dictionaries.  A big one is that they don't have order,
+2. Find out what you *can't* do with dictionaries.  A big one is that they do not have order,
    so try playing with that.
 3. Try doing a ``for-loop`` over them, and then try the ``items()`` function in a ``for-loop``.
 

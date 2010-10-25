@@ -60,7 +60,7 @@ Code Style
 ==========
 
 * Give your code vertical space so people can read it.  You will find some very
-  bad programmers who are able to write reasonable code, but who don't add
+  bad programmers who are able to write reasonable code, but who do not add
   *any* spaces.  This is bad style in any language because the human eye and
   brain use space and vertical alignment to scan and separate visual elements.
   Not having space is the same as giving your code an awesome camouflage paint job.
@@ -69,7 +69,7 @@ Code Style
   does this force you slow down and really read it, but it also helps you find
   difficult passages and things to change for readability.
 * Try to do what other people are doing in Python until you find your own style.
-* Once you find your own style, don't be a jerk about it.  Working with other people's
+* Once you find your own style, do not be a jerk about it.  Working with other people's
   code is just part of being a programmer, and other people have really bad taste.
   Trust me, you will probably have really bad taste too and not even realize it.
 * If you find someone who writes code in a style you like, try writing something
@@ -79,7 +79,7 @@ Good Comments
 =============
 
 * There are programmers who will tell you that your code should be readable
-  enough that you don't need comments.  They'll then tell you in their most
+  enough that you do not need comments.  They'll then tell you in their most
   official sounding voice that, "Ergo you should never write comments." Those
   programmers are either consultants who get paid more if other people can't
   use their code, or incompetents who tend to never work with other people.
@@ -88,7 +88,7 @@ Good Comments
   you are doing.  The code already says how, but why you did things the way
   you did is more important.
 * When you write doc comments for your functions though, you should make the
-  comments documentation for someone who will have to use your code.  You don't
+  comments documentation for someone who will have to use your code.  You do not
   have to go crazy, but a nice little sentence about what someone does with
   that function helps a lot.
 * Finally, while comments are good, too many are bad, and you have to 

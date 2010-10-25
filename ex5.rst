@@ -14,7 +14,7 @@ inside a string by using specialized format sequences and then putting
 the variables at the end with a special syntax that tells Python, "Hey,
 this is a format string, put these variables in there."
 
-As usual, just type this in even if you don't understand it and make it
+As usual, just type this in even if you do not understand it and make it
 exactly the same.
 
 .. literalinclude:: ex/ex5.py
@@ -36,6 +36,6 @@ Extra Credit
 2. Try more format characters.  ``%r`` is a very useful one, it's like saying "print this no matter what".
 3. Search online for all of the Python format characters.
 4. Try to write some variables that convert the inches and pounds to centimeters and kilos.
-   Don't just type in the measurements, but work out the math in Python.
+   Do not just type in the measurements, but work out the math in Python.
 
 

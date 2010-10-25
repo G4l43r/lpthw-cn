@@ -15,7 +15,7 @@ Here's the contents of that file:
 .. literalinclude:: ex/ex15_sample.txt
 
 What we want to do is "open" that file in our script and print it out.  However,
-we don't want to just "hard code" the name ``ex15_sample.txt`` into our script.
+we do not want to just "hard code" the name ``ex15_sample.txt`` into our script.
 The term "hard coding" means that we've put some bit of information that should
 come from the user as a string right in our program.  That's bad because we want
 it to load other files later.  The solution is to use ``argv`` and ``raw_input``
@@ -64,7 +64,7 @@ best you can before moving on.
    for what THING does in python.  Try searching for "python open".
 3. I used the name "commands" here, but they're also called "functions"
    and "methods".  Search around online to see what other people do
-   to define these.  Don't worry if they confuse you, it's normal for
+   to define these.  Do not worry if they confuse you, it's normal for
    a programmer to confuse you with their vast extensive knowledge.
 4. Get rid of the part from line 10-16 where you use ``raw_input`` and
    try the script then.

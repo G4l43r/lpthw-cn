@@ -25,7 +25,7 @@ things.
 Programming as an intellectual activity is the *only* art form that allows you
 to create interactive art.  You can create projects that other people can play
 with and you can talk to them indirectly.  No other art form is quite this
-interactive.  Movies flow to the audience in one direction.  Paintings don't
+interactive.  Movies flow to the audience in one direction.  Paintings do not
 move.  Code goes both ways.
 
 Programming as a profession is only moderately interesting.  It can be a good

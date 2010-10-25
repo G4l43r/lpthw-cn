@@ -18,7 +18,7 @@ later.
 
 Finally, use each of these in a small Python program, or as many as
 you can get done.  The key here is to find out what the symbol does,
-make sure you got it right, correct it if you don't, then use it
+make sure you got it right, correct it if you do not, then use it
 to lock it in.
 
 
@@ -157,7 +157,7 @@ save it for later.
 You should spend about a week on this, but if you finish it faster
 that's great.  The point though is to try to get coverage on all
 these symbols and make sure they're locked in your head.  What's also
-important is to find out what you *don't* know so you can fix it
+important is to find out what you *do not* know so you can fix it
 later.
 
 

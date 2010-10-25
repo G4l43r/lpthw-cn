@@ -5,7 +5,7 @@ You learned about lists and when you learned about ``while-loops`` you
 "appended" numbers to the end of a list then printed them out.   There was also
 extra credit where you were supposed to find all the other things you can do to
 lists in the Python documentation.  That was a while back, so go find in the
-book where you did that and review if you don't know what I'm talking about.
+book where you did that and review if you do not know what I'm talking about.
 
 Found it?  Remember it?  Good.  When you did this you had a list, and you "called" the
 function ``append`` on it.  However you may not really understand what's going on so let's see what
@@ -32,7 +32,7 @@ setting off a chain of events inside Python to cause something to happen to the
    the end of all this is a function call that looks like: ``append(mystuff, 'hello')``
    instead of what you read which is ``mystuff.append('hello')``.
 
-For the most part you don't have to know that this is going on, but it helps when you
+For the most part you do not have to know that this is going on, but it helps when you
 get error messages from python like this:
 
 .. code-block:: pycon
@@ -80,11 +80,11 @@ Extra Credit
 2. Translate these two ways to view the function calls in English.  For example, ``' '.join(things)``
    reads as, "Join things with ' ' between them."  Meanwhile, ``join(' ', things)`` means,
    "Call join with ' ' and things."  Understand how they're really the same thing.
-2. Go read about "Object Oriented Programming" online.  Confused?  Yeah I was too.  Don't worry though
+2. Go read about "Object Oriented Programming" online.  Confused?  Yeah I was too.  Do not worry though
    we'll learn enough to be dangerous then you can slowly learn more later.
 3. Read up on what a "class" is in Python.  *Do not read about how other languages use the word "class".* That will only mess you up.
 4. What's the relationship between ``dir(something)`` and the "class" of ``something``.
-5. If you don't have any idea what I'm talking about don't worry.  Programmers like to feel smart
+5. If you do not have any idea what I'm talking about do not worry.  Programmers like to feel smart
    so they invented Object Oriented Programming, named it OOP, and then used it way too much.  You
    think that's hard you should try to use "functional programming".
 

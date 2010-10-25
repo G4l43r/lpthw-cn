@@ -155,7 +155,7 @@ Here is the files ``tests/lexicon_tests.py`` that you should use:
     :linenos:
 
 Remember that you will want to make a new project with your skeleton, type
-in this test case (don't copy-paste!) and then write your scanner so that
+in this test case (do not copy-paste!) and then write your scanner so that
 the test runs.  Focus on the details and make sure everything works right.
 
 

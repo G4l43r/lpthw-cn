@@ -2,7 +2,7 @@ Exercise 3: Numbers And Math
 ****************************
 
 Every programming language has some kind of way of doing numbers and math.
-Don't worry, programmers lie frequently about being math geniuses when they
+Do not worry, programmers lie frequently about being math geniuses when they
 really aren't.  If they were math geniuses, they would be doing math not
 writing ads and social network games to steal people's money.
 

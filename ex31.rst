@@ -29,7 +29,7 @@ if-statements.  In fact, do the extra credit to really nail it.
 What You Should See
 ===================
 
-Here is me playing this little adventure game.  I don't do so well.
+Here is me playing this little adventure game.  I do not do so well.
 
 .. literalinclude:: ex/ex31.txt
 

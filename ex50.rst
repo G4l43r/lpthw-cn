@@ -85,7 +85,7 @@ Tips On Working The List
 ========================
 
 1. Make your map, characters, and story first on paper.
-2. Write unit tests so that you don't have to constantly check things by hand.
+2. Write unit tests so that you do not have to constantly check things by hand.
 3. Design your game engine so it's easy to test.
 4. Actually play your game once in a while.
 5. When in doubt, ask for help and show people your code.

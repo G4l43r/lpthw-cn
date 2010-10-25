@@ -70,10 +70,10 @@ With that we're done and know the result is False.
 .. warning::
 
     The more complicated ones may seem *very* hard at first.  You should
-    be able to give a good first stab at solving them, but don't
+    be able to give a good first stab at solving them, but do not
     get discouraged.  I'm just getting you primed for more of these 
     "logic gymnastics" so that later cool stuff is much much easier.
-    Just stick with it, keep track of what you get wrong, but don't worry
+    Just stick with it, keep track of what you get wrong, but do not worry
     that it's not getting in your head quite yet.  It'll come.
 
 
@@ -106,10 +106,10 @@ Extra Credit
 2. Write out the names of each of these equality operators.  For example, I call
    ``!=`` "not equal".
 3. Play with the ``python`` by typing out new boolean operators, and before you
-   hit enter try to just shout out what it is.  Don't think about it, just the
+   hit enter try to just shout out what it is.  Do not think about it, just the
    first thing that comes to mind.  Write it down then hit enter, and keep
    track of how many you get right and wrong.
-4. Throw that piece of paper from #3 away so you don't accidentally try to use it later.
+4. Throw that piece of paper from #3 away so you do not accidentally try to use it later.
 
 
 

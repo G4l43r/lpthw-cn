@@ -15,8 +15,8 @@ at the same time, a Salmon is a particular *type* of Fish and so it's actually
 different from all other Fish.  That's what makes it a Salmon and not a
 Halibut.  So a Salmon and a Fish are the same but different.  Weird.
 
-This question is confusing because most people don't think about real things
-this way, but they intuitively understand them.  You don't need to think about
+This question is confusing because most people do not think about real things
+this way, but they intuitively understand them.  You do not need to think about
 the difference between a Fish and a Salmon because you *know* how they are
 related.  You know a Salmon is a *kind* of Fish and that there's other kinds of
 Fish without having to understand that.
@@ -100,13 +100,13 @@ it.  In order to fix the problem, they needed some "new class" style so that the
 This is where "class is-a object" comes in.  They decided that they would use the
 word "object", lowercased, to be the "class" that you inherit from to make a class.
 Confusing right?  A class inherits from the class named object to make a class but
-it's not an object really it's a class, but don't forget to inherit from object.
+it's not an object really it's a class, but do not forget to inherit from object.
 
 Exactly. The choice of one single word meant that I couldn't teach you about this
 until now.  Now you can try to understand the concept of a class that is an
 object if you like.
 
-However, I would suggest you don't.  Just completely ignore the idea of old style
+However, I would suggest you do not.  Just completely ignore the idea of old style
 vs. new style classes and assume that Python always requires (object) when you
 make a class.  Save your brain power for something important.
 

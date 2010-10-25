@@ -45,7 +45,7 @@ Finally you have a functiont that has no arguments in ``print_none``.
 
 .. warning::
 
-    This is very important, don't get discouraged right now if this doesn't
+    This is very important, do not get discouraged right now if this doesn't
     quite make sense.  We're going to do a few exercises linking functions to
     your scripts and show you how to make more.  For now just keep thinking
     "mini script" when I say "function" and keep playing with them.
@@ -70,7 +70,7 @@ Extra Credit
 
 You need to write out a ``function checklist`` for later exercises.  Write
 these out onto an index card and keep it by you while you complete the rest
-of these exercises or until you feel you don't need it:
+of these exercises or until you feel you do not need it:
 
 1. Did you start your function definition with ``def``?
 2. Does your function name have only characters and ``_`` (underscore) characters?
@@ -88,7 +88,7 @@ And when you run (aka "use", "call") a function check these things:
 3. Did you put the values you want into the parenthesis separated by commas?
 4. Did you end the function call with a ``)`` character.
 
-You will use these two checklists on the remaining lessons until you don't need
+You will use these two checklists on the remaining lessons until you do not need
 them anymore.
 
 Finally, repeat this a few times:

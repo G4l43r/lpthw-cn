@@ -12,7 +12,7 @@ list of commands I want you to remember:
 *  write(stuff) -- Writes stuff to the file.
 
 For now these are the important commands you need to know.  Some of them
-take parameters, but we don't really care about that.  You only need to
+take parameters, but we do not really care about that.  You only need to
 remember that ``write`` takes a parameter of a string you want to write
 to the file.
 
@@ -43,7 +43,7 @@ editor and check it out.  Neat right?
 Extra Credit
 ============
 
-1. If you feel you don't understand this, go back through and use the comment
+1. If you feel you do not understand this, go back through and use the comment
    trick to get it squared away in your mind.  One simple English comment
    above each line will help you understand, or at least let you know what
    you need to research more.

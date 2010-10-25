@@ -75,7 +75,7 @@ generic name ``self`` that way you can write your function and it will always
 work.
 
 You actually could use another name rather than ``self`` but then every Python
-programmer on the planet would hate you, so don't.  Only jerks change things
+programmer on the planet would hate you, so do not.  Only jerks change things
 like that and I taught you better.  Be nice to people who have to read what you
 write because ten years later all code is horrible.
 

@@ -23,7 +23,7 @@ so far of finding differences and focusing on details:
 .. note::
 
     The ``_`` in ``space_in_a_car`` is called an underscore character.  Find out how to type it
-    if you don't already know.  We use this character a lot to put an imaginary space between
+    if you do not already know.  We use this character a lot to put an imaginary space between
     words in variable names.
 
 What You Should See
