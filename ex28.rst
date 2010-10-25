@@ -7,10 +7,10 @@ are used *everywhere* in programming.  They are essential fundamental parts of c
 and knowing them very well is akin to knowing your scales in music, or knowing your stances
 in Karate.
 
-In this exercise you'll be taking the logic exercises you memorized and start trying 
+In this exercise you will be taking the logic exercises you memorized and start trying 
 them out in ``python``.  Take each of these logic problems, and write out what you
 think the answer will be.  In each case it will be either True, or it will be False.
-Once you have the answers written down, you'll start ``python`` in your terminal and
+Once you have the answers written down, you will start ``python`` in your terminal and
 type them in to confirm your answers.
 
 1. ``True and True``
@@ -42,7 +42,7 @@ you can solve them easily by this simple process:
 2. Find each and/or inside a parenthesis and solve those first.
 3. Find each not and invert it.
 4. Find any remaining and/or and solve it.
-5. When you're done you should have True or False.
+5. When you are done you should have True or False.
 
 I will demonstrate with a variation on #20:
 
@@ -81,7 +81,7 @@ With that we're done and know the result is False.
 What You Should See
 ===================
 
-After you've tried to guess at these this is what your session with ``python``
+After you have tried to guess at these this is what your session with ``python``
 might look like:
 
 

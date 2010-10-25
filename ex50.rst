@@ -9,7 +9,7 @@ I may buy.  Your job is to take my vague descriptions of things I want and
 make something I can use.
 
 The purpose of this exercise is to give you a final exercise that you can complete
-to see if you've grasped the concepts you've learned so far.  We only have 2 exercises
+to see if you have grasped the concepts you have learned so far.  We only have 2 exercises
 after this, but this will be your last actual assigned piece of coding.
 
 Review What You Know
@@ -23,14 +23,14 @@ At this point you should know how to do the following:
 * Turn a user's input into a list of tuples using a lexicon scanner.
 * Turn the list of tuples into a Sentence you can analyze using a parser.
 
-Make sure you know how to do these things as you'll be using them to complete
+Make sure you know how to do these things as you will be using them to complete
 this assignment.
 
 
 Implementing A Feature List
 ===========================
 
-Typically when you work on software you'll be given a list of things
+Typically when you work on software you will be given a list of things
 someone wants as a small list of fairly vague and inconsistent features
 they want.  This sucks, I won't lie to you.  Typically people have no
 ability to think clearly about the things they want, and even less

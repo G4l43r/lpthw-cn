@@ -22,7 +22,7 @@ related.  You know a Salmon is a *kind* of Fish and that there's other kinds of
 Fish without having to understand that.
 
 Alright, let's take it one step further, let's say you have a bucket full of 3 Salmon and
-because you're a nice person you've decided to name them Fank, Joe, and Mary.  Now, think
+because you are a nice person you have decided to name them Fank, Joe, and Mary.  Now, think
 about this question:
 
 ``What is the difference between Mary and a Salmon?``

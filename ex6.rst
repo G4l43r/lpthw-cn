@@ -12,7 +12,7 @@ around the text.  You saw this many times with your use of ``print`` where you
 would put the text you want to go to the string inside ``"`` or ``'`` after the
 ``print``.  Then Python prints it.
 
-Strings can also contain the format characters you've discovered so far.  You
+Strings can also contain the format characters you have discovered so far.  You
 simply put the formatted variables in the string, and then a ``%`` (percent)
 character, followed by the variable.  The *only* catch is that if you want
 multiple formats in your string to print multiple variables, then you need to

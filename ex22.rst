@@ -3,11 +3,11 @@ Exercise 22:  What Do You Know So Far?
 
 There won't be any code in this exercise or the next one, so there's no WYSS or Extra Credit
 either.  In fact, this exercise is like one giant Extra Credit.  I'm going to have you do a
-form of review on what you should know so far in order to help lock in what you've learned
+form of review on what you should know so far in order to help lock in what you have learned
 so far.
 
-First, you should go back through every exercise you've done so far and write down 
-every word and symbol (another name for 'character') that you've used.  Make sure your
+First, you should go back through every exercise you have done so far and write down 
+every word and symbol (another name for 'character') that you have used.  Make sure your
 list of symbols is complete and you don't miss any.
 
 
@@ -22,7 +22,7 @@ the list and be ready to look them up when you find them.
 Once you have your list, spend a few days rewriting the list and double checking that 
 it's correct.  This may get boring but push through and really nail it down.
 
-If you think you've memorized the list and what they do, then you should step it up
+If you think you have memorized the list and what they do, then you should step it up
 and do this:
 
 1. Take a blank sheet of paper and try to write down as many symbols and words as you
@@ -41,17 +41,17 @@ and do this:
     The most important thing when doing this exercise is: "There is no failure, only trying."
 
 
-What You're Learning
+What You are Learning
 ====================
 
-It's important when you're doing a boring mindless memorization exercise like this that
+It's important when you are doing a boring mindless memorization exercise like this that
 you know why.  It helps you focus on a goal and know the purpose of all your efforts.
 
-In this exercise you're learning a vocabulary.  You're learning the names of symbols so
+In this exercise you are learning a vocabulary.  You are learning the names of symbols so
 that you can read source code more easily than if you didn't know them.  It's similar 
 to learning the alphabet, except the alphabet has extra symbols you might not know.
 
-The technique you're also learning will help you memorize things.  A good trick is to
+The technique you are also learning will help you memorize things.  A good trick is to
 try to recall what you can from memory, and then fill in the rest of the ones you don't
 know to then memorize again.  Doing it this way you develop memory skills that don't
 require you to have a "trigger" to remember what something is and makes it a more natural

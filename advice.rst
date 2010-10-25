@@ -1,9 +1,9 @@
 Advice From An Old Programmer
 *****************************
 
-You've finished this book and now you have decided to continue on with
-programming.  Maybe it will be a career for you, or maybe you'll just do it as
-a hobby.  For whatever reason you'll need some advice to make sure you continue
+You have finished this book and now you have decided to continue on with
+programming.  Maybe it will be a career for you, or maybe you will just do it as
+a hobby.  For whatever reason you will need some advice to make sure you continue
 on the right path and get the most enjoyment out of your newly chosen hobby.
 
 I have been programming for a very long time.  So long that it is incredibly
@@ -47,7 +47,7 @@ explore.  Might as well enjoy it while you can.
 Finally, I will say that learning to create software changes you and makes you
 different.  Not better or worse, just different.  You may find that people
 treat you harshly because you can create software, maybe using words like
-"nerd".  Maybe you'll find that because you can dissect their logic that they
+"nerd".  Maybe you will find that because you can dissect their logic that they
 hate arguing with you.  You may even find that simply knowing how a computer
 works makes you annoying and weird to them.
 
@@ -55,7 +55,7 @@ To this I only have one piece of advice: they can go to hell.  The world needs
 more weird people who know how things work and who love to figure it all out.
 When they treat you like this, just remember that this is *your* journey, not
 theirs.  Being different is not a crime, and people who tell you it is are
-just jealous that you've picked up a skill they never in their wildest dreams
+just jealous that you have picked up a skill they never in their wildest dreams
 could acquire.
 
 You can code. They cannot.  That is pretty damn cool.

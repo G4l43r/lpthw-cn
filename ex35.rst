@@ -1,7 +1,7 @@
 Exercise 35: Branches and Functions
 ********************************
 
-You've learned to do ``if-statements``, and you can do functions.  You
+You have learned to do ``if-statements``, and you can do functions.  You
 also know arrays.  Now it's time to bend your mind.  Type this in, and
 see if you can figure out what it's doing.
 

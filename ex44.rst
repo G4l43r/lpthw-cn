@@ -1,7 +1,7 @@
 Exercise 44: Evaluating Your Game
 *********************************
 
-In this exercise you're going to evaluate the game you just made.  Maybe you got
+In this exercise you are going to evaluate the game you just made.  Maybe you got
 part way through it and you got stuck.  Maybe you got it working but just barely.
 Either way, we're going to go through a bunch of things you should know now and 
 make sure you covered them in your game.  We're going to study how to properly
@@ -13,8 +13,8 @@ holding your hand mostly this whole time, and I can't do that for much longer.
 I'm now instead going to give you things to do, have you do them on your own,
 and then give you ways to improve what you did and make them better.
 
-Hopefully you'll struggle at first, and probably be very frustrated but stick
-with it and eventually you'll build a mind for solving problems.  You'll start
+Hopefully you will struggle at first, and probably be very frustrated but stick
+with it and eventually you will build a mind for solving problems.  You will start
 to find creative solutions to problems rather than just copy solutions out of
 textbooks.
 
@@ -31,7 +31,7 @@ add these things:
   a "function" and they'll shut up.
 * When you work with classes much of your time is spent talking about making the class
   "do things".  Instead of naming your functions about what the function does, instead
-  name it as if it's a command you're giving to the class.  Same as ``pop`` is saying
+  name it as if it's a command you are giving to the class.  Same as ``pop`` is saying
   "Hey list, ``pop`` this off."  It isn't called ``remove_from_end_of_list`` because
   even though that's what it does, that's not a *command* to a list.
 * Keep your functions small and simple.  For some reason when people start learning about
@@ -53,25 +53,25 @@ Class Style
 * A foolish consistency is the hobgoblin of little minds.  Consistency is good, but foolishly
   following some mantra because everyone else does it even though the mantra makes no
   sense in certain situations is bad style.
-* Always, *always* have ``class Name(object)`` format or else you'll be in big trouble.
+* Always, *always* have ``class Name(object)`` format or else you will be in big trouble.
 
 
 Code Style
 ==========
 
-* Give your code vertical space so people can read it.  You'll find some very
+* Give your code vertical space so people can read it.  You will find some very
   bad programmers who are able to write reasonable code, but who don't add
   *any* spaces.  This is bad style in any language because the human eye and
   brain use space and vertical alignment to scan and separate visual elements.
   Not having space is the same as giving your code an awesome camouflage paint job.
-* If you can't read it out loud, it's probably hard to read.  If you're having a
+* If you can't read it out loud, it's probably hard to read.  If you are having a
   problem making something easy to use, then try reading it out loud.  Not only
   does this force you slow down and really read it, but it also helps you find
   difficult passages and things to change for readability.
 * Try to do what other people are doing in Python until you find your own style.
 * Once you find your own style, don't be a jerk about it.  Working with other people's
   code is just part of being a programmer, and other people have really bad taste.
-  Trust me, you'll probably have really bad taste too and not even realize it.
+  Trust me, you will probably have really bad taste too and not even realize it.
 * If you find someone who writes code in a style you like, try writing something
   that mimics their style.
 
@@ -101,20 +101,20 @@ Evaluate Your Game
 
 I want you now to pretend you are me.  Adopt a very stern look, print out your
 code, and take a red pen and mark it up with every mistake you find.  Anything from
-this exercise and from other things you've known.  Once you're done marking
+this exercise and from other things you have known.  Once you are done marking
 your code up, I want you to fix everything you came up with.  Then repeat this
 a couple of times, looking for anything that could be better.  Use all the 
 tricks I've given you so far to break your code down into the smallest tiniest
 little analysis you can.
 
 The purpose of this exercise is to train your attention to detail on classes.
-Once you're done with this bit of code, find someone else's code and do the 
+Once you are done with this bit of code, find someone else's code and do the 
 same thing.  Go through a printed copy of some part of it and point out all
 the mistakes and style errors you find.  Then fix it and see if your fixes
 can be done without breaking their program.
 
 I want you to do nothing but evaluate and fix code for the week.  Your own code
-and other people's.  It'll be pretty hard work, but when you're done your brain
+and other people's.  It'll be pretty hard work, but when you are done your brain
 will be wired tight like a boxer's hands.
 
 

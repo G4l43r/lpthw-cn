@@ -20,9 +20,9 @@ you plan to use.  This keeps your programs small, but it also acts
 as documentation for other programmers who read your code later.
 
 The ``argv`` is the "argument variable" and it's actually a very standard name
-in programming.  You'll find it used in many other languages.  What this
+in programming.  You will find it used in many other languages.  What this
 variable does is *hold* the arguments you pass to your Python script when you
-run it.  In the exercises you'll get to play with this more and see what
+run it.  In the exercises you will get to play with this more and see what
 happens.
 
 Line 3 "unpacks" ``argv`` so that, rather than holding all the arguments, it
@@ -65,7 +65,7 @@ with different arguments:
 
 You can actually replace "first", "2nd", and "3rd" with any three things.
 
-If you don't run it correctly, then you'll get an error like this:
+If you don't run it correctly, then you will get an error like this:
 
 .. code-block:: console
 

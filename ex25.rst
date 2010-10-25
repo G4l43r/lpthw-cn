@@ -13,8 +13,8 @@ instead *you* will import it into your python and run the functions yourself.
     :linenos:
 
 First thing you should do is run this like normal with ``python ex25.py`` to
-find any errors you've made.  Once you've found all of the errors you can
-this way and fixed them, you'll then want to follow the WYSS section to
+find any errors you have made.  Once you have found all of the errors you can
+this way and fixed them, you will then want to follow the WYSS section to
 complete the exercise.
 
 
@@ -33,10 +33,10 @@ Here's what it looks like when I do it:
 Let's break this down line by line to make sure you know what's going 
 on:
 
-* Line 5 you import *your* ``ex25.py`` python file, just other imports you've done.  Notice you don't need to put the ``.py`` at the end to import it.  When you do this you make a ``module`` that has all your functions in it to use.
+* Line 5 you import *your* ``ex25.py`` python file, just other imports you have done.  Notice you don't need to put the ``.py`` at the end to import it.  When you do this you make a ``module`` that has all your functions in it to use.
 * Line 6 you made a ``sentence`` to work with.
 * Line 7 you use the ``ex25`` module and call your first function ``ex25.break_words``.  The ``.`` (dot, period) symbol is how you tell python, "Hey, inside ``ex25`` there's a function called ``break_words`` and I want to run it."
-* line 8 we just type ``words`` and python will print out what's in that variable (line 9).  It looks weird but this is a ``list``, you'll learn about that later.
+* line 8 we just type ``words`` and python will print out what's in that variable (line 9).  It looks weird but this is a ``list``, you will learn about that later.
 * Lines 10-11 we do the same thing with ``ex25.sort_words`` to get a sorted sentence.
 * Lines 13-16 we use ``ex25.print_first_word`` and ``ex25.print_last_word`` to get the first and last word printed out.
 * Line 17 is interesting.  I made a mistake and typed the ``words`` variable as ``wrods`` so python gave me an error on Lines 18-20.

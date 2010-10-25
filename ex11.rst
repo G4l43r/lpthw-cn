@@ -15,7 +15,7 @@ Most of what software does is the following:
 2. Change it.
 3. Print out something to show how it changed.
 
-So far you've only been printing things and the basics of changing it, but
+So far you have only been printing things and the basics of changing it, but
 you haven't been able to get any input in.  You may not even know what "input"
 means, so rather than talk about it, let's have you do some and see if you get
 it.  Next exercise we'll do more to explain it.

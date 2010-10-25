@@ -5,10 +5,10 @@ Everything about ``raw_input`` and ``argv`` has been so you can start
 reading files.  This exercise will probably be the one you have to play
 with the most to understand what's going on, so do it carefully and remember
 your checks.  Working with files is one way to very quickly erase your
-work if you're not careful.
+work if you are not careful.
 
 First, this exercise involves writing two files.  One is your usual ``ex15.py``
-file that you'll run, but the *other* is named ``ex15_sample.txt``.  This second
+file that you will run, but the *other* is named ``ex15_sample.txt``.  This second
 file isn't a script, but just a plain text file we'll be reading in our script.
 Here's the contents of that file:
 
@@ -38,7 +38,7 @@ exciting.  We call a function on ``txt``.  You see, what you got back from
 open is a ``file`` and it's also got commands you can give it.  You give a
 file a command by using the ``.`` (dot or period), the name of the command,
 and parameters.  Just like with ``open`` and ``raw_input``.  The difference
-is that when you say ``txt.read()`` you're saying, "Hey txt! Do your read command
+is that when you say ``txt.read()`` you are saying, "Hey txt! Do your read command
 with no parameters!"
 
 The remainder of the file is more of the same, but we'll leave the analysis
@@ -59,7 +59,7 @@ This is a big jump so you want to make sure you do this extra credit as
 best you can before moving on.
 
 1. Above each line write out in English what that line does. 
-2. If you're not sure ask someone for help or search online.
+2. If you are not sure ask someone for help or search online.
    Many times searching for "python THING" will find answers
    for what THING does in python.  Try searching for "python open".
 3. I used the name "commands" here, but they're also called "functions"
@@ -77,5 +77,5 @@ best you can before moving on.
 7. Startup ``python`` again and use ``open`` from the prompt.  Notice
    how you can open files and run ``read`` on them right there?
 8. Have your script also do a ``close()`` on the ``txt`` and ``txt_again``
-   variables.  It's important to close files when you're done with them.
+   variables.  It's important to close files when you are done with them.
 

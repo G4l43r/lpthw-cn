@@ -1,7 +1,7 @@
 Exercise 29: What If
 ********************
 
-Here is the next script of Python you'll enter, which introduces you to
+Here is the next script of Python you will enter, which introduces you to
 the ``if-statement``.  Type this in, make it run exactly right and then 
 we'll try see if your practice has paid off.
 
@@ -19,7 +19,7 @@ What You Should See
 Extra Credit
 ============
 
-In this extra credit, you're going to try to guess what you think
+In this extra credit, you are going to try to guess what you think
 the ``if-statement`` is and what it does.  Try to answer these questions
 in your own words before moving on to the next exercise:
 

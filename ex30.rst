@@ -16,13 +16,13 @@ credit right?
 
 
 2. Why does the code under the ``if`` need to be indented 4 spaces?
-   A colon at the end of a line is how you tell Python you're going to 
+   A colon at the end of a line is how you tell Python you are going to 
    create a new "block" of code, and then indenting 4 spaces tells Python
    what lines of code are in that block.  This is *exactly* the same thing
    you did when you made functions in the first half of the book.
 
 3. What happens if it isn't indented?
-   If it isn't indented, then you'll most likely create a Python error.  Python
+   If it isn't indented, then you will most likely create a Python error.  Python
    expects you to indent *something* after you and a line with a ``:`` (colon).
 
 
@@ -32,7 +32,7 @@ credit right?
 
 5. What happens if you change the initial variables for ``people``, ``cats``, and
    ``dogs``?
-   Because you're comparing numbers, if you change the numbers then different ``if-statements``
+   Because you are comparing numbers, if you change the numbers then different ``if-statements``
    will evaluate to ``True`` and the blocks of code under them will run.  Go back and 
    put different numbers in and then see if you can figure out in your head what blocks
    of code will run.

@@ -96,7 +96,7 @@ these error tokens to tell the user they messed up.
 
 Here's where it gets fun though, I'm not going to tell you how to do this.
 Instead I'm going to write a ``unit test`` (another name for a kind of automated
-test) and you're going to write the scanner so that the unit test works.
+test) and you are going to write the scanner so that the unit test works.
 
 
 Exceptions And Numbers
@@ -166,7 +166,7 @@ I suggest you focus on getting one test working at a time.  I also suggest that
 you keep this simple and just put all the words in your lexicon in lists that are
 in your ``lexicon.py`` module.  You will also want to not modify the input 
 list of words, but instead make your own new list with your lexicon tuples in it.
-You'll probably also want to use the ``in`` keyword with these lexicon lists
+You will probably also want to use the ``in`` keyword with these lexicon lists
 to check if a word is in the lexicon.
 
 Extra Credit

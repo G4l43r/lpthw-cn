@@ -21,7 +21,7 @@ The best way to explain why is by showing you the difference between how
 you use numbers and how programmers have to use numbers with a little
 example using the animals above.
 
-Imagine you're watching the four animals in our list above
+Imagine you are watching the four animals in our list above
 (``['bear', 'tiger', 'penguin', 'zeebra']``) run in a race.  Now they win in the *order* we have
 them in this list.  The race was really exciting because, well the animals
 didn't kill eachother and somehow managed to run a race.  Your friend however
@@ -47,8 +47,8 @@ element.
 Alright, how does this help you work with lists?  Simple, every time you say
 to yourself, "I want the 3rd animal," you translate this "ordinal" number to
 a "cardinal" number by subtracting 1.  The "3rd" animal is at index 2 and is the
-penguin.  You have to do this because you've spent your whole life using ordinal
-numbers, and now you have to think in cardinal.  Just subtract 1 and you'll
+penguin.  You have to do this because you have spent your whole life using ordinal
+numbers, and now you have to think in cardinal.  Just subtract 1 and you will
 be good.
 
 Remember:  ordinal == ordered, 1st; cardinal == cards at random, 0.

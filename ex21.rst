@@ -1,7 +1,7 @@
 Exercise 21: Functions Can Return Something
 *******************************************
 
-You've been using the ``=`` character to name variables and set them
+You have been using the ``=`` character to name variables and set them
 to numbers or strings.  We're now going to blow your mind again by
 showing you how to use ``=`` and a new Python word ``return`` to 
 set variables to be a *value from a function*.  There will be one

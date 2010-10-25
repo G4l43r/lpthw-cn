@@ -21,7 +21,7 @@ they did is a huge liar.
 
 Finally, remember that this is something you have to do for a while
 and for at least a couple hours every night.  If it helps, while
-you're struggling through learning Python every night, I'm hard
+you are struggling through learning Python every night, I'm hard
 at work learning to play guitar.  I work at it about 2 or 4 hours
 a day and still practice scales.
 

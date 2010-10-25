@@ -21,7 +21,7 @@ To complete this exercise you have to finish the following tasks:
     d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
     e. Turn on "Automatic indentation" as well.
     f. Open the ``View`` tab turn on "Display line numbers".
-3. Find your "Terminal" program.  Search for it.  You'll find it.
+3. Find your "Terminal" program.  Search for it.  You will find it.
 4. Put your Terminal in your Dock as well.
 5. Run your Terminal program.  It won't look like much.
 6. In your Terminal program, run ``python``.  You run
@@ -140,7 +140,7 @@ Linux
 =====
 
 Linux is a varied operating system with a bunch of different ways to install software.
-I'm assuming if you're running Linux then you know how to install packages so here's 
+I'm assuming if you are running Linux then you know how to install packages so here's 
 your instructions:
 
 1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
@@ -195,10 +195,10 @@ the general idea.
 Warnings For Beginners
 ======================
 
-You're done with this exercise.  This exercise could actually be hard for you
+You are done with this exercise.  This exercise could actually be hard for you
 depending on your familiarity with your computer.  If it is difficult, then
 take the time to read and study and get through it, because until you can do
-these very basic things you'll find it difficult to get much programming done.
+these very basic things you will find it difficult to get much programming done.
 
 If a programmer tells you to use ``vim`` or ``emacs`` tell them no.  These
 editors are for when you are a better programmer.  All you need right now

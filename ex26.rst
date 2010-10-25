@@ -2,11 +2,11 @@ Exercise 26: Congratulations, Take A Test!
 ******************************************
 
 You are almost done with the first half of the book.  The second half will
-start teaching you logic where things become more interesting and you'll
+start teaching you logic where things become more interesting and you will
 start to be able to do useful things.
 
 Before you continue though, I have a quiz for you.  This quiz will be *very*
-hard because it requires you to fix someone else's code.  When you're a programmer
+hard because it requires you to fix someone else's code.  When you are a programmer
 you have to deal with other programmer's code, and also with their arrogance.
 They will very frequently claim that their code is perfect.  Despite all
 of the obvious flaws in what they've written, it couldn't possibly be anything

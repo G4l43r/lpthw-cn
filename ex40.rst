@@ -41,7 +41,7 @@ to another, no matter what it is.  Here take a look:
     San Francisco
     >>> 
 
-Take a close look at this and you'll see that instead of just numbers we're
+Take a close look at this and you will see that instead of just numbers we're
 using strings to say what we want from the ``stuff`` dictionary.  We can also 
 put new things into the dictionary with strings.  It doesn't have to be strings
 though, we can also do this:

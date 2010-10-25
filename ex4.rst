@@ -9,7 +9,7 @@ more like English, and because programmers have a lousy ability to remember
 things.  If they didn't use good names for things in their software they'd
 get lost when they came back and tried to read their code again.
 
-If you get stuck with this exercise, remember the tricks you've been taught
+If you get stuck with this exercise, remember the tricks you have been taught
 so far of finding differences and focusing on details:
 
 1. Write a comment above each line explaining to yourself what it does in English.

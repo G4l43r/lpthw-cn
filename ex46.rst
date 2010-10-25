@@ -24,7 +24,7 @@ commands:
 I use a directory named ``projects`` to store all the various things I'm
 working on.  Inside that directory I have my ``skeleton`` directory that
 I put the basis of my projects into.  The directory ``NAME`` will be 
-renamed to whatever you're calling your project's main module when you 
+renamed to whatever you are calling your project's main module when you 
 use the skeleton.
 
 Next we need to setup some initial 
@@ -47,7 +47,7 @@ project later if we want:
 You should edit this file so that it has your contact information in it
 and is ready to go for when you copy it.
 
-Finally you'll want a simple skeleton file for tests named ``tests/NAME_tests.py``:
+Finally you will want a simple skeleton file for tests named ``tests/NAME_tests.py``:
 
 .. literalinclude:: ex/ex46_tests.py
     :linenos:
@@ -63,7 +63,7 @@ to the Linux/OSX instructions.
 Installing Python Packages
 --------------------------
 
-You'll want to make sure you have some packages installed that makes
+You will want to make sure you have some packages installed that makes
 these things work.  Here's the problem though, you are at a point where it's
 difficult for me to help you do that and keep this book sane and clean.  There
 are so many ways to install software on so many computers that I'd have to spend

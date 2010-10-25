@@ -87,7 +87,7 @@ What we do is a process of:
 1. Identify the next word with ``peek``.
 2. If that word fits in our grammar, then we call a function to handle that part 
    of the grammar, say ``parse_subject``.
-3. If it doesn't, then we ``raise`` an error, which you'll learn about in this lesson.
+3. If it doesn't, then we ``raise`` an error, which you will learn about in this lesson.
 4. When we're all done, we should have a Sentence object to work with in our game.
 
 The best way to demonstrate this is to just give you the code to read, but here's where
@@ -108,7 +108,7 @@ demonstrates how to do that with the ``ParserException`` at the top.  Notice tha
 it uses classes like you learned to give it the type of ``Exception``.  Also notice
 the use of ``raise`` keyword to actually raise the exception.
 
-In your tests, you'll want to work with these exceptions, which I'll show you how 
+In your tests, you will want to work with these exceptions, which I'll show you how 
 to do.
 
 
@@ -124,7 +124,7 @@ nose documentation.  Learn how to use this so you can write a test that is
 \emph{expected} to fail, which is very important in testing.  You should learn about
 this function (and others) by reading the nose documentation.
 
-When you're done, you should know how this bit of code works very well, and how
+When you are done, you should know how this bit of code works very well, and how
 to write a test for other people's code even if they don't want you to.  Trust me,
 it's a very handy skill to have.
 

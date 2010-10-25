@@ -2,13 +2,13 @@ Exercise 32: Loops And Lists
 *************************
 
 You should now be able to do some programs that are much more interesting than
-before.  If you've been keeping up you should realize that now you can combine
-all the other things you've learned with ``if-statements`` and boolean
+before.  If you have been keeping up you should realize that now you can combine
+all the other things you have learned with ``if-statements`` and boolean
 expressions to make your programs do smart things.
 
 However, programs also need to do repetitive things very quickly.  We are going
 to use a ``for-loop`` in this exercise to build and print various lists.  When
-you do the exercise you'll start to figure out what they are.  I won't tell you
+you do the exercise you will start to figure out what they are.  I won't tell you
 right now, you have to figure it out.
 
 Before you can use a for-loop, you need a way to *store* the results of loops
@@ -36,7 +36,7 @@ all its contents, and assigns them to the variable.
     exercise where you put ``if-statements`` inside ``if-statements``?  That
     probably made your brain hurt because most people don't ponder how to
     "nest" things inside things.  In programming this is all over the place.
-    You'll find functions that call other functions that have ``if-statements``
+    You will find functions that call other functions that have ``if-statements``
     that have lists with lists inside lists.  If you see a structure like this
     that you can't figure out, take out pencil and paper and break it down
     manually bit by bit until you understand it.

@@ -3,7 +3,7 @@ Exercise 1: A Good First Program
 
 Remember, you should have spent a good amount of time in Exercise 0 learning
 how to install a text editor, run the text editor, run the Terminal, and
-work with both of them.  If you haven't done that then don't go on, you'll
+work with both of them.  If you haven't done that then don't go on, you will
 not have a good time.  This is the only time I'll start an exercise with a 
 warning that you should not skip or get ahead of yourself.
 
@@ -30,7 +30,7 @@ file by typing:
 
 
 If you did it right then you should see the same output I have below.  If not,
-then you've done something wrong.  No, the computer is not wrong.
+then you have done something wrong.  No, the computer is not wrong.
 
 What You Should See
 ===================
@@ -46,7 +46,7 @@ If you have an error it will look like this:
     :language: python
     :linenos:
 
-It's important you be able to read these since you'll be making many of 
+It's important you be able to read these since you will be making many of 
 these mistakes.  Even I make many of these mistakes.  Let's look at this
 line-by-line.
 
@@ -57,7 +57,7 @@ line-by-line.
    Notice the missing ``"`` (double-quote) character?
 5. Finally, it prints out a "SyntaxError" and tells us something about what might
    be the error.  Usually these are very cryptic, but if you copy that text into
-   a search engine you'll find someone else who's had that error and you can probably
+   a search engine you will find someone else who's had that error and you can probably
    figure out how to fix it.
 
 

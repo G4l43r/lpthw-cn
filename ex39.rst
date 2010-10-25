@@ -8,7 +8,7 @@ lists in the Python documentation.  That was a while back, so go find in the
 book where you did that and review if you don't know what I'm talking about.
 
 Found it?  Remember it?  Good.  When you did this you had a list, and you "called" the
-function ``append`` on it.  However you may not really what's going on so let's see what
+function ``append`` on it.  However you may not really understand what's going on so let's see what
 we can do to lists and how doing things with "on" them works really.
 
 When you type Python code that reads ``mystuff.append('hello')`` you are actually

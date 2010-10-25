@@ -21,8 +21,8 @@ as well write a little bit of code to do it for you.
 That should be all the explanation you need because *your* reason for writing unit
 tests is to make your brain stronger.  You have gone through thist book writing code
 to do things.  Now you are going to take the next leap and write code that
-knows about other code you've written.  This process of writing a test that runs
-some code you've written *forces* you to understand clearly what you have just written.
+knows about other code you have written.  This process of writing a test that runs
+some code you have written *forces* you to understand clearly what you have just written.
 It solidifies in your brain exactly what it does and why it works and gives you a new
 level of attention to detail.
 
@@ -58,7 +58,7 @@ to work.  It tests out the basic room features, then the paths, then tries out a
 map.
 
 The important functions here are ``assert_equal`` which makes sure that variables
-you've set or paths you've built in a ``Room`` are actually what you think they are.
+you have set or paths you have built in a ``Room`` are actually what you think they are.
 If you get the wrong result then ``nosetests`` will print out an error message
 so you can go figure it out.
 
@@ -74,7 +74,7 @@ I have a general loose set of guidelines you should follow when making your test
 3. Keep your test cases (functions) short, but don't worry so much if they're a bit
    messy.  Test cases are usually kind of messy.
 4. Even though test cases are messy, try to keep them clean and remove any repetitive
-   code you can.  Create helper functions that get rid of duplicate code.  You'll thank
+   code you can.  Create helper functions that get rid of duplicate code.  You will thank
    me later when you make a change and then have to change your tests.  Duplicated
    code will make changing your tests more difficult.
 5. Finally, don't get too attached to your tests.  Sometimes, the best way to redesign

@@ -5,7 +5,7 @@ You should now go out and find some Python code to read.  You should
 be finding and reading any Python code you can and trying to steal
 ideas that you find.  You actually should have enough knowledge to
 be able to read, but maybe not understand what the code does.  What
-I'm going to teach you in this lesson is how to apply things you've
+I'm going to teach you in this lesson is how to apply things you have
 learned to understand other people's code.
 
 First, take the code you want to understand and print it out.  Yes,
@@ -41,9 +41,9 @@ Extra Credit
 ============
 
 1. Go find out what a "flow chart" is and write a few.
-2. If you find errors in code you're reading, try to fix them
+2. If you find errors in code you are reading, try to fix them
    and send the author your changes.
-3. Another technique for when you're not using paper is to put ``#`` comments
+3. Another technique for when you are not using paper is to put ``#`` comments
    with your notes in the code.  Sometimes, these could become the actual
    comments to help the next person.
 

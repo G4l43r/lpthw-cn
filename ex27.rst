@@ -16,10 +16,10 @@ out of your mind, keep doing it.  This exercise has a set of logic tables you
 must memorize to make it easier for you to do the later exercises.
 
 I'm warning you this won't be fun at first.  It will be downright boring and tedious
-but this is to teach you a very important skill you'll need as a programmer.  You
+but this is to teach you a very important skill you will need as a programmer.  You
 *will* need to be able to memorize important concepts as you go in your life.
-Most of these concepts will be exciting once you get them.  You'll struggle with
-them, like wrestling a squid, then one day *snap* you'll understand it.  All
+Most of these concepts will be exciting once you get them.  You will struggle with
+them, like wrestling a squid, then one day *snap* you will understand it.  All
 that work memorizing the basics pays off big later.
 
 Here's a tip on how to memorize something without going insane:  Do it a little
@@ -38,7 +38,7 @@ a notebook.  Don't just copy them, but instead try to do them from memory, and
 when you get stuck glance quickly at the ones I have here to refresh your 
 memory.  Doing this will train your brain to remember the whole table.
 
-Don't spend more than one week on this, because you'll be applying it
+Don't spend more than one week on this, because you will be applying it
 as you go.  You might want to keep your index cards as a "warm up" before
 you sit down to do further exercises though.
 

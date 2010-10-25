@@ -5,7 +5,7 @@ Now to totally blow your mind with a new loop, the ``while-loop``.  What
 this kind of loop does is as long as a boolean expression is ``True`` it will
 keep executing the code block under it...
 
-Wait, you've been keeping up with the terminology right?  That if we write a 
+Wait, you have been keeping up with the terminology right?  That if we write a 
 line and end it with a ``:`` (colon) then that tells Python to start a new 
 block of code?  Then we indent and that's the new code.  This is all about
 structuring your programs so that Python knows what you mean.  If you don't
@@ -27,12 +27,12 @@ To avoid these problems, there's some rules to follow:
 
 1. Make sure that you use ``while-loops`` sparingly.  Usually a ``for-loop`` is
    better.
-2. Review your while statements and make sure that the thing you're testing will
+2. Review your while statements and make sure that the thing you are testing will
    become ``False`` at some point later.
 3. When is doubt, print out your test variable at the top and bottom of the ``while-loop``
    to see what it's doing.
 
-In this exercise, you'll learn the ``while-loop`` by doing the above three things:
+In this exercise, you will learn the ``while-loop`` by doing the above three things:
 
 .. literalinclude:: ex/ex33.py
     :linenos:
@@ -56,6 +56,6 @@ Extra Credit
 4. Rewrite the script again to use this function to see what effect that has.
 5. Now, write it to use ``for-loops`` and ``range`` instead.  Do you need the incrementor in the middle anymore?  What happens if you don't get rid of it?
 
-If at any time that you're doing this it goes crazy (it probably will) just
+If at any time that you are doing this it goes crazy (it probably will) just
 hold down ``CTRL`` and hit ``c`` (CTRL-c) and the program will abort.
 
