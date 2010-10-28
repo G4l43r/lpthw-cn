@@ -1,12 +1,11 @@
 Exercise 5: More Variables And Printing
 ***************************************
 
-We'll now do even more typing of variables and printing them out.  This
-time though we'll use something called a "format string".  You might
-not know it, but every time you put ``"`` (double-quotes) around a
-piece of text you have been making a string.  A string is how you make
-something that your program might give to a human.  You print them, 
-save them to files, send them to web servers, all sorts of things.
+Now we'll do even more typing of variables and printing them out.  This time
+we'll use something called a "format string".  Every time you put ``"``
+(double-quotes) around a piece of text you have been making a *string*.  A string
+is how you make something that your program might give to a human.  You print
+them, save them to files, send them to web servers, all sorts of things.
 
 Strings are really handy, so in this exercise you will learn how to
 make strings that have variables embedded in them.  You embed variables
@@ -33,9 +32,9 @@ Extra Credit
 
 1. Change all the variables so there isn't the ``my_`` in front.  
    Make sure you change the name everywhere, not just where you used ``=`` to set them.
-2. Try more format characters.  ``%r`` is a very useful one, it's like saying "print this no matter what".
+2. Try more format characters.  ``%r`` is a very useful one.  It's like saying "print this no matter what".
 3. Search online for all of the Python format characters.
 4. Try to write some variables that convert the inches and pounds to centimeters and kilos.
-   Do not just type in the measurements, but work out the math in Python.
+   Do not just type in the measurements. Work out the math in Python.
 
 
