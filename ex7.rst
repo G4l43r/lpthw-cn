@@ -1,8 +1,8 @@
 Exercise 7: More Printing
 *************************
 
-We are now going to do a bunch of exercises where you just type code in
-and make them run.  There won't be much talking since it's just more of
+Now we are going to do a bunch of exercises where you just type code in
+and make it run.  I won't be explaining much since it is just more of
 the same.  The purpose is to build up your chops.  See you in a few 
 exercises, and *do not skip!*  Do not *paste!*
 
@@ -19,7 +19,7 @@ What You Should See
 Extra Credit
 ============
 
-For these next few exercises you will have the exact same extra credit.
+For these next few exercises, you will have the exact same extra credit.
 
 1. Go back through and write a comment on what each line does.
 2. Read each one backwards or out loud to find your errors.
