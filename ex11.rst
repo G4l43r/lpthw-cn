@@ -1,13 +1,11 @@
 Exercise 11: Asking Questions
 *****************************
 
-It's now time to pick up the pace a bit.  I've got you doing a lot of
-printing so that you get used to typing simple things, but those simple
-things are fairly boring.  What we want to do now is get you getting
-data into your programs.  This though is a little tricky so we have to
-have you learn to do two things that may not make sense right away,
-but if you stick with it they should click suddenly a few exercises 
-from now.
+Now it is time to pick up the pace.  I have got you doing a lot of printing so
+that you get used to typing simple things, but those simple things are fairly
+boring.  What we want to do now is get data into your programs.  This is a
+little tricky because you have learn to do two things that may not make sense right
+away, but trust me and do it anyway.  It will make sense in a few exercises.
 
 Most of what software does is the following:
 
@@ -15,10 +13,10 @@ Most of what software does is the following:
 2. Change it.
 3. Print out something to show how it changed.
 
-So far you have only been printing things and the basics of changing it, but
-you haven't been able to get any input in.  You may not even know what "input"
-means, so rather than talk about it, let's have you do some and see if you get
-it.  Next exercise we'll do more to explain it.
+So far you have only been printing, but you haven't been able to get any input
+from a person, or change it.  You may not even know what "input" means, so
+rather than talk about it, let's have you do some and see if you get it.  Next
+exercise we'll do more to explain it.
 
 
 .. literalinclude:: ex/ex11.py
