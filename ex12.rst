@@ -2,16 +2,18 @@ Exercise 12: Prompting People
 *****************************
 
 When you typed ``raw_input()`` you were typing the ``(`` and ``)`` characters
-which are parenthesis.  This is similar to when you used them to do a format
-with extra variables, as in ``"%s %s" % (x, y)``.  For ``raw_input`` you can
-also put in a prompt to show to a person.  You put a string that you want
-for the prompt inside the ``()`` so that it looks like this:
+which are ``parenthesis``.  This is similar to when you used them to do a
+format with extra variables, as in ``"%s %s" % (x, y)``.  For ``raw_input`` you
+can also put in a prompt to show to a person so they know what to type.  Put a
+string that you want for the prompt inside the ``()`` so that it looks like
+this:
 
 .. code-block:: python
 
     y = raw_input("Name? ")
 
-Which prompts the user with "Name?" and puts the result into the variable ``y``.
+This prompts the user with "Name?" and puts the result into the variable ``y``.
+This is how you ask someone a question and get their answer.
 
 This means we can completely rewrite our previous exercise using just
 ``raw_input`` to do all the prompting.
