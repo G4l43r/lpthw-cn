@@ -24,7 +24,7 @@ Let's use some of this to make a simple little text editor:
 
 That's a large file, probably the largest you have typed in.  So go slow, do
 your checks, and make it run.  One trick is to get bits of it running at a
-time.  Get lines 1-8 running, then 5 more, then a few more, etc. until it's
+time.  Get lines 1-8 running, then 5 more, then a few more, etc., until it's
 all done and running.
 
 
