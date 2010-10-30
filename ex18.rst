@@ -12,7 +12,7 @@ Functions do three things:
 2. They take arguments the way your scripts take ``argv``.
 3. Using #1 and #2 they let you make your own "mini scripts" or "tiny commands".
 
-How you create a function is using the word ``def`` in Python.  I'm going to
+You can create a function by using the word ``def`` in Python.  I'm going to
 have you make four different functions that work like your scripts, and then
 show you how each one is related.
 
@@ -23,15 +23,16 @@ Let's break down the first function, ``print_two`` which is the most similar
 to what you already know from making scripts:
 
 1. First we tell Python we want to make a function using ``def`` for "define".
-2. Still on the same line as ``def`` we then give the function a name, in this
-   case we just called it "print_two" but it could be "peanuts" too.
+2. On the same line as ``def`` we then give the function a name, in this
+   case we just called it "print_two" but it could be "peanuts" too. It doesn't matter,
+   except that your function should have a short name that says what it does.
 3. Then we tell it we want ``*args`` (asterisk args) which is a lot like your ``argv`` parameter
    but for functions. This *has* to go inside ``()`` parenthesis to work.
 4. Then we end this line with a ``:`` colon, and start indenting.
 5. After the colon all the lines that are indented 4 spaces will become attached 
-   to this name ``print_two``.  Our first indented line is one that unpacks
+   to this name, ``print_two``.  Our first indented line is one that unpacks
    the arguments the same as with your scripts.
-6. And to demonstrate how it works we print these arguments out, just like
+6. To demonstrate how it works we print these arguments out, just like
    we would in a script.
 
 Now, the problem with ``print_two`` is that it's not the easiest way to make
@@ -45,7 +46,7 @@ Finally you have a functiont that has no arguments in ``print_none``.
 
 .. warning::
 
-    This is very important, do not get discouraged right now if this doesn't
+    This is very important. Do *not* get discouraged right now if this doesn't
     quite make sense.  We're going to do a few exercises linking functions to
     your scripts and show you how to make more.  For now just keep thinking
     "mini script" when I say "function" and keep playing with them.
@@ -58,18 +59,18 @@ If you run the above script you should see:
 
 .. literalinclude:: ex/ex18.txt
 
-Right away you can see how a function works.  Notice that we did with
-our functions what you have been doing with things like ``exists``, ``open``,
-and other "commands".  In fact, I've been tricking you because in Python
-those "commands" are just functions.  This means that you can make your
-own commands and use them in your scripts too.
+Right away you can see how a function works.  Notice that you used your
+functions the way you use things like ``exists``, ``open``, and other
+"commands".  In fact, I've been tricking you because in Python those "commands"
+are just functions.  This means you can make your own commands and use
+them in your scripts too.
 
 
 Extra Credit
 ============
 
-You need to write out a ``function checklist`` for later exercises.  Write
-these out onto an index card and keep it by you while you complete the rest
+Write out a ``function checklist`` for later exercises.  Write
+these on an index card and keep it by you while you complete the rest
 of these exercises or until you feel you do not need it:
 
 1. Did you start your function definition with ``def``?
@@ -79,16 +80,16 @@ of these exercises or until you feel you do not need it:
 5. Did you make each argument unique (meaning no duplicated names).
 6. Did you put a close parenthesis and a colon ``):`` after the arguments?
 7. Did you indent all lines of code you want in the function 4 spaces?  No more, no less.
-8. Did you "end" your function by going back to writing with no indent (dedenting we call it)?
+8. Did you "end" your function by going back to writing with no indent (``dedenting`` we call it)?
 
-And when you run (aka "use", "call") a function check these things:
+And when you run (aka "use" or "call") a function, check these things:
 
 1. Did you call/use/run this function by typing its name?
 2. Did you put ``(`` character after the name to run it?
 3. Did you put the values you want into the parenthesis separated by commas?
 4. Did you end the function call with a ``)`` character.
 
-You will use these two checklists on the remaining lessons until you do not need
+Use these two checklists on the remaining lessons until you do not need
 them anymore.
 
 Finally, repeat this a few times:
