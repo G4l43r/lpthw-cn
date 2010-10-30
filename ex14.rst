@@ -1,20 +1,20 @@
 Exercise 14: Prompting And Passing
 **********************************
 
-Let's do one exercise to put using ``argv`` and ``raw_input`` together to
+Let's do one exercise that uses ``argv`` and ``raw_input`` together to
 ask the user something specific.  You will need this for the next exercise
 where we learn to read and write files.  In this exercise we'll use
 ``raw_input`` slightly differently by having it just print a simple ``>``
-prompt.  Similar to in a game like Zork or Adventure.
+prompt.  This is similar to a game like Zork or Adventure.
 
 
 .. literalinclude:: ex/ex14.py
     :linenos:
 
 
-Notice though that we make a variable ``prompt`` that is set to this prompt we
-want, and then we give that to ``raw_input`` instead of typing it over and
-over.  Now if we want to make the prompt something else, we just have to
+Notice though that we make a variable ``prompt`` that is set to the prompt we
+want, and we give that to ``raw_input`` instead of typing it over and
+over.  Now if we want to make the prompt something else, we just 
 change it in this one spot and rerun the script.
 
 Very handy.
@@ -23,7 +23,7 @@ Very handy.
 What You Should See
 ===================
 
-When you run this one, remember that you have to give the script your
+When you run this, remember that you have to give the script your
 name for the ``argv`` arguments.
 
 .. literalinclude:: ex/ex14.txt
@@ -32,8 +32,8 @@ name for the ``argv`` arguments.
 Extra Credit
 ============
 
-1. Go find out what Zork was, and what Adventure was.
-   See if you can find a copy and play it.
+1. Find out what Zork and Adventure were.
+   Try to find a copy and play it.
 2. Change the ``prompt`` variable to something else entirely.
 3. Add another argument and use it in your script.
 4. Make sure you understand how I combined a ``"""`` style multi-line string
