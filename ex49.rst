@@ -91,8 +91,8 @@ What we do is a process of:
 4. When we're all done, we should have a Sentence object to work with in our game.
 
 The best way to demonstrate this is to just give you the code to read, but here's where
-this exercise is different from the previous one:  \emph{You will write the test for the
-parser code I give you.}  Rather than giving you the test so you can write the code,
+this exercise is different from the previous one:  You will write the test for the
+parser code I give you.  Rather than giving you the test so you can write the code,
 I give you the code, and you have to write the test.
 
 Here's the code that I wrote for parsing simple sentences using the ``ex48.lexicon``
@@ -121,7 +121,7 @@ bad sentences.
 
 You can check for an exception by using the function ``assert_raises`` from the
 nose documentation.  Learn how to use this so you can write a test that is
-\emph{expected} to fail, which is very important in testing.  You should learn about
+*expected* to fail, which is very important in testing.  You should learn about
 this function (and others) by reading the nose documentation.
 
 When you are done, you should know how this bit of code works very well, and how
