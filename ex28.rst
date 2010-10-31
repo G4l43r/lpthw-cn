@@ -1,17 +1,16 @@
 Exercise 28: Boolean Practice
 *****************************
 
-The logic combinations you learned from the last exercise are called "boolean" logic
-expressions.  They're named after George Boole who invented the concepts and they are
-are used *everywhere* in programming.  They are essential fundamental parts of computation
-and knowing them very well is akin to knowing your scales in music, or knowing your stances
-in Karate.
+The logic combinations you learned from the last exercise are called "boolean"
+logic expressions.  Boolean logic is used *everywhere* in programming.  They
+are essential fundamental parts of computation and knowing them very well is
+akin to knowing your scales in music.
 
-In this exercise you will be taking the logic exercises you memorized and start trying 
-them out in ``python``.  Take each of these logic problems, and write out what you
-think the answer will be.  In each case it will be either True, or it will be False.
-Once you have the answers written down, you will start ``python`` in your terminal and
-type them in to confirm your answers.
+In this exercise you will be taking the logic exercises you memorized and start
+trying them out in ``python``.  Take each of these logic problems, and write
+out what you think the answer will be.  In each case it will be either True or
+False.  Once you have the answers written down, you will start ``python`` in
+your terminal and type them in to confirm your answers.
 
 1. ``True and True``
 2. ``False and True``
@@ -35,8 +34,10 @@ type them in to confirm your answers.
 20. ``3 == 3 and not ("testing" == "testing" or "Python" == "Fun")``
 
 I will also give you a trick to help you figure out the more complicated
-ones toward the end.  Whenever you see these boolean logic statements,
-you can solve them easily by this simple process:
+ones toward the end.
+
+Whenever you see these boolean logic statements, you can solve them easily by
+this simple process:
 
 1. Find equality test (== or !=) and replace it with its truth.
 2. Find each and/or inside a parenthesis and solve those first.
@@ -69,19 +70,19 @@ With that we're done and know the result is False.
 
 .. warning::
 
-    The more complicated ones may seem *very* hard at first.  You should
-    be able to give a good first stab at solving them, but do not
-    get discouraged.  I'm just getting you primed for more of these 
-    "logic gymnastics" so that later cool stuff is much much easier.
-    Just stick with it, keep track of what you get wrong, but do not worry
-    that it's not getting in your head quite yet.  It'll come.
+    The more complicated ones may seem *very* hard at first.  You should be
+    able to give a good first stab at solving them, but do not get discouraged.
+    I'm just getting you primed for more of these "logic gymnastics" so that
+    later cool stuff is much easier.  Just stick with it, and keep track of
+    what you get wrong, but do not worry that it's not getting in your head
+    quite yet.  It'll come.
 
 
 
 What You Should See
 ===================
 
-After you have tried to guess at these this is what your session with ``python``
+After you have tried to guess at these, this is what your session with ``python``
 might look like:
 
 
@@ -100,16 +101,16 @@ might look like:
 Extra Credit
 ============
 
-1. There's a lot of operators in Python similar to ``!=`` and ``==``.  Try to
+1. There are a lot of operators in Python similar to ``!=`` and ``==``.  Try to
    find out as many "equality operators" as you can.  They should be like: ``<``
    or ``<=``.
 2. Write out the names of each of these equality operators.  For example, I call
    ``!=`` "not equal".
 3. Play with the ``python`` by typing out new boolean operators, and before you
-   hit enter try to just shout out what it is.  Do not think about it, just the
+   hit enter try to shout out what it is.  Do not think about it, just the
    first thing that comes to mind.  Write it down then hit enter, and keep
    track of how many you get right and wrong.
-4. Throw that piece of paper from #3 away so you do not accidentally try to use it later.
+4. Throw away that piece of paper from #3 away so you do not accidentally try to use it later.
 
 
 
