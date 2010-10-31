@@ -2,7 +2,7 @@ Exercise 29: What If
 ********************
 
 Here is the next script of Python you will enter, which introduces you to
-the ``if-statement``.  Type this in, make it run exactly right and then 
+the ``if-statement``.  Type this in, make it run exactly right, and then 
 we'll try see if your practice has paid off.
 
 .. literalinclude:: ex/ex29.py
@@ -19,9 +19,9 @@ What You Should See
 Extra Credit
 ============
 
-In this extra credit, you are going to try to guess what you think
-the ``if-statement`` is and what it does.  Try to answer these questions
-in your own words before moving on to the next exercise:
+In this extra credit, try to guess what you think the ``if-statement`` is and
+what it does.  Try to answer these questions in your own words before moving
+onto the next exercise:
 
 1. What do you think the ``if`` does to the code under it?
 2. Why does the code under the ``if`` need to be indented 4 spaces?
