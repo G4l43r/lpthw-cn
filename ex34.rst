@@ -9,24 +9,23 @@ of a list:
 
 .. code-block:: python
 
-    animals = ['bear', 'tiger', 'penguin', 'zeebra']
+    animals = ['bear', 'tiger', 'penguin', 'zebra']
     bear = animals[0]
 
 You take a list of animals, and then you get the first one using ``0``?!  How
-does that work?  Well, because of the way math works, Python start its
+does that work?  Because of the way math works, Python start its
 lists at 0 rather than 1.  It seems weird, but there's many advantages to this,
-even though it is actually mostly arbitrary.
+even though it is mostly arbitrary.
 
 The best way to explain why is by showing you the difference between how
-you use numbers and how programmers have to use numbers with a little
-example using the animals above.
+you use numbers and how programmers use numbers.
 
 Imagine you are watching the four animals in our list above
-(``['bear', 'tiger', 'penguin', 'zeebra']``) run in a race.  Now they win in the *order* we have
-them in this list.  The race was really exciting because, well the animals
-didn't kill eachother and somehow managed to run a race.  Your friend however
-shows up late and wants to know who won.  Does your friend say, "Hey, who came
-in *zero*th?"  No, he says, "Hey says, hey who came in *first*?"
+(``['bear', 'tiger', 'penguin', 'zeebra']``) run in a race.  They win in the *order* we have
+them in this list.  The race was really exciting because, the animals
+didn't eat each other and somehow managed to run a race.  Your friend however
+shows up late and wants to know who won.  Does your friend say, 
+"Hey, who came in *zeroth*?"  No, he says, "Hey says, hey who came in *first*?"
 
 This is because the *order* of the animals is important.  You can't have the second
 animal without the first animal, and can't have the third without the second.  It's
@@ -34,17 +33,17 @@ also impossible to have a "zeroth" animal since zero means nothing.  How can you
 a nothing win a race?  It just doesn't make sense.  We call these kinds of 
 numbers "ordinal" numbers, because they indicate an ordering of things.
 
-Now, programmers however can't think this way because they can pick any element
+Programmers, however, can't think this way because they can pick any element
 out of a list at any point.  To a programmer, the above list is more like a deck
 of cards.  If they want the tiger, they grab it.  If they want the zeebra, they
 can take it too.  This need to pull elements out of lists at random means that
-they need a way to indicate elements consistently by an address, an "index", and
+they need a way to indicate elements consistently by an address, or an "index", and
 the best way to do that is to start the indices at 0.  Trust me on this, the math
-is *way* easier for these kinds of accesses.  In fact, this kind of number is a
+is *way* easier for these kinds of accesses.  This kind of number is a
 "cardinal" number and means you can pick at random, so there needs to be a 0
 element.
 
-Alright, how does this help you work with lists?  Simple, every time you say
+So, how does this help you work with lists?  Simple, every time you say
 to yourself, "I want the 3rd animal," you translate this "ordinal" number to
 a "cardinal" number by subtracting 1.  The "3rd" animal is at index 2 and is the
 penguin.  You have to do this because you have spent your whole life using ordinal
@@ -53,7 +52,7 @@ be good.
 
 Remember:  ordinal == ordered, 1st; cardinal == cards at random, 0.
 
-Let's practice this.  I've given you a list of animals, and then exercises
+Let's practice this.  Take this list of animals, and follow the exercises
 where I tell you to write down what animal you get for that ordinal or cardinal
 number.  Remember if I say "first", "second", etc. then I'm using ordinal, so
 subtract 1.  If I give you cardinal (0, 1, 2) then use it directly.
