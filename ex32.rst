@@ -1,20 +1,20 @@
 Exercise 32: Loops And Lists
 *************************
 
-You should now be able to do some programs that are much more interesting than
-before.  If you have been keeping up you should realize that now you can combine
+You should now be able to do some programs that are much more interesting.
+If you have been keeping up, you should realize that now you can combine
 all the other things you have learned with ``if-statements`` and boolean
 expressions to make your programs do smart things.
 
 However, programs also need to do repetitive things very quickly.  We are going
 to use a ``for-loop`` in this exercise to build and print various lists.  When
-you do the exercise you will start to figure out what they are.  I won't tell you
-right now, you have to figure it out.
+you do the exercise, you will start to figure out what they are.  I won't tell you
+right now.  You have to figure it out.
 
 Before you can use a for-loop, you need a way to *store* the results of loops
-somewhere, and the best way to do that is with a ``list``.  A list is exactly
-what its name says, a container of things that are organized in order.  A list.
-It's not complicated, you just have to learn a new syntax.  First, there's how
+somewhere.  The best way to do this is with a ``list``.  A list is exactly
+what its name says, a container of things that are organized in order.
+It's not complicated; you just have to learn a new syntax.  First, there's how
 you make a list:
 
 .. code-block:: python
@@ -26,12 +26,12 @@ you make a list:
 What you do is start the list with the ``[`` (left-bracket) which "opens" the
 list.  Then you put each item you want in the list separated by commas, just
 like when you did function arguments.  Lastly you end the list with a ``]``
-(right-bracket) to indicate that it's over.  Python then takes this list, and
+(right-bracket) to indicate that it's over.  Python then takes this list and
 all its contents, and assigns them to the variable.
 
 .. warning::
 
-    Now, this is where things get tricky for people who can't program.  Your
+    This is where things get tricky for people who can't program.  Your
     brain has been taught that the world is flat.  Remember in the last
     exercise where you put ``if-statements`` inside ``if-statements``?  That
     probably made your brain hurt because most people do not ponder how to
@@ -56,10 +56,10 @@ What You Should See
 Extra Credit
 ============
 
-1. Take a look at how you used ``range``.  Go look up the ``range`` function to 
+1. Take a look at how you used ``range``.  Look up the ``range`` function to 
    understand it.
 2. Could you have avoided that ``for-loop`` entirely on line 23 and just assigned
    ``range(0,6)`` directly to ``elements``?
-3. Go find the Python documentation on lists and read about them.  What other
+3. Find the Python documentation on lists and read about them.  What other
    operations can you do to lists besides ``append``?
 
