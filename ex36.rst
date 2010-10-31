@@ -1,8 +1,8 @@
 Exercise 36: Designing and Debugging
 ************************************
 
-I'm going to give you some rules now that you know ``if-statements``,
-``for-loops``, and ``while-loops`` that will keep you out of trouble.  I'm
+Now that you know ``if-statements``, I'm going to give you some rules for
+``for-loops`` and ``while-loops`` that will keep you out of trouble.  I'm
 also going to give you some tips on debugging so that you can figure out
 problems with your program.  Finally, you are going to design a similar
 little game as in the last exercise but with a slight twist.
@@ -12,7 +12,7 @@ Rules For If-Statements
 =======================
 
 1. Every ``if-statement`` must have an ``else``.
-2. If this ``else`` should never be run, because it doesn't
+2. If this ``else`` should never be run because it doesn't
    make sense, then you must use a ``die`` function in the ``else`` that
    prints out an error message and dies, just like we did in
    the last exercise.  This will find *many* errors.
@@ -22,21 +22,21 @@ Rules For If-Statements
    another function.
 4. Treat ``if-statements`` like paragraphs, where each ``if,elif,else``
    grouping is like a set of sentences.  Put blank lines before and
-   after them.
+   after.
 5. Your boolean tests should be simple.  If they are complex, move 
    their calculations to variables earlier in your function and use
    a good name for the variable.
 
-If you follow these simple rules you will start writing better code than
-most programmers currently coding.  Go back to the last exercise and
-see if I followed all of these rules.  If not, fix it.
+If you follow these simple rules, you will start writing better code than most
+programmers.  Go back to the last exercise and see if I followed all of these
+rules.  If not, fix it.
 
 .. warning::
 
     Never be a slave to the rules in real life.  For training purposes
     you need to follow these rules to make your mind strong, but in 
     real life sometimes these rules are just stupid.  If you think a 
-    rule is stupid, then try not using it.
+    rule is stupid, try not using it.
     
 
 
@@ -60,37 +60,32 @@ Tips For Debugging
    out the values of variables at points in the program to see
    where they go wrong.
 3. Make sure parts of your programs work as you work on them.  Do 
-   not write massive files of code and then run them at the very end.
+   not write massive files of code before you try to run them.
    Code a little, run a little, fix a little.
 
 
 Homework
 ========
 
-You should now write a similar game to the one that I created
-in the last exercise.  It can be any kind of game you want in the
-same flavor, and you should spend a week on it making it as 
-interesting as you can.  For extra credit, you should use lists,
-functions, and modules (remember those from Ex. 13?) as much as possible,
-and find as many new pieces of Python as you can to make the game work.
+Now write a similar game to the one that I created in the last exercise.  It
+can be any kind of game you want in the same flavor. Spend a week on it making
+it as interesting as possible.  For extra credit, use lists, functions, and
+modules (remember those from Ex. 13?) as much as possible, and find as many new
+pieces of Python as you can to make the game work.
 
-There is one catch though, you should write up your idea for
-the game first.  Before you start coding you must write up
-a map for your game.  Create the rooms, the monsters, and
-the traps that the player must go through on paper before you
-code.
+There is one catch though, write up your idea for the game first.  Before you
+start coding you must write up a map for your game.  Create the rooms,
+monsters, and traps that the player must go through on paper before you code.
 
-Once you have your map, then you should try to code it up.  If
-you find problems with the map then adjust it and make the
-code match.
+Once you have your map, try to code it up.  If you find problems with the map
+then adjust it and make the code match.
 
-One final word of advice:  Every programmer becomes paralyzed
-by irrational fear at starting out on a new large project.
-They then use procrastination to avoid confronting this fear
-and end up not getting their program working or even started.
-I do this.  Everyone does this.  The best way to get rid of 
-this is to make a list of things you should do, and then do
-them one at a time, bit by bit.
+One final word of advice:  Every programmer becomes paralyzed by irrational
+fear starting a new large project.  They then use procrastination to avoid
+confronting this fear and end up not getting their program working or even
+started.  I do this.  Everyone does this.  The best way to avoid this is
+to make a list of things you should do, and then do them one at a time, bit by
+bit.
 
 Just start doing it, do a small version, make it bigger, 
 keep a list of things to do, and do them.
