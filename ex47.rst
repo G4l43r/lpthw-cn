@@ -19,7 +19,7 @@ tasks.  Testing a piece of software is definitely boring and tedious, so you mig
 as well write a little bit of code to do it for you.
 
 That should be all the explanation you need because *your* reason for writing unit
-tests is to make your brain stronger.  You have gone through thist book writing code
+tests is to make your brain stronger.  You have gone through this book writing code
 to do things.  Now you are going to take the next leap and write code that
 knows about other code you have written.  This process of writing a test that runs
 some code you have written *forces* you to understand clearly what you have just written.

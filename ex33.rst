@@ -15,10 +15,10 @@ functions, and the ``for-loop`` until you get it.
 Later on we'll have some exercises that will train your brain to read these
 structures, similar to how we burned boolean expressions into your brain.
 
-Back to ``while-loops``. What they do is simply do a test like an ``if-statement``,
-but instead of running the code block *once* it jumps from back to the "top" where
-the ``while`` is, and does the check again.  It keeps doing this until
-the expression is ``False``.
+Back to ``while-loops``. What they do is simply do a test like an
+``if-statement``, but instead of running the code block *once*, they jump back
+to the "top" where the ``while`` is, and repeat.  It keeps doing this until the
+expression is ``False``.
 
 Here's the problem with ``while-loops``: Sometimes they do not stop. This is
 great if your intention is to just keep looping until the end of the universe.

@@ -42,7 +42,7 @@ the names we want right inside ``()``.  That's what ``print_two_again`` does.
 After that you have an example of how you make a function that takes one
 argument in ``print_one``.
 
-Finally you have a functiont that has no arguments in ``print_none``.
+Finally you have a function that has no arguments in ``print_none``.
 
 .. warning::
 

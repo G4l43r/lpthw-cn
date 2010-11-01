@@ -96,6 +96,13 @@ Windows
 13. Back in Terminal, see if you can list the directory to see your 
     newly created file.  Search online for how to list a directory.
 
+
+.. warning::
+
+    Windows is a big problem for Python.  Sometimes you install Python and one
+    computer will have no problems, and another computer will be missing important
+    features.  If you have problems, please visit: http://docs.python.org/faq/windows.html
+
 Windows: What You Should See
 --------------------------
 

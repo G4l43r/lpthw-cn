@@ -65,7 +65,7 @@ moving on.
    and "methods".  Search around online to see what other people do
    to define these.  Do not worry if they confuse you. It's normal for
    a programmer to confuse you with their vast extensive knowledge.
-4. Get rid of the part from line 10-16 where you use ``raw_input`` and
+4. Get rid of the part from line 10-15 where you use ``raw_input`` and
    try the script then.
 5. Use only ``raw_input`` and try the script that way.  Think of why one
    way of getting the filename would be better than another.

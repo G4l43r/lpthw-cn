@@ -4,7 +4,7 @@ Exercise 2: Comments And Pound Characters
 Comments are very important in your programs.  They are used to tell you
 what something does in English, and they also are used to disable parts
 of your program if you need to remove them temporarily.  Here's how you
-do comments.
+use comments in Python:
 
 .. literalinclude:: ex/ex2.py
     :language: python
