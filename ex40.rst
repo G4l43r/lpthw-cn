@@ -1,12 +1,12 @@
 Exercise 40: Dictionaries, Oh Lovely Dictionaries
 **********************************************
 
-Well, I now have to hurt you with another container you can use, because once
+Now I have to hurt you with another container you can use, because once
 you learn this container a massive world of ultra-cool will be yours.  It is
 the most useful container ever:  the dictionary.
 
 Python calls them "dicts", other languages call them, "hashes".  I tend to use
-both names, but it doesn't matter, what does matter is what they do when compared
+both names, but it doesn't matter.  What does matter is what they do when compared
 to lists.  You see, a list lets you do this:
 
 .. code-block:: pycon
@@ -21,10 +21,10 @@ to lists.  You see, a list lets you do this:
     ['a', 'z', 'c', 'd']
     >>> 
 
-You can use numbers to "index" into a list, meaning you can use numbers to get 
-find out what's in them.  You should know this by now, but what a ``dict``
-does is let you use *anything* not just numbers.  Yes, a dict associates one thing
-to another, no matter what it is.  Here take a look:
+You can use numbers to "index" into a list, meaning you can use numbers to 
+find out what's in lists.  You should know this by now, but what a ``dict``
+does is let you use *anything*, not just numbers.  Yes, a dict associates one thing
+to another, no matter what it is.  Take a look:
 
 
 .. code-block:: pycon
@@ -41,10 +41,10 @@ to another, no matter what it is.  Here take a look:
     San Francisco
     >>> 
 
-Take a close look at this and you will see that instead of just numbers we're
-using strings to say what we want from the ``stuff`` dictionary.  We can also 
-put new things into the dictionary with strings.  It doesn't have to be strings
-though, we can also do this:
+You will see that instead of just numbers we're using strings to say what we
+want from the ``stuff`` dictionary.  We can also put new things into the
+dictionary with strings.  It doesn't have to be strings though, we can also do
+this:
 
 .. code-block:: pycon
 
@@ -77,7 +77,7 @@ how you delete things, with the ``del`` keyword:
 
 We'll now do an exercise that you *must* study very carefully.  I want you to type this
 exercise in and try to understand what's going on.  It is a very interesting exercise
-that will hopefully have a big light turn on in your head very soon.
+that will hopefully make a big light turn on in your head very soon.
 
 
 .. literalinclude:: ex/ex40.py
