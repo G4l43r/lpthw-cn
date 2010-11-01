@@ -70,18 +70,18 @@ You see that ``self`` in the parameters?  You know what that is?  That's right,
 it's the "extra" parameter that Python creates so you can type
 ``a.some_function()`` and then it will translate *that* to really be
 ``some_function(a)``.  Why use ``self``?  Your function has no idea what you
-are calling any one "instance" of ``TheThing`` or another, so you just use a
-generic name ``self`` that way you can write your function and it will always
+are calling any one "instance" of ``TheThing`` or another, you just use a
+generic name ``self``. That way you can write your function and it will always
 work.
 
-You actually could use another name rather than ``self`` but then every Python
+You could actually use another name rather than ``self`` but then every Python
 programmer on the planet would hate you, so do not.  Only jerks change things
 like that and I taught you better.  Be nice to people who have to read what you
 write because ten years later all code is horrible.
 
 Next, see the ``__init__`` function?  That is how you setup a Python class with
 internal variables.  You can set them on ``self`` with the ``.`` (period) just
-like I show you here.  See also how we then use this in ``add_me_up()`` later
+like I will show you here.  See also how we then use this in ``add_me_up()`` later
 which lets you add to the ``self.number`` you created.  Later you can see how
 we use this to add to our number and print it.
 
@@ -91,7 +91,7 @@ to try it.  In fact, I want to go play some guitar right now so I'm not going
 to give you an exercise to type.  You are going to go write an exercise
 using classes.
 
-Here's how we would do exercise 41 but using classes instead of the thing
+Here's how we would do exercise 41 using classes instead of the thing
 we created:
 
 .. literalinclude:: ex/ex42.py
@@ -103,7 +103,7 @@ What You Should See
 
 The output from this version of the game should be exactly the same as the
 previous version, and in fact you will notice that some of the code is nearly
-the same.  You should take this new version of the game and compare it to
+the same.  Compare this new version of the game and with
 the last one so you understand the changes that were made.  Key things to
 really get are:
 
@@ -114,9 +114,9 @@ really get are:
    the class structure.
 4. How you indented again to put the contents of the functions under their names.
 5. How colons are being used.
-6. The concept of ``self`` and how it's being used in ``__init__``, ``play``,
+6. The concept of ``self`` and how it's used in ``__init__``, ``play``,
    and ``death``.
-7. You should go find out what ``getattr`` does inside ``play`` so that you 
+7. Go find out what ``getattr`` does inside ``play`` so that you 
    understand what's going on with the operation of ``play``.  In fact, try
    doing this by hand inside Python to really get it.
 8. How a ``Game`` was created at the end and then told to ``play()`` and how that
