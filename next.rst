@@ -3,17 +3,16 @@ Next Steps
 
 You are not a programmer quite yet.  I like to think of this book
 as giving you your "programming brown belt".  You know enough to
-be able to start another book on programming and you could handle
+be able to start another book on programming and handle
 it just fine.  This book should have given you the mental tools
 and attitude you need to go through most Python books and actually
-learn something.  It might even make them easy.
+learn something.  It might even make it easy.
 
-On the http://learnpythonthehardway.org/ website there are a few
-free books mentioned as ones you should move onto next.  Try them
-out and see how far you can get.
+On the http://learnpythonthehardway.org/ website there are a few free books you
+should move onto next.  Try them out and see how far you can get.
 
 You could probably start hacking away at some programs right now,
-and if you have that itch then go ahead.  Just understand, anything
+and if you have that itch, go ahead.  Just understand, anything
 you write will probably suck.  That's alright though, I suck at
 every programming language I first start using.  Nobody writes
 pure perfect gold when they are a beginner, and anyone who tells you

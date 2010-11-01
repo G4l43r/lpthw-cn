@@ -1,26 +1,26 @@
-Exercise 52: The Most Important Lesson
-**************************************
+Exercise 52: Teach Someone Else What You Know
+*********************************************
 
-You have done something that many other people haven't by going through
-this book and learning to write software.  However, you might not realize
-how much you actually know about the subject.  In order for you to get
-a perspective on your knowledge, and to help you understand what you know
-I'm going to ask you to do something intimidating:
+By going through this book and learning to write software, you have done
+something that many other people haven't.  However, you might not realize how
+much you actually know about the subject.  In order for you to get a
+perspective on your knowledge, and to help you understand what you know I'm
+going to ask you to do something intimidating:
 
-*I want you to teach someone else exercises 1 through 5 of this book.*
+*Teach someone else exercises 1 through 5 of this book.*
 
 That's right, you are going to be a teacher for a day and get a new person
 into programming.  Who knows, maybe they'll become interested and continue
 after you are done.  Maybe they'll think it's stupid and just forget about
 it.
 
-The purpose of this lesson though is to get you to articulate what you know
-and try to explain it to someone else.  Doing this will help you get an
+The purpose of this lesson is to get you to articulate what you know
+and try to explain it to someone.  Doing this will help you get an
 even firmer and cleaner grasp of what you know.
 
 A piano teacher I took a few lessons from told me that he played professionally
-in many Jazz bands, playing all sorts of complex music, but it wasn't until he
-started *teaching* Jazz that he actually understood what he was doing.
+in many jazz bands, playing all sorts of complex music, but it wasn't until he
+started *teaching* jazz that he actually understood what he was doing.
 
 Teaching someone else forces you to really understand what you are doing.
 
@@ -28,6 +28,6 @@ Teaching someone else forces you to really understand what you are doing.
 Extra Credit
 ============
 
-* Find your local "python group" and go to a meeting.  If there isn't one, then
+* Find your local "python group" and go to a meeting.  If there isn't one, 
   try starting one with some of your friends.
 
