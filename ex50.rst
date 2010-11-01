@@ -1,23 +1,21 @@
 Exercise 50: Your First Work Assignment
 ***************************************
 
-I'm now going to give you a work assignment, similar to what you might get
-as a professional programmer.  I'm going to give you an assignment that consists
-of a game I want you to create using what you know so far.  The assignment will
-be to convert the list of features I give you into a complete little game that
-I may buy.  Your job is to take my vague descriptions of things I want and
-make something I can use.
+I'm now going to give you a work assignment, similar to what you might get as a
+professional programmer.  The assignment will be to convert the list of
+features I give you into a complete little game that I may buy.  Your job is to
+take my vague descriptions of things I want and make something I can use.
 
-The purpose of this exercise is to give you a final exercise that you can complete
-to see if you have grasped the concepts you have learned so far.  We only have 2 exercises
-after this, but this will be your last actual assigned piece of coding.
+The purpose of this exercise is to see if you have grasped the concepts you
+have learned so far.  We only have 2 exercises after this, but this will be
+your last actual assigned piece of coding.
 
 Review What You Know
 ====================
 
 At this point you should know how to do the following:
 
-* Create classes and structure a rooms from them.
+* Create classes and structure rooms from them.
 * Throw and raise exceptions.
 * Use functions, variables, dictionaries, lists, and tuples.
 * Turn a user's input into a list of tuples using a lexicon scanner.
@@ -30,34 +28,32 @@ this assignment.
 Implementing A Feature List
 ===========================
 
-Typically when you work on software you will be given a list of things
-someone wants as a small list of fairly vague and inconsistent features
-they want.  This sucks, I won't lie to you.  Typically people have no
-ability to think clearly about the things they want, and even less
-ability to describe them.
+Typically when you work on software you will be given a list vague and
+inconsistent features they want.  This sucks, I won't lie to you.  Typically
+people have no ability to think clearly about the things they want, and even
+less ability to describe them.
 
 As a programmer, it is your job to take the vague things they tell you
 and work with them to create something they want.  In fact, sometimes 
-*you* will have a problem articulating what you want, and have to do
-this to yourself as well.  Brains are weird like that.
+*you* will have a problem articulating what *you* want.
 
 The best way to implement a feature list like this is to follow this
 pattern:
 
 1. Dump everything out of the person's head *without* criticizing or judging the ideas.
 2. As you dump, write these down in a spread sheet or on index cards.
-3. Take a break, then collect all the features and go back through to prioritize them
-   into MUST or NICE.
+3. Take a break, collect all the features and go back through to prioritize them
+   into MUST (have) or NICE (to have).
 4. Sort the list so that you can see what is MUST vs. what is NICE to have.
 5. Pick a piece of the MUST work, and start working on it.
-6. Show the person who wants the software your work after about a week, and repeat this process again based on your new feedback.
+6. After about a week, show the person who wants the software your, and repeat this process again based on your new feedback.
 
 This pattern can be found in one form or another in different "methodologies" programmers
 use to organize their work.
 
 I'm going to give you a list of features that I want in my game, and I've
 already prioritized them so this is just the MUST requirements.  Your job is to
-spend one week working on the list getting it done.
+spend one week working on the list and getting it done.
 
 
 The Feature List
@@ -68,10 +64,10 @@ The Feature List
 * The game will be a text adventure game, like that bear and broadsword game you did.  I like games like that.
 * Oh, lasers.  Totally gotta have lasers.
 * But not too powerful lasers.  It should be hard to finish the game.
-* But not too hard to finish the game, just right to keep players interested.  You know, like WoW.  I hear people
-  make tons of money off Wow.
+* But not too hard to finish the game, just right to keep players interested.  You know, like ``Worlf of Warcraft``.  I hear people
+  make tons of money off WoW.
 * The ship should have about 10 rooms at first, then we want to expand them.
-* I'd like to be able to change the description of rooms without changing code.  Can you do that?
+* I'd like to be able to change the description of the rooms without changing the code.  Can you do that?
 * My friend says farms are big now, so have a scene where there's a farm and stuff.
 * The aliens should be some kind of Mafia aliens.  Mafia stuff is huge now too.
 * I should be able to move around with real sentences like "go north", "open door", etc.
@@ -85,7 +81,7 @@ Tips On Working The List
 ========================
 
 1. Make your map, characters, and story first on paper.
-2. Write unit tests so that you do not have to constantly check things by hand.
+2. Write unit tests so you do not have to constantly check things by hand.
 3. Design your game engine so it's easy to test.
 4. Actually play your game once in a while.
 5. When in doubt, ask for help and show people your code.
