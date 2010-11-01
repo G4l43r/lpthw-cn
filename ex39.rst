@@ -1,15 +1,15 @@
 Exercise 39: Doing Things To Lists
 *******************************
 
-You learned about lists and when you learned about ``while-loops`` you
-"appended" numbers to the end of a list then printed them out.   There was also
+You have learned about lists. When you learned about ``while-loops`` you
+"appended" numbers to the end of a list and printed them out.   There was also
 extra credit where you were supposed to find all the other things you can do to
 lists in the Python documentation.  That was a while back, so go find in the
 book where you did that and review if you do not know what I'm talking about.
 
 Found it?  Remember it?  Good.  When you did this you had a list, and you "called" the
-function ``append`` on it.  However you may not really understand what's going on so let's see what
-we can do to lists and how doing things with "on" them works really.
+function ``append`` on it.  However, you may not really understand what's going on so let's see what
+we can do to lists, and how doing things with "on" them works.
 
 When you type Python code that reads ``mystuff.append('hello')`` you are actually
 setting off a chain of events inside Python to cause something to happen to the
@@ -25,7 +25,7 @@ setting off a chain of events inside Python to cause something to happen to the
 3. It then hits ``append`` and compares the name "append" to all the ones that ``mystuff``
    says it owns.  If append is in there (it is) then it grabs *that* to use.
 4. Next Python sees the ``(`` (parenthesis) and realizes, "Oh hey, this should be a function."
-   At this point it calls the function just like normally, but instead it calls the function
+   At this point it *calls* (aka runs, executes) the function just like normally, but instead it calls the function
    with an *extra* argument.
 5. That *extra* argument is ... ``mylist``!  I know, weird right?  But that's how Python
    works so it's best to just remember it and assume that's alright.  What happens then, at 
@@ -80,13 +80,13 @@ Extra Credit
 2. Translate these two ways to view the function calls in English.  For example, ``' '.join(things)``
    reads as, "Join things with ' ' between them."  Meanwhile, ``join(' ', things)`` means,
    "Call join with ' ' and things."  Understand how they are really the same thing.
-2. Go read about "Object Oriented Programming" online.  Confused?  Yeah I was too.  Do not worry though
-   we'll learn enough to be dangerous then you can slowly learn more later.
+2. Go read about "Object Oriented Programming" online.  Confused?  Yeah I was too.  Do not worry.
+   You will learn enough to be dangerous, and you can slowly learn more later.
 3. Read up on what a "class" is in Python.  *Do not read about how other languages use the word "class".* That will only mess you up.
-4. What's the relationship between ``dir(something)`` and the "class" of ``something``.
+4. What's the relationship between ``dir(something)`` and the "class" of ``something``?
 5. If you do not have any idea what I'm talking about do not worry.  Programmers like to feel smart
-   so they invented Object Oriented Programming, named it OOP, and then used it way too much.  You
-   think that's hard you should try to use "functional programming".
+   so they invented Object Oriented Programming, named it OOP, and then used it way too much.  If you
+   think that's hard, you should try to use "functional programming".
 
 
 
