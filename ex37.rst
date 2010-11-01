@@ -1,20 +1,19 @@
 Exercise 37: Symbol Review
 **************************
 
-It's time to review the symbols and Python words you know and to try
+It's time to review the symbols and Python words you know, and to try
 to pick up a few more for the next few lessons.  What I've done here
 is written out all the Python symbols and keywords that are important
 to know.
 
-In this lesson you are to take each keyword, and first try to write out 
-what it does from memory.  Next, go search online for it and see what
+In this lesson take each keyword, and first try to write out 
+what it does from memory.  Next, search online for it and see what
 it really does.  It may be hard because some of these are going to
 be impossible to search for, but keep trying.
 
-If you got one of these wrong from memory, then write up an index card
-with the correct definition and try to "correct" your memory.  If you
-just didn't know about it then write down what it is and save it for
-later.
+If you get one of these wrong from memory, write up an index card with the
+correct definition and try to "correct" your memory.  If you just didn't know
+about it, write it down, and save it for later.
 
 Finally, use each of these in a small Python program, or as many as
 you can get done.  The key here is to find out what the symbol does,
@@ -93,7 +92,7 @@ what you think they do.
 String Formats
 ==============
 
-Same thing for string formats, use them in some strings to know what
+Same thing for string formats: use them in some strings to know what
 they do.
 
 
@@ -118,9 +117,8 @@ they do.
 Operators
 =========
 
-Some of these may be unfamiliar to you, but look them up anyway.  Find
-out what they do, and if you still can't figure out what it does, 
-save it for later.
+Some of these may be unfamiliar to you, but look them up anyway.  Find out what
+they do, and if you still can't figure it out, save it for later.
 
 * ``+``
 * ``-``
@@ -154,10 +152,9 @@ save it for later.
 * ``**=``
 
 
-You should spend about a week on this, but if you finish it faster
-that's great.  The point though is to try to get coverage on all
-these symbols and make sure they are locked in your head.  What's also
-important is to find out what you *do not* know so you can fix it
-later.
+Spend about a week on this, but if you finish faster that's great.  The point
+is to try to get coverage on all these symbols and make sure they are locked in
+your head.  What's also important is to find out what you *do not* know so you
+can fix it later.
 
 
