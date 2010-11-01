@@ -1,16 +1,16 @@
 Exercise 46: A Project Skeleton
 *******************************
 
-This will also be where you start learning how to setup a good project "skeleton"
+This will be where you start learning how to setup a good project "skeleton"
 directory.  This skeleton directory will have all the basics you need to get a
 new project up and running.  It will have your project layout, automated tests,
-modules, and install scripts.  When you go to make a new project, you just copy
+modules, and install scripts.  When you go to make a new project, just copy
 this directory to a new name and edit the files to get started.
 
 Skeleton Contents: Linux/OSX
 ============================
 
-You first want to create the structure of your skeleton directory with these 
+First, create the structure of your skeleton directory with these 
 commands:
 
 .. code-block:: bash
@@ -44,7 +44,7 @@ project later if we want:
 .. literalinclude:: ex/ex46.py
     :linenos:
 
-You should edit this file so that it has your contact information in it
+Edit this file so that it has your contact information 
 and is ready to go for when you copy it.
 
 Finally you will want a simple skeleton file for tests named ``tests/NAME_tests.py``:
@@ -53,18 +53,11 @@ Finally you will want a simple skeleton file for tests named ``tests/NAME_tests.
     :linenos:
 
 
-Skeleton Contents: Windows
---------------------------
-
-Coming soon...I need a windows computer to test this but it should be similar
-to the Linux/OSX instructions.
-
-
 Installing Python Packages
 --------------------------
 
-You will want to make sure you have some packages installed that makes
-these things work.  Here's the problem though, you are at a point where it's
+Make sure you have some packages installed that makes
+these things work.  Here's the problem though.  You are at a point where it's
 difficult for me to help you do that and keep this book sane and clean.  There
 are so many ways to install software on so many computers that I'd have to spend
 10 pages walking you through every step, and let me tell you I am a lazy guy.
@@ -74,7 +67,7 @@ should install, and then tell you to figure it out and get it working.  This
 will be really good for you since it will open a whole world of software
 you can use that other people have released to the world.
 
-You are now supposed to install the following python packages:
+Next, nstall the following python packages:
 
 1. pip from http://pypi.python.org/pypi/pip
 2. distribute from http://pypi.python.org/pypi/distribute
@@ -95,7 +88,7 @@ but you can't install pacakages until you install package installers, and you ca
 install package installers until you figure out how your system installs software
 in general, and so on.
 
-Struggle through this anyway.  Consider it your trial by annoyance to get into
+Struggle through this anyway.  Consider it your trial-by-annoyance to get into
 the programmer club.  Every programmer has to do these annoying tedious tasks
 before they can do something cool.
 
@@ -114,7 +107,7 @@ After you get all that installed you should be able to do this:
     OK
 
 I'll explain what this ``nosetests`` thing is doing in the next exercise, but
-for now if you do not see that then you probably got something wrong.  Make sure
+for now if you do not see that, you probably got something wrong.  Make sure
 you put ``__init__.py`` files in your ``NAME`` and ``tests`` directory and make
 sure you got ``tests/NAME_tests.py`` right.
 
@@ -123,7 +116,7 @@ Using The Skeleton
 ==================
 
 You are now done with most of your yak shaving.  Whenever you want to start a new
-project, you just do this:
+project, just do this:
 
 
 1. Make a copy of your skeleton directory.  Name it after your new project.
@@ -138,12 +131,12 @@ project, you just do this:
 Required Quiz
 =============
 
-This exercise doesn't have extra credit, it has a quiz you have to complete:
+This exercise doesn't have extra credit but a quiz you should complete:
 
-1. Go and read about how to use all of the things you installed.
+1. Read about how to use all of the things you installed.
 2. Read about the ``setup.py`` file and all it has to offer.  Warning, it is not a very
-   well written piece of software, so it will be very strange to use.
-3. Make a project and start putting code into the module you have, then get the 
+   well-written piece of software, so it will be very strange to use.
+3. Make a project and start putting code into the module, then get the 
    module working.
 4. Put a script in the ``bin`` directory that you can run.  Read about how you can make
    a Python script that's runnable for your system.
