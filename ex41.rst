@@ -2,9 +2,9 @@ Exercise 41: A Room With A View Of A Bear With A Broadsword
 ***********************************************************
 
 Did you figure out the secret of the function in the dict from the
-last exercise?  Could you explain it to yourself?  Let me explain it
-and you can compare your explanation with mine.  Here's the lines of
-code we're talking about:
+last exercise?  Can you explain it to yourself?  Let me explain it
+and you can compare your explanation with mine.  Here are the lines of
+code we are talking about:
 
 .. code-block::  python
     
@@ -12,12 +12,12 @@ code we're talking about:
     city_found = cities['_find'](cities, state)
 
 Remember that functions can be variables too.  The ``def find_city`` just makes
-another variable name in your current module that you can then use anywhere.  In
+another variable name in your current module that you can use anywhere.  In
 this code first we are putting the function ``find_city`` into the dict ``cities``
 as ``'_find'``.  This is the same as all the others where we set states to some
 cities, but in this case it's actually the function we put in there.
 
-Alright, so once we know that ``find_city`` is in the dict at ``_find`` that means
+Alright, so once we know that ``find_city`` is in the dict at ``_find``, that means
 we can do work with it.  The 2nd line of code (used later in the previous 
 exercise) can be broken down like this:
 
@@ -29,7 +29,7 @@ exercise) can be broken down like this:
    it's got a function, and when it hits ``(`` it does the function call.
 5. The parameters ``cities, state`` are passed to this function ``find_city``, and
    it runs because it's called.
-6. ``find_city`` then tries to lookup ``states`` inside ``cities``, and returns
+6. ``find_city`` then tries to look up ``states`` inside ``cities``, and returns
    what it finds or a message saying it didn't find anything.
 7. Python takes what ``find_city`` returned, and *finally* that is what is assigned
    to ``city_found`` all the way at the beginning.
@@ -52,11 +52,11 @@ Here's another way to read it, this time "inside-out".
    ``_find`` in cities.
 3. That gives us a function.  Keep going counter-clock-wise and you get to the parameters.
 4. The parameters are passed to the function, and that returns a result.  Go counter-clock-wise again.
-5. Finally, we are at the ``city_found =`` assignment and we have our end result.
+5. Finally, we are at the ``city_found =`` assignment, and we have our end result.
 
 After decades of programming I do not even think about these three ways to read
-code.  I just glance at it and I know what it means, and I can even glance at a whole
-screen of code and all the bugs and errors jump out at me.  That took an incredibly
+code.  I just glance at it and know what it means, and I can even glance at a whole
+screen of code, and all the bugs and errors jump out at me.  That took an incredibly
 long time and quite a bit more study than is sane.  To get that way, I learned these
 three ways of reading most any programming language:
 
@@ -88,7 +88,7 @@ Extra Credit
 ============
 
 1.  Explain how returning the next room works.
-2.  Create more rooms making the game bigger.
+2.  Create more rooms, making the game bigger.
 3.  Instead of having each function print itself, learn about "doc comments".  See if you 
     can write the room description as doc comments, and change the runner to print
     them.
