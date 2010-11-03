@@ -207,3 +207,5 @@ latex_preamble = r"""
 
 # If false, no module index is generated.
 latex_use_modindex = False
+
+latex_domain_indices = False

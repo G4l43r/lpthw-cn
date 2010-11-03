@@ -46,7 +46,7 @@ pattern:
    into MUST (have) or NICE (to have).
 4. Sort the list so that you can see what is MUST vs. what is NICE to have.
 5. Pick a piece of the MUST work, and start working on it.
-6. After about a week, show the person who wants the software your, and repeat this process again based on your new feedback.
+6. After about a week, show the person the software, get their feedback, and repeat this process again based on your new feedback.
 
 This pattern can be found in one form or another in different "methodologies" programmers
 use to organize their work.
@@ -64,7 +64,7 @@ The Feature List
 * The game will be a text adventure game, like that bear and broadsword game you did.  I like games like that.
 * Oh, lasers.  Totally gotta have lasers.
 * But not too powerful lasers.  It should be hard to finish the game.
-* But not too hard to finish the game, just right to keep players interested.  You know, like ``Worlf of Warcraft``.  I hear people
+* But not too hard to finish the game, just right to keep players interested.  You know, like ``World of Warcraft``.  I hear people
   make tons of money off WoW.
 * The ship should have about 10 rooms at first, then we want to expand them.
 * I'd like to be able to change the description of the rooms without changing the code.  Can you do that?
