@@ -27,7 +27,7 @@ setting off a chain of events inside Python to cause something to happen to the
 4. Next Python sees the ``(`` (parenthesis) and realizes, "Oh hey, this should be a function."
    At this point it *calls* (aka runs, executes) the function just like normally, but instead it calls the function
    with an *extra* argument.
-5. That *extra* argument is ... ``mylist``!  I know, weird right?  But that's how Python
+5. That *extra* argument is ... ``mystuff``!  I know, weird right?  But that's how Python
    works so it's best to just remember it and assume that's alright.  What happens then, at 
    the end of all this is a function call that looks like: ``append(mystuff, 'hello')``
    instead of what you read which is ``mystuff.append('hello')``.
