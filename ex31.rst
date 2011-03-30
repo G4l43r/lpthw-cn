@@ -1,0 +1,41 @@
+Exercise 31: Making Decisions
+*****************************
+
+In the first half of this book you mostly just printed out things and called 
+functions, but everything was basically in a straight line.  Your scripts ran
+starting at the top, and went to the bottom where they ended.  If you 
+made a function you could run that function later, but it still didn't
+have the kind of branching you need to really make decisions.  Now that
+you have ``if``, ``else``, and ``elif`` you can start to make scripts that
+decide things.
+
+In the last script you wrote out a simple set of tests asking some questions.
+In this script you will ask the user questions and make decisions based
+on their answers.  Write this script, and then play with it quite a lot
+to figure it out.
+
+.. literalinclude:: ex/ex31.py
+    :linenos:
+
+A key point here is that you are now putting the ``if-statements`` *inside*
+``if-statements`` as code that can run.  This is very powerful and can be used
+to create "nested" decisions, where one branch leads to another and another.
+
+Make sure you understand this concept of if-statements inside
+if-statements.  In fact, do the extra credit to really nail it.
+
+
+What You Should See
+===================
+
+Here is me playing this little adventure game.  I do not do so well.
+
+.. literalinclude:: ex/ex31.txt
+
+
+Extra Credit
+============
+
+Make new parts of the game and change what decisions people can make.  Expand
+the game out as much as you can before it gets ridiculous.
+

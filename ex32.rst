@@ -1,0 +1,65 @@
+Exercise 32: Loops And Lists
+*************************
+
+You should now be able to do some programs that are much more interesting.
+If you have been keeping up, you should realize that now you can combine
+all the other things you have learned with ``if-statements`` and boolean
+expressions to make your programs do smart things.
+
+However, programs also need to do repetitive things very quickly.  We are going
+to use a ``for-loop`` in this exercise to build and print various lists.  When
+you do the exercise, you will start to figure out what they are.  I won't tell you
+right now.  You have to figure it out.
+
+Before you can use a for-loop, you need a way to *store* the results of loops
+somewhere.  The best way to do this is with a ``list``.  A list is exactly
+what its name says, a container of things that are organized in order.
+It's not complicated; you just have to learn a new syntax.  First, there's how
+you make a list:
+
+.. code-block:: python
+    
+    hairs = ['brown', 'blond', 'red']
+    eyes = ['brown', 'blue', 'green']
+    weights = [1, 2, 3, 4]
+
+What you do is start the list with the ``[`` (left-bracket) which "opens" the
+list.  Then you put each item you want in the list separated by commas, just
+like when you did function arguments.  Lastly you end the list with a ``]``
+(right-bracket) to indicate that it's over.  Python then takes this list and
+all its contents, and assigns them to the variable.
+
+.. warning::
+
+    This is where things get tricky for people who can't program.  Your
+    brain has been taught that the world is flat.  Remember in the last
+    exercise where you put ``if-statements`` inside ``if-statements``?  That
+    probably made your brain hurt because most people do not ponder how to
+    "nest" things inside things.  In programming this is all over the place.
+    You will find functions that call other functions that have ``if-statements``
+    that have lists with lists inside lists.  If you see a structure like this
+    that you can't figure out, take out pencil and paper and break it down
+    manually bit by bit until you understand it.
+
+We now will build some lists using some loops and print them out:
+
+.. literalinclude:: ex/ex32.py
+    :linenos:
+
+
+What You Should See
+===================
+
+.. literalinclude:: ex/ex32.txt
+
+
+Extra Credit
+============
+
+1. Take a look at how you used ``range``.  Look up the ``range`` function to 
+   understand it.
+2. Could you have avoided that ``for-loop`` entirely on line 23 and just assigned
+   ``range(0,6)`` directly to ``elements``?
+3. Find the Python documentation on lists and read about them.  What other
+   operations can you do to lists besides ``append``?
+

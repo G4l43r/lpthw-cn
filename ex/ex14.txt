@@ -1,0 +1,14 @@
+$ python ex14.py Zed
+Hi Zed, I'm the ex14.py script.
+I'd like to ask you a few questions.
+Do you like me Zed?
+> yes
+Where do you live Zed?
+> America
+What kind of computer do you have?
+> Tandy
+
+Alright, so you said 'yes' about liking me.
+You live in 'America'.  Not sure where that is.
+And you have a 'Tandy' computer.  Nice.
+

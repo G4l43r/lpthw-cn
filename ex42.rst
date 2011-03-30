@@ -1,0 +1,133 @@
+Exercise 42: Getting Classy
+***************************
+
+While it's fun to put functions inside of dictionaries, you'd think there'd
+be something in Python that does this for you.  There is and it's the ``class``
+keyword.  Using ``class`` is how you create an even more awesome "dict with functions"
+than the one you made in the last exercise.  Classes have all sorts of powerful
+features and uses that I could never go into in this book.  Instead, you will just
+use them like they are fancy dictionaries with functions.
+
+A programming language that uses classes is called an "Object Oriented
+Programming".  This is an old style of programming where you make "things" and
+you "tell" those things to do work.  You have been doing a lot of this.  A whole
+lot.  You just didn't know it.  Remember when you were doing this:
+
+.. code-block:: python
+
+    stuff = ['Test', 'This', 'Out']
+    print ' '.join(stuff)
+
+You were actually using classes.  The variable ``stuff`` is actually a ``list class``.
+The ``' '.join(stuff)`` is calling the ``join`` function of the string ``' '``
+(just an empty space) is *also* a class, a string class.  It's all classes!
+
+Well, and objects, but let's just skip that word for now.  You will learn what
+those are after you make some classes.  How do you make classes?  Very similar
+to how you made the ``ROOMS`` dict, but easier:
+
+.. code-block:: python
+
+    class TheThing(object):
+
+        def __init__(self):
+            self.number = 0
+
+        def some_function(self):
+            print "I got called."
+
+        def add_me_up(self, more):
+            self.number += more
+            return self.number
+
+    # two different things
+    a = TheThing()
+    b = TheThing()
+
+    a.some_function()
+    b.some_function()
+
+    print a.add_me_up(20)
+    print a.add_me_up(20)
+    print b.add_me_up(30)
+    print b.add_me_up(30)
+
+    print a.number
+    print b.number
+
+.. warning::
+
+    Alright, this is where you start learning about "warts".  Python is an old
+    language with lots of really ugly obnoxious pieces that were bad decisions.
+    To cover up these bad decisions they make new bad decisions and then yell
+    at people to adopt the new bad decisions.  The phrase ``class
+    TheThing(object)`` is an example of a bad decision.  I won't get into it
+    right here, but  you shouldn't worry about why your class has to have
+    ``(object)`` after its name, just type it this way all the time or other
+    Python programmers will yell at you.  We'll get into why later.
+
+You see that ``self`` in the parameters?  You know what that is?  That's right,
+it's the "extra" parameter that Python creates so you can type
+``a.some_function()`` and then it will translate *that* to really be
+``some_function(a)``.  Why use ``self``?  Your function has no idea what you
+are calling any one "instance" of ``TheThing`` or another, you just use a
+generic name ``self``. That way you can write your function and it will always
+work.
+
+You could actually use another name rather than ``self`` but then every Python
+programmer on the planet would hate you, so do not.  Only jerks change things
+like that and I taught you better.  Be nice to people who have to read what you
+write because ten years later all code is horrible.
+
+Next, see the ``__init__`` function?  That is how you setup a Python class with
+internal variables.  You can set them on ``self`` with the ``.`` (period) just
+like I will show you here.  See also how we then use this in ``add_me_up()`` later
+which lets you add to the ``self.number`` you created.  Later you can see how
+we use this to add to our number and print it.
+
+Classes are very powerful, so you should go read about them.  Read everything
+you can and play with them.  You actually know how to use them, you just have
+to try it.  In fact, I want to go play some guitar right now so I'm not going
+to give you an exercise to type.  You are going to go write an exercise
+using classes.
+
+Here's how we would do exercise 41 using classes instead of the thing
+we created:
+
+.. literalinclude:: ex/ex42.py
+    :linenos:
+
+
+What You Should See
+===================
+
+The output from this version of the game should be exactly the same as the
+previous version, and in fact you will notice that some of the code is nearly
+the same.  Compare this new version of the game and with
+the last one so you understand the changes that were made.  Key things to
+really get are:
+
+1. How you made a ``class Game(object)`` and put functions inside it.
+2. How ``__init__`` is a special intialization method that sets up important variables.
+3. How you added functions *to* the class by indenting them so they were deeper under
+   the ``class`` keyword.  This is important so study carefully how indentation creates
+   the class structure.
+4. How you indented again to put the contents of the functions under their names.
+5. How colons are being used.
+6. The concept of ``self`` and how it's used in ``__init__``, ``play``,
+   and ``death``.
+7. Go find out what ``getattr`` does inside ``play`` so that you 
+   understand what's going on with the operation of ``play``.  In fact, try
+   doing this by hand inside Python to really get it.
+8. How a ``Game`` was created at the end and then told to ``play()`` and how that
+   got everything started.
+
+
+Extra Credit
+============
+
+1. Go find out what the ``__dict__`` is and figure out how to get at it.
+2. Try adding some rooms to make sure you know how to work with a class.
+3. Create a two-class version of this, where one is the ``Map`` and the other is the ``Engine``.
+   Hint: ``play`` goes in the ``Engine``.
+

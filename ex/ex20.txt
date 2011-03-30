@@ -1,0 +1,16 @@
+$ python ex20.py test.txt
+First let's print the whole file:
+
+To all the people out there.
+I say I don't like my hair.
+I need to shave it off.
+
+Now let's rewind, kind of like a tape.
+Let's print three lines:
+1 To all the people out there.
+
+2 I say I don't like my hair.
+
+3 I need to shave it off.
+
+$

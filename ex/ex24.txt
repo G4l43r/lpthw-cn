@@ -1,0 +1,22 @@
+$ python ex24.py
+Let's practice everything.
+You'd need to know 'bout escapes with \ that do 
+ newlines and 	 tabs.
+--------------
+
+	The lovely world
+with logic so firmly planted
+cannot discern 
+ the needs of love
+nor comprehend passion from intuition
+and requires an explanation
+
+		where there is none.
+
+--------------
+This should be five: 5
+With a starting point of: 10000
+We'd have 5000000 beans, 5000 jars, and 50 crates.
+We can also do that this way:
+We'd have 500000 beans, 500 jars, and 5 crates.
+$

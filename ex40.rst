@@ -1,0 +1,106 @@
+Exercise 40: Dictionaries, Oh Lovely Dictionaries
+**********************************************
+
+Now I have to hurt you with another container you can use, because once
+you learn this container a massive world of ultra-cool will be yours.  It is
+the most useful container ever:  the dictionary.
+
+Python calls them "dicts", other languages call them, "hashes".  I tend to use
+both names, but it doesn't matter.  What does matter is what they do when compared
+to lists.  You see, a list lets you do this:
+
+.. code-block:: pycon
+
+    >>> things = ['a', 'b', 'c', 'd']
+    >>> print things[1]
+    b
+    >>> things[1] = 'z'
+    >>> print things[1]
+    z
+    >>> print things
+    ['a', 'z', 'c', 'd']
+    >>> 
+
+You can use numbers to "index" into a list, meaning you can use numbers to 
+find out what's in lists.  You should know this by now, but what a ``dict``
+does is let you use *anything*, not just numbers.  Yes, a dict associates one thing
+to another, no matter what it is.  Take a look:
+
+
+.. code-block:: pycon
+
+    >>> stuff = {'name': 'Zed', 'age': 36, 'height': 6*12+2}
+    >>> print stuff['name']
+    Zed
+    >>> print stuff['age']
+    36
+    >>> print stuff['height']
+    74
+    >>> stuff['city'] = "San Francisco"
+    >>> print stuff['city']
+    San Francisco
+    >>> 
+
+You will see that instead of just numbers we're using strings to say what we
+want from the ``stuff`` dictionary.  We can also put new things into the
+dictionary with strings.  It doesn't have to be strings though, we can also do
+this:
+
+.. code-block:: pycon
+
+    >>> stuff[1] = "Wow"
+    >>> stuff[2] = "Neato"
+    >>> print stuff[1]
+    Wow
+    >>> print stuff[2]
+    Neato
+    >>> print stuff
+    {'city': 'San Francisco', 2: 'Neato', 
+        'name': 'Zed', 1: 'Wow', 'age': 36, 
+        'height': 74}
+    >>>
+
+In this one I just used numbers.  I could use anything.  Well almost but just pretend
+you can use anything for now.
+
+Of course, a dictionary that you can only put things in is pretty stupid, so here's 
+how you delete things, with the ``del`` keyword:
+
+.. code-block:: pycon
+    
+    >>> del stuff['city']
+    >>> del stuff[1]
+    >>> del stuff[2]
+    >>> stuff
+    {'name': 'Zed', 'age': 36, 'height': 74}
+    >>>
+
+We'll now do an exercise that you *must* study very carefully.  I want you to type this
+exercise in and try to understand what's going on.  It is a very interesting exercise
+that will hopefully make a big light turn on in your head very soon.
+
+
+.. literalinclude:: ex/ex40.py
+    :linenos:
+
+
+.. warning::  Notice how I use ``themap`` instead of ``map``?  That's because Python
+    has a function called map, so if you try to use that you can have problems later.
+
+
+What You Should See
+===================
+
+.. literalinclude:: ex/ex40.txt
+
+
+
+Extra Credit
+============
+
+1. Go find the Python documentation for dictionaries (a.k.a. dicts, dict) and try to do
+   even more things to them.
+2. Find out what you *can't* do with dictionaries.  A big one is that they do not have order,
+   so try playing with that.
+3. Try doing a ``for-loop`` over them, and then try the ``items()`` function in a ``for-loop``.
+

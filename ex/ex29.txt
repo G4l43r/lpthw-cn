@@ -1,0 +1,7 @@
+$ python ex29.py 
+Too many cats! The world is doomed!
+The world is dry!
+People are greater than equal to dogs.
+People are less than equal to dogs.
+People are dogs.
+$
