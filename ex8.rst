@@ -1,21 +1,19 @@
-Exercise 8: Printing, Printing
+习题 8: 打印, 打印
 ******************************
 
 .. literalinclude:: ex/ex8.py
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 .. literalinclude:: ex/ex8.txt
 
 
-Extra Credit
+加分习题
 ============
 
-1. Do your checks of your work, write down your mistakes, try not to make them 
-   on the next exercise.
-2. Notice that the last line of output uses both single and double 
-   quotes for individual pieces. Why do you think that is? 
+1. 自己检查结果, 记录你犯过的错误, 并且在下个练习中尽量不犯同样的错误.
+2. 注意最后一行程序中既有单引号又有双引号, 你觉得它是如何工作的?
 
