@@ -1,7 +1,7 @@
-Á·Ï° 19: º¯ÊıºÍ±äÁ¿
+ç»ƒä¹  19: å‡½æ•°å’Œå˜é‡
 ************************************
 
-º¯ÊıÕâ¸ö¸ÅÄîÒ²Ğí³ĞÔØÁËÌ«¶àµÄĞÅÏ¢Á¿, ²»¹ı±ğµ£ĞÄ. Ö»Òª¼á³Ö×öÕâĞ©Á·Ï°
+å‡½æ•°è¿™ä¸ªæ¦‚å¿µä¹Ÿè®¸æ‰¿è½½äº†å¤ªå¤šçš„ä¿¡æ¯é‡, ä¸è¿‡åˆ«æ‹…å¿ƒ. åªè¦åšæŒåšè¿™äº›ç»ƒä¹ 
 Functions may have been a mind-blowing amount of information, but do not worry.
 Just keep doing these exercises and going through your checklist from the last
 exercise and you will eventually get it.
