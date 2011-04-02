@@ -1,15 +1,14 @@
-Exercise 35: Branches and Functions
+Exercise 35: 分支和函数
 ********************************
 
-You have learned to do ``if-statements``, functions, and arrays.  Now it's time
-to bend your mind.  Type this in, and see if you can figure out what it's
-doing.
+你已经学会了 ``if语句``, 函数, 还有数组. 现在你要练习扭转一下思维了. 把下面的代码
+写下来, 看你是否能弄懂它实现的是什么功能.
 
 .. literalinclude:: ex/ex35.py
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 Here's me taking too much gold:
@@ -17,7 +16,7 @@ Here's me taking too much gold:
 .. literalinclude:: ex/ex35.txt
 
 
-Extra Credit
+加分习题
 ============
 
 1. Draw a map of the game and how you flow through it.

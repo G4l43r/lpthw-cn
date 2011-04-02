@@ -1,25 +1,24 @@
-ϰ�� 24: ������ϰ
+习题 24: 更多练习
 **************************
 
-You are getting to the end of this section. You should have enough
-Python "under your fingers" to move onto learning about how programming
-really works, but you should do some more practice.  This exercise is
-longer and all about building up stamina.  The next exercise will be
-similar.  Do them, get them exactly right, and do your checks.
+你离这本书第一部分的结尾已经不远, 你应该已经具备了足够的Python基础知识, 可以
+继续学习一些编程的原理了, 但你应该做更多的练习. 这个练习的内容比较长, 它的目的
+是锻炼你的毅力, 下一个习题也差不多是这样的. 好好完成它们, 做到完全正确, 记得仔细
+检查.
 
 .. literalinclude:: ex/ex24.py
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 .. literalinclude:: ex/ex24.txt
 
 
-Extra Credit
+加分习题
 ============
 
-1. Make sure to do your checks:  read it backwards, read it out loud, put comments above confusing parts.
-2. Break the file on purpose, then run it to see what kinds of errors you get.  Make sure you can fix it.
+1. 记得仔细检查结果: 从后往前倒着检查, 把代码朗读出来, 在不清楚的位置加上注解.
+2. 故意把代码改错, 运行并检查会发生什么样的错误. 并且确认你有能力改正这些错误. 
 

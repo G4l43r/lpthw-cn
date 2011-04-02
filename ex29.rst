@@ -1,33 +1,28 @@
-Exercise 29: What If
+习题 29: What If
 ********************
 
-Here is the next script of Python you will enter, which introduces you to
-the ``if-statement``.  Type this in, make it run exactly right, and then 
-we'll try see if your practice has paid off.
+下面是你要写的作业, 这段向你介绍了"if语句". 把这段输入进去, 让它能正确执行, 然后
+我们看看你是否有所收获. 
 
 .. literalinclude:: ex/ex29.py
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 .. literalinclude:: ex/ex29.txt
 
 
 
-Extra Credit
+加分习题
 ============
 
-In this extra credit, try to guess what you think the ``if-statement`` is and
-what it does.  Try to answer these questions in your own words before moving
-onto the next exercise:
+猜猜"if语句"是什么, 是用来做什么的. 在做下一道习题前, 试着用自己的话回答下面的问题:
 
-1. What do you think the ``if`` does to the code under it?
-2. Why does the code under the ``if`` need to be indented 4 spaces?
-3. What happens if it isn't indented?
-4. Can you put other boolean expressions from Ex. 26 in the ``if-statement``? 
-   Try it.
-5. What happens if you change the initial variables for ``people``, ``cats``, and
-   ``dogs``?
+1. 你认为 ``if`` 对于它下一行的代码做了什么?
+2. 为什么 ``if`` 语句的下一行需要4个空格的缩进?
+3. 如果不缩进, 会发生什么事情?
+4. 把习题26中的其它布尔表达式放到``if语句``中会不会也可以运行呢? 试一下.
+5. 如果把变量 ``people``, ``cats``, 和 ``dogs`` 的初始值改掉, 会发生什么事情?
 
