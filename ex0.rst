@@ -1,51 +1,40 @@
-Exercise 0: The Setup
+习题 0: 准备工作
 *********************
 
-This exercise has no code.  It is simply the exercise you complete
-to get your computer setup to run Python.   You should follow these instructions
-as exactly as possible.  For example, Mac OSX computers already have Python 2, so
-do not install Python 3 (or any Python).
+这道习题并没有代码内容, 它的主要目的是让你在计算机上安装好Python.  你应该尽量照着说明进行操作, 例如, Mac OSX默认已经安装了Python 2, 所以就不要在上面安装Python 3 或者别的Python版本了.
 
 
 Mac OSX
 =======
 
-To complete this exercise, complete the following tasks:
+你需要做下列任务来完成这个练习:
 
-1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
-   the ``gedit`` text editor, and install it.
-2. Put gedit (your editor) in your Dock so you can reach
-   it easily.
-    a. Run gedit so we can fix some stupid defaults it has.
-    b. Open ``Preferences`` from the ``gedit menu`` and select the ``Editor`` tab.
-    c. Change ``Tab width:`` to 4.
-    d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
-    e. Turn on "Automatic indentation" as well.
-    f. Open the ``View`` tab and turn on "Display line numbers".
-3. Find your "Terminal" program.  Search for it.  You will find it.
-4. Put your Terminal in your Dock as well.
-5. Run your Terminal program.  It won't look like much.
-6. In your Terminal program, run ``python``.  You run
-   things in Terminal by just typing their name and hitting RETURN.
-7. Hit CTRL-D (^D) and get out of python.
-8. You should be back at a prompt similar to what you had before you typed ``python``.  If not find out why.
-9. Learn how to make a directory in the Terminal.  Search online for help.
-10. Learn how to change into a directory in the Terminal.  Again search online.
-11. Use your editor to create a file in this directory.  You
-    will make the file, "Save" or "Save As...", and pick this directory.
-12. Go back to Terminal using just the keyboard to switch windows.  Look it
-    up if you can't figure it out.
-13. Back in Terminal, see if you can list the directory to see your 
-    newly created file.  Search online for how to list a directory.
+1. 用浏览器打开 http://learnpythonthehardway.org/wiki/ExerciseZero 下载并安装 ``gedit`` 文本编辑器
+2. 把 gedit (也就是你的编辑器) 放到 Dock 中, 以方便日后使用.
+    a. 运行 gedit, 我们要先改掉一些愚蠢的默认设定.
+    b. 从 ``gedit menu`` 中打开 ``Preferences``, 选择 ``Editor`` 页面.
+    c. 将 ``Tab width:`` 改为 4.
+    d. 选择 (确认有勾选到该选项) ``Insert spaces instead of tabs``.
+    e. 然后打开 "Automatic indentation" 选项.
+    f. 转到 ``View`` 页面, 打开 "Display line numbers" 选项.
+3. 找到系统中的 "Terminal" 程序.  到处找找, 你会找到的.
+4. 把 Terminal 也放到 Dock 里面.
+5. 运行 Terminal 程序, 这个程序看上去不怎么地.
+6. 在 Terminal 程序里边运行 ``python``.  运行的方法是输入程序的名字再敲一下回车.
+7. 敲击 CTRL-D (^D) 退出 python.
+8. 这样你就应该退回到敲 ``python`` 前的提示界面了. 如果没有的话自己研究一下为什么.
+9. 学着使用 Terminal 创建一个目录. 你可以上网搜索怎样做.
+10. 学着使用 Terminal 进入一个目录.  同样你可以上网搜索.
+11. 使用你的编辑器在你进入的目录下建立一个文件. 你将建立一个文件, 使用 "Save" 或者 "Save As..." 选项, 然后选择这个目录.
+12. 使用键盘切换回到 Terminal 窗口, 如果不知道怎样使用键盘切换, 你一样可以上网搜索.
+13. 回到 Terminal, 看看你能不能使用命令看到你新建的文件, 上网搜索如何将文件夹中的内容列出来.
 
 
 
-OSX: What You Should See
+OSX: 你应该看到的结果
 ------------------------
 
-Here's me doing the above on my computer in Terminal.  Your computer would be
-different, so see if you can figure out all the differences between what I did
-and what you should do.
+以下是我在自己电脑的 Terminal 中执行上述练习时看到的内容. 和你做的结果会有一些不同, 所以看看你能不能找出两者不同点来, 
 
 .. code-block:: console
     
@@ -58,7 +47,7 @@ and what you should do.
     ~ $ mkdir mystuff
     ~ $ cd mystuff
     mystuff $ ls
-    # ... Use Gedit here to edit test.txt....
+    # ... 使用gedit编辑text.txt ...
     mystuff $ ls
     test.txt
     mystuff $ 
@@ -68,42 +57,35 @@ Windows
 
 .. note:: Contributed by zhmark.
 
-1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
-   the ``gedit`` text editor, and install it. You do not need to be administrator to do this.
-2. Make sure you can get to ``gedit`` easily by putting it on your desktop and/or in
-   ``Quick Launch``. Both options are available during setup.
-    a. Run gedit so we can fix some stupid defaults it has.
-    b. Open ``Edit->Preferences`` select the ``Editor`` tab.
-    c. Change ``Tab width:`` to 4.
-    d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
-    e. Turn on "Automatic indentation" as well.
-    f. Open the ``View`` tab turn on "Display line numbers".
-3. Find your "Terminal" program.  It's called ``Command Prompt``. Alternatively just run ``cmd``. 
-4. Make a shortcut to it on your desktop and/or ``Quick Launch`` for your convenience.
-5. Run your Terminal program.  It won't look like much.
-6. In your Terminal program, run ``python``.  You run things in Terminal by just typing their 
-   name and hitting RETURN.
-    a. If you run ``python`` and it's not there (``python is not recognized..``).  Install it from http://python.org/download 
-    b. *Make sure you install Python 2 not Python 3.*
-    c. You may be better off with ActiveState Python especially when you miss Administrative rights
-7. Hit CTRL-Z (^Z), ``Enter`` and get out of ``python``.
-8. You should be back at a prompt similar to what you had before you typed ``python``.  If not find out why.
-9. Learn how to make a directory in the Terminal.  Search online for help.
-10. Learn how to change into a directory in the Terminal.  Again search online.
-11. Use your editor to create a file in this directory.  Make the file, "Save" or "Save As...", and pick this directory.
-12. Go back to Terminal using just the keyboard to switch windows.  Look it
-    up if you can't figure it out.
-13. Back in Terminal, see if you can list the directory to see your 
-    newly created file.  Search online for how to list a directory.
+1.用浏览器打开 http://learnpythonthehardway.org/wiki/ExerciseZero 下载并安装 ``gedit`` 文本编辑器. 这个操作无需管理员权限.
+2. 把 ``gedit`` 放到桌面或者快速启动栏, 这样你就可以方便地访问到该程序了. 这两条在安装选项中可以看到.
+    a. 运行 gedit, 我们要先改掉一些愚蠢的默认设定.
+    b. 从 ``gedit menu`` 中打开 ``Preferences``, 选择 ``Editor`` 页面.
+    c. 将 ``Tab width:`` 改为 4.
+    d. 选择 (确认有勾选到该选项) ``Insert spaces instead of tabs``.
+    e. 然后打开 "Automatic indentation" 选项.
+    f. 转到 ``View`` 页面, 打开 "Display line numbers" 选项.
+3. 找到 "Terminal" 程序.  它的名字是 ``Command Prompt``. 或者你可以直接运行 ``cmd``. 
+4. 为它创建一个快捷方式, 放到桌面或者快速启动栏中以方便使用.
+5. 运行 Terminal 程序, 这个程序看上去不怎么地.
+6. 在 Terminal 程序里边运行 ``python``.  运行的方法是输入程序的名字再敲一下回车.
+    a. 如果你运行 ``python`` 发现它不存在 (``系统找不到python云云``).  你需要访问 http://python.org/download 并且安装Python.
+    b. *确认你安装的是 Python 2 而不是 Python 3.*
+    c. 你应该不需要安装 ActiveState Python, 尤其是没有管理员权限的时候.
+7. 敲击 CTRL-Z (^Z), 再敲回车以退出 ``python``.
+8. 这样你就应该退回到敲 ``python`` 前的提示界面了. 如果没有的话自己研究一下为什么.
+9. 学着使用 Terminal 创建一个目录. 你可以上网搜索怎样做.
+10. 学着使用 Terminal 进入一个目录.  同样你可以上网搜索.
+11. 使用你的编辑器在你进入的目录下建立一个文件. 你将建立一个文件, 使用 "Save" 或者 "Save As..." 选项, 然后选择这个目录.
+12. 使用键盘切换回到 Terminal 窗口, 如果不知道怎样使用键盘切换, 你一样可以上网搜索.
+13. 回到 Terminal, 看看你能不能使用命令看到你新建的文件, 上网搜索如何将文件夹中的内容列出来.
 
 
 .. warning::
 
-    Windows is a big problem for Python.  Sometimes you install Python and one
-    computer will have no problems, and another computer will be missing important
-    features.  If you have problems, please visit: http://docs.python.org/faq/windows.html
+    对于 Python 来说 Windows 是个大问题. 有时你在一台电脑上装得好好的, 但在另外一台电脑上却会有问题. 如果碰到问题的话, 你可以参考: http://docs.python.org/faq/windows.html
 
-Windows: What You Should See
+Windows: 你应该看到的结果
 --------------------------
 
 
@@ -120,10 +102,10 @@ Windows: What You Should See
 
     C:\Documents and Settings\you>cd mystuff
 
-    ... Here you would use gedit to make test.txt in mystuff ...
+    ... 使用gedit创建和编辑text.txt ...
 
     C:\Documents and Settings\you\mystuff>
-       <bunch of unimportant errors if you istalled it as non-admin - ignore them - hit Enter>
+       < 如果你没有使用管理员权限安装的话, 你可能会看到一大堆无关紧要的错误信息 -- 你只要忽略它们既可 -- 敲回车键继续 >
     C:\Documents and Settings\you\mystuff>dir
      Volume in drive C is
      Volume Serial Number is 085C-7E02
@@ -138,47 +120,37 @@ Windows: What You Should See
 
     C:\Documents and Settings\you\mystuff> 
 
-You will probably see a very different prompt, Python information, and other stuff but this is
-the general idea.  If your system is different let us know at http://learnpythonthehardway.org
-and we'll fix it.
+你看到的命令行信息, Python信息, 以及其它一些东西可能会非常不一样, 不过应该大致不差, 你可以通过 http://learnpythonthehardway.org 把你找到的错处告诉我们, 我们会改过来.
 
 
 Linux
 =====
 
-Linux is a varied operating system with a bunch of different ways to install software.
-I'm assuming if you are running Linux then you know how to install packages so here are
-your instructions:
+Linux 系统可谓五花八门, 安装软件的方式也各有不同. 我们假设作为Linux用户的你已经知道如何安装软件包了, 以下是给你的操作说明:
 
-1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
-   the ``gedit`` text editor, and install it.
-2. Make sure you can get to ``gedit`` easily
-   by putting it in your window manager's menu.
-    a. Run gedit so we can fix some stupid defaults it has.
-    b. Open ``Preferences`` select the ``Editor`` tab.
-    c. Change ``Tab width:`` to 4.
-    d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
-    e. Turn on "Automatic indentation" as well.
-    f. Open the ``View`` tab turn on "Display line numbers".
-3. Find your "Terminal" program.  It could be called ``GNOME Terminal``, ``Konsole``, or ``xterm``.
-4. Put your Terminal in your Dock as well.
-5. Run your Terminal program.  It won't look like much.
-6. In your Terminal program, run ``python``.  You run
-   things in Terminal by just typing their name and hitting RETURN.
-   a. If you run ``python`` and it's not there, install it.  *Make sure you install Python 2 not Python 3.*
-7. Hit CTRL-D (^D) and get out of ``python``.
-8. You should be back at a prompt similar to what you had before you typed ``python``.  If not find out why.
-9. Learn how to make a directory in the Terminal.  Search online for help.
-10. Learn how to change into a directory in the Terminal.  Again search online.
-11. Use your editor to create a file in this directory.  Typically you
-    will make the file, "Save" or "Save As..", and pick this directory.
-12. Go back to Terminal using just the keyboard to switch windows.  Look it
-    up if you can't figure it out.
-13. Back in Terminal see if you can list the directory to see your 
-    newly created file.  Search online for how to list a directory.
+1. 1. 用浏览器打开 http://learnpythonthehardway.org/wiki/ExerciseZero 下载并安装 ``gedit`` 文本编辑器
+2. 把 gedit (也就是你的编辑器) 放到窗口管理器显见的位置, 以方便日后使用.
+    a. 运行 gedit, 我们要先改掉一些愚蠢的默认设定.
+    b. 从 ``gedit menu`` 中打开 ``Preferences``, 选择 ``Editor`` 页面.
+    c. 将 ``Tab width:`` 改为 4.
+    d. 选择 (确认有勾选到该选项) ``Insert spaces instead of tabs``.
+    e. 然后打开 "Automatic indentation" 选项.
+    f. 转到 ``View`` 页面, 打开 "Display line numbers" 选项.
+3. 找到 "Terminal" 程序.  它的名字可能是 ``GNOME Terminal``, ``Konsole``, 或者 ``xterm``.
+4. 把 Terminal 也放到 Dock 里面.
+5. 运行 Terminal 程序, 这个程序看上去不怎么地.
+6. 在 Terminal 程序里边运行 ``python``.  运行的方法是输入程序的名字再敲一下回车.
+   a. 如果你运行 ``python`` 发现它不存在的话, 你需要安装它, 而且要 *确认你安装的是 Python 2 而非 Python 3.*
+7. 敲击 CTRL-D (^D) 以退出 ``python``.
+8. 这样你就应该退回到敲 ``python`` 前的提示界面了. 如果没有的话自己研究一下为什么.
+9. 学着使用 Terminal 创建一个目录. 你可以上网搜索怎样做.
+10. 学着使用 Terminal 进入一个目录.  同样你可以上网搜索.
+11. 使用你的编辑器在你进入的目录下建立一个文件. 你将建立一个文件, 使用 "Save" 或者 "Save As..." 选项, 然后选择这个目录.
+12. 使用键盘切换回到 Terminal 窗口, 如果不知道怎样使用键盘切换, 你一样可以上网搜索.
+13. 回到 Terminal, 看看你能不能使用命令看到你新建的文件, 上网搜索如何将文件夹中的内容列出来.
 
 
-Linux: What You Should See
+Linux: 你应该看到的结果
 --------------------------
 
 
@@ -191,46 +163,31 @@ Linux: What You Should See
     >>>
     [~]$ mkdir mystuff
     [~]$ cd mystuff
-    # ... Use gedit here to edit test.txt ...
+    # ... 使用gedit编辑text.txt ...
     [mystuff]$ ls
     test.txt
     [mystuff]$ 
 
-You will probably see a very different prompt, Python information, and other stuff but this is
-the general idea.
+你看到的命令行信息, Python信息, 以及其它一些东西可能会非常不一样, 不过应该大致不差就是了.
 
 
-Warnings For Beginners
+给新手的告诫
 ======================
 
-You are done with this exercise.  This exercise might be hard for you
-depending on your familiarity with your computer.  If it is difficult,
-take the time to read and study and get through it, because until you can do
-these very basic things you will find it difficult to get much programming done.
+你已经完成了这节练习. 取决于你对计算机的熟悉程度, 这个练习对你而言可能会有些难. 如果你觉得有难度的话, 你要自己克服困难, 多花点时间学习一下. 因为如果你不会这些基础操作的话, 编程对你来说将会更难学习.
 
-If a programmer tells you to use ``vim`` or ``emacs``, tell them no.  These
-editors are for when you are a better programmer.  All you need right now
-is an editor that lets you put text into a file.  We will use ``gedit`` because
-it is simple and the same on all computers.  Professional programmers use
-``gedit`` so it's good enough for you starting out.
+如果有程序员告诉你让你使用 ``vim`` 或者 ``emacs``, 那你应该拒绝他们. 当你成为一个更好的程序员的时候, 这些编辑器才会适合你使用. 你现在需要的只是一个可以编辑文字的编辑器. 我们使用  ``gedit`` 是因为它很简单, 而且在不同的系统上面使用起来是一样的. 就连专业程序员也会使用 ``gedit`` , 所以对于初学而言它已经足够了.
 
-A programmer may try to get you to install Python 3 and learn that.  You
-should tell them, "When all of the python code on your computer is Python 3,
-then I'll try to learn it."  That should keep them busy for about 10 years.
+也许有程序员会告诉你让你安装和学习 Python 3.  你应该告诉他们 "等你电脑里的所有 python 代码都支持 Python 3 了, 我试着学学吧. "  你这句话足够他们忙活个十来年的了.
 
-A programmer will eventually tell you to use Mac OSX or Linux.  If the programmer
-likes fonts and typography, they'll tell you to get a Mac OSX computer.  If they
-like control and have a huge beard, they'll tell you to install Linux.  Again,
-use whatever computer you have right now that works.  All you need is ``gedit``,
-a Terminal, and ``python``.
+总有一天你会听到有程序员建议你使用 Mac OSX 或者 Linux.  如果他喜欢字体美观, 他会告诉你让你弄台 Mac OSX 计算机. 如果他们喜欢操作控制而且留了一部大胡子, 他会让你安装Linux. 这里再次向你说明, 只要是一台手上能用的电脑就可以了. 你需要的只有三样东西: ``gedit``, 一个命令行终端, 还有 ``python``.
 
-Finally the purpose of this setup is so you can do three things very reliably
-while you work on the exercises:
+最后要说的是, 这节练习的准备工作的目的, 是让你可以在以后的练习中顺利地做到下面的这些事情:
 
-1. *Write* exercises using ``gedit``.
-2. *Run* the exercises you wrote.
-3. *Fix* them when they are broken.
-4. Repeat.
+1. 使用 ``gedit`` *编写* 代码.
+2. *运行* 你写的习题.
+3. *修改* 错误的习题.
+4. 重复上述步骤.
 
-Anything else will only confuse you, so stick to the plan.
+其他的事情只会让你更困惑, 所以还是坚持按计划进行吧.
 
