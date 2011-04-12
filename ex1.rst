@@ -1,80 +1,70 @@
-Exercise 1: A Good First Program
+练习 1: 第一个程序
 ********************************
 
-Remember, you should have spent a good amount of time in Exercise 0 learning
-how to install a text editor, run the text editor, run the Terminal, and
-work with both of them.  If you haven't done that then do not go on. You will
-not have a good time.  This is the only time I'll start an exercise with a 
-warning that you should not skip or get ahead of yourself.
+你应该在练习0中花了不少的时间, 学会了如何安装文本编辑器, 运行文本编辑器, 以及如何运行命令行终端, 
+而且你已经花时间熟悉了这些工具. 你不可以跳过前一个练习的内容直接进行下面的内容, 这也是本书唯一的一次这样的警示.
 
 .. literalinclude:: ex/ex1.py
     :linenos:
 
-Type the above into a single file named ``ex1.py``.  This is important
-as python works best with files ending in ``.py``.
+将上面的内容写到一个文件中, 取名为 ``ex1.py``. 注意这个命名方式, Python文件最好以 ``.py`` 结尾.
 
 .. warning::
 
-    Do not type the numbers on the far left of these lines.  Those are called
-    "line numbers" and they are used by programmers to talk about what part of 
-    a program is wrong.  Python will tell you errors related to these line numbers,
-    but *you* do not type them in.
+    不要把上面内容最左边的数字也输进去. 这些是所谓的"行号(line numbers)", 程序员在谈论到程序中某个位置
+    的错误时会使用到行号. Python在程序出错时也会以行号的方式告诉你错误信息, 但是*你*不需要输入这些行号.
 
 
-Then in Terminal *run* the file by typing:
+然后在命令行终端通过输入以下内容来*运行*这段代码:
 
 .. code-block:: bash
 
     python ex1.py
 
 
-If you did it right then you should see the same output I have below.  If not,
-you have done something wrong.  No, the computer is not wrong.
+如果你写对了的话, 你应该看到和下面一样的内容. 如果不一样, 那就是你弄错了什么东西.
+不是计算机出错了, 计算机没错.
 
-What You Should See
+你应该看到的内容
 ===================
 
 .. literalinclude:: ex/ex1.txt
 
-You may see the name of your directory before the ``$`` which is fine,
-but if your output is not exactly the same, find out why and fix it.
+你也许会看到 ``$`` 前面会显示你所在的目录的名字, 这不是问题, 但如果你的输出不一样
+的话, 你需要找出为什么会不一样, 然后把程序改对.
 
-If you have an error it will look like this:
+如果你看到类似如下的错误信息:
 
 .. literalinclude:: ex/ex1.err
     :language: python
     :linenos:
 
-It's important that you can read these since you will be making many of 
-these mistakes.  Even I make many of these mistakes.  Let's look at this
-line-by-line.
+你应该能看明白这些内容, 这是很重要的一点, 因为你以后还会犯类似的错误. 就是我现在也会
+犯这样的错误. 让我们一行一行来看.
 
-1. Here we ran our command in the terminal to run the ``ex1.py`` script.
-2. Python then tells us that the file ``ex1.py`` has an error on line 3.
-3. It then prints this line for us.
-4. Then it puts a ``^`` (caret) character to point at where the problem is.
-   Notice the missing ``"`` (double-quote) character?
-5. Finally, it prints out a "SyntaxError" and tells us something about what might
-   be the error.  Usually these are very cryptic, but if you copy that text into
-   a search engine, you will find someone else who's had that error and you can probably
-   figure out how to fix it.
+1. 首先我们在命令行终端输入命令来运行 ``ex1.py`` 脚本.
+2. Python 告诉我们 ``ex1.py`` 文件的第3行有一个错误.
+3. 然后这一行的内容被打印了出来.
+4. 然后Python打印出一个 ``^`` (井号caret) 符号, 用来指示出错的位置.
+   注意到少了一个 ``"`` (双引号, double-quote) 符号了吗??
+5. 最后, 它打印出了一个 "SyntaxError (语法错误)" 告诉你究竟是什么样的错误. 通常这些错误信息
+   都非常难懂, 不过你可以把错误信息的内容复制到搜索引擎里, 然后你就能找到别人也遇到过这样的错误,
+   而且你也许能找到如何解决这个问题.
 
 
-Extra Credit
+加分习题
 ============
 
-You will also have ``Extra Credit``. The Extra Credit contains things you
-should *try* to do.  If you can't, skip it and come back later.
+你还会有 ``加分习题`` 需要完成. 加分习题里边的内容是供你*尝试*做的. 如果你觉得做不出来, 你可以暂时
+跳过, 过段时间再回来做.
 
-For this exercise, try these things:
+在这个练习中, 试试这些东西:
 
-1. Make your script print another line.
-2. Make your script print only one of the lines.
-3. Put a '#' (octothorpe) character at the beginning of a line.  What did it do?
-   Try to find out what this character does.
+1. 让你的脚本再多打印一行.
+2. 让你的搅拌只打印一行.
+3. 在一行的起始位置放一个 '#' (octothorpe) 符号. 它的作用是什么? 自己研究一下.
 
-From now on, I won't explain how each exercise works unless an exercise is
-different.
+从现在开始, 除非特别情况, 我将不再解释每个习题的工作原理了.
 
 
 .. note::
