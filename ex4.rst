@@ -1,4 +1,4 @@
-Exercise 4: Variables And Names
+习题 4: Variables And Names
 *******************************
 
 Now you can print things with ``print`` and you can do math.  The next step is

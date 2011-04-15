@@ -1,48 +1,44 @@
-Exercise 3: Numbers And Math
+习题 3: 数字和数学计算
 ****************************
 
-Every programming language has some kind of way of doing numbers and math.
-Do not worry, programmers lie frequently about being math geniuses when they
-really aren't.  If they were math geniuses, they would be doing math, not
-writing ads and social network games to steal people's money.
+每一种编程语言都包含处理数字和进行数学计算的方法. 不必担心, 程序员经常撒谎说他们是多么牛的
+数学天才, 其实他们根本不是. 如果他们真是数学天才, 他们早就去从事数学相关的行业了, 而不是
+写写广告程序和社交网络游戏, 从人们身上偷赚点小钱而已. 
 
-This exercise has lots of math symbols.  Let's name them right away so you know
-what they are called.  As you type this one in, say the names.  When saying them
-feels boring you can stop saying them.  Here are the names:
+这章练习里有很多的数学运算符号. 我们来马上看一遍它们都叫什么名字. 你要一边写一边念出它们的
+名字来, 直到你念烦了为止. 名字如下:
 
-* ``+``           plus
-* ``-``           minus
-* ``/``           slash
-* ``*``           asterisk
-* ``%``           percent
-* ``<``           less-than
-* ``>``           greater-than
-* ``<=``          less-than-equal
-* ``>=``          greater-than-equal
+* ``+``           plus                  加号
+* ``-``           minus                 减号
+* ``/``           slash                 斜杠
+* ``*``           asterisk              星号
+* ``%``           percent               百分号
+* ``<``           less-than             小于号
+* ``>``           greater-than          大于号
+* ``<=``          less-than-equal       小于等于号
+* ``>=``          greater-than-equal    大于等于号
 
-Notice how the operations are missing?  After you type in the code for this
-exercise, go back and figure out what each of these does and complete the
-table.  For example, ``+`` does addition.
+有没有注意到以上只是些符号, 没有运算操作呢? 写完下面的练习代码后, 再回到上面的列表, 写出每
+个符号的作用. 例如 ``+`` 是用来做加法运算的. 
 
 .. literalinclude:: ex/ex3.py
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 .. literalinclude:: ex/ex3.txt
 
 
-Extra Credit
+加分习题
 ============
 
-1. Above each line, use the ``#`` to write a comment to yourself explaining what the line does.
-2. Remember in Exercise 0 when you started python?  Start python this way 
-   again and using the above characters and what you know, use python as a calculator.
-3. Find something you need to calculate and write a new ``.py`` file that does it.
-4. Notice the math seems "wrong"?  There are no fractions, only whole numbers.
-   Find out why by researching what a "floating point" number is.
-5. Rewrite ``ex3.py`` to use floating point numbers so it's more accurate (hint: 20.0 is floating point).
+1. 使用 ``#`` 在代码每一行的前一行为自己写一个注解, 说明一下这一行的作用.
+2. 记得开始时的<练习 0>吧?  用里边的方法把 Python 运行起来, 然后使用刚才学到的运算符号,  把
+   Python当做计算器玩玩.
+3. 自己找个想要计算的东西, 写一个 ``.py`` 文件把它计算出来.
+4. 有没有发现计算结果是"错"的呢?  计算结果只有整数, 没有小数部分. 研究一下这是为什么, 搜索一下"浮点数(floating point number)""是什么东西.
+5. 使用浮点数重写一遍 ``ex3.py`` , 让它的计算结果更准确. (提示: 20.0 是一个浮点数).
 
 
