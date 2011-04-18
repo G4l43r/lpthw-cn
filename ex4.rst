@@ -1,4 +1,4 @@
-习题 4: Variables And Names
+习题 4: 变量和命名
 *******************************
 
 Now you can print things with ``print`` and you can do math.  The next step is

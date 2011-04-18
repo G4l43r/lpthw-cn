@@ -1,27 +1,24 @@
-Exercise 2: Comments And Pound Characters
+习题 2: 注释和井号
 *****************************************
 
-Comments are very important in your programs.  They are used to tell you
-what something does in English, and they also are used to disable parts
-of your program if you need to remove them temporarily.  Here's how you
-use comments in Python:
+程序里的注释是很重要的. 它们可以用自然语言告诉你某段代码的功能是什么. 在你想要临时移除一段
+代码时, 你还可以用注解的方式将这段代码临时禁用. 接下来的练习将让你学会注释:
 
 .. literalinclude:: ex/ex2.py
     :language: python
     :linenos:
 
-What You Should See
+你应该看到的结果
 ===================
 
 .. literalinclude:: ex/ex2.txt
 
 
-Extra Credit
+加分习题
 ============
 
-1. Find out if you were right about what the # character does and make sure you know what it's called (octothorpe or pound character).
-2. Take your ``ex2.py`` file and review each line going backwards.  Start at the last line, and check each word in reverse against what you should have typed.
-3. Did you find more mistakes?  Fix them.
-4. Read what you typed above out loud, including saying each character by its name.  Did you find more mistakes?  Fix them.
-
+1. 弄清楚"#"符号的作用. 而且记住它的名字. (中文为井号, 英文为octothorpe或者pound character).
+2. 打开你的 ``ex2.py`` 文件, 从后往前逐行检查. 从最后一行开始, 倒着逐个单词单词检查回去.
+3. 有没有发现什么错误呢? 有的话就改正过来.
+4. 朗读你写的习题, 把每个字符都读出来. 有没有发现更多的错误呢? 有的话也一样改正过来.
 
