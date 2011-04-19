@@ -1,40 +1,36 @@
-Exercise 5: More Variables And Printing
-***************************************
+联系 5: 更多的变量和打印
+************************
 
-Now we'll do even more typing of variables and printing them out.  This time
-we'll use something called a "format string".  Every time you put ``"``
-(double-quotes) around a piece of text you have been making a *string*.  A string
-is how you make something that your program might give to a human.  You print
-them, save them to files, send them to web servers, all sorts of things.
+我们现在要键入更多的变量并且把它们打印出来. 这次我们将使用一个叫"格式化
+字符串"的东西. 每一次你使用``"``把一些文本引用起来, 你就建立了一个字符串. 
+字符串是程序将信息展示给人的方式. 你可以打印它们, 可以将它们写入文件, 还
+可以将它们发送给网站服务器, 很多事情都是通过字符串交流实现的.
 
-Strings are really handy, so in this exercise you will learn how to
-make strings that have variables embedded in them.  You embed variables
-inside a string by using specialized format sequences and then putting
-the variables at the end with a special syntax that tells Python, "Hey,
-this is a format string, put these variables in there."
+字符串是非常好用的东西, 所以再这个练习中你将学会如何创建包含变量内容的字
+符串. 你使用专门的格式和语法把变量放到字符串里, 相当于来告诉python, "嘿, 
+这是一个格式化字符串, 把这些变量放到那几个位置." 
 
-As usual, just type this in even if you do not understand it and make it
-exactly the same.
+一样的, 即使你不懂这些内容, 只要一字不差地键入就可以了.
 
 .. literalinclude:: ex/ex5.py
     :linenos:
 
 
-What You Should See
-===================
+你应该看到的内容
+================
 
 .. literalinclude:: ex/ex5.txt
 
 
 
-Extra Credit
-============
+额外奖励
+========
 
-1. Change all the variables so there isn't the ``my_`` in front.  
-   Make sure you change the name everywhere, not just where you used ``=`` to set them.
-2. Try more format characters.  ``%r`` is a very useful one.  It's like saying "print this no matter what".
-3. Search online for all of the Python format characters.
-4. Try to write some variables that convert the inches and pounds to centimeters and kilos.
-   Do not just type in the measurements. Work out the math in Python.
-
+1. 修改所有的变量名字, 把它们前面的``my_``去掉.  确认将每一个地方的都改掉, 
+   不只是你使用``=``赋值过的地方.
+2. 试着使用更多的格式化字符. ``%r``是非常有用的一个, 它的含义是"不管什么都
+   打印出来".
+3. 在网上搜索所有的Python格式化字符.
+4. 试着使用变量将英寸和磅转换成厘米和千克. 不要直接键入答案, 使用Python的
+   计算功能来完成.
 
