@@ -1,127 +1,98 @@
-The Hard Way Is Easier
+笨办法更简单
 **********************
 
-This simple book is meant to get you started in programming.  The title says
-it's the hard way to learn to write code; but it's actually not.  It's only the
-"hard" way because it's the way people *used* to teach things.  With the help
-of this book, you will do the incredibly simple things that all programmers need
-to do to learn a language:
+这本小书的目的是让你起步编程. 虽然书名叫"笨办法", 但其实并非如此. 所谓的笨办法是
+指本书教授的方式. 在这本书的帮助下, 你将通过非常简单的练习学会一门编程语言, 练习
+是每个程序员的必经之路:
 
-1. Go through each exercise.
-2. Type in each sample *exactly*.
-3. Make it run.
+1. 做每一道习题
+2. *一字不差* 地写出每一个程序
+3. 让程序运行起来
 
-That's it.  This will be *very* difficult at first, but stick with it.  If you
-go through this book, and do each exercise for one or two hours a night, you will
-have a good foundation for moving onto another book.  You might not really
-learn "programming" from this book, but you will learn the foundation skills you
-need to start learning the language.
+就是这样了. 刚开始这对你来说会 *非常* 难, 但你需要坚持下去. 如果你通读了这本书, 每晚花个一两小时做做习题, 你可以为自己读下一本编程书籍打下良好的基础. 通过这本书
+你学到的可能不是真正的编程, 但你会学到最基本的学习方法. 
 
-This book's job is to teach you the three most essential skills that a
-beginning programmer needs to know: Reading and Writing, Attention to Detail,
-Spotting Differences.
+这本书的目的是教会你编程新手所需的三种最重要的技能: 读和写, 注重细节, 发现不同.
 
 
-Reading and Writing
+读和写
 ===================
 
-It seems stupidly obvious, but, if you have a problem typing, you will have a
-problem learning to code.  Especially if you have a problem typing the fairly
-odd characters in source code. Without this simple skill you will be unable to
-learn even the most basic things about how software works.
+很显然, 如果你连打字都成问题的话, 那你学习编程也会成问题. 尤其如果你连程序
+源代码中的那些奇怪字符都打不出来的话, 就根本别提编程了. 没有这样基本技能的话, 
+你将连最基本的软件工作原理都难以学会.
 
-Typing the code samples and getting them to run will help you learn the names of
-the symbols, get familiar with typing them, and get you reading the language.
+将代码写下来并且运行起来的过程将帮助你记住各种符号的名字, 对他们熟悉起来, 从而
+让你熟悉编程语言.
 
-Attention to Detail
+注重细节
 ===================
 
-The one skill that separates bad programmers from good programmers is attention
-to detail.  In fact, it's what separates the good from the bad in any profession.
-Without paying attention to the tiniest details of your work, you will miss key
-elements of what you create.  In programming, this is how you end up
-with bugs and difficult-to-use systems.
+区分好程序员和差程序员的最重要的一个技能就是对于细节的注重程度. 事实上这是任何
+行业区分好坏的标准. 如果缺乏对于工作的每一个微小细节的注意, 你的工作成果将缺乏
+重要的元素. 以编程来讲, 这样你得到的结果只能是毛病多多难以使用的软件.
 
-By going through this book, and copying each example *exactly*, you will be
-training your brain to focus on the details of what you are doing, as you are doing it.
+通过将本书里的每一个例子 *一字不差* 地打出来, 你将通过实践训练自己, 让自己
+集中精力到你工作的细节上面, 
 
 
-Spotting Differences
+发现不同
 ====================
 
-A very important skill -- that most programmers develop over time -- is the ability to
-visually notice differences between things.  An experienced programmer can take
-two pieces of code that are slightly different and immediately start pointing
-out the differences.  Programmers have invented tools to make this even
-easier, but we won't be using any of these.  You first have to train your
-brain the hard way, then you can use the tools.
+程序员长年累月培养起来的一个重要技能, 就是注意到东西之间的不同点. 有经验的程序员
+拿着两份仅有细微不同的程序, 可以立即指出里边的不同点来. 程序员甚至造出工具来让
+这件事更加容易, 不过我们不会用到这些工具. 首先你要用笨办法训练自己, 然后你才可以
+使用这些工具.
 
-While you do these exercises, typing each one in, you will be making mistakes.
-It's inevitable; even seasoned programmers would make a few.  Your
-job is to compare what you have written to what's required, and fix all the
-differences.  By doing so, you will train yourself to notice mistakes,
-bugs, and other problems.
+在你做这些练习, 打字进去的时候, 你一定会写错东西, 这是不可避免的, 即使有经验的
+程序员也会偶尔写错. 你的任务是把自己写的东西和要求的正确答案对比, 把所有的不同点
+都修正过来. 这样的过程可以训练你, 让你对于错误和bug更加敏感. 
 
 
-Do Not Copy-Paste
+不要复制粘贴
 =================
 
-You must *type* each of these exercises in, manually.  If you copy and paste,
-you might as well just not even do them.  The point of these exercises is to
-train your hands, your brain, and your mind in how to read, write, and see
-code.  If you copy-paste, you are cheating yourself out of the effectiveness of
-the lessons.
+你必须手动将每个练习输进去. 如果你复制粘贴的话, 那就相当于你根本什么都没有做.
+这些习题的目的是训练你的双手, 你的大脑, 还有你的思维, 让你能读, 写, 观察代码. 
+如果你复制粘贴, 那你就是欺骗自己, 而且这些练习的效果将大打折扣.
 
 
-A Note On Practice And Persistence
+对于坚持练习的一点提示
 ==================================
 
-While you are studying programming, I'm studying how to play guitar.  I
-practice it every day for at least 2 hours a day.  I play scales, chords, and
-arpeggios for an hour at least and then learn music theory, ear training, songs
-and anything else I can.  Some days I study guitar and music for 8 hours because I
-feel like it and it's fun.  To me repetitive practice is natural and just how
-to learn something.  I know that to get good at anything you have to practice
-every day, even if I suck that day (which is often) or it's difficult. Keep
-trying and eventually it'll be easier and fun.
+在你通过这本书学习编程时, 我正在学习弹吉他. 我每天至少训练2小时. 至少花一个小时
+练习音阶, 和声以及琶音, 剩下的时间用来学习音乐理论和歌曲, 以及训练听力等. 有时我
+一天会花上8个小时, 因为我觉得这是一件有趣的事情. 对我来说, 要学好一样东西, 每天
+的练习是必不可少的. 就算这天个人状态很差, 或者说学习的课题实在太难, 你也不必介意. 
+只要坚持尝试, 总有一天困难的会变成容易的, 枯燥也会变得有趣的.
 
-As you study this book, and continue with programming, remember that anything
-worth doing is difficult at first.  Maybe you are the kind of person who is
-afraid of failure so you give up at the first sign of difficulty.
-Maybe you never learned self-discipline so you can't do anything that's
-"boring".  Maybe you were told that you are "gifted" so you never attempt
-anything that might make you seem stupid or not a prodigy.  Maybe you are
-competitive and unfairly compare yourself to someone like me who's been
-programming for 20+ years.
+在你通过这本书学习编程的过程中要记住一点, 就是所谓的万事开头难, 有价值的事情尤其
+如此. 也许你是一个害怕失败的人, 一碰到困难就想放弃. 也许你是一个缺乏自律的人, 一
+碰到"无聊"的事情就不想上手. 也许因为有人夸你"有天分"而让你自视甚高, 不愿意做这些
+看上去很笨拙的事情, 怕有负你"神童"的称号. 也许你太过激进, 把自己跟有20多年经验的
+编程老手相比, 让自己失去了信心.
 
-Whatever your reason for wanting to quit, *keep at it*.  Force yourself.  If
-you run into an Extra Credit you can't do, or a lesson you just do not understand, then
-skip it and come back to it later.  Just keep going because with programming
-there's this very odd thing that happens.
+不管是什么原因, 你一定要 *坚持下去*. 如果你碰到做不出来的加分习题, 或者碰到一节
+看不懂的习题, 你可以暂时跳过去, 晚点回来再看. 只要坚持下去, 因为会有这样的异事
+发生.
 
-At first, you will not understand anything.  It'll be weird, just like with
-learning any human language.  You will struggle with words, and not know what
-symbols are what, and it'll all be very confusing.  Then one day *BANG* your
-brain will snap and you will suddenly "get it".  If you keep doing the exercises
-and keep trying to understand them, you will get it.  You might not be a master
-coder, but you will at least understand how programming works.
+一开始, 你可能什么都看不懂. 这会让你感觉很奇怪, 就像学习人类的自然语言一样. 你
+会发现很难记住一些单词和特殊符号的用法, 而且会经常感到很迷茫, 知道有一天忽然
+一下子, 你会觉得豁然开朗, 以前不明白的东西忽然就明白了. 如果你坚持练习下去, 坚持
+去上下求索, 你最终会学会的. 也许你不会成为一个编程大师, 但你至少会明白程序是怎么
+工作的. 
 
-If you give up, you won't ever reach this point.  You will hit the first
-confusing thing (which is everything at first) and then stop.  If you keep
-trying, keep typing it in, trying to understand it and reading about it, 
-you will eventually get it.
+如果你放弃的话, 你失去达到这个程度的机会. 你会在第一次碰到不明白的东西时(几乎
+是所有的东西)放弃. 如果你坚持尝试, 坚持写习题, 试着读懂习题的话, 你最终一定会
+明白里边的内容.
 
-But, if you go through this whole book, and you still do not understand how to
-code, at least you gave it a shot.  You can say you tried your best and a
-little more and it didn't work out, but at least you tried.  You can be proud
-of that.
+但是, 就算你通读了这本书, 你还是不知道编程时怎么回事, 至少你尝试过了. 你可以说
+你已经尽过力但成效不佳, 但至少你尝试过了. 这也是一件值得你骄傲的事情. 
 
 
-License
+许可协议
 =======
 
-This book is Copyright (C) 2010 by Zed A. Shaw.  You are free to distribute
-this book to anyone you want, so long as you do *not* charge anything for it,
-*and* it is not altered.  You must give away the book in its entirety, or not at
-all.
-
+本书版权声明为 Copyright (C) 2010 by Zed A. Shaw.  你可以自由分发这本书给任何人, 
+只要你 *不* 收取任何费用, *而且* 不修改任何内容. 你只可以, 而且必须完整原封不动
+地分发这本书.
