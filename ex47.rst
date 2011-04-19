@@ -1,34 +1,30 @@
-Exercise 47: Automated Testing
+练习 47: 自动化测试
 ******************************
 
-Having to type commands into your game over and over to make sure
-it's working is annoying.  Wouldn't it be better to write little pieces of code
-that test your code?  Then when you make a change, or add a new thing to your
-program, you just "run your tests" and the tests make sure things are still 
-working.  These automated tests won't catch all your bugs, but they will 
-cut down on the time you spend repeatedly typing and running your code.
+为了确认游戏的功能是否正常, 你需要一遍一遍地在你的游戏中输入命令. 这个过程是很
+让人烦躁的. 如果能写一小段代码用来测试你的代码岂不是更好? 然后只要你对程序做了
+任何修改, 或者添加了什么新东西, 你只要"跑一下你的测试", 而这些测试能确认程序依
+然能正确运行. 这些自动测试不会抓到所有的bug, 但可以让你无需重复输入命令运行你的
+代码, 从而为你节约很多时间.
 
-Every exercise after this one will not have a ``What You Should See`` section,
-but instead it will have a ``What You Should Test`` section.  You will be writing
-automated tests for all of your code starting now, and this will hopefully make you
-an even better programmer.
+从这一章开始, 以后的练习将不会有"你应该看到的结果"这一节, 取而代之的是一个"你应
+该测试的东西"一节. 从现在开始, 你需要为自己写的所有代码写自动化测试, 而这将让你
+成为一个更好的程序员.
 
-I won't try to explain why you should write automated tests.  I will only say that,
-you are trying to be a programmer, and programmers automate boring and tedious 
-tasks.  Testing a piece of software is definitely boring and tedious, so you might
-as well write a little bit of code to do it for you.
+我不会试图解释为什么你需要写自动化测试. 我要告诉你的是, 你想要成为一个程序员, 而
+程序的作用是让无聊冗繁的工作自动化. 测试软件毫无疑问是无聊冗繁的, 所以你还是写点
+代码让它为你测试的更好. 
 
-That should be all the explanation you need because *your* reason for writing unit
-tests is to make your brain stronger.  You have gone through this book writing code
-to do things.  Now you are going to take the next leap and write code that
-knows about other code you have written.  This process of writing a test that runs
-some code you have written *forces* you to understand clearly what you have just written.
-It solidifies in your brain exactly what it does and why it works and gives you a new
-level of attention to detail.
+这应该是你需要的所有的解释了. 因为*你*写单元测试的原因是让你的大脑更加强健. 你读
+了这本书, 写了很多代码让它们实现一些事情. 现在你将更进一步, 写出懂得你写的其他
+代码的代码. 这个写代码测试你写的其他代码的过程将*强迫*你清楚的理解你之前写的代码. 
+这会让你更清晰地了解你写的代码实现的功能及其原理, 而且让你对细节的注意更上一个台阶.
 
-Writing A Test Case
+
+撰写测试用例
 ===================
 
+我们将拿一段非常简单的代码为例, 写一个简单的测试. 我们将
 We're going to take a very simple piece of code and write one simple test.  We're
 going to base this little test on a new project from your project skeleton.
 
