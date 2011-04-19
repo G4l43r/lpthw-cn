@@ -11,7 +11,7 @@ Exercise 35: 分支和函数
 你应该看到的结果
 ===================
 
-Here's me taking too much gold:
+你可以看到, 我拿了太多金子了:
 
 .. literalinclude:: ex/ex35.txt
 
@@ -19,10 +19,9 @@ Here's me taking too much gold:
 加分习题
 ============
 
-1. Draw a map of the game and how you flow through it.
-2. Fix all of your mistakes, including spelling mistakes.
-3. Write comments for the functions you do not understand.  Remember doc comments?
-4. Add more to the game.  What can you do to both simplify and expand it.
-5. The ``gold_room`` has a weird way of getting you to type a number.  What are all
-   the bugs in this way of doing it?  Can you make it better than just checking if
-   "1" or "0" are in the number?  Look at how ``int()`` works for clues.
+1. 把这个游戏的地图画出来, 把自己的路线也画出来.
+2. 改正你所有的错误, 包括拼写错误.
+3. 为你不懂的函数写注解. 记得文档注解该怎么写吗?
+4. 为游戏添加更多元素. 通过怎样的方式可以简化并且扩展游戏的功能呢?
+5. 这个 ``gold_room`` 游戏使用了奇怪的方式让你键入一个数字. 这种方式会导致什么样的bug?
+   你可以用比检查0, 1更好的方式判断输入是否是数字吗? ``int()`` 这个函数可以给你一些头绪. 
