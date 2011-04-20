@@ -1,37 +1,31 @@
 习题 10: 那是什么?
 ***************************
 
-在习题 9 中我丢给你一些新东西. I threw you some new stuff, just to keep you on your toes.  I
-showed you two ways to make a string that goes across multiple lines.  In the
-first way, I put the characters ``\n`` (back-slash ``n``) between the names of
-the months.  What these two characters do is put a ``new line character`` into
-the string at that point.
+在习题 9 中我丢给你一些新东西让你能站得更稳. 我让你看到两种让字符串扩展到多行的
+方法. 第一种方法是在月份之间用``\n`` (back-slash ``n`` )隔开.  这两个字符的作用是
+在该位置上放入一个新行(new line)字符.
 
-This use of the ``\`` (back-slash) character is a way we can put difficult-to-type
-characters into a string.  There are plenty of these "escape sequences" available
-for different characters you might want to put in, but there's a special one,
-the ``double back-slash`` which is just two of them ``\\``.  These two characters
-will print just one back-slash.  We'll try a few of these sequences so you can
-see what I mean.
+使用反斜杠 ``\`` (back-slash) 可以将难打印出来的字符放到字符串种. 针对不同的符号
+有很多这样的所谓转义序列(escape sequences), 但有一个特殊的转义序列, 就是 ``双反斜杠`` , 
+``double back-slash`` 也就是两个反斜杠 ``\\``.  这两个字符组合会打印出一个反斜杠
+来. 接下来我们做几个练习, 你就知道这些转义序列的意义了. 
 
-Another important escape sequence is to escape a single-quote ``'`` or
-double-quote ``"``.  Imagine you have a string that uses double-quotes
-and you want to put a double-quote in for the output.  If you do this ``"I "understand" joe."``
-then Python will get confused since it will think the ``"`` around ``"understand"``
-actually *ends* the string.  You need a way to tell Python that the ``"`` inside
-the string isn't a *real* double-quote.
+另外一种重要的转义序列是用来将单引号 ``'`` 和双引号 ``"`` 转义. 想象你有一个用
+双引号引用起来的字符串, 你想要在字符串的内容里再添加双引号进去. 比如你想说 
+``"I "understand" joe."`` Python就会认为 ``"understand"`` 前后的两个引号是字符串
+的边界, 从而把字符串弄错. 你需要一种方法告诉python字符串里边的双引号不是 *真正* 
+的双引号.
 
-To solve this problem you *escape* double-quotes and single-quites so Python
-knows to include in the string.  Here's an example:
+要解决这个问题, 你需要将双引号和单引号转义, 让Python将其包含到字符串里边去. 这里
+有一个例子:
 
 .. code-block:: python
 
-    "I am 6'2\" tall."  # escape double-quote inside string
-    'I am 6\'2" tall.'  # escape single-quote inside string
+    "I am 6'2\" tall."  # 将字符串中的双引号转义
+    'I am 6\'2" tall.'  # 将字符串种的单引号转义
 
-The second way is by using triple-quotes, which is just ``"""`` and works
-like a string, but does you also can put as many lines of text you as want
-until you type ``"""`` again.  We'll also play with these.
+第二种方法是使用三引号(triple-quotes), 也就是 ``"""``, 你可以在一组三引号之间放入
+任意多行的文字. 接下来你将看到用法.
 
 
 
@@ -39,24 +33,21 @@ until you type ``"""`` again.  We'll also play with these.
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
-Look for the tab characters that you made.  In this exercise the spacing is
-important to get right.
+注意你打印出来的制表符. 这节练习中的文字间隔对于答案的正确性是很重要的.
 
 .. literalinclude:: ex/ex10.txt
 
 
-Extra Credit
+加分习题
 ============
 
-1. Search online to see what other escape sequences are available.
-2. Use ``'''`` (triple-single-quote) instead.  Can you see why you might use that instead of ``"""``?
-3. Combine escape sequences and format strings to create a more complex format.
-4. Remember the ``%r`` format?  Combine ``%r`` with double-quote and 
-   single-quote escapes and print them out.  Compare %r with %s.  
-   Notice how %r prints it the way you'd write it in your file, but 
-   %s prints it the way you'd like to see it?
-
+1. 上网搜索一下还有哪些可用的转义字符.
+2. 使用 ``'''`` (三个单引号)取代三个双引号.  看看效果是不是一样的?
+3. 将转义序列和格式化字符串放到一起, 创建一种更复杂的格式.
+4. 记得 ``%r`` 格式化字符串吗? 使用 ``%r`` 使用单引号和双引号转义字符将打印.  将
+   %r 和 %s 比较一下.  
+   注意到了吗? %r 打印出来的是你写在脚本里的内容, 而 %s 打印的是你应该看到的内容.
 
