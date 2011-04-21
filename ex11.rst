@@ -1,22 +1,20 @@
-Exercise 11: Asking Questions
+习题 11: 提问
 *****************************
 
-Now it is time to pick up the pace.  I have got you doing a lot of printing so
-that you get used to typing simple things, but those simple things are fairly
-boring.  What we want to do now is get data into your programs.  This is a
-little tricky because you have learn to do two things that may not make sense right
-away, but trust me and do it anyway.  It will make sense in a few exercises.
+我已经出过很多打印相关的练习, 让你习惯写简单的东西, 但简单的东西都有点无聊, 
+现在该跟上脚步了. 我们现在要做的是把数据读到你的程序里边去. 这可能对你有点难度, 
+因为你可能一下子不明白, 不过你需要相信我, 无论如何把习题做了. 只要做几个练习
+你就明白了.
 
-Most of what software does is the following:
+软件做的事情最主要的就是下面几点:
 
-1. Take some kind of input from a person.
-2. Change it.
-3. Print out something to show how it changed.
+1. 接受人的输入.
+2. 改变输入
+3. 打印出改变了的输入.
 
-So far you have only been printing, but you haven't been able to get any input
-from a person, or change it.  You may not even know what "input" means, so
-rather than talk about it, let's have you do some and see if you get it.  Next
-exercise we'll do more to explain it.
+到目前为止你只做了打印, 但还不会接受或者修改人的输入. 你也许还不知道"输入(input)"
+是什么意思. 所以闲话少说, 我们还是开始做点练习看你能不能明白. 下一个习题里边我们
+会给你更多的解释.
 
 
 .. literalinclude:: ex/ex11.py
@@ -24,11 +22,11 @@ exercise we'll do more to explain it.
 
 .. note::
 
-    Notice that we put a ``,`` (comma) at the end of each ``print`` line.
-    This is so that ``print`` doesn't end the line with a newline and go 
-    to the next line.
+    注意到我在每行 ``print`` 后面加了个逗号(comma) ``,`` 了吧? 这样的话 ``print``
+    就不会输出新行符而结束这一行跑到下一行去了.
 
-What You Should See
+
+你应该看到的结果
 ===================
 
 
@@ -36,12 +34,12 @@ What You Should See
 
 
 
-Extra Credit
+加分习题
 ============
 
-1. Go online and find out what Python's ``raw_input`` does.
-2. Can you find other ways to use it?  Try some of the samples you find.
-3. Write another "form" like this to ask some other questions.
-4. Related to escape sequences, try to find out why the last line has ``'6\'2"'``
-   with that ``\'`` sequence.  See how the single-quote needs to be escaped
-   because otherwise it would end the string?
+1. 上网查一下 Python 的 ``raw_input`` 实现的是什么功能.
+2. 你能找到它的别的用法吗? 测试一下你上网搜索到的例子.
+3. 用类似的格式再写一段, 把问题改成你自己的问题.
+4. 和转义序列有关的, 想想为什么最后一行 ``'6\'2"'`` 里边有一个 ``\'`` 序列. 单引号需要
+   被转义, 从而防止它被识别为字符串的结尾, 有没有注意到这一点?
+
