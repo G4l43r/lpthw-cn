@@ -1,43 +1,42 @@
-Exercise 12: Prompting People
+习题 12: 提示别人
 *****************************
 
-When you typed ``raw_input()`` you were typing the ``(`` and ``)`` characters
-which are ``parenthesis``.  This is similar to when you used them to do a
-format with extra variables, as in ``"%s %s" % (x, y)``.  For ``raw_input`` you
-can also put in a prompt to show to a person so they know what to type.  Put a
-string that you want for the prompt inside the ``()`` so that it looks like
-this:
+当你键入 ``raw_input()`` 的时候, 你需要键入 ``(`` 和 ``)`` 也就是括号( ``parenthesis`` ). 
+这和你格式化输出两个以上变量时的情况有点类似, 比如说 ``"%s %s" % (x, y)`` 里边就
+有括号. 对于 ``raw_input`` 而言, 你还可以让它显示出一个提示, 从而告诉别人应该输入
+什么东西. 你可以在 ``()`` 之间放入一个你想要作为提示的字符串, 如下所示:
+
 
 .. code-block:: python
 
     y = raw_input("Name? ")
 
-This prompts the user with "Name?" and puts the result into the variable ``y``.
-This is how you ask someone a question and get their answer.
+这句话会用 "Name?" 提示用户, 然后将用户输入的结果赋值给变量 ``y``. 这就是我们
+提问用户并且得到答案的方式.
 
-This means we can completely rewrite our previous exercise using just
-``raw_input`` to do all the prompting.
 
+也就是说, 我们的上一个练习可以使用 ``raw_input`` 重写一次. 所有的提示都可以通过
+ ``raw_input`` 实现.
+ 
 
 .. literalinclude:: ex/ex12.py
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 
 .. literalinclude:: ex/ex12.txt
 
 
-Extra Credit
+加分习题
 ============
 
-1. In Terminal where you normally run ``python`` to run your scripts, 
-   type: ``pydoc raw_input``.  Read what it says.
-2. Get out of pydoc by typing ``q`` to quit.
-3. Go look online for what the ``pydoc`` command does.
-4. Use pydoc to also read about ``open``, ``file``, ``os``, and ``sys``.  It's alright if you
-   do not understand those, just read through and take notes about interesting
-   things.
+1. 在命令行界面下运行你的程序, 然后在命令行输入 ``pydoc raw_input`` 看它说了些
+   什么
+2. 输入 ``q`` 推出 pydoc.
+3. 上网找一下 ``pydoc`` 命令是用来做什么的.
+4. 使用 pydoc 再看一下 ``open``, ``file``, ``os``, 和 ``sys`` 的含义.  看不懂没
+   关系, 只要通读一下, 记下你觉得有意思的点就行了.
 
