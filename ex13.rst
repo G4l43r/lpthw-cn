@@ -1,68 +1,60 @@
-Exercise 13: Parameters, Unpacking, Variables
+习题 13: 参数, 解包, 变量
 *********************************************
 
-In this exercise we will cover one more input method you can use to pass
-variables to a script (script being another name for your ``.py`` files).  You
-know how you type ``python ex13.py`` to run the ``ex13.py`` file?  Well the
-``ex13.py`` part of the command is called an "argument".  What we'll do now is
-write a script that also accepts arguments.
+在这节练习中, 我们将降到另外一种将变量传递给脚本的方法(所谓脚本, 就是你写的 ``.py`` 
+程序). 你已经知道, 如果要运行 ``ex13.py``, 只要在命令行运行 ``python ex13.py`` 就
+可以了. 这句命令中的 ``ex13.py`` 部分就是所谓的"参数(argument)", 我们现在要做的
+就是写一个可以接受参数的脚本. 
 
-Type this program and I'll explain it in detail:
+将下面的程序写下来, 后面你将看到详细解释:
 
 .. literalinclude:: ex/ex13.py
     :linenos:
 
-On line ``1`` we have what's called an "import".  This is how you add
-features to your script from the Python feature set.  Rather than
-give you all the features at once, Python asks you to say what 
-you plan to use.  This keeps your programs small, but it also acts
-as documentation for other programmers who read your code later.
+在第1行我们有一个 "import" 语句. 这是你将python的功能引入你的脚本的方法. Python
+不会一下子将它所有的功能给你, 而是让你需要什么就调用什么. 这样可以让你的程序保持
+精简, 而后面的程序员看到你的代码的时候, 这些"import"可以作为提示, 让他们明白你的
+代码用到了哪些功能.
 
-The ``argv`` is the "argument variable", a very standard name in programming.
-that you will find used in many other languages.  This variable *holds* the
-arguments you pass to your Python script when you run it.  In the exercises you
-will get to play with this more and see what happens.
 
-Line 3 "unpacks" ``argv`` so that, rather than holding all the arguments, it
-gets assigned to four variables you can work with: ``script``, ``first``,
-``second``, and ``third``.  This may look strange, but "unpack" is probably the
-best word to describe what it does.  It just says, "Take whatever is in argv,
-unpack it, and assign it to all of these variables on the left in order."
+``argv`` 是所谓的"参数变量(argument variable)", 是一个非常标准的编程术语. 在其他
+的编程语言里你也可以看到它. 这个变量 *包含* 你传递给Python的参数. 在后面的练习中
+你将在使用它的过程中对它有更多的了解.
 
-After that we just print them out like normal.
+第3行将 ``argv`` "解包(unpack)", 与其将所有参数放到同一个变量下面, 我们将每个参数
+赋予一个变量名: ``script``, ``first``, ``second``, and ``third``.  这也许看上去
+有些奇怪, 不过"解包"可能是最好的描述方式了. 它的含义很简单: "把 argv 中的东西解包, 
+将所有的参数依次赋予左边的变量名.
 
-Hold Up! Features Have Another Name
+接下来就是正常的打印了.
+
+等一下! "功能"还有另外一个名字
 ===================================
 
-I call them "features here" (these little things you ``import`` to make
-your Python program do more) but nobody else calls them features. I just 
-used that name because I needed to trick you into learning what they
-are without jargon.  Before you can continue, you need to learn
-their real name:  ``modules``.
+前面我们使用 ``import`` 让你的程序实现更多的功能, 但实际上没人吧 ``import`` 称为
+功能. 我希望你可以在没接触到正式术语的时候就弄懂它的功能. 在继续下去之前, 你需要
+知道它们的真正名称: ``模组(modules)``.
 
-From now on we will be calling these "features" that we ``import`` *modules*.
-I'll say things like, "You want to import the ``sys`` module."  They are
-also called "libraries" by other programmers, but let's just stick with
-modules.
+从现在开始我们将把这些我们 ``导入(import)`` 进来的功能称作 ``模组``. 你将看到类似这样
+的说法, "你需要把 ``sys`` 模组import进来. " 也有人将它们称作"库(libraries)", 不过
+我们还是叫它们模组吧.
 
 
-What You Should See
+你应该看到的结果
 ===================
 
-Run the program like this:
+用下面的方式运行你的程序:
 
 .. code-block:: console
 
     python ex13.py first 2nd 3rd
 
-This is what you should see when you do a few different runs
-with different arguments:
+如果你每次使用不同的参数运行, 你将看到下面的结果:
 
 .. literalinclude:: ex/ex13.txt
 
-You can actually replace "first", "2nd", and "3rd" with any three things.
-You do not have to give these parameters either, you can give any 3 strings
-you want:
+你其实可以将 "first", "2nd", 和 "3rd" 替换成任意三样东西. 你可以将它们换成任意
+你想要的东西.
 
 .. code-block:: console
 
@@ -70,7 +62,7 @@ you want:
     python ex13.py anything 6 7
 
 
-If you do not run it correctly, then you will get an error like this:
+如果你没有运行对, 你将看到如下错误:
 
 .. code-block:: console
 
@@ -80,22 +72,19 @@ If you do not run it correctly, then you will get an error like this:
         script, first, second, third = argv
     ValueError: need more than 3 values to unpack
 
-This happens when you do not put enough arguments on the command when you
-run it (in this case just ``first 2nd``).  Notice when I run it I give it
-``first 2nd 3rd``, which caused it to give an error about "need more than 3
-values to unpack" telling you that you didn't give it enough parameters.
+当你运行脚本时提供的参数数量不足时, 你就会看到上述错误信息 (这次我只用了
+ ``first 2nd`` 两个参数).  "need more than 3 values to unpack" 这个错误信息告诉
+ 你参数数量不足.
 
 
 
-Extra Credit
+加分习题
 ============
 
-1. Try giving fewer than three arguments to your script.  See that error 
-   you get?  See if you can explain it.
-2. Write a script that has fewer arguments and one that has more.  Make
-   sure you give the unpacked variables good names.
-3. Combine ``raw_input`` with ``argv`` to make a script that gets more
-   input from a user.
-4. Remember that modules give you features.  Modules.  Modules.  Remember this
-   because we'll need it later.
+1. 给你的脚本三个以下的参数. 看看会得到什么错误信息. 试着解释一下.
+2. 再写两个脚本, 其中一个接受更少的参数, 另一个接受更多的参数. 在参数解包时给它们
+   取一些有意义的变量名.
+3. 将 ``raw_input`` 和 ``argv`` 一起使用, 让你的脚本从用户手上得到更多的输入.
+4. 记住模组(modules)为你提供额外功能.  Modules.  Modules.  记住它, 因为我们后面
+   还会用到.
 
