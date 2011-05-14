@@ -1,57 +1,47 @@
-Exercise 16: Reading And Writing Files
+习题 16: 读写文件
 **************************************
 
-If you did the extra credit from the last exercise you should have seen all 
-sorts of commands (methods/functions) you can give to files.  Here's the
-list of commands I want you to remember:
+如果你做了上一个练习的加分习题，你应该了解了各种文件相关的命令（方法/函数）。
+你应该记住的命令如下：
 
-*  close -- Closes the file.  Like ``File->Save..`` in your editor.
-*  read -- Reads the contents of the file, you can assign the result to a variable.
-*  readline -- Reads just one line of a text file.
-*  truncate -- Empties the file, watch out if you care about the file.
-*  write(stuff) -- Writes stuff to the file.
+*  close -- 关闭文件。跟你编辑器的 ``文件->保存..`` 一个意思。
+*  read -- 读取文件内容。你可以把结果赋给一个变量。
+*  readline -- 读取文本文件中的一行。
+*  truncate -- 清空文件，请小心使用该命令。
+*  write(stuff) -- 将stuff写入文件。
 
-For now these are the important commands you need to know.  Some of them
-take parameters, but we do not really care about that.  You only need to
-remember that ``write`` takes a parameter of a string you want to write
-to the file.
+这是你现在该知道的重要命令。有些命令需要接受参数，这对我们并不重要。你
+只要记住 ``write`` 的用法就可以了。 ``write``需要接收一个字符串作为参数，从而将该字符串写入文件。
 
-Let's use some of this to make a simple little text editor:
+让我们来使用这些命令做一个简单的文本编辑器吧: 
 
 
 .. literalinclude:: ex/ex16.py
     :linenos:
 
-That's a large file, probably the largest you have typed in.  So go slow, do
-your checks, and make it run.  One trick is to get bits of it running at a
-time.  Get lines 1-8 running, then 5 more, then a few more, etc., until it's
-all done and running.
+这个文件是够大的，大概是你键入过的最大的文件。所以慢慢来，仔细检查，让它能
+运行起来。有一个小技巧就是你可以让你的脚本一部分一部分地运行起来。先写 1-8 行，
+让它运行起来，再多运行 5 行，再接着多运行几行，以此类推，直到整个脚本运行起来为止。
 
 
-What You Should See
+你应该看到的结果
 ===================
 
-There are actually two things you will see, first the output of your new
-script:
+你将看到两样东西，一样是你新脚本的输出:
 
 .. literalinclude:: ex/ex16.txt
 
-Now, open up the file you made (in my case ``test.txt``) in your
-editor and check it out.  Neat right?
+接下来打开你新建的文件（我的是 ``test.txt`` ）检查一下里边的内容，怎么样，不错吧？
 
 
-Extra Credit
+加分习题
 ============
 
-1. If you feel you do not understand this, go back through and use the comment
-   trick to get it squared away in your mind.  One simple English comment
-   above each line will help you understand, or at least let you know what
-   you need to research more.
-2. Write a script similar to the last exercise that uses ``read`` and ``argv`` 
-   to read the file you just created.
-3. There's too much repetition in this file.  Use strings, formats, and escapes
-   to print out ``line1``, ``line2``, and ``line3`` with just one ``target.write()``
-   command instead of 6.
-4. Find out why we had to pass a ``'w'`` as an extra parameter to ``open``.  Hint:
-   ``open`` tries to be safe by making you explicitly say you want to write a file.
+1. 如果你觉得自己没有弄懂的话，用我们的老办法，在每一行之前加上注解，为自己理清思路。
+   就算不能理清思路，你也可以知道自己究竟具体哪里没弄明白。
+2. 写一个和上一个练习类似的脚本，使用 ``read`` 和 ``argv`` 读取你刚才新建的文件。
+3. 文件中重复的地方太多了。试着用一个 ``target.write()`` 将 ``line1``, ``line2``,
+   ``line3`` 打印出来，你可以使用字符串、格式化字符、以及转义字符。
+4. 找出为什么我们需要给 ``open`` 多赋予一个 ``'w'`` 参数。提示:
+   ``open`` 对于文件的写入操作态度是安全第一，所以你只有特别指定以后，它才会进行写入操作。
 
