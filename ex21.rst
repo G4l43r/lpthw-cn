@@ -1,59 +1,48 @@
-Exercise 21: Functions Can Return Something
+习题 21: 函数可以返回东西
 *******************************************
 
-You have been using the ``=`` character to name variables and set them
-to numbers or strings.  We're now going to blow your mind again by
-showing you how to use ``=`` and a new Python word ``return`` to 
-set variables to be a *value from a function*.  There will be one
-thing to pay close attention to, but first type this in:
-
+你已经学过使用 ``=`` 给变量命名，以及将变量定义为某个数字或者字符串。接下来我们
+将让你见证更多奇迹。我们要演示给你的是如何使用 ``=`` 以及一个新的 Python 词汇
+``return`` 来将变量设置为“一个函数的值”。有一点你需要及其注意，不过我们暂且不讲，
+先撰写下面的脚本吧：
 
 .. literalinclude:: ex/ex21.py
     :linenos:
 
-We are now doing our own math functions for ``add``, ``subtract``, ``multiply``,
-and ``divide``.  The important thing to notice is the last line where we
-say ``return a + b`` (in ``add``).  What this does is the following:
+现在我们创建了我们自己的加减乘除数学函数： ``add``, ``subtract``, ``multiply``, 
+以及 ``divide`` 。重要的是函数的最后一行，例如 ``add`` 的最后一行是 ``return a + b`` ，
+它实现的功能是这样的：
 
-1. Our function is called with two arguments: ``a`` and ``b``.
-2. We print out what our function is doing, in this case "ADDING".
-3. Then we tell Python to do something kind of backward: we return
-   the addition of ``a + b``.  You might say this as, "I add ``a`` and ``b``
-   then return them."
-4. Python adds the two numbers. Then when the function ends any line
-   that runs it will be able to assign this ``a + b`` result to a variable.
+1. 我们调用函数时使用了两个参数： ``a`` 和 ``b`` 。
+2. 我们打印出这个函数的功能，这里就是计算加法（adding）
+3. 接下来我们告诉 Python 让它做某个回传的动作：我们将 ``a + b`` 的值返回 (return) 。
+   或者你可以这么说：“我将 ``a`` 和 ``b`` 加起来，再把结果返回。”
+4. Python 将两个数字相加，然后当函数结束的时候，它就可以将 ``a + b`` 的结果赋予
+   一个变量。
+   
+和本书里的很多其他东西一样，你要慢慢消化这些内容，一步一步执行下去，追踪一下究竟
+发生了什么。为了帮助你理解，本节的加分习题将让你解决一个迷题，并且让你学到点比较
+酷的东西。
 
-As with many other things in this book, you should take this real slow,
-break it down and try to trace what's going on.  To help there's extra
-credit to get you to solve a puzzle and learn something cool.
 
-
-What You Should See
+你应该看到的结果
 ===================
 
 
 .. literalinclude:: ex/ex21.txt
 
 
-Extra Credit
+加分习题
 ============
 
-1. If you aren't really sure what ``return`` does, try writing a few of
-   your own functions and have them return some values.  You can return
-   anything that you can put to the right of an ``=``.
-2. At the end of the script is a puzzle.  I'm taking the return value
-   of one function, and *using* it as the argument of another function.
-   I'm doing this in a chain so that I'm kind of creating a formula using
-   the functions.  It looks really weird, but if you run the script you 
-   can see the results.  What you should do is try to figure out the
-   normal formula that would recreate this same set of operations.
-3. Once you have the formula worked out for the puzzle, get in there
-   and see what happens when you modify the parts of the functions. 
-   Try to change it on purpose to make another value.
-4. Finally, do the inverse. Write out a simple formula and use the 
-   functions in the same way to calculate it.
+1. 如果你不是很确定 ``return`` 的功能，试着自己写几个函数出来，让它们返回一些值。
+   你可以将任何可以放在 ``=`` 右边的东西作为一个函数的返回值。
+2. 这个脚本的结尾是一个迷题。我将一个函数的返回值用作了另外一个函数的参数。我将
+   它们链接起来了，接跟写数学等式一样。这样可能有些难读，不过运行一下你就知道结果
+   了。接下来，你需要试试看能不能用正常的方法实现和这个表达式一样的功能。
+3. 一旦你解决了这个迷题，试着修改一下函数里的某些部分，然后看会有什么样的结果。
+   你可以有目的地修改它，让它输出另外一个值。
+4. 最后，颠倒过来做一次。写一个简单的等式，使用一样的函数来计算它。
 
-This exercise might really whack your brain out, but take it slow and easy and
-treat it like a little game.  Figuring out puzzles like this is what makes
-programming fun, so I'll be giving you more little problems like this as we go.
-
+这个习题可能会让你有些头大，不过还是慢慢来，把它当做一个游戏，解决这样的迷题正是
+编程的乐趣之一。后面你还会看到类似的小谜题。
