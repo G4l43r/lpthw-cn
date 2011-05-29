@@ -1,13 +1,13 @@
 习题 40: 字典, 可爱的字典
 **********************************************
 
-Now I have to hurt you with another container you can use, because once
-you learn this container a massive world of ultra-cool will be yours.  It is
-the most useful container ever:  the dictionary.
+接下来我要教你另外一种让你伤脑筋的容器型数据结构，因为一旦你学会这种容器，
+你将拥有超酷的能力。这是最有用的容器：字典(dictionary)。
 
-Python calls them "dicts", other languages call them, "hashes".  I tend to use
-both names, but it doesn't matter.  What does matter is what they do when compared
-to lists.  You see, a list lets you do this:
+Python 将这种数据类型叫做 "dict"，有的语言里它的名称是 "hash"。这两种名字
+我都会用到，不过这并不重要，重要的是它们和列表的区别。你看，针对列表你可以做
+这样的事情：
+
 
 .. code-block:: pycon
 
@@ -21,11 +21,9 @@ to lists.  You see, a list lets you do this:
     ['a', 'z', 'c', 'd']
     >>> 
 
-You can use numbers to "index" into a list, meaning you can use numbers to 
-find out what's in lists.  You should know this by now, but what a ``dict``
-does is let you use *anything*, not just numbers.  Yes, a dict associates one thing
-to another, no matter what it is.  Take a look:
-
+你可以使用数字作为列表的索引，也就是你可以通过数字找到列表中的元素。而 ``dict``
+所作的，是让你可以通过任何东西找到元素，不只是数字。是的，字典可以将一个物件
+和另外一个东西关联，不管它们的类型是什么，我们来看看：
 
 .. code-block:: pycon
 
@@ -41,10 +39,9 @@ to another, no matter what it is.  Take a look:
     San Francisco
     >>> 
 
-You will see that instead of just numbers we're using strings to say what we
-want from the ``stuff`` dictionary.  We can also put new things into the
-dictionary with strings.  It doesn't have to be strings though, we can also do
-this:
+你将看到除了通过数字以外，我们还可以用字符串来从字典中获取 ``stuff`` ，我们
+还可以用字符串来往字典中添加元素。当然它支持的不只有字符串，我们还可以做
+这样的事情：
 
 .. code-block:: pycon
 
@@ -60,11 +57,11 @@ this:
         'height': 74}
     >>>
 
-In this one I just used numbers.  I could use anything.  Well almost but just pretend
-you can use anything for now.
+在这里我使用了两个数字。其实我可以使用任何东西，不过这么说并不准确，不过你先
+这么理解就行了。
 
-Of course, a dictionary that you can only put things in is pretty stupid, so here's 
-how you delete things, with the ``del`` keyword:
+当然了，一个只能放东西进去的字典是没啥意思的，所以我们还要有删除物件的方法，
+也就是使用 ``del`` 这个关键字：
 
 .. code-block:: pycon
     
@@ -75,32 +72,30 @@ how you delete things, with the ``del`` keyword:
     {'name': 'Zed', 'age': 36, 'height': 74}
     >>>
 
-We'll now do an exercise that you *must* study very carefully.  I want you to type this
-exercise in and try to understand what's going on.  It is a very interesting exercise
-that will hopefully make a big light turn on in your head very soon.
+接下来我们要做一个练习，你必须非常仔细，我要求你将这个练习写下来，然后试着弄懂
+它做了些什么。这个练习很有趣，做完以后你可能会有豁然开朗的感觉。
 
 
 .. literalinclude:: ex/ex40.py
     :linenos:
 
 
-.. warning::  Notice how I use ``themap`` instead of ``map``?  That's because Python
-    has a function called map, so if you try to use that you can have problems later.
+.. warning::  注意到我用了 ``themap`` 而不是 ``map`` 了吧？这是因为 Python 已经有
+    一个函数称作 map 了，所以如果你用 map 做变量名，你后面可能会碰到问题。
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 .. literalinclude:: ex/ex40.txt
 
 
 
-Extra Credit
+加分习题
 ============
 
-1. Go find the Python documentation for dictionaries (a.k.a. dicts, dict) and try to do
-   even more things to them.
-2. Find out what you *can't* do with dictionaries.  A big one is that they do not have order,
-   so try playing with that.
-3. Try doing a ``for-loop`` over them, and then try the ``items()`` function in a ``for-loop``.
-
+1. 在 Python 文档中找到 dictionary (又被称作 dicts, dict)的相关的内容，学着对 dict 做更多的操作。
+2. 找出一些 dict 无法做到的事情。例如比较重要的一个就是 dict 的内容是无序的，你可以检查一下看看
+   是否真是这样。
+3. 试着把 ``for-loop`` 执行到 dict 上面，然后试着在 for-loop 中使用 dict 的 ``items()`` 函数，看看
+   会有什么样的结果。
