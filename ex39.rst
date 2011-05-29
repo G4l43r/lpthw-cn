@@ -1,39 +1,34 @@
 习题 39: 列表的操作
 *******************************
 
-You have learned about lists. When you learned about ``while-loops`` you
-"appended" numbers to the end of a list and printed them out.   There was also
-extra credit where you were supposed to find all the other things you can do to
-lists in the Python documentation.  That was a while back, so go find in the
-book where you did that and review if you do not know what I'm talking about.
+你已经学过了列表。在你学习 ``while-loop`` 的时候，你对列表进行过追加(append)
+操作，而且将列表的内容打印了出来。另外你应该还在加分习题里研究过 Python 文档，
+看了列表支持的其他操作。这已经是一段时间以前了，所以如果你不记得了的话，就回
+到本书的前面再复习一遍把。
 
-Found it?  Remember it?  Good.  When you did this you had a list, and you "called" the
-function ``append`` on it.  However, you may not really understand what's going on so let's see what
-we can do to lists, and how doing things with "on" them works.
+找到了吗？还记得吗？很好。那时候你对一个列表执行了 ``append`` 函数。不过，你
+也许还没有真正明白发生的事情，所以我们再来看看我们可以对列表进行什么样的操作。
 
-When you type Python code that reads ``mystuff.append('hello')`` you are actually
-setting off a chain of events inside Python to cause something to happen to the
-``mystuff`` list.  Here's how it works:
+当你看到像 ``mystuff.append('hello')`` 这样的代码时，你事实上已经在 Python 内部
+激发了一个连锁反应。以下是它的工作原理：
 
-1. Python sees you mentioned ``mystuff`` and looks up that variable.  It might have to
-   look backwards to see if you created with ``=``, look and see if it is a function
-   argument, or maybe it's a global variable.  Either way it has to find the ``mystuff``
-   first.
-2. Once it finds ``mystuff`` it then hits the ``.`` (period) operator and starts to look
-   at *variables* that are a part of ``mystuff``.  Since ``mystuff`` is a list, it knows
-   that ``mystuff`` has a bunch of functions.
-3. It then hits ``append`` and compares the name "append" to all the ones that ``mystuff``
-   says it owns.  If append is in there (it is) then it grabs *that* to use.
-4. Next Python sees the ``(`` (parenthesis) and realizes, "Oh hey, this should be a function."
-   At this point it *calls* (aka runs, executes) the function just like normally, but instead it calls the function
-   with an *extra* argument.
-5. That *extra* argument is ... ``mystuff``!  I know, weird right?  But that's how Python
-   works so it's best to just remember it and assume that's alright.  What happens then, at 
-   the end of all this is a function call that looks like: ``append(mystuff, 'hello')``
-   instead of what you read which is ``mystuff.append('hello')``.
+1. Python 看到你用到了 ``mystuff`` ，于是就去找到这个变量。也许它需要倒着检查看
+   你有没有在哪里用 ``=`` 创建过这个变量，或者检查它是不是一个函数参数，或者看
+   它是不是一个全局变量。不管哪种方式，它得先找到 ``mystuff`` 这个变量才行。
+2. 一旦它找到了 ``mystuff`` ，就轮到处理句点 ``.`` (period) 这个操作符，而且开始
+   查看 ``mystuff`` 内部的一些变量了。由于 ``mystuff`` 是一个列表，Python 知道
+    ``mystuff`` 支持一些函数。
+3. 接下来轮到了处理 ``append`` 。Python 会将 "append" 和 ``mystuff`` 支持的所有函数
+   的名称一一对比，如果确实其中有一个叫 append 的函数，那么 Python 就会去使用这个函数。
+4. 接下来 Python 看到了括号 ``(`` (parenthesis) 并且意识到, “噢，原来这应该是一个
+   函数”，到了这里，它就正常会调用这个函数了，不过这里的函数还要多一个参数才行。
+5. 这个额外的参数其实是…… ``mystuff``!  我知道，很奇怪是不是？不过这就是 Python 的
+   工作原理，所以还是记住这一点，就当它是正常的好了。真正发生的事情其实是
+   ``append(mystuff, 'hello')`` ，不过你看到的只是 ``mystuff.append('hello')``
+   。
 
-For the most part you do not have to know that this is going on, but it helps when you
-get error messages from python like this:
+大部分时候你不需要知道这些细节，不过如果你看到一个像这样的 Python 错误信息的时候，
+上面的细节就对你有用了：
 
 .. code-block:: pycon
 
@@ -52,15 +47,14 @@ get error messages from python like this:
     TypeError: test() takes exactly 1 argument (2 given)
     >>> 
 
-What was all that?  Well, this is me typing into the Python shell and showing you
-some magic.  You haven't seen ``class`` yet but we'll get into those later.  For 
-now you see how Python said ``test() takes exactly 1 argument (2 given)``.  If
-you see this it means that python changed ``a.test("hello")`` to ``test(a, "hello")``
-and that somewhere someone messed up and didn't add the argument for ``a``.
+就是这个吗？嗯，这个是我在 Python 命令行下展示给你的一点魔法。你还没有见过
+``class`` 不过后面很快就要碰到了。现在你看到 Python 说 
+``test() takes exactly 1 argument (2 given)`` (test() 只可以接受1个参数，实际上
+给了两个)。它意味着 python 把 ``a.test("hello")`` 改成了 ``test(a, "hello")``
+，而有人弄错了，没有为它添加 ``a`` 这个参数。
 
-That might be a lot to take in, but we're going to spend a few exercises getting this
-concept firm in your brain.  To kick things off, here's an exercise that mixes
-strings and lists for all kinds of fun.
+一下子要消化这么多可能有点难度，不过我们将做几个练习，让你头脑中有一个深刻的印象。
+下面的练习将字符串和列表混在一起，看看你能不能在里边找出点乐子来：
 
 .. literalinclude:: ex/ex39.py
     :linenos:
@@ -75,18 +69,18 @@ strings and lists for all kinds of fun.
 加分习题
 ============
 
-1. Take each function that is called, and go through the steps outlined above to translate them to what
-   Python does.  For example, ``' '.join(things)`` is ``join(' ', things)``.
-2. Translate these two ways to view the function calls in English.  For example, ``' '.join(things)``
-   reads as, "Join things with ' ' between them."  Meanwhile, ``join(' ', things)`` means,
-   "Call join with ' ' and things."  Understand how they are really the same thing.
-2. Go read about "Object Oriented Programming" online.  Confused?  Yeah I was too.  Do not worry.
-   You will learn enough to be dangerous, and you can slowly learn more later.
-3. Read up on what a "class" is in Python.  *Do not read about how other languages use the word "class".* That will only mess you up.
-4. What's the relationship between ``dir(something)`` and the "class" of ``something``?
-5. If you do not have any idea what I'm talking about do not worry.  Programmers like to feel smart
-   so they invented Object Oriented Programming, named it OOP, and then used it way too much.  If you
-   think that's hard, you should try to use "functional programming".
-
+1. 将每一个被调用的函数以上述的方式翻译成 Python 实际执行的动作。例如： ``' '.join(things)`` 
+   其实是 ``join(' ', things)`` 。
+2. 将这两种方式翻译为自然语言。例如， ``' '.join(things)`` 可以翻译成“用 ' '
+   连接(join) things”，而 ``join(' ', things)`` 的意思是“为 ' ' 和 things 调用 join
+   函数”。这其实是同一件事情。
+2. 上网阅读一些关于 "Object Oriented Programming(面向对象编程)" 的资料。晕了吧？嗯，我以前也是。
+   别担心。你将从这本书学到足够用的关于面向对象编程的基础知识，而以后你还可以慢慢学到更多。
+3. 查一下 Python中的 "class" 是什么东西。不要阅读关于其他语言的 "class" 的用法，这会让你更糊涂。
+4. ``dir(something)`` 和  ``something`` 的 class 有什么关系？
+5. 如果你不知道我讲的是些什么东西，别担心。程序员为了显得自己聪明，于是就发明了 Opject Oriented
+   Programming，简称为
+   OOP，然后他们就开始滥用这个东西了。如果你觉得这东西太难，你可以开始学习 "functional programming"
+   (函数编程)。
 
 

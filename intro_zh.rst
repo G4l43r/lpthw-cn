@@ -24,12 +24,12 @@ LPTHW的风格和别的书差异很大. 它没有像一般的入门书籍一样�
 燥乏味, 原书作者Zed Shaw也知道, 所以如果你觉得有些看不下去的话, Zed Shaw推荐你
 看下面两本书:
 
-    `How To Think Like A Computer Scientist`_
-    `A Byte Of Python`_ 这本书有 中译版_ 
+* `How To Think Like A Computer Scientist`_
+* `A Byte Of Python`_ 这本书有 中译版_ 
 
 
 本书没有翻译错误。如果有，那就说明你理解错了。如果你看了这一条还想联系译者，请
-发邮件给 gastlygem<at>gmail.com ，或者在 `bitbucket 仓库`_ 里提出 issue
+发邮件给 wangdingwei82@gmail.com ，或者在 `bitbucket 仓库`_ 里提出 issue
 report。
 
 你可以访问 lulu.com 购买英文印刷版.
@@ -43,4 +43,5 @@ report。
 .. _`How To Think Like A Computer Scientist`: http://www.greenteapress.com/thinkpython/
 .. _`A Byte Of Python`: http://www.swaroopch.com/notes/Python
 .. _中译版: http://linux.chinaitlab.com/manual/python_chinese/
+.. _`bitbucket 仓库`: https://bitbucket.org/gastlygem/lpthw/
 
