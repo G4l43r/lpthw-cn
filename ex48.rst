@@ -1,4 +1,4 @@
-练习 48: 更复杂的用户输入
+习题 48: 更复杂的用户输入
 ********************************
 
 Your game probably was coming along great, but I bet how you handled what the

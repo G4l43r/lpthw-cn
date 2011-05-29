@@ -1,4 +1,4 @@
-Exercise 40: Dictionaries, Oh Lovely Dictionaries
+习题 40: 字典, 可爱的字典
 **********************************************
 
 Now I have to hurt you with another container you can use, because once

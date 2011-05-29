@@ -1,4 +1,4 @@
-Exercise 46: A Project Skeleton
+习题 46: 一个项目框架
 *******************************
 
 This will be where you start learning how to setup a good project "skeleton"

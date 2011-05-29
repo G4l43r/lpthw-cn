@@ -1,4 +1,4 @@
-Exercise 44: Evaluating Your Game
+习题 44: Evaluating Your Game
 *********************************
 
 In this exercise you will evaluate the game you just made.  Maybe you got

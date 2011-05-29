@@ -1,4 +1,4 @@
-Exercise 41: A Room With A View Of A Bear With A Broadsword
+习题 41: A Room With A View Of A Bear With A Broadsword
 ***********************************************************
 
 Did you figure out the secret of the function in the dict from the

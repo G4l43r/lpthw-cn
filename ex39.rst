@@ -1,4 +1,4 @@
-Exercise 39: Doing Things To Lists
+习题 39: 列表的操作
 *******************************
 
 You have learned about lists. When you learned about ``while-loops`` you
@@ -66,13 +66,13 @@ strings and lists for all kinds of fun.
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 .. literalinclude:: ex/ex39.txt
 
 
-Extra Credit
+加分习题
 ============
 
 1. Take each function that is called, and go through the steps outlined above to translate them to what

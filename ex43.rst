@@ -1,4 +1,4 @@
-Exercise 43:  You Make A Game
+习题 43:  你来制作一个游戏
 =============================
 
 You need to start learning to feed yourself.  Hopefully as you have worked

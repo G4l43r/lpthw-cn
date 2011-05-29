@@ -1,4 +1,4 @@
-Exercise 42: Getting Classy
+习题 42: Getting Classy
 ***************************
 
 While it's fun to put functions inside of dictionaries, you'd think there'd
