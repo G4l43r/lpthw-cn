@@ -1,73 +1,57 @@
-Exercise 27: Memorizing Logic 
+习题 27: 记住逻辑关系 
 *****************************
+到此为止你已经学会了读写文件，命令行处理，以及很多 Python 数学运算功能。今天，
+你将要开始学习逻辑了。你要学习的不是研究院里的高深逻辑理论，只是程序员每天都
+用到的让程序跑起来的基础逻辑知识。
 
-Today is the day you start learning about logic.  Up to this point you have done 
-everything you possibly can reading and writing files, to the terminal, and have
-learned quite a lot of the math capabilities of Python.
+学习逻辑之前你需要先记住一些东西。这个练习我要求你一个星期完成，不要擅自修改
+日程，就算你烦得不得了，也要坚持下去。这个练习会让你背下来一系列的逻辑表格，
+这会让你更容易地完成后面的习题。
 
-From now on, you will be learning *logic*.  You won't learn complex theories
-that academics love to study, but just the simple basic logic that
-makes real programs work and that real programmers need every day.
+需要事先警告你的是：这件事情一开始一点乐趣都没有，你会一开始就觉得它很无聊乏味，
+但它的目的是教你程序员必须的一个重要技能——一些重要的概念是必须记住的，一旦你明白了
+这些概念，你会获得相当的成就感，但是一开始你会觉得它们很难掌握，就跟和乌贼比赛摔跤一样，
+而等到某一天，你会刷的一下豁然开朗。你会从这些基础的记忆学习中得到丰厚的回报。
 
-Learning logic has to come after you do some memorization.  I want you
-to do this exercise for an entire week.  Do not falter.  Even if you are bored
-out of your mind, keep doing it.  This exercise has a set of logic tables you
-must memorize to make it easier for you to do the later exercises.
+这里告诉你一个记住某样东西，而不让自己抓狂的方法：在一整天里，每次记忆一小部分，
+把你最需要加强的部分标记起来。不要想着在两小时内连续不停地背诵，这不会有什么好
+的结果。不管你花多长时间，你的大脑也只会留住你在前 15 或者 30 分钟内看过的东西。
 
-I'm warning you this won't be fun at first.  It will be downright boring and tedious
-but this is to teach you a very important skill you will need as a programmer.  You
-*will* need to be able to memorize important concepts as you go in your life.
-Most of these concepts will be exciting once you get them.  You will struggle with
-them, like wrestling a squid, then one day *snap* you will understand it.  All
-that work memorizing the basics pays off big later.
+取而代之，你需要做的是创建一些索引卡片，卡片有两列内容，正面是逻辑关系，反面是
+答案。你需要做到的结果是：拿出一张卡片来，看到正面的表达式，例如 "True or False"，
+你可以立即说出背面的结果是 "True"！坚持练习，直到你能做到这一点为止。
 
-Here's a tip on how to memorize something without going insane:  Do a tiny bit
-at a time throughout the day and mark down what you need to work on most.  Do
-not try to sit down for two hours straight and memorize these tables.
-This won't work.  Your brain will really only retain whatever you studied in the
-first 15 or 30 minutes anyway.
-   
-Instead, what you should do is create a bunch of index cards with each column
-on the left on one side (True or False) and the column on the right on the back.
-You should then pull them out, see the "True or False" and be able to immediately
-say "True!"  Keep practicing until you can do this.
+一旦你能做到这一点了，接下来你需要每天晚上自己在笔记本上写一份真值表出来。
+不要只是抄写它们，试着默写真值表，如果发现哪里没记住的话，就飞快地撇一眼
+这里的答案。这样将训练你的大脑让它记住整个真值表。
 
-Once you can do that, start writing out your own truth tables each night into a
-notebook.  Do not just copy them. Try to do them from memory, and when you get
-stuck glance quickly at the ones I have here to refresh your memory.  Doing
-this will train your brain to remember the whole table.
-
-Do not spend more than one week on this, because you will be applying it
-as you go.
+不要在这上面花超过一周的时间，因为你在后面的应用过程中还会继续学习它们。
 
 
-The Truth Terms
+逻辑术语
 ===============
 
-In python we have the following terms (characters and phrases) for determining
-if something is "True" or "False".  Logic on a computer is all about
-seeing if some combination of these characters and some variables is True
-at that point in the program.
+在 python 中我们会用到下面的术语（字符或者词汇）来定义事物的真(True)或者假(False)。
+计算机的逻辑就是在程序的某个位置检查这些字符或者变量组合在一起表达的结果是真是假。
 
-* ``and``
-* ``or``
-* ``not``
-* ``!=`` (not equal)
-* ``==`` (equal)
-* ``>=`` (greater-than-equal)
-* ``<=`` (less-than-equal)
-* True
-* False
+* ``and`` 与
+* ``or`` 或
+* ``not`` 非
+* ``!=`` (not equal) 不等于
+* ``==`` (equal) 等于
+* ``>=`` (greater-than-equal) 大于等于
+* ``<=`` (less-than-equal) 小于等于
+* True 真
+* False 假
 
-You actually have run into these characters before, but maybe not the phrases.
-The phrases (and, or, not) actually work the way you expect them to, just like
-in English.
+其实你已经见过这些字符了，但这些词汇你可能还没见过。这些词汇(and, or, not)和你
+期望的效果其实是一样的，跟英语里的意思一模一样。
 
 
-The Truth Tables
+真值表
 ================
 
-We will now use these characters to make the truth tables you need to memorize.
+我们将使用这些字符来创建你需要记住的真值表。
 
 
 ========= =====
@@ -158,7 +142,8 @@ not (False and False) True
 =============== =====
 
 
-Now use these tables to write up your own cards and spend the week memorizing them.  Remember though,
-there is no failing in this book, just trying as hard as you can each day, and then a *little* bit more.
+现在使用这些表格创建你自己的卡片，再花一个星期慢慢记住它们。记住一点，这本书不会要求你
+成功或者失败，只要每天尽力去学，再在尽力的基础上多花一点功夫就可以了。
+
 
 
