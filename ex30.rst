@@ -1,66 +1,56 @@
-Exercise 30:  Else And If
+习题 30:  Else 和 If
 *************************
 
-In the last exercise you worked out some ``if-statements``, and then tried to
-guess what they are and how they work.  Before you learn more I'll explain what
-everything is by answering the questions you had from extra credit.  You did
-the extra credit right?
+前一习题中你写了一些 ``if-statements`` （if 语句），并且试图猜出它们是什么，
+以及实现的是什么功能。在你继续学习之前，我给你解释一下上一节的加分习题的答案。
+上一节的加分习题你已经做了吧，有没有？
 
 
-1. What do you think the ``if`` does to the code under it?  An if statement
-   creates what is called a "branch" in the code.  It's kind of like those
-   choose your own adventure books where you are asked to turn to one page if
-   you make one choice, and another if you go a different direction.  The
-   ``if-statement`` tells your script, "If this boolean expression is True,
-   then run the code under it, otherwise skip it."
+1. 你认为 ``if`` 对于它下一行的代码做了什么? 
+   If 语句为代码创建了一个所谓的“分支”、
+   就跟 RPG 游戏中的情节分支一样。 ``if-statement`` 告诉你的脚本：“如果这个布尔表达式
+   为真，就运行接下来的代码，否则就跳过这一段。”
+
+2. 为什么 ``if`` 语句的下一行需要4个空格的缩进?
+   行尾的冒号的作用是告诉 Python 接下来你要创建一个新的代码区段。这根你创建函数时的冒号
+   是一个道理。
+
+3. 如果不缩进, 会发生什么事情?
+   如果你没有缩进，你应该会看到 Python 报错。Python 的规则里，只要一行以 ``:`` （冒号，
+   colon）结尾，它接下来的内容就应该有缩进。
 
 
-2. Why does the code under the ``if`` need to be indented 4 spaces?
-   A colon at the end of a line is how you tell Python you are going to 
-   create a new "block" of code, and then indenting 4 spaces tells Python
-   what lines of code are in that block.  This is *exactly* the same thing
-   you did when you made functions in the first half of the book.
+4. 把习题26中的其它布尔表达式放到``if语句``中会不会也可以运行呢? 试一下.
+   可以。而且不管多复杂都可以，虽然写复杂的东西通常是一种不好的编程风格。
 
-3. What happens if it isn't indented?
-   If it isn't indented, you will most likely create a Python error.  Python
-   expects you to indent *something* after you end a line with a ``:`` (colon).
+5. 如果把变量 ``people``, ``cats``, 和 ``dogs`` 的初始值改掉, 会发生什么事情?
+   因为你比较的对象是数字，如果你把这些数字改掉的话，某些位置的 ``if-statements`` 会被
+   演绎为 ``True``，而它下面的代码区段将被运行。你可以试着修改这些数字，然后在头脑里
+   假想一下那一段代码会被运行。
 
 
-4. Can you put other boolean expressions from Ex. 26 in the ``if`` statement?  Try it.
-   Yes you can, and they can be as complex as you like, although really complex 
-   things generally are bad style.
+把我的答案和你的答案比较一下，确认自己真正懂得代码“区段”的含义。这点对于你下一节的练习
+很重要，因为你将会写很多的 if 语句。
 
-5. What happens if you change the initial variables for ``people``, ``cats``,
-   and ``dogs``?  Because you are comparing numbers, if you change the numbers,
-   different ``if-statements`` will evaluate to ``True`` and the blocks of code
-   under them will run.  Go back and put different numbers in and see if you
-   can figure out in your head what blocks of code will run.
-
-
-Compare my answers to your answers, and make sure you *really* understand the concept of
-a "block" of code.  This is important for when you do the next exercise where you write
-all the parts of ``if-statements`` that you can use.
-
-
-Type this one in and make it work too.
+把这一段写下来，并让它运行起来：
 
 .. literalinclude:: ex/ex30.py
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 .. literalinclude:: ex/ex30.txt
 
 
-Extra Credit
+加分习题
 ============
 
-1. Try to guess what ``elif`` and ``else`` are doing.
-2. Change the numbers of ``cars``, ``people``, and ``buses`` and then trace
-   through each ``if-statement`` to see what will be printed.
-3. Try some more complex boolean expressions like ``cars > people and buses < cars``.
-4. Above each line write an English description of what the line does.
+1. 猜想一下 ``elif`` 和 ``else`` 的功能。
+2. 将 ``cars``, ``people``, 和 ``buses`` 的数量改掉，然后追溯每一个 ``if-statement`` 。
+   看看最后会打印出什么来。
+3. 试着写一些复杂的布尔表达式，例如 ``cars > people and buses < cars`` 。
+4. 在每一行的上面写注解，说明这一行的功用。
 
 
