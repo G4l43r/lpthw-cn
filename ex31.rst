@@ -1,41 +1,36 @@
-Exercise 31: Making Decisions
+习题 31: 作出决定
 *****************************
 
-In the first half of this book you mostly just printed out things and called 
-functions, but everything was basically in a straight line.  Your scripts ran
-starting at the top, and went to the bottom where they ended.  If you 
-made a function you could run that function later, but it still didn't
-have the kind of branching you need to really make decisions.  Now that
-you have ``if``, ``else``, and ``elif`` you can start to make scripts that
-decide things.
+这本书的上半部分你打印了一些东西，而且调用了函数，不过一切都是直线式进行的。
+你的脚本从最上面一行开始，一路运行到结束，但其中并没有决定程序流向的分支点。
+现在你已经学了 ``if``, ``else``, 和 ``elif`` ，你就可以开始创建包含条件判断
+的脚本了。
 
-In the last script you wrote out a simple set of tests asking some questions.
-In this script you will ask the user questions and make decisions based
-on their answers.  Write this script, and then play with it quite a lot
-to figure it out.
+上一个脚本中你写了一系列的简单提问测试。这节的脚本中，你将需要向用户提问，
+依据用户的答案来做出决定。把脚本写下来，多多鼓捣一阵子，看看它的工作原理是
+什么。
 
 .. literalinclude:: ex/ex31.py
     :linenos:
 
-A key point here is that you are now putting the ``if-statements`` *inside*
-``if-statements`` as code that can run.  This is very powerful and can be used
-to create "nested" decisions, where one branch leads to another and another.
+这里的重点是你可以在 ``if-statement`` 内部再放一个 ``if-statement`` 。这是
+一个很强大的功能，可以用来创建嵌套(nested)的决定，其中的一个分支将引向另一个
+分支的子分支。
 
-Make sure you understand this concept of if-statements inside
-if-statements.  In fact, do the extra credit to really nail it.
+你需要理解 if-statement 包含 if-statement 的概念。做一下加分习题，这样你会确信
+自己真正理解了它们。
 
 
-What You Should See
+你应该看到的结果
 ===================
 
-Here is me playing this little adventure game.  I do not do so well.
+我在玩一个小冒险游戏，我玩的水平不怎么好：
 
 .. literalinclude:: ex/ex31.txt
 
 
-Extra Credit
+加分习题
 ============
 
-Make new parts of the game and change what decisions people can make.  Expand
-the game out as much as you can before it gets ridiculous.
-
+为游戏添加新的部分，改变玩家做决定的位置。尽自己的能力扩展这个游戏，不过别把游戏弄得
+太怪异不堪了。
