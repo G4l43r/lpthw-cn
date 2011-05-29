@@ -1,62 +1,47 @@
-Exercise 34: Accessing Elements Of Lists
+习题 34: 访问列表的元素
 ****************************************
 
-Lists are pretty useful, but unless you can get at the things in them they
-aren't all that good.  You can already go through the elements of a list in
-order, but what if you want say, the 5th element?  You need to know how to
-access the elements of a list.  Here's how you would access the *first* element
-of a list:
+列表的用处很大，但只有你能访问里边的内容时它才能发挥出作用来。你已经学会了
+按顺序读出列表的内容，但如果你要得到第 5 个元素该怎么办呢？你需要知道如何
+访问列表中的元素。访问第一个元素的方法是这样的：
 
 .. code-block:: python
 
     animals = ['bear', 'tiger', 'penguin', 'zebra']
     bear = animals[0]
 
-You take a list of animals, and then you get the first one using ``0``?!  How
-does that work?  Because of the way math works, Python start its
-lists at 0 rather than 1.  It seems weird, but there's many advantages to this,
-even though it is mostly arbitrary.
+你定义一个 animals 的列表，然后你用 ``0`` 来获取第一个元素?! 这是怎么回事啊？
+因为数学里边就是这样，所以 Python 的列表也是从 0 开始的。虽然看上去很奇怪，
+但其实这样定义有它的好处，而且实际上设计成 0 或者 1 开头其实都可以，
 
-The best way to explain why is by showing you the difference between how
-you use numbers and how programmers use numbers.
+最好的解释方式是将你平时使用数字的方式和程序员使用数字的方式做对比。
 
-Imagine you are watching the four animals in our list above
-(``['bear', 'tiger', 'penguin', 'zeebra']``) run in a race.  They win in the *order* we have
-them in this list.  The race was really exciting because, the animals
-didn't eat each other and somehow managed to run a race.  Your friend however
-shows up late and wants to know who won.  Does your friend say, 
-"Hey, who came in *zeroth*?"  No, he says, "Hey says, hey who came in *first*?"
+假设你在观看上面列表中的四种动物(``['bear', 'tiger', 'penguin', 'zeebra']``) 
+的赛跑，而它们比赛的名词正好跟列表里的次序一样。这是一场很激动人心的比赛，
+因为这些动物没打算吃掉对方，而且比赛还真的举办起来了。结果你的朋友来晚了，
+他想知道谁赢了比赛，他会问你“嘿，谁是第0名”吗？不会的，他会问“嘿，谁是第1名？”
 
-This is because the *order* of the animals is important.  You can't have the second
-animal without the first animal, and can't have the third without the second.  It's
-also impossible to have a "zeroth" animal since zero means nothing.  How can you have
-a nothing win a race?  It just doesn't make sense.  We call these kinds of 
-numbers "ordinal" numbers, because they indicate an ordering of things.
+这是因为动物的次序是很重要的。没有第一个就没有第二个，没有第二个也没有第三个。
+第零个是不存在的，因为零的意思是什么都没有。“什么都没有”怎么赢比赛嘛，完全不合
+逻辑。这样的数字我们称之为“ordinal number（序数）”，因为它们表示的是事物的顺序。
 
-Programmers, however, can't think this way because they can pick any element
-out of a list at any point.  To a programmer, the above list is more like a deck
-of cards.  If they want the tiger, they grab it.  If they want the zeebra, they
-can take it too.  This need to pull elements out of lists at random means that
-they need a way to indicate elements consistently by an address, or an "index", and
-the best way to do that is to start the indices at 0.  Trust me on this, the math
-is *way* easier for these kinds of accesses.  This kind of number is a
-"cardinal" number and means you can pick at random, so there needs to be a 0
-element.
+而程序员不能用这种方式思考问题，因为他们可以从列表的任何一个位置取出一个元素来。
+对程序员来说，上述的列表更像是一叠卡片。如果他们想要 tiger，就抓它出来，如果想要
+zeebra，也一样抓取出来。要随机地抓取列表里的内容，列表的每一个元素都应该有一个地
+址，或者一个 "index（索引）"，而最好的方式是使用以 0 开头的索引。相信我说的这一点
+吧，这种方式获取元素会更容易。这类的数字被称为“cardinal number（基数）”，它意味着
+你可以任意抓取元素，所以我们需要一个 0 号元素。
 
-So, how does this help you work with lists?  Simple, every time you say
-to yourself, "I want the 3rd animal," you translate this "ordinal" number to
-a "cardinal" number by subtracting 1.  The "3rd" animal is at index 2 and is the
-penguin.  You have to do this because you have spent your whole life using ordinal
-numbers, and now you have to think in cardinal.  Just subtract 1 and you will
-be good.
+那么，这些知识对于你的列表操作有什么帮助呢？很简单，每次你对自己说“我要第 3 只动物”
+时，你需要将“序数”转换成“基数”，只要将前者减 1 就可以了。第 3 只动物的索引是 2，
+也就是 penguin。由于你一辈子都在跟序数打交道，所以你需要用这种方式来获得基数，
+只要减 1 就都搞定了。
 
-Remember:  ordinal == ordered, 1st; cardinal == cards at random, 0.
+记住:  ordinal == ordered（有序的），以 1 开始；cardinal == 随机的卡片, 以 0 开始。
 
-Let's practice this.  Take this list of animals, and follow the exercises
-where I tell you to write down what animal you get for that ordinal or cardinal
-number.  Remember if I say "first", "second", etc. then I'm using ordinal, so
-subtract 1.  If I give you cardinal (0, 1, 2) then use it directly.
-
+让我们练习一下。定义一个动物列表，然后跟着做后面的练习，你需要写出所指位置的动物
+名称。如果我用的是“1st, 2nd”等说法，那说明我用的是序数，所以你需要减去 1。如果我
+给你的是基数（0, 1, 2），你只要直接使用即可。
 .. code-block:: python
 
     animals = ['bear', 'python', 'peacock', 'kangaroo', 'whale', 'platypus']
@@ -70,24 +55,24 @@ subtract 1.  If I give you cardinal (0, 1, 2) then use it directly.
 7. The 6th animal.
 8. The animal at 4.
 
-For each of these, write out a full sentence of the form:  "The 1st animal is at 0 and is a bear."
-Then say it backwards, "The animal at 0 is the 1st animal and is a bear."
+对于上述每一条，以这样的格式写出一个完整的句子：“The 1st animal is at 0 and is a bear.”
+然后倒过来念：“The animal at 0 is the 1st animal and is a bear.”
 
-Use your python to check your answers.
+使用 python 检查你的答案。
 
 
-Extra Credit
+加分习题
 ============
 
-1. Read about ordinal and cardinal numbers online.
-2. With what you know of the difference between these types of numbers, can you explain why this 
-   really is 2010?  (Hint, you can't pick years at random.)
-3. Write some more lists and work out similar indexes until you can translate them.
-4. Use Python to check your answers to this as well.
+1. 上网搜索一下关于序数(ordinal number)和基数(cardinal number)的知识并阅读一下。
+2. 以你对于这些数字类型的了解，解释一下为什么今年是 2010 年。提示：你不能随便挑选
+   年份。
+3. 再写一些列表，用一样的方式作出索引，确认自己可以在两种数字之间互相翻译。
+4. 使用 python 检查自己的答案。
 
 .. warning::
 
-    Programmers will tell you to read this guy named "Dijkstra" on this subject.
-    I recommend you avoid his writings on this unless you enjoy being yelled at
-    by someone who stopped programming at the same time programming started.
+    会有程序员告诉你让你去阅读一个叫“Dijkstra”的人写的关于数字的话题。我建议你还是
+    不读为妙。除非你喜欢听一个在编程这一行刚兴起时就停止从事编程了的人对你大喊大叫。
+
 
