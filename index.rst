@@ -3,14 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Learn Python The Hard Way's documentation!
+笨办法学 Python （Learn Python The Hard Way）
 =====================================================
 
 Contents:
 
 .. toctree::
    :maxdepth: 1
-
+   
+   intro_zh
    intro
    ex0
    ex1
