@@ -1,30 +1,27 @@
-习题 42: Getting Classy
+习题 42: 物以类聚
 ***************************
 
-While it's fun to put functions inside of dictionaries, you'd think there'd
-be something in Python that does this for you.  There is and it's the ``class``
-keyword.  Using ``class`` is how you create an even more awesome "dict with functions"
-than the one you made in the last exercise.  Classes have all sorts of powerful
-features and uses that I could never go into in this book.  Instead, you will just
-use them like they are fancy dictionaries with functions.
+虽说将函数放到字典里是很有趣的一件事情，你应该也会想到“如果 Python 能自动为你做
+这件事情该多好”。事实上也的确有，那就是 ``class`` 这个关键字。你可以使用 
+``class`` 创建更棒的“函数字典”，比你在上节练习中做的强大多了。Class（类）有着
+各种各样强大的功能和用法，但本书不会深入讲这些内容，在这里，你只要你学会把它们
+当作高级的“函数字典”使用就可以了。
 
-A programming language that uses classes is called an "Object Oriented
-Programming".  This is an old style of programming where you make "things" and
-you "tell" those things to do work.  You have been doing a lot of this.  A whole
-lot.  You just didn't know it.  Remember when you were doing this:
+用到“class”的编程语言被称作“Object Oriented Programming（面向对象编程）”语言。
+这是一种传统的编程方式，你需要做出“东西”来，然后你“告诉”这些东西去完成它们的工作。
+类似的事情你其实已经做过不少了，只不过还没有意识到而已。记得你做过的这个吧：
 
 .. code-block:: python
 
     stuff = ['Test', 'This', 'Out']
     print ' '.join(stuff)
 
-You were actually using classes.  The variable ``stuff`` is actually a ``list class``.
-The ``' '.join(stuff)`` is calling the ``join`` function of the string ``' '``
-(just an empty space) is *also* a class, a string class.  It's all classes!
+其实你这里已经使用了 class。``stuff`` 这个变量其实是一个 ``list class`` （列表类）。
+而 ``' '.join(stuff)`` 里调用函数 ``join`` 的字符串 ``' '`` （就是一个空格）也是
+一个 class —— 它是一个 string class (字符串类)。到处都是 class！
 
-Well, and objects, but let's just skip that word for now.  You will learn what
-those are after you make some classes.  How do you make classes?  Very similar
-to how you made the ``ROOMS`` dict, but easier:
+还有一个概念是 object（物件），不过我们暂且不提。当你创建过几个 class 后就会学到了。
+你怎样创建 class 呢？和你创建 ``ROOMS`` 的方法差不多，但其实更简单：
 
 .. code-block:: python
 
@@ -57,77 +54,62 @@ to how you made the ``ROOMS`` dict, but easier:
 
 .. warning::
 
-    Alright, this is where you start learning about "warts".  Python is an old
-    language with lots of really ugly obnoxious pieces that were bad decisions.
-    To cover up these bad decisions they make new bad decisions and then yell
-    at people to adopt the new bad decisions.  The phrase ``class
-    TheThing(object)`` is an example of a bad decision.  I won't get into it
-    right here, but  you shouldn't worry about why your class has to have
-    ``(object)`` after its name, just type it this way all the time or other
-    Python programmers will yell at you.  We'll get into why later.
+    嗯，你开始看到 Python 的“疣子”了。Python 是一门比较旧的语言，其中包含很多
+    丑陋可恶的设计决定。为了将这些丑陋设计掩盖过去，他们就做了一些新的丑陋设计，
+    然后告诉人们让他们习惯这些新的坏设计。``class TheThing(object)`` 就是其中
+    一个例子。这里我就不展开讲了，不过你也不必操心为什么你的 class 要在后面添一个
+    ``(object)`` ，只要跟着这样做就可以了，否则将来总有一天别的 Python 程序员
+    会吼你让你这样做。后面我们再讲为什么。
 
-You see that ``self`` in the parameters?  You know what that is?  That's right,
-it's the "extra" parameter that Python creates so you can type
-``a.some_function()`` and then it will translate *that* to really be
-``some_function(a)``.  Why use ``self``?  Your function has no idea what you
-are calling any one "instance" of ``TheThing`` or another, you just use a
-generic name ``self``. That way you can write your function and it will always
-work.
+你看到参数里的 ``self`` 了吧？你知道它是什么东西吗？对了，它就是 Python 创建的
+额外的一个参数，有了它你才能实现 ``a.some_function()` 这种用法，这时它就会把
+前者翻译成 ``some_function(a)`` 执行下去。为什么用 ``self`` 呢？因为你的函数并
+不知道你的这个“实例”是来自叫 ``TheThing`` 或者别的名字的 class。所以你只要使用
+一个通用的名字 ``self`` 。这样你写出来的函数就会在任何情况下都能正常工作。
 
-You could actually use another name rather than ``self`` but then every Python
-programmer on the planet would hate you, so do not.  Only jerks change things
-like that and I taught you better.  Be nice to people who have to read what you
-write because ten years later all code is horrible.
+其实你可以使用 ``self`` 以外的别的字眼，不过如果你这样做的话，你就会成为所有
+Python 程序员的众之矢的，所以还是随大流的好。只有变态才会在这里乱改，我教你的
+没错。对以后会读到你的代码的人好点儿，因为你现在的代码10年以后所有的代码都会是一
+团糟。
 
-Next, see the ``__init__`` function?  That is how you setup a Python class with
-internal variables.  You can set them on ``self`` with the ``.`` (period) just
-like I will show you here.  See also how we then use this in ``add_me_up()`` later
-which lets you add to the ``self.number`` you created.  Later you can see how
-we use this to add to our number and print it.
+接下来，看到 ``__init__`` 函数了吗？这就是你为 Python class 设置内部变量的方式。
+你可以使用 ``.`` 将它们设置到 ``self`` 上面。另外看到我们使用了 ``add_me_up()``
+为你创建的 ``self.number`` 加值。后面你可以看到我们怎样可以使用这种方法为数字
+加值，然后打印出来。
 
-Classes are very powerful, so you should go read about them.  Read everything
-you can and play with them.  You actually know how to use them, you just have
-to try it.  In fact, I want to go play some guitar right now so I'm not going
-to give you an exercise to type.  You are going to go write an exercise
-using classes.
+Class 是很强大的东西，你应该好好读读相关的东西。尽可能多找些东西读并且多多实验。
+你其实知道它们该怎么用，只要试试就知道了。其实我马上就要去练吉他了，所以我不会
+让你写练习了。你将使用 class 写一个练习。
 
-Here's how we would do exercise 41 using classes instead of the thing
-we created:
+接下来我们将把习题41的内容重写，不过这回我们将使用 class：
 
 .. literalinclude:: ex/ex42.py
     :linenos:
 
 
-What You Should See
+你应该看到的结果
 ===================
 
-The output from this version of the game should be exactly the same as the
-previous version, and in fact you will notice that some of the code is nearly
-the same.  Compare this new version of the game and with
-the last one so you understand the changes that were made.  Key things to
-really get are:
+这个版本的游戏和你的上一版效果应该是一样的，其实有些代码都几乎一样。比较一下两版
+代码，弄懂其中不同的地方，重点需要理解这些东西：
 
-1. How you made a ``class Game(object)`` and put functions inside it.
-2. How ``__init__`` is a special intialization method that sets up important variables.
-3. How you added functions *to* the class by indenting them so they were deeper under
-   the ``class`` keyword.  This is important so study carefully how indentation creates
-   the class structure.
-4. How you indented again to put the contents of the functions under their names.
-5. How colons are being used.
-6. The concept of ``self`` and how it's used in ``__init__``, ``play``,
-   and ``death``.
-7. Go find out what ``getattr`` does inside ``play`` so that you 
-   understand what's going on with the operation of ``play``.  In fact, try
-   doing this by hand inside Python to really get it.
-8. How a ``Game`` was created at the end and then told to ``play()`` and how that
-   got everything started.
+1. 怎样创建一个 ``class Game(object)`` 并且放函数到里边去。
+2. ``__init__`` 是一个特殊的初始方法，可以预设重要的变量在里边。
+3. 为 class 添加函数的方法是将函数在 class 下再缩进一阶，class 的架构就是通过
+   缩进实现的，这点很重要。
+4. 你在函数里的内容又缩进了一阶。
+5. 注意冒号的用法。
+6. 理解 ``self`` 的概念，以及它在 ``__init__`` 、 ``play`` 、 ``death`` 里是怎样使用的。
+7. 研究 ``play`` 里的 ``getattr`` 的功能，这样你就能明白 ``play`` 所做的事情。
+   其实你可以手动在 Python 命令行实验一下，从而弄懂它。
+8. 最后我们怎样创建了一个 ``Game`` ，然后通过 ``play()`` 让所有的东西运行起来。
 
 
-Extra Credit
+加分习题
 ============
 
-1. Go find out what the ``__dict__`` is and figure out how to get at it.
-2. Try adding some rooms to make sure you know how to work with a class.
-3. Create a two-class version of this, where one is the ``Map`` and the other is the ``Engine``.
-   Hint: ``play`` goes in the ``Engine``.
+1. 研究一下 ``__dict__`` 是什么东西，应该怎样使用。
+2. 再为游戏添加一些房间，确认自己已经学会使用 class 。
+3. 创建一个新版本，里边使用两个 class，其中一个是 ``Map`` ，另一个是 ``Engine`` 。
+   提示: 把 ``play`` 放到 ``Engine`` 里面。
 
