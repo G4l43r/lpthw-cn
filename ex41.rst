@@ -1,101 +1,94 @@
-习题 41: A Room With A View Of A Bear With A Broadsword
+习题 41: 持剑的熊，密室
 ***********************************************************
 
-Did you figure out the secret of the function in the dict from the
-last exercise?  Can you explain it to yourself?  Let me explain it
-and you can compare your explanation with mine.  Here are the lines of
-code we are talking about:
+你在上一节中发现 dict 的秘密功能了吗？你可以解释给自己吗？让我来给你
+解释一下，顺便和你自己的理解对比看有什么不同。这里是我们要讨论的代码：
 
 .. code-block::  python
     
     cities['_find'] = find_city
     city_found = cities['_find'](cities, state)
 
-Remember that functions can be variables too.  The ``def find_city`` just makes
-another variable name in your current module that you can use anywhere.  In
-this code first we are putting the function ``find_city`` into the dict ``cities``
-as ``'_find'``.  This is the same as all the others where we set states to some
-cities, but in this case it's actually the function we put in there.
+你要记住一个函数也可以作为一个变量， ``def find_city`` 这一句正是创建
+了一个你可以在任何地方都能使用的变量。在这段代码里，我们首先把函数
+``find_city`` 放到叫做 ``cities`` 的字典中，并将其标记为 ``'_find'`` 。
+这和我们将州和市关联起来的代码做的事情一样，只不过我们在这里放了一个
+函数的名称。
 
-Alright, so once we know that ``find_city`` is in the dict at ``_find``, that means
-we can do work with it.  The 2nd line of code (used later in the previous 
-exercise) can be broken down like this:
+好了，所以一旦我们知道 ``find_city`` 是在字典中 ``_find`` 的位置，这就
+意味着我们可以去调用它。第二行代码可以分解成如下步骤：
 
-1. Python sees ``city_found =`` and knows we want to make a new variable.
-2. It then reads ``cities`` and finds that variable, it's a dict.
-3. Then there's ``['_find']`` which will *index* into the ``cities`` dict and pull
-   out whatever is at ``_find``.
-4. What is at ``['_find']`` is our function ``find_city`` so Python *then* knows
-   it's got a function, and when it hits ``(`` it does the function call.
-5. The parameters ``cities, state`` are passed to this function ``find_city``, and
-   it runs because it's called.
-6. ``find_city`` then tries to look up ``states`` inside ``cities``, and returns
-   what it finds or a message saying it didn't find anything.
-7. Python takes what ``find_city`` returned, and *finally* that is what is assigned
-   to ``city_found`` all the way at the beginning.
+1. Python 看到 ``city_found =`` 于是知道了需要创建一个变量。
+2. 然后它读到 ``cities`` ，然后知道了它是一个字典
+3. 然后看到了 ``['_find']`` ，于是 Python 就从索引找到了字典 ``cities`` 
+   中对应的位置，并且获取了该位置的内容。
+4. ``['_find']`` 这个位置的内容是我们的函数 ``find_city`` ，所以 Python
+   就知道了这里表示一个函数，于是当它碰到 ``(`` 就开始了函数调用。
+5. ``cities, state`` 这两个参数将被传递到函数 ``find_city`` 中，然后这个
+   函数就被运行了。
+6. ``find_city`` 接着从 ``cities`` 中寻找 ``states`` ，并且返回它找到的
+   内容，如果什么都没找到，就返回一个信息说它什么都没找到。
+7. Python ``find_city`` 接受返回的信息，最后将该信息赋值给一开始的
+   ``city_found`` 这个变量。
 
-I'm going to teach you a trick.  Sometimes these things read better in English
-if you read the code backwards, so let's try that.  Here's how I would do
-it for that same line (remember *backwards*):
+我再教你一个小技巧。如果你倒着阅读的话，代码可能会变得更容易理解。让我们
+来试一下，一样是那行：
 
-1. ``state`` and ``city`` are...
-2. passed as parameters to...
-3. a function at...
-4. ``'_find'`` inside...
-5. the dict ``cities``...
-6. and finally assigned to ``city_found``.
+1. ``state`` 和 ``city`` 是...
+2. 作为参数传递给...
+3. 一个函数，位置在...
+4. ``'_find'`` 然后寻找，目的地为...
+5. ``cities`` 这个位置...
+6. 最后赋值给 ``city_found``.
 
-Here's another way to read it, this time "inside-out".
+还有一种方法读它，这回是“由里向外”。
 
-1. Find the center item of the expression, in this case ``['_find']``.
-2. Go counter-clock-wise and you have a dict ``cities``, so this finds the element
-   ``_find`` in cities.
-3. That gives us a function.  Keep going counter-clock-wise and you get to the parameters.
-4. The parameters are passed to the function, and that returns a result.  Go counter-clock-wise again.
-5. Finally, we are at the ``city_found =`` assignment, and we have our end result.
+1. 找到表达式的中心位置，此次为 ``['_find']``.
+2. 逆时针追溯，首先看到的是一个叫 ``cities`` 的字典，这样就知道了 cities 中的
+   ``_find`` 元素。
+3. 上一步得到一个函数。继续逆时针寻找，看到的是参数。
+4. 参数传递给函数后，函数会返回一个值。然后再逆时针寻找。
+5. 最后，我们到了 ``city_found =`` 的赋值位置，并且得到了最终结果。
 
-After decades of programming I do not even think about these three ways to read
-code.  I just glance at it and know what it means, and I can even glance at a whole
-screen of code, and all the bugs and errors jump out at me.  That took an incredibly
-long time and quite a bit more study than is sane.  To get that way, I learned these
-three ways of reading most any programming language:
+数十年的编程下来，我在读代码的过程中已经用不到上面的三种方法了。我只要瞟一眼
+就知道它的意思了。甚至给我一整页的代码，我可以一眼瞄出里边的 bug 和错误。这样
+的技能是花了超乎常人的时间和精力才锻炼得来的。在磨练的过程中，我学会了下面
+三种读代码的方法，它们是用户几乎所有的编程语言：
 
-1. Front to back.
-2. Back to front.
-3. Counter-clock-wise.
+1. 从前向后。
+2. 从后向前。
+3. 逆时针方向。
 
-Try them out when you have a difficult statement to figure out.
+下次碰到难懂的语句时，你可以试试这三种方法。
 
-Let's now type in your next exercise, and then go over after that.
-This one is gonna be fun.
+现在我们来写这次的练习，写完后再过一遍，这节习题其实挺有趣的。
 
 .. literalinclude:: ex/ex41.py
     :linenos:
 
-It's a lot of code, but go through it, make sure it works, play it.
+代码不少，不过还是从头写完吧。确认它能运行，然后玩一下看看。
 
 
-What You Should See
+你应该看到的结果
 ===================
 
-Here's me playing the game.  Bears are cool.
+我玩起来时这样的，熊很酷：
 
 .. literalinclude:: ex/ex41.txt
 
 
 
-Extra Credit
+加分习题
 ============
 
-1.  Explain how returning the next room works.
-2.  Create more rooms, making the game bigger.
-3.  Instead of having each function print itself, learn about "doc comments".  See if you 
-    can write the room description as doc comments, and change the runner to print
-    them.
-4.  Once you have doc comments as the room description, do you need to have the
-    function prompt even?  Have the runner prompt the user, and pass that in to
-    each function.  You functions should just be if-statements printing the
-    result and returning the next room.
-5.  This is actually a small version of something called a "finite state machine".
-    Go read about them.  They might not make sense but try anyway.
+1.  解释一下返回至下一个房间的工作原理。
+2.  创建更多的房间，让游戏规模变大。
+3.  除了让每个函数打印自己以外，试试学习一下 "doc comments（文档注解）。
+    看看你能不能将房间描述写成文档注解，然后修改运行它的代码，让它把文档
+    注解打印出来。
+4.  一旦你用了文档注解作为房间描述，你还需要让这个函数打印出用户提示吗？
+    试着让运行函数的代码打出用户提示来，然后将用户输入传递到各个函数。
+    你的函数应该只是一些 if 语句组合，将结果打印出来，并且返回下一个房间。
+5.  这其实是一个小版本的 "finite state machine（有限状态机）"，找资料
+    阅读了解一下，虽然你可能看不懂，但还是找来看看吧。
 
