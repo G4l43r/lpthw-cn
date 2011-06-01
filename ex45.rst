@@ -46,70 +46,58 @@
 写成代码是什么样子
 ----------------------
 
-This is a weird concept, but to be very honest you only have to worry about it
-when you make new classes, and when you use a class.  I will show you two
-tricks to help you figure out whether something is a ``Class`` or
-``Object``.
+这个概念有点绕人，不过实话说，你只要在创建和使用 class 的时候操心一下就可以了。
+我来给你两个区分 ``Class`` 和 ``Object`` 的小技巧。
 
-First, you need to learn two catch phrases "is-a" and "has-a".  You use the
-phrase is-a when you talk about objects and classes being related to each other
-by a class relationship.  You use has-a when you talk about objects and classes
-that are related only because they *reference* each other.
+首先针对类和对象，你需要学会两个说法，“is-a(是啥)”和“has-a(有啥)”。“是啥”要用在
+谈论“两者以类的关系互相关联”的时候，而“有啥”要用在“两者无共同点，仅是互为参照”的时候。
 
-Now, go through this piece of code and replace each ``##??`` comment with a
-replacement comment that says whether the next line represents an ``is-a`` or a
-``has-a`` relationship, and what that relationship is.  In the beginning of the
-code, I've laid out a few examples, so you just have to write the remaining
-ones.
+接下来，通读这段代码，将每一个注解为 ``##??`` 的位置标明他是“is-a”还是“has-a”
+的关系，并讲明白这个关系是什么。在代码的开始我还举了几个例子，所以你只要写
+剩下的就可以了。
 
-Remember, is-a is the relationship between Fish and Salmon, while has-a is the
-relationship between Salmon and Gills.
+记住，“是啥”指的是鱼和泥鳅的关系，而“有啥”指的是泥鳅和鳃的关系。
 
 
 .. literalinclude:: ex/ex45.py
     :linenos:
 
 
-About class Name(object)
+关于 class Name(object)
 ========================
 
-Remember how I was yelling at you to always use ``class Name(object)`` and I couldn't
-tell you why?  Now I can tell you, because you just learned about the difference between
-a ``class`` and an ``object``.  I couldn't tell you until now because you would have
-just been confused and couldn't learn to use the technology.
+记得我曾经强迫让你使用 ``class Name(object)`` 却没告诉你为什么吧，现在你已经
+知道了“类”和“对象”的区别，我就可以告诉你原因了。如果我早告诉你的话，你可能会
+晕掉，也学不会这门技术了。
 
-What happened is Python's original rendition of ``class`` was broken in many serious
-ways.  By the time they admitted the fault it was too late, and they had to support 
-it.  In order to fix the problem, they needed some "new class" style so that the
-"old classes" would keep working but you could use the new more correct version.
+真正的原因是在 Python 早期，它对于 ``class`` 的定义在很多方面都是严重有问题的。
+当他们承认这一点的时候已经太迟了，所以逼不得已，他们需要支持这种有问题的 ``class`` 。
+为了解决已有的问题，他们需要引入一种“新类”，这样的话“旧类”还能继续使用，而你也
+有一个新的正确的类可以使用了。
 
-This is where "class is-a object" comes in.  They decided that they would use the
-word "object", lowercased, to be the "class" that you inherit from to make a class.
-Confusing right?  A class inherits from the class named object to make a class but
-it's not an object really it's a class, but do not forget to inherit from object.
+这就用到了“类即是对象”的概念。他们决定用小写的“object”这个词作为一个类，让你在
+创建新类时从它继承下来。有点晕了吧？一个类从另一个类继承，而后者虽然是个类，但
+名字却叫“object”……不过在定义类的时候，别忘记要从 object 继承就好了。
 
-Exactly. The choice of one single word meant that I couldn't teach you about this
-until now.  Now you can try to understand the concept of a class that is an
-object if you like.
+的确如此。一个词的不同就让这个概念变得更难理解，让我不得不现在才讲给你。现在你
+可以试着去理解“一个是对象的类”这个概念了，如果你感兴趣的话。
 
-However, I would suggest you do not.  Just completely ignore the idea of old style
-vs. new style classes and assume that Python always requires (object) when you
-make a class.  Save your brain power for something important.
+然而，我还是建议你别去理解了。你不如完全忘记旧格式和新格式的类的区别，就假设
+Python 的 class 永远都要求你加上 (object) 好了，留着你的脑力思考更重要的问题吧。
 
 
-Extra Credit
+加分习题
 ============
 
 
-1. Research why Python added this strange ``object`` class, and what that means.
-2. Is it possible to use a ``Class`` like it's an ``Object``?
-3. Fill out the animals, fish, and people in this exercise with functions that make
-   them do things.  See what happens when functions are in a "base class" like Animal
-   vs. in say Dog.
-4. Find other people's code and work out all the is-a and has-a relationships.
-5. Make some new relationships that are lists and dicts so you can also have "has-many"
-   relationships.
-6. Do you think there's a such thing as a "is-many" relationship?  Read about "multiple
-   inheritance", then avoid it if you can.
+1. 研究一下为什么 Python 添加了这个奇怪的叫做 ``object`` 的 class，它究竟有什么
+   含义呢？
+2. 有没有办法把 ``Class`` 当作 ``Object`` 使用呢？
+3. 在习题中为 animals、fish、还有 people 添加一些函数，让它们做一些事情。看看
+   当函数在 Animal 这样的“base class(基类)”里和在 Dog 里有什么区别。
+4. 找些别人的代码，理清里边的“是啥”和“有啥”的关系。
+5. 使用列表和字典创建一些新的一对应多的“has-many”的关系。
+6. 你认为会有一种“has-many”的关系吗？阅读一下关于 "multiple inheritance(多重继承)"
+   的资料，然后尽量避免这种用法。then avoid it if you can.
 
 
