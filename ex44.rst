@@ -1,119 +1,94 @@
-习题 44: Evaluating Your Game
-*********************************
+习题 44: 评估你的游戏
+********************************
 
-In this exercise you will evaluate the game you just made.  Maybe you got
-part-way through it and you got stuck.  Maybe you got it working but just barely.
-Either way, we're going to go through a bunch of things you should know now and 
-make sure you covered them in your game.  We're going to study how to properly
-format a class, common conventions in using classes, and a lot of "textbook" knowledge.
+这节练习的目的是检查评估你的游戏。也许你只完成了一半，卡在那里没有进行下去，
+也许你勉强做出来了。不管怎样，我们将串一下你应该弄懂的一些东西，并确认你的
+游戏里有使用到它们。我们将学习如何用正确的格式构建 class，使用 class 的一些
+通用习惯，另外还有很多的“书本知识”让你学习。
 
-Why would I have you try to do it yourself and then show you how to do it right?
-From now on in the book I'm going to try to make you self-sufficient.  I've been
-holding your hand mostly this whole time, and I can't do that for much longer.
-I'm now instead going to give you things to do, have you do them on your own,
-and then give you ways to improve what you did.
+为什么我会让你先行尝试，然后才告诉你正确的做法呢？因为从现在开始你要学会
+“自给自足”，以前是我牵着你前行，以后就得靠你自己了。后面的习题我只会告诉
+你你的任务，你需要自己去完成，在你完成后我再告诉你如何可以改进你的作业。
 
-You will struggle at first and probably be very frustrated but stick
-with it and eventually you will build a mind for solving problems.  You will start
-to find creative solutions to problems rather than just copy solutions out of
-textbooks.
+一开始你会觉得很困难并且很不习惯，但只要坚持下去，你就会培养出自己解决问题
+的能力。你还会找出创新的方法解决问题，这比从课本中拷贝解决方案强多了。
 
-Function Style
+函数的风格
 ==============
 
-All the other rules I've taught you about how to make a function nice apply here, but
-add these things:
+以前我教过的怎样写好函数的方法一样是适用的，不过这里要添加几条：
 
-* For various reasons, programmers call functions that are part of classes ``methods``.
-  It's mostly marketing but just be warned that every time you say "function" they'll
-  annoyingly correct you and say "method".  If they get too annoying, just ask them to
-  demonstrate the mathematical basis that determines how a "method" is different from
-  a "function" and they'll shut up.
-* When you work with classes much of your time is spent talking about making the class
-  "do things".  Instead of naming your functions after what the function does, instead
-  name it as if it's a command you are giving to the class.  Same as ``pop`` is saying
-  "Hey list, ``pop`` this off."  It isn't called ``remove_from_end_of_list`` because
-  even though that's what it does, that's not a *command* to a list.
-* Keep your functions small and simple.  For some reason when people start learning about
-  classes they forget this.
+* 由于各种各样的原因，程序员将 class (类)里边的函数称作 ``method`` （方法）。
+  很大程度上这只是个市场策略（用来推销 OOP），不过如果你把它们称作“函数”的话，
+  是会有啰嗦的人跳出来纠正你的。如果你觉得他们太烦了，你可以告诉他们从数学方面
+  演示一下“函数”和“方法”究竟有什么不同，这样他们会很快闭嘴的。
+* 在你使用 class 的过程中，很大一部分时间是告诉你的 class 如何“做事情”。给这些
+  函数命名的时候，与其命名成一个名词，不如命名为一个动词，作为给 class 的一个命令。
+  就和 list 的 ``pop`` (抛出)函数一样，它相当于说：“嘿，列表，把这东西给我 pop 出去。”
+  它的名字不是 ``remove_from_end_of_list`` ，因为即使它的功能的确是这样，这一串字符
+  也不是一个命令。
+* 让你的函数保持简单小巧。由于某些原因，有些人开始学习 class 后就会忘了这一条。
 
 
-Class Style
+类的风格
 ===========
 
-* Your class should use "camel case" like ``SuperGoldFactory`` rather than ``super_gold_factory``.
-* Try not to do too much in your ``__init__`` functions. It makes them harder to use.
-* Your other functions should use "underscore format" so write ``my_awesome_hair`` and not
-  ``myawesomehair`` or ``MyAwesomeHair``.
-* Be consistent in how you organize your function arguments.  If your class has to deal
-  with users, dogs, and cats, keep that order throughout unless it really doesn't make
-  sense.  If you have one function takes ``(dog, cat, user)`` and the other takes ``(user, cat, dog)``, it'll be hard to use.
-* Try not to use variables that come from the module or globals.  They should be fairly
-  self-contained.
-* A foolish consistency is the hobgoblin of little minds.  Consistency is good, but foolishly
-  following some idiotic mantra because everyone else does is bad style.  Think for yourself.
-* Always, *always* have ``class Name(object)`` format or else you will be in big trouble.
+* 你的 class 应该使用 "camel case（驼峰式大小写）"，例如你应该使用 ``SuperGoldFactory``  
+  而不是 ``super_gold_factory``.
+* 你的 ``__init__`` 不应该做太多的事情，这会让 class 变得难以使用。
+* 你的其它函数应该使用 "underscore format（下划线隔词）"，所以你可以写 ``my_awesome_hair`` ，
+   而不是 ``myawesomehair`` 或者 ``MyAwesomeHair`` 。
+* 用一致的方式组织函数的参数。如果你的 class 需要处理 users、dogs、和 cats，就保持这个次序
+  （特别情况除外）。如果一个函数的参数是 ``(dog, cat, user)`` ，另一个的是 ``(user, cat, dog)``
+  ，这会让函数使用起来很困难。
+* 不要对全局变量或者来自模组的变量进行重定义或者赋值，让这些东西自顾自就行了。
+* 不要一根筋式地维持风格一致性，这是思维力底下的妖怪喽啰做的事情。一致性是好事情，不过愚蠢
+  地跟着别人遵从一些白痴口号是错误的行为——这本身就是一种坏的风格。好好为自己照想把。
+* 永远永远都使用 ``class Name(object)`` 的方式定义 class，否则你会碰到大麻烦。
 
 
-Code Style
+代码风格
 ==========
 
-* Give your code vertical space so people can read it.  You will find some very
-  bad programmers who are able to write reasonable code, but who do not add
-  *any* spaces.  This is bad style in any language because the human eye and
-  brain use space and vertical alignment to scan and separate visual elements.
-  Not having space is the same as giving your code an awesome camouflage paint job.
-* If you can't read it out loud, it's probably hard to read.  If you are having a
-  problem making something easy to use, try reading it out loud.  Not only
-  does this force you to slow down and really read it, but it also helps you find
-  difficult passages and things to change for readability.
-* Try to do what other people are doing in Python until you find your own style.
-* Once you find your own style, do not be a jerk about it.  Working with other people's
-  code is part of being a programmer, and other people have really bad taste.
-  Trust me, you will probably have really bad taste too and not even realize it.
-* If you find someone who writes code in a style you like, try writing something
-  that mimics their style.
+* 为了以方便他人阅读，为自己的代码字符之间留下一些空白。你将会看到一些很差的程序员，
+  他们写的代码还算通顺，但字符之间没有任何空间。这种风格在任何编程语言中都是坏习惯，
+  人的眼睛和大脑会通过空白和垂直对齐的位置来扫描和区隔视觉元素，如果你的代码里没有
+  任何空白，这相当于为你的代码上了迷彩装。如果一段代码你无法朗读出来，那么这段代码
+  的可读性可能就有问题。如你找不到让某个东西易用的方法，试着也朗读出来。这样不仅
+  会逼迫你慢速而且真正仔细阅读过去，还会帮你找到难读的段落，从而知道那些代码的易读
+  性需要作出改进。
+* 学着模仿别人的风格写 Python 程序，直到哪天你找到你自己的风格为止。
+* 一旦你有了自己的风格，也别把它太当回事。程序员工作的一部分就是和别人的代码打交道，
+  有的人审美就是很差。相信我，你的审美某一方面一定也很差，只是你从未意识到而已。
+* 如果你发现有人写的代码风格你很喜欢，那就模仿他们的风格。
 
-Good Comments
+好的注释
 =============
 
-* There are programmers who will tell you that your code should be readable
-  enough that you do not need comments.  They'll then tell you in their most
-  official sounding voice that, "Ergo you should never write comments." Those
-  programmers are either consultants who get paid more if other people can't
-  use their code, or incompetents who tend to never work with other people.
-  Ignore them and write comments.
-* When you write comments, describe *why* you are doing what
-  you are doing.  The code already says how, but why you did things the way
-  you did is more important.
-* When you write doc comments for your functions , make the
-  comments documentation for someone who will have to use your code.  You do not
-  have to go crazy, but a nice little sentence about what someone does with
-  that function helps a lot.
-* Finally, while comments are good, too many are bad, and you have to 
-  maintain them.  Keep your comments relatively short and to the point,
-  and if you change a function, review the comment to make sure it's still
-  correct.
+* 有程序员会告诉你，说你的代码需要有足够的可读性，这样你就无需写注释了。他们
+  会以自己接近官腔的声音说“所以你永远都不应该写代码注释。”这些人要么是一些顾问
+  型的人物，如果别人无法使用他们的代码，就会付更多钱给他们让他们解决问题，要么
+  是能力不足，从来没有跟别人合作过的程序员。别理会这些人，好好写你的注解。
+* 写注解的时候，描述清楚为什么你要这样做。代码只会告诉你“这样实现”，而不会告诉你
+  “为什么要这样实现”，而后者比前者更重要。
+* 当你为函数写文档注解的时候，记得为别的代码使用者也写些东西。你不需要狂写一大堆，
+  但一两句话谢谢这个函数的用法还是很有用的。
+* 最后要说的是，虽然注解是好东西，太多的注解就不见得是了。而且注解也是需要维护的，
+  你要尽量让注解短小精悍一语中的，如果你对代码做了更改，记得检查并更新相关的注解，
+  确认它们还是正确的。
 
-Evaluate Your Game
+为你的游戏评分
 ==================
 
-I want you now to pretend you are me.  Adopt a very stern look, print out your
-code, and take a red pen and mark every mistake you find.  Anything from
-this exercise and from other things you have known.  Once you are done marking
-your code up, I want you to fix everything you came up with.  Then repeat this
-a couple of times, looking for anything that could be better.  Use all the 
-tricks I've given you to break your code down into the smallest tiniest
-little analysis you can.
+现在我要求你假装成是我，办起脸来，把你的代码打印出来，然后拿一支红笔，把代码
+中所有的错误都标出来。你要充分利用你在本章以及前面学到的知识。等你批改完了，
+我要求你把所有的错误改对。这个过程我需要你多重复几次，争取找到更多的可以改进
+的地方。使用我前面教过的方法，把代码分解成最细小的单元一一进行分析。
 
-The purpose of this exercise is to train your attention to detail on classes.
-Once you are done with this bit of code, find someone else's code and do the 
-same thing.  Go through a printed copy of some part of it and point out all
-the mistakes and style errors you find.  Then fix it and see if your fixes
-can be done without breaking their program.
+这节练习的目的是训练你对于细节的关注程度。等你检查完自己的代码，再找一段别人
+的代码用这种方法检查一遍。把代码打印出来，检查出所有代码和风格方面的错误，然后
+试着在不改坏别人代码的前提下把它们修改正确、
 
-I want you to do nothing but evaluate and fix code for the week.  Your own code
-and other people's.  It'll be pretty hard work, but when you are done your brain
-will be wired tight like a boxer's hands.
-
+这周我要求你的事情就是批改和纠错，包含你自己的代码和别人的代码，再没有别的了。
+这节习题难度还是挺大，不过一旦你完成了任务，你学过的东西就会牢牢记在脑中。
 
