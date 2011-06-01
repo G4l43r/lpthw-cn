@@ -1,63 +1,49 @@
 习题 45: Is-A, Has-A, Objects, and Classes
 *********************************************
 
-An important concept that you have to understand is the difference between a
-``Class`` and an ``Object``.  The problem is, there is no real "difference" between a
-class and an object.  They are actually the same thing at different points in
-time.  I will demonstrate by a Zen koan:
+有一个重要的概念你需要弄明白，那就是 ``Class`` （类）和 ``Object`` （物件）的区别。
+问题在于，class 和 object 并没有真正的不同。它们其实是同样的东西，只是在不同的时间
+名字不同罢了。我用禅语来解释一下吧：
 
-``What is the difference between a Fish and a Salmon?``
+``鱼和泥鳅有什么区别？``
 
-Did that question sort of confuse you? Really sit down and think about it for a
-minute.  I mean, a Fish and a Salmon are different but, wait, they are the same
-thing right?  A Salmon is a *kind* of Fish, so I mean it's not different.  But
-at the same time, becase a Salmon is a particular *type* of Fish and so it's actually
-different from all other Fish.  That's what makes it a Salmon and not a
-Halibut.  So a Salmon and a Fish are the same but different.  Weird.
+这个问题有没有让你有点晕呢？说真的，坐下来想一分钟。我的意思是说，鱼和泥鳅是不一样，
+不过它们其实也是一样的是不是？泥鳅是鱼的一种，所以说没什么不同，不过泥鳅又有些特别，
+它和别的种类的鱼的确不一样，比如泥鳅和黄鳝就不一样。所以泥鳅和鱼既相同又不同。
+怪了。
 
-This question is confusing because most people do not think about real things
-this way, but they intuitively understand them.  You do not need to think about
-the difference between a Fish and a Salmon because you *know* how they are
-related.  You know a Salmon is a *kind* of Fish and that there are other kinds of
-Fish without having to understand that.
+这个问题让人晕的原因是大部分人不会这样去思考问题，其实每个人都懂这一点，你无须去思考
+鱼和泥鳅的区别，因为你知道它们之间的关系。你知道泥鳅是鱼的一种，而且鱼还有别的种类，
+根本就没必要去思考这类问题。
 
-Let's take it one step further, let's say you have a bucket full of 3 Salmon
-and because you are a nice person, you have decided to name them Frank, Joe, and
-Mary.  Now, think about this question:
+让我们更进一步，假设你有一只水桶，里边有三条泥鳅。假设你的好人卡多到没地方用，于是
+你给它们分别取名叫小方，小斌，小星。现在想想这个问题：
 
-``What is the difference between Mary and a Salmon?``
+``小方和泥鳅有什么区别？``
 
-Again this is a weird question, but it's a bit easier than the Fish vs.
-Salmon question.  You know that Mary is a Salmon, and so she's not really
-different.  She's just a specific "instance" of a Salmon.  Joe and Frank are also
-instances of Salmon. But, what do I mean when I say instance?  I mean they were
-created from some other Salmon and now represent a real thing that has Salmon-like
-attributes.
+这个问题一样的奇怪，但比起鱼和泥鳅的问题来还好点。你知道小方是一条泥鳅，所以他并没什么
+不同，他只是泥鳅的一个特例。小斌和小星一样也是泥鳅的实例(instance)。我的意思是说，它们
+是由泥鳅创建出来的，而且代表着和泥鳅一样的属性。
 
-Now for the mind bending idea:  Fish is a ``Class``, and Salmon is a ``Class``, and
-Mary is an ``Object``.  Think about that for a second.  Alright let's break it 
-down real slow and see if you get it.
+所以我们的思维方式是（你可能会有点不习惯）：鱼是一个“类”(``class``)，泥鳅是一个“类”(``class``)，
+而小方是一个“对象”(``object``)。仔细想想，然后我再一点一点慢慢解释给你。
 
-A Fish is a ``Class``, meaning it's not a *real* thing, but rather a word we attach
-to instances of things with similar attributes.  Got fins? Got gills? Lives in
-water?  Alright it's probably a Fish.
+鱼是一个“类”，表示它不是一个真正的东西，而是一个用来描述具有同类属性的实例的概括性词汇。
+你有鳍？你有鳔？你住在水里？好吧那你就是一条鱼。
 
-Someone with a Ph.D. then comes along and says, "No my young friend, *this* Fish
-is actually *Salmo salar*, affectionately known as a Salmon."  This professor
-has just clarified the Fish further and made a new ``Class`` called "Salmon" that
-has more specific attributes.  Longer nose, reddish flesh, big, lives in the ocean or
-fresh water, tasty?  Ok, probably a Salmon.
+后来河蟹养殖专家路过，看到你的水桶，于是告诉你：“小伙子，你这些鱼是泥鳅。”专家的这话
+一出，就澄清了真相，并且定义了一个新的叫做“泥鳅”的“类”，而这个“类”又有它特定的属性。
+细长条？长胡须？爱钻泥巴？味道还可以？那你就是一条泥鳅。
 
-Finally, a cook comes along and tells the Ph.D., "No, you see this Salmon right
-here, I'll call her Mary and I'm going to make a tasty fillet out of her with
-a nice sauce."  Now you have this *instance* of a Salmon (which also is an
-instance of a Fish) named Mary turned into something real that is filling your
-belly.  It has become an ``Object``.
+最后家庭煮父过来了，他跟河蟹专家说：“非也非也，你看到的是泥鳅，我看到的是小方，而且
+我要把小方和剁椒配一起做一道小菜。”于是你就有了一只叫做小方的泥鳅的“实例(instance)”
+（泥鳅也是鱼的一个“实例”），并且你使用了它（把它塞到你的胃里了），这样它就是一个
+“对象(object)”。
 
-There you have it: Mary is a kind of Salmon that is a kind of Fish.  ``Object`` is
-a ``Class`` is a ``Class``.
+这会你应该了解了：小方是泥鳅的成员，而泥鳅又是鱼的成员。这里的关系式：对象属于某个类，
+而某个类又属于另一个类。
 
-How This Looks In Code
+写成代码是什么样子
 ----------------------
 
 This is a weird concept, but to be very honest you only have to worry about it

@@ -1,8 +1,7 @@
 习题 49: 创建句子
 *****************************
 
-What we should be able to get from our little game lexicon scanner is a list that
-looks like this:
+从我们这个小游戏的词汇扫描器中，我们应该可以得到类似下面的列表：
 
 .. code-block:: pycon
 
@@ -19,6 +18,7 @@ looks like this:
     ('stop', 'the'), ('error', 'nose')]
     >>> 
 
+现在让我们把它转化成游戏可以使用的东西，
 Now let us turn this into something the game can work with, which
 would be some kind of Sentence class.
 
