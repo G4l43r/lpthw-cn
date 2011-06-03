@@ -24,72 +24,64 @@
 撰写测试用例
 ===================
 
-我们将拿一段非常简单的代码为例, 写一个简单的测试. 我们将
-We're going to take a very simple piece of code and write one simple test.  We're
-going to base this little test on a new project from your project skeleton.
+我们将拿一段非常简单的代码为例, 写一个简单的测试, 这个测试将建立在上节我们创建
+的项目骨架上面.
 
-First, make a ``ex47`` project from your project skeleton.  Make sure you
-do it right and rename the module and get that first ``tests/ex47_tests.py`` test
-file going right.  Also make sure nose runs this test file.  *IMPORTANT* make sure you
-also delete ``tests/skel_tests.pyc`` if it's there.
+首先,从你的项目骨架创建一个叫做 ``ex47`` 的项目。确认该改名称的地方都有改过，尤其
+是 ``tests/ex47_tests.py`` 这处不要写错，另外运行 ``nosetest`` 确认一下没有错误信息。
+检查一下 ``tests/skel_tests.pyc`` 这个文件，有的话就把它删掉，这一点需要尤其注意。
 
-Next, create a simple file ``ex47/game.py`` where you can put the code to test.
-This will be a very silly little class that we want to test with this code
-in it:
+接下来创建一个简单的 ``ex47/game.py`` 文件，里边放一些用来被测试的代码。我们现在放
+一个傻乎乎的小 class 进去，用来作为我们的测试对象：
 
 .. literalinclude:: ex/ex47.py
     :linenos:
 
-Once you have that file, change unit test skeleton to this:
+准备好了这个文件，接下来把测试骨架改成这样子：
 
 .. literalinclude:: ex/ex47_tests.py
     :linenos:
 
-This file imports the ``Room`` class you made in the ``ex47.game``
-module so that you can do tests on it.  There are then a set of tests that are functions
-starting with ``test_``.  Inside each test case there's a bit of code that makes
-a Room or a set of Rooms, and then makes sure the rooms work the way you expect them
-to work.  It tests out the basic room features, then the paths, then tries out a whole
-map.
+这个文件 import 了你在 ``ex47.game`` 创建的 ``Room`` 这个类，接下来我们要做的
+就是测试它。于是我们看到一系列的以 ``test_`` 开头的测试函数，它们就是所谓的
+“测试用例(test case)”，每一个测试用例里面都有一小段代码，它们会创建一个或者
+一些房间，然后去确认房间的功能和你期望的是否一样。它测试了基本的房间功能，然后
+测试了路径，最后测试了整个地图。
 
-The important functions here are ``assert_equal`` which makes sure that variables
-you have set or paths you have built in a ``Room`` are actually what you think they are.
-If you get the wrong result, then ``nosetests`` will print out an error message
-so you can go figure it out.
+这里最重要的函数时 ``assert_equal``\，它保证了你设置的变量，以及你在 ``Room``
+里设置的路径和你的期望相符。如果你得到错误的结果的话， ``nosetests`` 将会打印出
+一个错误信息，这样你就可以找到出错的地方并且修正过来。
 
-
-Testing Guidelines
+测试指南
 ==================
 
-Follow these general loose set of guidelines when making your tests:
+在写测试代码时，你可以照着下面这些不是很严格的指南来做：
 
-1. Test files go in ``tests/`` and are named ``BLAH_tests.py`` otherwise ``nosetests``
-   won't run them.  This also keeps your tests from clashing with your other code.
-2. Write one test file for each module you make.
-3. Keep your test cases (functions) short, but do not worry if they are a bit
-   messy.  Test cases are usually kind of messy.
-4. Even though test cases are messy, try to keep them clean and remove any repetitive
-   code you can.  Create helper functions that get rid of duplicate code.  You will thank
-   me later when you make a change and then have to change your tests.  Duplicated
-   code will make changing your tests more difficult.
-5. Finally, do not get too attached to your tests.  Sometimes, the best way to redesign
-   something is to just delete it, the tests, and start over.
+1. 测试脚本要放到 ``tests/`` 目录下，并且命名为 ``BLAH_tests.py`` ，否则 ``nosetests``
+   就不会执行你的测试脚本了。这样做还有一个好处就是防止测试代码和别的代码互相混掉。
+2. 为你的每一个模组写一个测试。
+3. 测试用例（函数）保持简短，但如果看上去不怎么整洁也没关系，测试用例一般都有点乱。
+4. 就算测试用例有些乱，也要试着让他们保持整洁，把里边重复的代码删掉。创建一些辅助函数
+   来避免重复的代码。当你下次在改完代码需要改测试的时候，你会感谢我这一条建议的。重复
+   的代码会让修改测试变得很难操作。
+5. 最后一条是太把测试当做一回事。有时候，更好的方法是把代码和测试全部删掉，然后从新设计
+   代码。
 
 
-What You Should See
+你应该看到的结果
 ===================
 
 .. literalinclude:: ex/ex47.txt
 
-That's what you should see if everything is working right.  Try causing an error to see what
-that looks like and then fix it.
+如果一切工作正常的话，你看到的结果应该就是这样。试着把代码改错几个地方，然后看错误信息
+会是什么，再把代码改正确。
 
-Extra Credit
+
+加分习题
 ============
 
 
-1. Go read about nosetests more, and also read about alternatives.
-2. Learn about Python's "doc tests" and see if you like them better.
-3. Make your Room more advanced, and then use it to rebuild your game yet again
-   but this time, unit test as you go.
-
+1. 仔细读读 nosetest 相关的文档，再去了解一下其他的替代方案。
+2. 了解一下 Python 的 "doc tests" ，看看你是不是更喜欢这种测试方式。
+3. 改进你游戏里的 Room，然后用它重建你的游戏，这次重写，你需要一边写代码，
+   一边把单元测试写出来。
