@@ -1,17 +1,14 @@
-习题 46: 一个项目框架
+习题 46: 一个项目骨架
 *******************************
 
-This will be where you start learning how to setup a good project "skeleton"
-directory.  This skeleton directory will have all the basics you need to get a
-new project up and running.  It will have your project layout, automated tests,
-modules, and install scripts.  When you go to make a new project, just copy
-this directory to a new name and edit the files to get started.
+这里你将学会如何建立一个项目“骨架”目录。这个骨架目录具备让项目跑起来的所有基本
+内容。它里边会包含你的项目文件布局、自动化测试代码，模组，以及安装脚本。当你建立
+一个新项目的时候，只要把这个目录复制过去，改改目录的名字，再编辑里边的文件就行了。
 
-Skeleton Contents: Linux/OSX
+骨架内容: Linux/OSX
 ============================
 
-First, create the structure of your skeleton directory with these 
-commands:
+首先使用下述命令创建你的骨架目录：
 
 .. code-block:: bash
 
@@ -21,81 +18,65 @@ commands:
     ~/projects $ cd skeleton
     ~/projects/skeleton $ mkdir bin NAME tests docs
 
-I use a directory named ``projects`` to store all the various things I'm
-working on.  Inside that directory I have my ``skeleton`` directory that
-I put the basis of my projects into.  The directory ``NAME`` will be 
-renamed to whatever you are calling your project's main module when you 
-use the skeleton.
+我使用了一个叫 ``projects`` 的目录，用来存放我自己的各个项目。然后我在里边
+建立了一个叫做 ``skeleton`` 的文件夹，这就是我们新项目的基础目录。其中叫做
+``NAME`` 的文件夹是你的项目的主文件夹，你可以将它任意取名。
 
-Next we need to setup some initial 
-files:
-
+接下来我们要配置一些初始文件：
 
 .. code-block:: bash
 
     ~/projects/skeleton $ touch NAME/__init__.py
     ~/projects/skeleton $ touch tests/__init__.py
 
-That creates empty Python module directories we can put our code in.
-Then we need to create a ``setup.py`` file we can use to install our
-project later if we want:
-
+以上命令为你创建了空的模组目录，以供你后面为其添加代码。然后我们需要
+建立一个 ``setup.py`` 文件，这个文件在安装项目的时候我们会用到它：
 
 .. literalinclude:: ex/ex46.py
     :linenos:
 
-Edit this file so that it has your contact information 
-and is ready to go for when you copy it.
+编辑这个文件，把自己的联系方式写进去，然后放到那里就行了。
 
-Finally you will want a simple skeleton file for tests named ``tests/NAME_tests.py``:
+最后你需要一个简单的测试专用的骨架文件叫 ``tests/NAME_tests.py``：
 
 .. literalinclude:: ex/ex46_tests.py
     :linenos:
 
 
-Installing Python Packages
+Python 软件包的安装
 --------------------------
 
-Make sure you have some packages installed that makes
-these things work.  Here's the problem though.  You are at a point where it's
-difficult for me to help you do that and keep this book sane and clean.  There
-are so many ways to install software on so many computers that I'd have to spend
-10 pages walking you through every step, and let me tell you I am a lazy guy.
+你需要预先安装一些软件包，不过问题就来了。我的本意是让这本书越清晰越干净越好，
+不过安装软件的方法是在是太多了，如果我要一步一步写下来，那 10 页都写不完，而且
+告诉你吧，我本来就是个懒人。
 
-Rather than tell you how to do it exactly, I'm going to tell you what you 
-should install, and then tell you to figure it out and get it working.  This
-will be really good for you since it will open a whole world of software
-you can use that other people have released to the world.
+所以我不会提供详细的安装步骤了，我只会告诉你需要安装哪些东西，然后让你自己搞定。
+这对你也有好处，因为你将打开一个全新的世界，里边充满了其他人发布的 Python 软件。
 
-Next, nstall the following python packages:
+接下来你需要安装下面的软件包：
 
-1. pip from http://pypi.python.org/pypi/pip
-2. distribute from http://pypi.python.org/pypi/distribute
-3. nose from http://pypi.python.org/pypi/nose/
-4. virtualenv from http://pypi.python.org/pypi/virtualenv
+1. pip -- http://pypi.python.org/pypi/pip
+2. distribute -- http://pypi.python.org/pypi/distribute
+3. nose -- http://pypi.python.org/pypi/nose/
+4. virtualenv -- http://pypi.python.org/pypi/virtualenv
 
-Do not just download these packages and install them by hand.  Instead see how 
-other people recommend you install these packages and use them for your particular
-system.  The process will be different for most versions of Linux, OSX, and definitely
-different for Windows.
+不要只是手动下载并且安装这些软件包，你应该看一下别人的建议，尤其看看针对你的操作
+系统别人是怎样建议你安装和使用的。同样的软件包在不一样的操作系统上面的安装方式是
+不一样的，不一样版本的 Linux 和 OSX 会有不同，而 Windows 更是不同。
 
-I am warning you, this will be frustrating.  In the business we call this "yak shaving".
-Yak shaving is any activity that is mind numblingly irritatingly boring and tedious
-that you have to do before you can do something else that's more fun.  You want to
-create cool Python projects, but you can't do that until you setup a skeleton 
-directory, but you can't setup a skeleton directory until you install some packages,
-but you can't install pacakages until you install package installers, and you can't
-install package installers until you figure out how your system installs software
-in general, and so on.
+我要预先警告你，这个过程会是相当无趣。在业内我们将这种事情叫做 "yak shaving(剃牦牛)"。
+它指的是在你做一件有意义的事情之前的一些准备工作，而这些准备工作又是及其无聊冗繁的。
+你要做一个很酷的 Python 项目，但是创建骨架目录需要你安装一些软件包，而安装软件包之前
+你还要安装 package installer (软件包安装工具)，而要安装这个工具你还得先学会如何在
+你的操作系统下安装软件，真是愚公移山呀。
 
-Struggle through this anyway.  Consider it your trial-by-annoyance to get into
-the programmer club.  Every programmer has to do these annoying tedious tasks
-before they can do something cool.
+无论如何，还是克服困难把。你就把它当做进入编程俱乐部的一个考验。每个程序员都会经历这
+条道路，在每一段“酷”的背后总会有一段“烦”的。
 
-Testing Your Setup
+测试你的配置
 ==================
 
-After you get all that installed you should be able to do this:
+安装了所有上面的软件包以后，你就可以做下面的事情了：
 
 .. code-block:: bash
 
@@ -106,42 +87,35 @@ After you get all that installed you should be able to do this:
 
     OK
 
-I'll explain what this ``nosetests`` thing is doing in the next exercise, but
-for now if you do not see that, you probably got something wrong.  Make sure
-you put ``__init__.py`` files in your ``NAME`` and ``tests`` directory and make
-sure you got ``tests/NAME_tests.py`` right.
+下一节练习中我会告诉你 ``nosetests`` 的功能，不过如果你没有看到上面的画面，
+那就说明你哪里出错了。确认一下你的 ``NAME`` 和 ``tests`` 目录下存在 ``__init__.py``\，
+并且你没有把 ``tests/NAME_tests.py`` 命名错。
 
 
-Using The Skeleton
+使用这个骨架
 ==================
 
-You are now done with most of your yak shaving.  Whenever you want to start a new
-project, just do this:
+剃牦牛的事情已经做的差不多了，以后每次你要新建一个项目时，只要做下面的事情就可以了：
+
+1. 拷贝这份骨架目录，把名字改成你新项目的名字。
+2. 再将 NAME 模组更名为你需要的名字，它可以是你项目的名字，当然别的名字也行。
+3. 编辑 setup.py 让它包含你新项目的相关信息。
+4. 重命名 ``tests/NAME_tests.py`` ，让它的名字匹配到你模组的名字。
+5. 使用 ``nosetests`` 检查有无错误。
+6. 开始写代码吧。
 
 
-1. Make a copy of your skeleton directory.  Name it after your new project.
-2. Rename (move) the NAME module to be the name of your project or whatever you want to call
-   your root module.
-3. Edit your setup.py to have all the information for your project.
-4. Rename ``tests/NAME_tests.py`` to also have your module name.
-5. Double check it's all working using ``nosetests`` again.
-6. Start coding.
-
-
-Required Quiz
+小测验
 =============
 
-This exercise doesn't have extra credit but a quiz you should complete:
+这节练习没有加分习题，不过需要你做一个小测验：
 
-1. Read about how to use all of the things you installed.
-2. Read about the ``setup.py`` file and all it has to offer.  Warning, it is not a very
-   well-written piece of software, so it will be very strange to use.
-3. Make a project and start putting code into the module, then get the 
-   module working.
-4. Put a script in the ``bin`` directory that you can run.  Read about how you can make
-   a Python script that's runnable for your system.
-5. Mention the ``bin`` script you created in your ``setup.py`` so that it gets installed.
-6. Use your ``setup.py`` to install your own module and make sure it works, then use
-   ``pip`` to uninstall it.
-
-
+1. 找文档阅读，学会使用你前面安装了的软件包。
+2. 阅读关于 ``setup.py`` 的文档，看它里边可以做多少配置。Python 的安装器并不是一个
+   好软件，所以使用起来也非常奇怪。
+3. 创建一个项目，在模组目录里写一些代码，并让这个模组可以运行。
+4. 在 ``bin`` 目录下放一个可以运行的脚本，找材料学习一下怎样创建可以在系统下运行的
+   Python 脚本。
+5. 在你的 ``setup.py`` 中加入 ``bin`` 这个目录，这样你安装时就可以连它安装进去。
+6. 使用 ``setup.py`` 安装你的模组，并确定安装的模组可以正常使用，最后使用 ``pip`` 
+   将其卸载。
