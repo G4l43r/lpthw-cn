@@ -18,30 +18,28 @@
     ('stop', 'the'), ('error', 'nose')]
     >>> 
 
-现在让我们把它转化成游戏可以使用的东西，
-Now let us turn this into something the game can work with, which
-would be some kind of Sentence class.
+现在让我们把它转化成游戏可以使用的东西，也就是一个 Sentence 类。
 
-If you remember grade school, a sentence can be a simple structure like:
+如果你还记得学校学过的东西的话，一个句子是由这样的结构组成的：
 
-    Subject Verb Object
+    主语(Subject) + 谓语(动词 Verb) + 宾语(Object)
 
-Obviously it gets more complex than that, and you probably did many days of annoying
-sentence graphs for English class.  What we want is to turn the above lists of
-tuples into a nice Sentence object that has subject, verb, and object.
+很显然实际的句子可能会比这复杂，而你可能已经在英语的语法课上面被折腾得够呛了。
+我们的目的，是将上面的元组列表转换为一个 Sentence 对象，而这个对象又包含主谓宾
+各个成员。
 
-Match And Peek
+匹配(Match)和窥视(Peek)
 ==============
 
-To do this we need four tools:
+为了达到这个效果，你需要四样工具：
 
-1. A way to loop through the list of tuples.  That's easy.
-2. A way to "match" different types of tuples that we expect in our Subject Verb Object setup.
-3. A way to "peek" at a potential tuple so we can make some decisions.
-4. A way to "skip" things we do not care about, like stop words.
+1. 循环访问元组列表的方法，这挺简单的。
+2. 匹配我们的主谓宾设置中不同种类元组的方法。
+3. 一个“窥视”潜在元组的方法，以便做决定时用到。
+4. 跳过(skip)我们不在乎的内容的方法，例如形容词、冠词等没有用处的词汇。
 
-We use the peek function to say look at the next element in our tuple list, and then
-match to take one off and work with it.  Let's take a look at a first peek function:
+我们使用 peek 函数来查看元组列表中的下一个成员，做匹配以后再对它做下一步动作。\
+让我们先看看这个 peek 函数：
 
 .. code-block:: python
 
@@ -52,7 +50,7 @@ match to take one off and work with it.  Let's take a look at a first peek funct
         else:
             return None
         
-Very easy.  Now for the match function:
+很简单。再看看 match 函数：
 
 .. code-block:: python
 
@@ -67,7 +65,7 @@ Very easy.  Now for the match function:
         else:
             return None
 
-Again, very easy, and finally our skip function:
+还是很简单，最后我们看看 skip 函数:
 
 .. code-block:: python
 
@@ -75,10 +73,10 @@ Again, very easy, and finally our skip function:
         while peek(word_list) == word_type:
             match(word_list, word_type)
 
-By now you should be able to figure out what these do.  Make sure you understand them.
+以你现在的水平，你应该可以看出它们的功能来。确认自己真的弄懂了它们。
 
 
-The Sentence Grammar
+句子的语法
 ====================
 
 With our tools we can now begin to build Sentence objects from our list of tuples.
