@@ -1,89 +1,84 @@
-习题 50: Your First Work Assignment
+习题 50: 你的第一项工作任务
 ***************************************
 
-I'm now going to give you a work assignment, similar to what you might get as a
-professional programmer.  The assignment will be to convert the list of
-features I give you into a complete little game that I may buy.  Your job is to
-take my vague descriptions of things I want and make something I can use.
+现在我将为你分配一项工作任务，就跟给专业程序员分配工作任务一样。这个任务将是一个
+小游戏，假设我是客户，我把要求一一列给你，你把这个游戏写出来，如果你完成的不错，
+我也许会买你的游戏。你要把我的一些模糊的描述变成一样真正能用的东西。
 
-The purpose of this exercise is to see if you have grasped the concepts you
-have learned so far.  We only have 2 exercises after this, but this will be
-your last actual assigned piece of coding.
+这节练习的目的是看你是否已经掌握了你学过的所有概念。还有两节练习这本书就结束了，
+这节习题是你的最后一个代码练习作业。
 
-Review What You Know
+回顾你学过的内容
 ====================
 
-At this point you should know how to do the following:
+到现在为止，你应该已经学会了下面的东西：
 
-* Create classes and structure rooms from them.
-* Throw and raise exceptions.
-* Use functions, variables, dictionaries, lists, and tuples.
-* Turn a user's input into a list of tuples using a lexicon scanner.
-* Turn the list of tuples into a Sentence you can analyze using a parser.
+* 创建“类(class)”，用类实现房间的构建。
+* 抛出异常(Throw/Raise Exceptions)。
+* 使用函数(function)、变量(variable)、字典(dictionary)、列表(list)、以及元组(tuple)。
+* 使用词汇扫描器，将用户的输入转换为元组列表。
+* 使用解析器(parser)将元组列表转换为一个句子(Sentence)对象。
 
-Make sure you know how to do these things as you will be using them to complete
-this assignment.
+你在任务中会用到这些知识，因此你要确认学会了这些东西。
 
 
-Implementing A Feature List
+功能列表的实现
 ===========================
 
-Typically when you work on software you will be given a list vague and
-inconsistent features they want.  This sucks, I won't lie to you.  Typically
-people have no ability to think clearly about the things they want, and even
-less ability to describe them.
+软件工作中特征性的一种情况，就是有人给你一份模糊不清前后矛盾的功能需求。实话实说，\
+这种事情很挫。一般人没有能力可以清晰地构想出他的需求来，说到描述需求的能力，那就\
+更差了。
 
-As a programmer, it is your job to take the vague things they tell you
-and work with them to create something they want.  In fact, sometimes 
-*you* will have a problem articulating what *you* want.
+作为一个程序员，你的任务就是接受这些模糊的描述，利用这些描述创造出他们想要的东西来。\
+其实有的时候，连你自己都说不清你需要什么。
 
-The best way to implement a feature list like this is to follow this
-pattern:
+实现功能列表的最好的方法，就是照着下面的样板流程来：
 
-1. Dump everything out of the person's head *without* criticizing or judging the ideas.
-2. As you dump, write these down in a spread sheet or on index cards.
-3. Take a break, collect all the features and go back through to prioritize them
-   into MUST (have) or NICE (to have).
-4. Sort the list so that you can see what is MUST vs. what is NICE to have.
-5. Pick a piece of the MUST work, and start working on it.
-6. After about a week, show the person the software, get their feedback, and repeat this process again based on your new feedback.
+1. 让别人把所有的关于需求的想法都告诉你，整个过程中不要去评判这些想法。
+2. 一边倾听，一边把所有这些东西写下来，你可以放到表单里，也可以写在索引卡上。
+3. 休息一会，把所有的功能需求整理到一起，为它们设立优先等级，一种是“必须有”的功能，
+   一种是“有了比较好”的功能。
+4. 将列表的内容归类排序，将“必须功能”和“可选功能”区分开。
+5. 选择一个必须功能，开始将其实现。
+6. 过大约一个星期以后，把你写的软件展示给提出需求的人看，得到他们的反馈信息，依据
+   他们的反馈修改功能列表，并重复前面的步骤。
+   
+在各种各样的“编程方法论”中，你都可以看到这个样板流程的身影。
 
-This pattern can be found in one form or another in different "methodologies" programmers
-use to organize their work.
+接下来我会给你一份功能列表，你需要在游戏中实现它们。我给它们的优先度都是“必须”，
+你的任务是花一个星期实现这份列表上提到的所有功能。
 
-I'm going to give you a list of features that I want in my game, and I've
-already prioritized them so this is just the MUST requirements.  Your job is to
-spend one week working on the list and getting it done.
-
-
-The Feature List
+功能列表
 ================
 
-* I want a game that is set on an alien space ship.
-* The game should have a human hero who has to escape from the clutches of an alien race who has enslaved him.
-* The game will be a text adventure game, like that bear and broadsword game you did.  I like games like that.
-* Oh, lasers.  Totally gotta have lasers.
-* But not too powerful lasers.  It should be hard to finish the game.
-* But not too hard to finish the game, just right to keep players interested.  You know, like ``World of Warcraft``.  I hear people
-  make tons of money off WoW.
-* The ship should have about 10 rooms at first, then we want to expand them.
-* I'd like to be able to change the description of the rooms without changing the code.  Can you do that?
-* My friend says farms are big now, so have a scene where there's a farm and stuff.
-* The aliens should be some kind of Mafia aliens.  Mafia stuff is huge now too.
-* I should be able to move around with real sentences like "go north", "open door", etc.
-* It's alright if the way the rooms are laid out is in code, but players will need a printed map.  Can you keep track of the map?
-* There needs to be a story behind this, and maybe a love interest.
-* Probably a couple of geek culture references.  But no Star Trek! Ok, first season is cool but nothing after that.
-* I want to be able to install it on my computer with python so can you make it install from a setup.py?  That'll make it easy to package later.
+* 这个游戏的发生地点是外星人的宇宙飞船。
+* 游戏中应该有一个人类英雄，他的任务是逃离外星人的奴役。
+* 这因该是一个文字类的冒险游戏，和我们的“熊和阔剑”的游戏类似。我就喜欢这样的游戏。
+* 哦，激光。激光武器是必不可少的。
+* 激光武器也不能太厉害了。游戏的难度应该比较高才对。
+* 不过也不能太难了，不然大家就没兴趣了嘛。你懂的，《魔兽世界》你知道吧，听说这\
+  游戏的开发商可赚钱了。
+* 飞船一开始应该有大约 10 个房间，接下来我们还要扩展它们。
+* 我想随便修改房间的描述，可我又不想改代码，这个你能做吗？
+* 有朋友告诉我农场游戏很流行，你就做一个有农场的场景出来吧。
+* 外星人应该有类似黑手党的性质，这年头黑手党也是流行话题，是吧？
+* 我应该可以使用句子在游戏中移动位置，例如“go north”、“open door”等。
+* 在代码中设计好房间和路径是没问题的，不过玩家需要一份打印出来的地图，你的游戏\
+  能提供地图查询吗？
+* 游戏应该有个故事背景，最好是爱情相关的。
+* 最好包含点 geek 文化在里边，不过别提《星际迷航(Star Trek)》！好了，我承认第一季\
+  不错，但后面都是垃圾。
+* 我要在我的电脑上安装这个游戏，你能不能让它通过 setup.py 安装起来呢？这样以后\
+  打包发行也比较容易。
 
 
-Tips On Working The List
+完成任务列表的小技巧
 ========================
 
-1. Make your map, characters, and story first on paper.
-2. Write unit tests so you do not have to constantly check things by hand.
-3. Design your game engine so it's easy to test.
-4. Actually play your game once in a while.
-5. When in doubt, ask for help and show people your code.
+1. 先在纸上设计出地图、人物角色、以及故事主线。
+2. 撰写单元测试，这样你后面就无需手动检查代码了。
+3. 设计你的游戏引擎，让它便于测试。
+4. 每隔一段时间，自己亲自玩一下你写的游戏。
+5. 如果遇到疑惑，就向别人寻求帮助，并把你的代码给别人看。
 
-Good luck, see you in a week to review your game.
+祝你好运，下周评审游戏时再见。
