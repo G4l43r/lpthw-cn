@@ -24,8 +24,8 @@
 
     主语(Subject) + 谓语(动词 Verb) + 宾语(Object)
 
-很显然实际的句子可能会比这复杂，而你可能已经在英语的语法课上面被折腾得够呛了。
-我们的目的，是将上面的元组列表转换为一个 Sentence 对象，而这个对象又包含主谓宾
+很显然实际的句子可能会比这复杂，而你可能已经在英语的语法课上面被折腾得够呛了。\
+我们的目的，是将上面的元组列表转换为一个 Sentence 对象，而这个对象又包含主谓宾\
 各个成员。
 
 匹配(Match)和窥视(Peek)
@@ -79,62 +79,52 @@
 句子的语法
 ====================
 
-With our tools we can now begin to build Sentence objects from our list of tuples.
-What we do is a process of:
+有了工具，我们现在可以从元组列表来构建句子(Sentence)对象了。我们的处理流程如下：
 
-1. Identify the next word with ``peek``.
-2. If that word fits in our grammar, we call a function to handle that part 
-   of the grammar, say ``parse_subject``.
-3. If it doesn't, we ``raise`` an error, which you will learn about in this lesson.
-4. When we're all done, we should have a Sentence object to work with in our game.
+1. 使用 ``peek`` 识别下一个单词。
+2. 如果这个单词和我们的语法匹配，我们就调用一个函数来处理这部分语法。假设函数的名字\
+   叫 ``parse_subject`` 好了。
+3. 如果语法不匹配，我们就 ``raise`` 一个错误，接下来你会学到这方面的内容。
+4. 全部分析完以后，我们应该能得到一个 Sentence 对象，然后可以将其应用在我们的游戏中。
 
-The best way to demonstrate this is to give you the code to read, but here's where
-this exercise is different from the previous one:  You will write the test for the
-parser code I give you.  Rather than giving you the test so you can write the code,
-I will give you the code, and you have to write the test.
+演示这个过程最简单的方法是把代码展示给你让你阅读，不过这节习题有个不一样的要求，前面\
+是我给你测试代码，你照着写出程序来，而这次是我给你的程序，而你要为它写出测试代码来。
 
-Here's the code that I wrote for parsing simple sentences using the ``ex48.lexicon``
-module:
+以下就是我写的用来解析简单句子的代码，它使用了 ``ex48.lexicon`` 这个模组。
 
 .. literalinclude:: ex/ex49.py
 
-A Word On Exceptions
+关于异常(Exception)
 ====================
 
-You briefly learned about exceptions, but not how to raise them.  This code
-demonstrates how to do that with the ``ParserException`` at the top.  Notice
-that it uses classes to give it the type of ``Exception``.  Also notice the use
-of ``raise`` keyword to raise the exception.
+你已经简单学过关于异常的一些东西，但还没学过怎样抛出(raise)它们。这节的代码演示了\
+如何 raise。首先在最前面，你要定义好 ``ParserException`` 这个类，而它又是 ``Exception``
+的一种。另外要注意我们是怎样使用 ``raise`` 这个关键字来抛出异常的。
 
-In your tests, you will want to work with these exceptions, which I'll show you how 
-to do.
+你的测试代码应该也要测试到这些异常，这个我也会演示给你如何实现。
 
 
-What You Should Test
+你应该测试的东西
 ====================
 
-For Exercise 49 is write a complete test that confirms everything
-in this code is working.  That includes making exceptions happen by giving it
-bad sentences.
+为《习题 49》写一个完整的测试方案，确认代码中所有的东西都能正常工作，其中异常的测试——\
+输入一个错误的句子它会抛出一个异常来。
 
-Check for an exception by using the function ``assert_raises`` from the nose
-documentation.  Learn how to use this so you can write a test that is
-*expected* to fail, which is very important in testing.  Learn about this
-function (and others) by reading the nose documentation.
+使用 ``assert_raises`` 这个函数来检查异常，在 nose 的文档里查看相关的内容，学着使用它\
+写针对“执行失败”的测试，这也是测试很重要的一个方面。从 nose 文档中学会使用 
+``assert_raises``\，以及一些别的函数。
 
-When you are done, you should know how this bit of code works, and how
-to write a test for other people's code even if they do not want you to.  Trust me,
-it's a very handy skill to have.
+写完测试以后，你应该就明白了这段程序的工作原理，而且也学会了如何为别人的程序写测试代码。
+相信我，这是一个非常有用的技能。
 
-Extra Credit
+加分习题
 ============
 
-1. Change the ``parse_`` methods and try to put them into a class rather than 
-   be just methods.  Which design do you like better?
-2. Make the parser more error resistant so that you can avoid annoying your
-   users if they type words your lexicon doesn't understand.
-3. Improve the grammar by handling more things like numbers.
-4. Think about how you might use this Sentence class in your game to do more fun
-   things with a user's input.
+1. 修改 ``parse_`` 函数（方法），将它们放到一个类里边，而不仅仅是独立的方法函数。这两种\
+   程序设计你喜欢哪一种呢？
+2. 提高 parser 对于错误输入的抵御能力，这样即使用户输入了你预定义语汇之外的词语，你的程序\
+   也能正常运行下去。
+3. 改进语法，让它可以处理更多的东西，例如数字。
+4. 想想在游戏里你的 Sentence 类可以对用户输入做哪些有趣的事情。
 
 
