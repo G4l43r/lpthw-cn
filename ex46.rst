@@ -37,7 +37,7 @@
 
 编辑这个文件，把自己的联系方式写进去，然后放到那里就行了。
 
-最后你需要一个简单的测试专用的骨架文件叫 ``tests/NAME_tests.py``：
+最后你需要一个简单的测试专用的骨架文件叫 ``tests/NAME_tests.py``\：
 
 .. literalinclude:: ex/ex46_tests.py
     :linenos:

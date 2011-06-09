@@ -17,7 +17,7 @@
    它是不是一个全局变量。不管哪种方式，它得先找到 ``mystuff`` 这个变量才行。
 2. 一旦它找到了 ``mystuff`` ，就轮到处理句点 ``.`` (period) 这个操作符，而且开始\
    查看 ``mystuff`` 内部的一些变量了。由于 ``mystuff`` 是一个列表，Python 知道\
-    ``mystuff`` 支持一些函数。
+   ``mystuff`` 支持一些函数。
 3. 接下来轮到了处理 ``append`` 。Python 会将 "append" 和 ``mystuff`` 支持的所有函数\
    的名称一一对比，如果确实其中有一个叫 append 的函数，那么 Python 就会去使用这个函数。
 4. 接下来 Python 看到了括号 ``(`` (parenthesis) 并且意识到, “噢，原来这应该是一个\
@@ -74,11 +74,11 @@
 2. 将这两种方式翻译为自然语言。例如， ``' '.join(things)`` 可以翻译成“用 ' '
    连接(join) things”，而 ``join(' ', things)`` 的意思是“为 ' ' 和 things 调用 join
    函数”。这其实是同一件事情。
-2. 上网阅读一些关于“面向对象编程(Object Oriented Programming)”的资料。晕了吧？嗯，我以前也是。\
+3. 上网阅读一些关于“面向对象编程(Object Oriented Programming)”的资料。晕了吧？嗯，我以前也是。\
    别担心。你将从这本书学到足够用的关于面向对象编程的基础知识，而以后你还可以慢慢学到更多。
-3. 查一下 Python中的 "class" 是什么东西。不要阅读关于其他语言的 "class" 的用法，这会让你更糊涂。
-4. ``dir(something)`` 和  ``something`` 的 class 有什么关系？
-5. 如果你不知道我讲的是些什么东西，别担心。程序员为了显得自己聪明，于是就发明了 Opject Oriented
+4. 查一下 Python中的 "class" 是什么东西。不要阅读关于其他语言的 "class" 的用法，这会让你更糊涂。
+5. ``dir(something)`` 和  ``something`` 的 class 有什么关系？
+6. 如果你不知道我讲的是些什么东西，别担心。程序员为了显得自己聪明，于是就发明了 Opject Oriented
    Programming，简称为 OOP，然后他们就开始滥用这个东西了。如果你觉得这东西太难，\
    你可以开始学一下 “函数编程(functional programming)”。
 
