@@ -23,7 +23,7 @@ as python works best with files ending in ``.py``.
 
 Then in Terminal *run* the file by typing:
 
-.. code-block:: bash
+.. code-block:: console
 
     python ex1.py
 

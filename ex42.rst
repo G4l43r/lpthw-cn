@@ -1,5 +1,5 @@
-Exercise 42: Getting Classy
-***************************
+Exercise 42: Gothons Are Getting Classy
+***************************************
 
 While it's fun to put functions inside of dictionaries, you'd think there'd
 be something in Python that does this for you.  There is and it's the ``class``

@@ -13,7 +13,7 @@ Skeleton Contents: Linux/OSX
 First, create the structure of your skeleton directory with these 
 commands:
 
-.. code-block:: bash
+.. code-block:: console
 
     ~ $ mkdir -p projects
     ~ $ cd projects/
@@ -31,7 +31,7 @@ Next we need to setup some initial
 files:
 
 
-.. code-block:: bash
+.. code-block:: console
 
     ~/projects/skeleton $ touch NAME/__init__.py
     ~/projects/skeleton $ touch tests/__init__.py
@@ -97,7 +97,7 @@ Testing Your Setup
 
 After you get all that installed you should be able to do this:
 
-.. code-block:: bash
+.. code-block:: console
 
     ~/projects/skeleton $ nosetests
     .
