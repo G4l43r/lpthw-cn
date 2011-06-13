@@ -25,113 +25,144 @@ class Game(object):
         print self.quips[randint(0, len(self.quips)-1)]
         exit(1)
 
+    def central_corridor(self):
+        print "The Gothons of Planet Percal #25 have invaded your ship and destroyed"
+        print "your entire crew.  You are the last surviving member and your last"
+        print "mission is to get the neutron destruct bomb from the Weapons Armory,"
+        print "put it in the bridge, and blow the ship up after getting into an "
+        print "escape pod."
+        print "\n"
+        print "You're running down the central corridor to the Weapons Armory when"
+        print "a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume"
+        print "flowing around his hate filled body.  He's blocking the door to the"
+        print "Armory and about to pull a weapon to blast you."
 
-    def princess_lives_here(self):
-        print "You see a beautiful Princess with a shiny crown."
-        print "She offers you some cake."
+        action = raw_input("> ")
 
-        eat_it = raw_input("> ")
-
-        if eat_it == "eat it":
-            print "You explode like a pinata full of frogs."
-            print "The Princess cackles and eats the frogs. Yum!"
+        if action == "shoot!":
+            print "Quick on the draw you yank out your blaster and fire it at the Gothon."
+            print "His clown costume is flowing and moving around his body, which throws"
+            print "off your aim.  Your laser hits his costume but misses him entirely.  This"
+            print "completely ruins his brand new costume his mother bought him, which"
+            print "makes him fly into an insane rage and blast you repeatedly in the face until"
+            print "you are dead.  Then he eats you."
             return 'death'
 
-        elif eat_it == "do not eat it":
-            print "She throws the cake at you and it cuts off your head."
-            print "The last thing you see is her munching on your torso. Yum!"
+        elif action == "dodge!":
+            print "Like a world class boxer you dodge, weave, slip and slide right"
+            print "as the Gothon's blaster cranks a laser past your head."
+            print "In the middle of your artful dodge your foot slips and you"
+            print "bang your head on the metal wall and pass out."
+            print "You wake up shortly after only to die as the Gothon stomps on"
+            print "your head and eats you."
             return 'death'
 
-        elif eat_it == "make her eat it":
-            print "The Princess screams as you cram the cake in her mouth."
-            print "Then she smiles and cries and thanks you for saving her."
-            print "She points to a tiny door and says, 'The Koi needs cake too.'"
-            print "She gives you the very last bit of cake and shoves you in."
-            return 'gold_koi_pond'
+        elif action == "tell a joke":
+            print "Lucky for you they made you learn Gothon insults in the academy."
+            print "You tell the one Gothon joke you know:"
+            print "Lbhe zbgure vf fb sng, jura fur fvgf nebhaq gur ubhfr, fur fvgf nebhaq gur ubhfr."
+            print "The Gothon stops, tries not to laugh, then busts out laughing and can't move."
+            print "While he's laughing you run up and shoot him square in the head"
+            print "putting him down, then jump through the Weapon Armory door."
+            return 'laser_weapon_armory'
 
         else:
-            print "The princess looks at you confused and just points at the cake."
-            return 'princess_lives_here'
+            print "DOES NOT COMPUTE!"
+            return 'central_corridor'
 
-    def gold_koi_pond(self):
-        print "There is a garden with a koi pond in the center."
-        print "You walk close and see a massive fin poke out."
-        print "You peek in and a creepy looking huge Koi stares at you."
-        print "It opens its mouth waiting for food."
+    def laser_weapon_armory(self):
+        print "You do a dive roll into the Weapon Armory, crouch and scan the room"
+        print "for more Gothons that might be hiding.  It's dead quiet, too quiet."
+        print "You stand up and run to the far side of the room and find the"
+        print "neutron bomb in its container.  There's a keypad lock on the box"
+        print "and you need the code to get the bomb out.  If you get the code"
+        print "wrong 10 times then the lock closes forever and you can't"
+        print "get the bomb.  The code is 3 digits."
+        code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
+        guess = raw_input("[keypad]> ")
+        guesses = 0
+
+        while guess != code and guesses < 10:
+            print "BZZZZEDDD!"
+            guesses += 1
+            guess = raw_input("[keypad]> ")
+
+        if guess == code:
+            print "The container clicks open and the seal breaks, letting gas out."
+            print "You grab the neutron bomb and run as fast as you can to the"
+            print "bridge where you must place it in the right spot."
+            return 'the_bridge'
+        else:
+            print "The lock buzzes one last time and then you hear a sickening"
+            print "melting sound as the mechanism is fused together."
+            print "You decide to sit there, and finally the Gothons blow up the"
+            print "ship from their ship and you die."
+            return 'death'
+
+
+    def the_bridge(self):
+        print "You burst onto the Bridge with the netron destruct bomb"
+        print "under your arm and surprise 5 Gothons who are trying to"
+        print "take control of the ship.  Each of them has an even uglier"
+        print "clown costume than the last.  They haven't pulled their"
+        print "weapons out yet, as they see the active bomb under your"
+        print "arm and don't want to set it off."
         
-        feed_it = raw_input("> ")
+        action = raw_input("> ")
 
-        if feed_it == "feed it":
-            print "The Koi jumps up, and rather than eating the cake, eats your arm."
-            print "You fall in and the Koi shrugs than eats you."
-            print "You are then pooped out sometime later."
+        if action == "throw the bomb":
+            print "In a panic you throw the bomb at the group of Gothons"
+            print "and make a leap for the door.  Right as you drop it a"
+            print "Gothon shoots you right in the back killing you."
+            print "As you die you see another Gothon frantically try to disarm"
+            print "the bomb. You die knowing they will probably blow up when"
+            print "it goes off."
             return 'death'
 
-        elif feed_it == "do not feed it":
-            print "The Koi grimaces, then thrashes around for a second."
-            print "It rushes to the other end of the pond, braces against the wall..."
-            print "then it *lunges* out of the water, up in the air and over your"
-            print "entire body, cake and all."
-            print "You are then pooped out a week later."
-            return 'death'
-
-        elif feed_it == "throw it in":
-            print "The Koi wiggles, then leaps into the air to eat the cake."
-            print "You can see it's happy, it then grunts, thrashes..."
-            print "and finally rolls over and poops a magic diamond into the air"
-            print "at your feet."
-
-            return 'bear_with_sword'
-
+        elif action == "slowly place the bomb":
+            print "You point your blaster at the bomb under your arm"
+            print "and the Gothons put their hands up and start to sweat."
+            print "You inch backward to the door, open it, and then carefully"
+            print "place the bomb on the floor, pointing your blaster at it."
+            print "You then jump back through the door, punch the close button"
+            print "and blast the lock so the Gothons can't get out."
+            print "Now that the bomb is placed you run to the escape pod to"
+            print "get off this tin can."
+            return 'escape_pod'
         else:
-            print "The Koi gets annoyed and wiggles a bit."
-            return 'gold_koi_pond'
+            print "DOES NOT COMPUTE!"
+            return "the_bridge"
+
+    def escape_pod(self):
+        print "You rush through the ship desperately trying to make it to"
+        print "the escape pod before the whole ship explodes.  It seems like"
+        print "hardly any Gothons are on the ship, so your run is clear of"
+        print "interference.  You get to the chamber with the escape pods, and"
+        print "now need to pick one to take.  Some of them could be damaged"
+        print "but you don't have time to look.  There's 5 pods, which one"
+        print "do you take?"
+
+        good_pod = randint(1,5)
+        guess = raw_input("[pod #]> ")
 
 
-    def bear_with_sword(self):
-        print "Puzzled, you are about to pick up the fish poop diamond when"
-        print "a bear bearing a load bearing sword walks in."
-        print '"Hey! That\' my diamond! Where\'d you get that!?"'
-        print "It holds its paw out and looks at you."
-        
-        give_it = raw_input("> ")
-
-        if give_it == "give it":
-            print "The bear swipes at your hand to grab the diamond and"
-            print "rips your hand off in the process.  It then looks at"
-            print 'your bloody stump and says, "Oh crap, sorry about that."'
-            print "It tries to put your hand back on, but you collapse."
-            print "The last thing you see is the bear shrug and eat you."
+        if int(guess) != good_pod:
+            print "You jump into pod %s and hit the eject button." % guess
+            print "The pod escapes out into the void of space, then"
+            print "implodes as the hull ruptures, crushing your body"
+            print "into jam jelly."
             return 'death'
-
-        elif give_it == "say no":
-            print "The bear looks shocked.  Nobody ever told a bear"
-            print "with a broadsword 'no'.  It asks, "
-            print '"Is it because it\'s not a katana?  I could go get one!"'
-            print "It then runs off and now you notice a big iron gate."
-            print '"Where the hell did that come from?" You say.'
-
-            return 'big_iron_gate'
-
-    def big_iron_gate(self):
-        print "You walk up to the big iron gate and see there's a handle."
-
-        open_it = raw_input("> ")
-
-        if open_it == 'open it':
-            print "You open it and you are free!"
-            print "There are mountains.  And berries! And..."
-            print "Oh, but then the bear comes with his katana and stabs you."
-            print '"Who\'s laughing now!?  Love this katana."'
-
-            return 'death'
-
         else:
-            print "That doesn't seem sensible.  I mean, the door's right there."
-            return 'big_iron_gate'
+            print "You jump into pod %s and hit the eject button." % guess
+            print "The pod easily slides out into space heading to"
+            print "the planet below.  As it flies to the planet, you look"
+            print "back and see your ship implode then explode like a"
+            print "bright star, taking out the Gothon ship at the same"
+            print "time.  You won!"
+            exit(0)
 
 
-a_game = Game("princess_lives_here")
+a_game = Game("central_corridor")
 a_game.play()
 
 
