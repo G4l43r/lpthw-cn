@@ -12,7 +12,7 @@ Mac OSX
 
 To complete this exercise, complete the following tasks:
 
-1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
+1. Go to http://learnpythonthehardway.org/exercise0.html with your browser, get
    the ``gedit`` text editor, and install it.
 2. Put gedit (your editor) in your Dock so you can reach
    it easily.

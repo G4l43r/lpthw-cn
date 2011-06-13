@@ -3,10 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Learn Python The Hard Way's documentation!
-=====================================================
+Learn Python The Hard Way, 2nd Edition
+======================================
 
-Contents:
+This is the HTML preview of *Learn Python The Hard Way, 2nd Edition*. It is a work in
+progress and will most likely have some errors as I work on the full release of the 2nd Edition.
+
 
 .. toctree::
    :maxdepth: 1
