@@ -79,7 +79,7 @@ with new output like this:
 
 .. code-block:: console
 
-    $ python ex/ex50.py 
+    $ python bin/app.py
     http://0.0.0.0:8080/
     127.0.0.1:59542 - - [13/Jun/2011 11:44:43] "HTTP/1.1 GET /" - 200 OK
     127.0.0.1:59542 - - [13/Jun/2011 11:44:43] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
