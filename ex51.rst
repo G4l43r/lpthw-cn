@@ -1,3 +1,6 @@
-Exercise 51: A Web App Two
-**************************
+Exercise 51: Getting Input From A Browser
+*****************************************
+
+Now that you have the basics of a web based application we'll now put some 
+flesh on the bones and put the "Gothons of Percal #25" game into it.
 

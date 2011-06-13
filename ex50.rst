@@ -1,4 +1,6 @@
-Exercise 50: A Web Application
-******************************
+Exercise 50: Your First Website
+*******************************
 
+In this exercise you will build a simple web version of one of your games.  These
+final three exercises will be very hard and you should take your time with them.
 
