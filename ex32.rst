@@ -1,5 +1,5 @@
 Exercise 32: Loops And Lists
-*************************
+****************************
 
 You should now be able to do some programs that are much more interesting.
 If you have been keeping up, you should realize that now you can combine

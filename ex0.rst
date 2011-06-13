@@ -16,12 +16,12 @@ To complete this exercise, complete the following tasks:
    the ``gedit`` text editor, and install it.
 2. Put gedit (your editor) in your Dock so you can reach
    it easily.
-    a. Run gedit so we can fix some stupid defaults it has.
-    b. Open ``Preferences`` from the ``gedit menu`` and select the ``Editor`` tab.
-    c. Change ``Tab width:`` to 4.
-    d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
-    e. Turn on "Automatic indentation" as well.
-    f. Open the ``View`` tab and turn on "Display line numbers".
+   a. Run gedit so we can fix some stupid defaults it has.
+   b. Open ``Preferences`` from the ``gedit menu`` and select the ``Editor`` tab.
+   c. Change ``Tab width:`` to 4.
+   d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
+   e. Turn on "Automatic indentation" as well.
+   f. Open the ``View`` tab and turn on "Display line numbers".
 3. Find your "Terminal" program.  Search for it.  You will find it.
 4. Put your Terminal in your Dock as well.
 5. Run your Terminal program.  It won't look like much.
@@ -72,20 +72,20 @@ Windows
    the ``gedit`` text editor, and install it. You do not need to be administrator to do this.
 2. Make sure you can get to ``gedit`` easily by putting it on your desktop and/or in
    ``Quick Launch``. Both options are available during setup.
-    a. Run gedit so we can fix some stupid defaults it has.
-    b. Open ``Edit->Preferences`` select the ``Editor`` tab.
-    c. Change ``Tab width:`` to 4.
-    d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
-    e. Turn on "Automatic indentation" as well.
-    f. Open the ``View`` tab turn on "Display line numbers".
+   a. Run gedit so we can fix some stupid defaults it has.
+   b. Open ``Edit->Preferences`` select the ``Editor`` tab.
+   c. Change ``Tab width:`` to 4.
+   d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
+   e. Turn on "Automatic indentation" as well.
+   f. Open the ``View`` tab turn on "Display line numbers".
 3. Find your "Terminal" program.  It's called ``Command Prompt``. Alternatively just run ``cmd``. 
 4. Make a shortcut to it on your desktop and/or ``Quick Launch`` for your convenience.
 5. Run your Terminal program.  It won't look like much.
 6. In your Terminal program, run ``python``.  You run things in Terminal by just typing their 
    name and hitting RETURN.
-    a. If you run ``python`` and it's not there (``python is not recognized..``).  Install it from http://python.org/download 
-    b. *Make sure you install Python 2 not Python 3.*
-    c. You may be better off with ActiveState Python especially when you miss Administrative rights
+   a. If you run ``python`` and it's not there (``python is not recognized..``).  Install it from http://python.org/download 
+   b. *Make sure you install Python 2 not Python 3.*
+   c. You may be better off with ActiveState Python especially when you miss Administrative rights
 7. Hit CTRL-Z (^Z), ``Enter`` and get out of ``python``.
 8. You should be back at a prompt similar to what you had before you typed ``python``.  If not find out why.
 9. Learn how to make a directory in the Terminal.  Search online for help.
@@ -104,7 +104,7 @@ Windows
     features.  If you have problems, please visit: http://docs.python.org/faq/windows.html
 
 Windows: What You Should See
---------------------------
+----------------------------
 
 
 .. code-block:: bat
@@ -154,12 +154,12 @@ your instructions:
    the ``gedit`` text editor, and install it.
 2. Make sure you can get to ``gedit`` easily
    by putting it in your window manager's menu.
-    a. Run gedit so we can fix some stupid defaults it has.
-    b. Open ``Preferences`` select the ``Editor`` tab.
-    c. Change ``Tab width:`` to 4.
-    d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
-    e. Turn on "Automatic indentation" as well.
-    f. Open the ``View`` tab turn on "Display line numbers".
+   a. Run gedit so we can fix some stupid defaults it has.
+   b. Open ``Preferences`` select the ``Editor`` tab.
+   c. Change ``Tab width:`` to 4.
+   d. Select (make sure a check mark is in) ``Insert spaces instead of tabs``.
+   e. Turn on "Automatic indentation" as well.
+   f. Open the ``View`` tab turn on "Display line numbers".
 3. Find your "Terminal" program.  It could be called ``GNOME Terminal``, ``Konsole``, or ``xterm``.
 4. Put your Terminal in your Dock as well.
 5. Run your Terminal program.  It won't look like much.

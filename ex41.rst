@@ -1,5 +1,5 @@
-Exercise 41: A Room With A View Of A Bear With A Broadsword
-***********************************************************
+Exercise 41: Gothons From Planet Percal #25
+*******************************************
 
 Did you figure out the secret of the function in the dict from the
 last exercise?  Can you explain it to yourself?  Let me explain it
@@ -88,7 +88,7 @@ Extra Credit
 ============
 
 1.  Explain how returning the next room works.
-2.  Create more rooms, making the game bigger.
+2.  Add cheat codes to the game so you can get past the more difficult rooms.
 3.  Instead of having each function print itself, learn about "doc comments".  See if you 
     can write the room description as doc comments, and change the runner to print
     them.

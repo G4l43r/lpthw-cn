@@ -1,5 +1,5 @@
 Exercise 39: Doing Things To Lists
-*******************************
+**********************************
 
 You have learned about lists. When you learned about ``while-loops`` you
 "appended" numbers to the end of a list and printed them out.   There was also
@@ -31,6 +31,7 @@ setting off a chain of events inside Python to cause something to happen to the
    works so it's best to just remember it and assume that's alright.  What happens then, at 
    the end of all this is a function call that looks like: ``append(mystuff, 'hello')``
    instead of what you read which is ``mystuff.append('hello')``.
+
 
 For the most part you do not have to know that this is going on, but it helps when you
 get error messages from python like this:

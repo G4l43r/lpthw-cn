@@ -1,5 +1,5 @@
 Exercise 45: Is-A, Has-A, Objects, and Classes
-*********************************************
+**********************************************
 
 An important concept that you have to understand is the difference between a
 ``Class`` and an ``Object``.  The problem is, there is no real "difference" between a
