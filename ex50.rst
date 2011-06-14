@@ -1,84 +1,205 @@
-习题 50: 你的第一项工作任务
-***************************************
+习题 50: 你的第一个网站
+*******************************
 
-现在我将为你分配一项工作任务，就跟给专业程序员分配工作任务一样。这个任务将是一个
-小游戏，假设我是客户，我把要求一一列给你，你把这个游戏写出来，如果你完成的不错，
-我也许会买你的游戏。你要把我的一些模糊的描述变成一样真正能用的东西。
-
-这节练习的目的是看你是否已经掌握了你学过的所有概念。还有两节练习这本书就结束了，
-这节习题是你的最后一个代码练习作业。
-
-回顾你学过的内容
-====================
-
-到现在为止，你应该已经学会了下面的东西：
-
-* 创建“类(class)”，用类实现房间的构建。
-* 抛出异常(Throw/Raise Exceptions)。
-* 使用函数(function)、变量(variable)、字典(dictionary)、列表(list)、以及元组(tuple)。
-* 使用词汇扫描器，将用户的输入转换为元组列表。
-* 使用解析器(parser)将元组列表转换为一个句子(Sentence)对象。
-
-你在任务中会用到这些知识，因此你要确认学会了这些东西。
+这节以及后面的习题中，你的任务是把前面创建的游戏做成网页版。这是本书的最后三个\
+章节，这些内容对你来说难度会相当大，你要在上面花些时间才能做出来。在你开始这节\
+练习以前，你必须已经成功地完成过了《习题 46》的内容，正确安装了 ``pip``\，而且\
+学会了如何安装软件包以及如何创建项目骨架。如果你不记得这些内容，就回到《习题 46》\
+重新复习一遍。
 
 
-功能列表的实现
-===========================
+安装 Flask
+-----------------
 
-软件工作中特征性的一种情况，就是有人给你一份模糊不清前后矛盾的功能需求。实话实说，\
-这种事情很挫。一般人没有能力可以清晰地构想出他的需求来，说到描述需求的能力，那就\
-更差了。
+在创建你的第一个网页应用程序之前，你需要安装一个“网页框架”，它的名字叫 ``flask``\。\
+所谓的“框架”通常是指“让某件事情做起来更容易的软件包”。在网页应用的世界里，人们创建\
+了各种各样的“网页框架”，用来解决他们在创建网站时碰到的问题，然后把这些解决方案用\
+软件包的方式发布出来，这样你就可以利用它们引导创建你自己的项目了。
 
-作为一个程序员，你的任务就是接受这些模糊的描述，利用这些描述创造出他们想要的东西来。\
-其实有的时候，连你自己都说不清你需要什么。
+可选的框架类型有很多很多，不过在这里我们将使用 ``flask`` 框架。你可以先学会它，\
+等到差不多的时候再去接触其它的框架，不过 ``flask`` 本身挺不错的，所以就算你一直使用\
+也没关系。
 
-实现功能列表的最好的方法，就是照着下面的样板流程来：
+使用 ``pip`` 安装 ``flask``\：
 
-1. 让别人把所有的关于需求的想法都告诉你，整个过程中不要去评判这些想法。
-2. 一边倾听，一边把所有这些东西写下来，你可以放到表单里，也可以写在索引卡上。
-3. 休息一会，把所有的功能需求整理到一起，为它们设立优先等级，一种是“必须有”的功能，
-   一种是“有了比较好”的功能。
-4. 将列表的内容归类排序，将“必须功能”和“可选功能”区分开。
-5. 选择一个必须功能，开始将其实现。
-6. 过大约一个星期以后，把你写的软件展示给提出需求的人看，得到他们的反馈信息，依据
-   他们的反馈修改功能列表，并重复前面的步骤。
-   
-在各种各样的“编程方法论”中，你都可以看到这个样板流程的身影。
+.. code-block:: console
 
-接下来我会给你一份功能列表，你需要在游戏中实现它们。我给它们的优先度都是“必须”，
-你的任务是花一个星期实现这份列表上提到的所有功能。
+    $ sudo pip install flask
+    [sudo] password for zedshaw: 
+    Downloading/unpacking flask
+    ...
+    Successfully installed flask
+    Cleaning up...
 
-功能列表
-================
-
-* 这个游戏的发生地点是外星人的宇宙飞船。
-* 游戏中应该有一个人类英雄，他的任务是逃离外星人的奴役。
-* 这因该是一个文字类的冒险游戏，和我们的“熊和阔剑”的游戏类似。我就喜欢这样的游戏。
-* 哦，激光。激光武器是必不可少的。
-* 激光武器也不能太厉害了。游戏的难度应该比较高才对。
-* 不过也不能太难了，不然大家就没兴趣了嘛。你懂的，《魔兽世界》你知道吧，听说这\
-  游戏的开发商可赚钱了。
-* 飞船一开始应该有大约 10 个房间，接下来我们还要扩展它们。
-* 我想随便修改房间的描述，可我又不想改代码，这个你能做吗？
-* 有朋友告诉我农场游戏很流行，你就做一个有农场的场景出来吧。
-* 外星人应该有类似黑手党的性质，这年头黑手党也是流行话题，是吧？
-* 我应该可以使用句子在游戏中移动位置，例如“go north”、“open door”等。
-* 在代码中设计好房间和路径是没问题的，不过玩家需要一份打印出来的地图，你的游戏\
-  能提供地图查询吗？
-* 游戏应该有个故事背景，最好是爱情相关的。
-* 最好包含点 geek 文化在里边，不过别提《星际迷航(Star Trek)》！好了，我承认第一季\
-  不错，但后面都是垃圾。
-* 我要在我的电脑上安装这个游戏，你能不能让它通过 setup.py 安装起来呢？这样以后\
-  打包发行也比较容易。
+以上是 Linux 和 Mac OSX 系统下的安装命令，如果你使用的是 Windows，那你只要把
+``sudo`` 去掉就可以了。如果你无法正常安装，请回到《习题 46》，确认自己学会了\
+里边的内容。
 
 
-完成任务列表的小技巧
-========================
+写一个简单的“Hello World”项目
+-----------------------------------
 
-1. 先在纸上设计出地图、人物角色、以及故事主线。
-2. 撰写单元测试，这样你后面就无需手动检查代码了。
-3. 设计你的游戏引擎，让它便于测试。
-4. 每隔一段时间，自己亲自玩一下你写的游戏。
-5. 如果遇到疑惑，就向别人寻求帮助，并把你的代码给别人看。
+现在你将做一个非常简单的“Hello World”项目出来，首先你要创建一个项目目录：
 
-祝你好运，下周评审游戏时再见。
+.. code-block:: console
+
+    $ cd projects
+    $ mkdir gothonweb
+    $ cd gothonweb
+    $ mkdir bin gothonweb tests docs templates
+    $ touch gothonweb/__init__.py
+    $ touch tests/__init__.py
+
+你最终的目的是把《习题 42》中的游戏做成一个 web 应用，所以你的项目名称叫做
+``gothonweb``\，不过在此之前，你需要创建一个最基本的 ``flask`` 应用，将下面\
+的代码放到 ``bin/app.py`` 中：
+
+.. literalinclude:: ex/ex50.py
+    :linenos:
+
+然后使用下面的方法来运行这个 web 程序：
+
+.. code-block:: console
+
+    $ python bin/app.py
+    * Running on http://127.0.0.1:5000/
+    * Restarting with reloader...
+
+
+最后，使用你的网页浏览器，打开 URL ``http://localhost:5000/``\，你应该看到两样\
+东西，首先是浏览器里显示了 ``Hello, world!``\，然后是你的命令行终端显示了如下\
+的输出：
+
+.. code-block:: console
+
+    $ python bin/app.py
+    * Running on http://127.0.0.1:5000/
+    * Restarting with reloader...
+    127.0.0.1 - - [13/Jun/2011 17:18:03] "GET / HTTP/1.1" 200 -
+    127.0.0.1 - - [13/Jun/2011 17:18:03] "GET /favicon.ico HTTP/1.1" 404 -
+
+这些是 ``flask`` 打印出的 log 信息，从这些信息你可以看出服务器有在运行，而且能\
+了解到程序在浏览器背后做了些什么事情。这些信息还有助于你发现程序的问题。例如在\
+最后一行它告诉你浏览器试图获取 ``/favicon.ico``\，但是这个文件并不存在，因此它\
+返回的状态码是 ``404 Not Found``\。
+
+到这里，我还没有讲到任何 web 相关的工作原理，因为首先你需要完成准备工作，以\
+便后面的学习能顺利进行，接下来的两节习题中会有详细的解释。我会要求你用各种方法\
+把你的 flask 应用程序弄坏，然后再将其重新构建起来：这样做的目的是让你明白运行\
+``flask`` 程序需要准备好哪些东西。
+
+
+发生了什么事情？
+------------------
+
+在浏览器访问到你的网页应用程序时，发生了下面一些事情：
+
+1. 浏览器通过网络连接到你自己的电脑，它的名字叫做 ``localhost``\，这是一个标准\
+   称谓，表示的谁就是网络中你自己的这台计算机，不管它实际名字是什么，你都可以使用\
+   ``localhost`` 来访问。它使用到的网络端口是 ``5000``\。
+2. 连接成功以后，浏览器对 ``bin/app.py`` 这个应用程序发出了 HTTP 请求(request)，\
+   要求访问 URL ``/``\，这通常是一个网站的第一个 URL。
+3. 你在 ``bin/app.py`` 里创建了一个应用(app)，将其设为调试(debugging)状态，然后\
+   你用了这个魔法般的 ``@app.route("/")``\，它告诉了 ``flask`` 你下面定义的函\
+   将作为针对 ``/`` URL 的回应。这种语句的名称是“修饰器(decorator)”，这个概念\
+   现在解释起来有点复杂，你目前只要知道把它放在函数定义的上一行，这样它就可以\
+   做到修改这个函数的目的了。
+4. 现在 ``flask`` 找到了 ``def hello`` 这个函数定义，它就调用了这个函数来处理\
+   浏览器的请求，这个函数返回了一个简单的字符串，以供 ``flask`` 将其传递给\
+   浏览器。
+5. 最后 ``flask`` 完成了对于浏览器请求的处理，将响应(response)回传给浏览器，\
+   于是你就看到了现在的页面。
+
+确定你真的弄懂了这些，你需要画一个示意图，来理清信息是如何从浏览器传递到
+``flask``\，再到 ``def hello``\，再回到你的浏览器的。
+
+
+修正错误
+-------------
+
+First, delete line 11 where you assign the ``greeting`` variable, then hit refresh in your
+browser.  You should see an error page now that gives you lots of information on how your
+application just exploded.  You know that the variable ``greeting`` is now missing, but
+``flask`` gives you this nice error page to track down exactly where.  Try doing each
+of the following things with this page:
+
+1. Look at each of the outputs (click on them) and see if you can follow what
+   variables it's talking about and where they are.
+2. Try breaking this simple application in other ways and explore what happens.  Don't forget to also
+   look at the logs being printed into your terminal as ``flask`` will put other stack traces
+   and information there too.
+
+
+Create Basic Templates
+----------------------
+
+You can break your flask application, but did you notice that "Hello World" isn't a very
+good HTML page?  This is a web application people, and as such it needs a proper HTML 
+response.  To do that you will create a simple template that says "Hello World"
+in a big green font.
+
+The first step is to create a ``templates/index.html`` file that looks like this:
+
+.. literalinclude:: ex/ex50/gothonweb/templates/index.html
+    :linenos:
+
+If you know what HTML is then this should look fairly familiar, if not then you might need to go research
+HTML and try writing a few web pages by hand so you know how it works.  This HTML file
+however is a *template*, which means that ``flask`` will fill in "holes" in the text
+depending on variables you pass in to the template.  Every place you see ``$greeting`` will be
+a variable you'll pass to the template that alters its contents.
+
+To make your ``bin/app.py`` do this, you need to add some code to tell flask where to
+load the template and to render it.  Take that file and change it like this:
+
+.. literalinclude:: ex/ex50/gothonweb/bin/app.py
+    :linenos:
+
+Once you have that in place, reload the web page in your browser and you should see a different message
+in green.  You should also be able to do a ``View Source`` on the page in your browser to see that it is
+valid HTML.
+
+This may have flown by you very fast, so let me explain how a template works:
+
+1. In your ``bin/app.py`` you've added a new import for ``render_template`` which will magically
+   figure out that you want templates in ``templates/``.
+2. This ``render_template`` function knows how to load ``.html`` files out of the ``templates/`` directory because
+   the author wrote it that way. See? Magic! It's awesome.
+3. Later in your code, when the browser hits the ``hello`` function like before, instead of just returning
+   the string ``greeting``, you call ``render_template`` and pass the greeting to it as a variable.
+4. This ``render_template`` function is kind of a *magic* function where it
+   sees that you're asking for ``index.html``, goes into the ``templates/``
+   directory, looks for a page named ``index.html``, and then "renders" it, or
+   converts it.  If figures out where ``templates/`` is based on the ``Flask(".")`` call
+   which says, "Run flask in the current directory."
+5. In the ``templates/index.html`` file you see what looks like regular HTML, but then there's
+   these ``if``, ``else``, and ``endif`` statements that look nothing like Python.  This is called
+   Jinja2 Templates, and they're a different language from Python, but they should be easy for you
+   to grasp or at least hack around until you pick it up.  Hopefully you won't be writing too much
+   of these statements.
+6. Finally, you have the HTML in ``templates/index.html`` that looks at the ``greeting`` variable, and
+   if it's there, prints one message using the ``greeting``, or a default message.
+
+To get deeper into this, try changing the greeting variable and the HTML to see what effect it has.
+Try also creating another template named ``templates/foo.html`` and render that using ``render_template``
+instead of ``index.html`` like before. This will show you how the name of the function you
+call on ``render`` is just matched to a ``.html`` file in ``templates/``.
+
+
+Next Steps: Input, Better Templates, Games
+------------------------------------------
+
+You should spend a good week really diving into the http://flask.pocoo.org
+documentation and trying everything you can find there to try.  Rework this
+initial project directory to add anything you can think up and explore.  You
+should also be learning about HTML5 and CSS3 and trying to get a good
+understanding of how to write those kinds of files.  We'll be making a very
+pathetic set of HTML5 and CSS3 files in the last two exercises, but for now you
+should be exploring and learning.
+
+In Exercises 51 you will reorganize the web application, get some better templates, setup
+a little game engine that get input, and lay the foundation for your game.  In Exercise
+52 you'll finally put your game together and learn to unit test it so that you can work
+faster and make sure it keeps working.
+
+
