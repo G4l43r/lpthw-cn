@@ -8,34 +8,30 @@ and have a working ``pip`` installed such that you can install packages and
 know how to make a skeleton project directory.  If you don't remember how
 to do this go back to Exercise 46 and do it all over again.
 
-Installing web.py
+Installing flask
 -----------------
 
 The first thing you need to do before you can create your first web application
-is install the "web framework" called ``web.py``.  The term "framework" generally
+is install the "web framework" called ``flask``.  The term "framework" generally
 means "some package that makes it easier for me to do something".  In the world
 of web applications, people create "web frameworks" to compensate for the difficult
 problems they've encountered when making their own sites.  They then share these
 common solutions to these problems with you in the form of a package you can
 download to bootstrap your own projects.
 
-In our case, we'll be using the ``web.py`` framework, but there are many, many,
-*many* others you can choose.  For now, learn ``web.py`` then branch out to another
-one when you're ready (or just keep using ``web.py`` since it's good enough).
+In our case, we'll be using the ``flask`` framework, but there are many, many,
+*many* others you can choose.  For now, learn ``flask`` then branch out to another
+one when you're ready (or just keep using ``flask`` since it's good enough).
 
-Using ``pip`` install ``web.py``:
+Using ``pip`` install ``flask``:
 
 .. code-block:: console
 
-    $ sudo pip install web.py
+    $ sudo pip install flask
     [sudo] password for zedshaw: 
-    Downloading/unpacking web.py
-      Running setup.py egg_info for package web.py
-        
-    Installing collected packages: web.py
-      Running setup.py install for web.py
-        
-    Successfully installed web.py
+    Downloading/unpacking flask
+    ...
+    Successfully installed flask
     Cleaning up...
 
 This will work on Linux and Mac OSX computers, but on Windows just drop the ``sudo`` part of
@@ -47,7 +43,7 @@ Make A Simple "Hello World" Project
 -----------------------------------
 
 Now you're going to make an initial very simple "Hello World" web application and
-project directory using ``web.py``.  First you'll need to make your project directory:
+project directory using ``flask``.  First you'll need to make your project directory:
 
 .. code-block:: console
 
@@ -60,7 +56,7 @@ project directory using ``web.py``.  First you'll need to make your project dire
 
 You're going to be taking the game from Exercise 42 and making it into a web application, so that's
 why you're calling it ``gothonweb``.  Before you do that, we need to create the most basic
-``web.py`` application possible.  Put the following code into ``bin/app.py``:
+``flask`` application possible.  Put the following code into ``bin/app.py``:
 
 .. literalinclude:: ex/ex50.py
     :linenos:
@@ -70,9 +66,11 @@ You then run this application like this:
 .. code-block:: console
 
     $ python bin/app.py
-    http://0.0.0.0:8080/
+    * Running on http://127.0.0.1:5000/
+    * Restarting with reloader...
 
-Finally, use your web browser and go to the URL ``http://localhost:8080/`` and you should see two
+
+Finally, use your web browser and go to the URL ``http://localhost:5000/`` and you should see two
 things.  First, in your browser you'll see ``Hello, world!``.  Second, you'll see your terminal
 with new output like this:
 
@@ -80,11 +78,12 @@ with new output like this:
 .. code-block:: console
 
     $ python bin/app.py
-    http://0.0.0.0:8080/
-    127.0.0.1:59542 - - [13/Jun/2011 11:44:43] "HTTP/1.1 GET /" - 200 OK
-    127.0.0.1:59542 - - [13/Jun/2011 11:44:43] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+    * Running on http://127.0.0.1:5000/
+    * Restarting with reloader...
+    127.0.0.1 - - [13/Jun/2011 17:18:03] "GET / HTTP/1.1" 200 -
+    127.0.0.1 - - [13/Jun/2011 17:18:03] "GET /favicon.ico HTTP/1.1" 404 -
 
-Those are log messages that ``web.py`` prints out so you can see that the server is working, and
+Those are log messages that ``flask`` prints out so you can see that the server is working, and
 see what the browser is doing behind the scenes.  They help you do debugging and figure
 out when you have problems.  For example, it's saying that your browser tried to get
 ``/favicon.ico`` but that file didn't exist so it returned ``404 Not Found`` status
@@ -92,7 +91,7 @@ code.
 
 I haven't explained the way *any* of this web stuff works yet, because I want to get you setup
 and ready to roll so that I can explain it better in the next two exercises.  To accomplish this
-I'm going to have you break your web.py application in various ways and then restructure it 
+I'm going to have you break your flask application in various ways and then restructure it 
 so that you know how it's setup.
 
 What's Going On?
@@ -102,21 +101,21 @@ Here's what's happening when your browser hits your application:
 
 1. Your browser makes a network connection to your own computer, which is called ``localhost``
    and is a standard way of saying "whatever my own computer is called on the network".  It
-   also uses port ``8080``.
+   also uses port ``5000``.
 2. Once it connects, it makes an HTTP request to the ``bin/app.py`` application and asks for
    the ``/`` URL, which is commonly the first URL on any website.
-3. Inside ``bin/app.py`` you've got a list of URLs and what classes they match.  The only one
-   we have is the ``'/', 'index'`` mapping.  This means that whenever someone goes to ``/``
-   with a browser, ``web.py`` will find the ``class index`` and load it to handle the
-   request.
-4. Now that ``web.py`` has found ``class index`` it calls the ``index.GET`` method on an
-   instance of that class to actually handle the request.  This function runs, and simply
-   returns a string for what ``web.py`` should send to the browser.
-5. Finally, ``web.py`` has handled the request and sends this response to the browser which
+3. Inside ``bin/app.py`` you make an app, set it to debugging, and then you have this "magic" ``@app.route("/")``
+   which tells ``flask`` that you want this function to be what answers the ``/`` URL.
+   These things are called decorators, and they're way too complex to explain now, so just
+   know that you put them before a function ``def`` and they modify that function.
+4. Now that ``flask`` has found ``def hello`` it calls the method to actually
+   handle the request.  This function runs, and simply returns a string for
+   what ``flask`` should send to the browser.
+5. Finally, ``flask`` has handled the request and sends this response to the browser which
    is what you are seeing.
 
 Make sure you really understand this, and you should draw up a diagram of how this information
-is flowing from your browser, to ``web.py``, then to ``index.GET`` and back to your browser.
+is flowing from your browser, to ``flask``, then to ``def hello`` and back to your browser.
 
 
 Fixing Errors
@@ -125,23 +124,20 @@ Fixing Errors
 First, delete line 11 where you assign the ``greeting`` variable, then hit refresh in your
 browser.  You should see an error page now that gives you lots of information on how your
 application just exploded.  You know that the variable ``greeting`` is now missing, but
-``web.py`` gives you this nice error page to track down exactly where.  Try doing each
+``flask`` gives you this nice error page to track down exactly where.  Try doing each
 of the following things with this page:
 
-1. Look at each of the ``Local vars`` outputs (click on them) and see if you can follow what
+1. Look at each of the outputs (click on them) and see if you can follow what
    variables it's talking about and where they are.
-2. Look at the ``Request Information`` section and see if it matches anything you're familiar with already.
-   This is information that your web browser is sending to your ``gothonweb`` application.  You
-   normally don't even know that it's sending this stuff, so now you get to see what it does.
-3. Try breaking this simple application in other ways and explore what happens.  Don't forget to also
-   look at the logs being printed into your terminal as ``web.py`` will put other stack traces
+2. Try breaking this simple application in other ways and explore what happens.  Don't forget to also
+   look at the logs being printed into your terminal as ``flask`` will put other stack traces
    and information there too.
 
 
 Create Basic Templates
 ----------------------
 
-You can break your web.py application, but did you notice that "Hello World" isn't a very
+You can break your flask application, but did you notice that "Hello World" isn't a very
 good HTML page?  This is a web application people, and as such it needs a proper HTML 
 response.  To do that you will create a simple template that says "Hello World"
 in a big green font.
@@ -153,18 +149,15 @@ The first step is to create a ``templates/index.html`` file that looks like this
 
 If you know what HTML is then this should look fairly familiar, if not then you might need to go research
 HTML and try writing a few web pages by hand so you know how it works.  This HTML file
-however is a *template*, which means that ``web.py`` will fill in "holes" in the text
+however is a *template*, which means that ``flask`` will fill in "holes" in the text
 depending on variables you pass in to the template.  Every place you see ``$greeting`` will be
 a variable you'll pass to the template that alters its contents.
 
-To make your ``bin/app.py`` do this, you need to add some code to tell web.py where to
+To make your ``bin/app.py`` do this, you need to add some code to tell flask where to
 load the template and to render it.  Take that file and change it like this:
 
 .. literalinclude:: ex/ex50/gothonweb/bin/app.py
     :linenos:
-
-Pay close attention to the new ``render`` variable, and how I changed the last line of ``index.GET``
-so it returns ``render.index()`` passing in your ``greeting`` variable.
 
 Once you have that in place, reload the web page in your browser and you should see a different message
 in green.  You should also be able to do a ``View Source`` on the page in your browser to see that it is
@@ -172,35 +165,41 @@ valid HTML.
 
 This may have flown by you very fast, so let me explain how a template works:
 
-1. In your ``bin/app.py`` you've added a new variable ``render`` which is a ``web.template.render`` object.
-2. This ``render`` object knows how to load ``.html`` files out of the ``templates/`` directory because
-   you passed that to it as a parameter.
-3. Later in your code, when the browser hits the ``index.GET`` like before, instead of just returning
-   the string ``greeting``, you call ``render.index`` and pass the greeting to it as a variable.
-4. This ``render.index`` method is kind of a *magic* function where the ``render`` object sees that
-   you're asking for ``index``, goes into the ``templates/`` directory, looks for a page named ``index.html``,
-   and then "renders" it, or converts it.
-5. In the ``templates/index.html`` file you see the beginning definition that says this template takes 
-   a ``greeting`` parameter, just like a function.  Also, just like Python this template is indentation
-   sensitive, so make sure you get them right.
+1. In your ``bin/app.py`` you've added a new import for ``render_template`` which will magically
+   figure out that you want templates in ``templates/``.
+2. This ``render_template`` function knows how to load ``.html`` files out of the ``templates/`` directory because
+   the author wrote it that way. See? Magic! It's awesome.
+3. Later in your code, when the browser hits the ``hello`` function like before, instead of just returning
+   the string ``greeting``, you call ``render_template`` and pass the greeting to it as a variable.
+4. This ``render_template`` function is kind of a *magic* function where it
+   sees that you're asking for ``index.html``, goes into the ``templates/``
+   directory, looks for a page named ``index.html``, and then "renders" it, or
+   converts it.  If figures out where ``templates/`` is based on the ``Flask(".")`` call
+   which says, "Run flask in the current directory."
+5. In the ``templates/index.html`` file you see what looks like regular HTML, but then there's
+   these ``if``, ``else``, and ``endif`` statements that look nothing like Python.  This is called
+   Jinja2 Templates, and they're a different language from Python, but they should be easy for you
+   to grasp or at least hack around until you pick it up.  Hopefully you won't be writing too much
+   of these statements.
 6. Finally, you have the HTML in ``templates/index.html`` that looks at the ``greeting`` variable, and
-   if it's there, prints one message using the ``$greeting``, or a default message.
+   if it's there, prints one message using the ``greeting``, or a default message.
 
 To get deeper into this, try changing the greeting variable and the HTML to see what effect it has.
-Try also creating another template named ``templates/foo.html`` and render that using ``render.foo()``
-instead of ``render.index()`` like before. This will show you how the name of the function you
+Try also creating another template named ``templates/foo.html`` and render that using ``render_template``
+instead of ``index.html`` like before. This will show you how the name of the function you
 call on ``render`` is just matched to a ``.html`` file in ``templates/``.
 
 
 Next Steps: Input, Better Templates, Games
 ------------------------------------------
 
-You should spend a good week really diving into the http://webpy.org/ documentation and trying
-everything you can find there to try.  Rework this initial project directory to add anything
-you can think up and explore.  You should also be learning about HTML5 and CSS3 and trying
-to get a good understanding of how to write those kinds of files.  We'll be making a very
-pathetic set of HTML5 and CSS3 files in the last two exercises, but for now you should be
-exploring and learning.
+You should spend a good week really diving into the http://flask.pocoo.org
+documentation and trying everything you can find there to try.  Rework this
+initial project directory to add anything you can think up and explore.  You
+should also be learning about HTML5 and CSS3 and trying to get a good
+understanding of how to write those kinds of files.  We'll be making a very
+pathetic set of HTML5 and CSS3 files in the last two exercises, but for now you
+should be exploring and learning.
 
 In Exercises 51 you will reorganize the web application, get some better templates, setup
 a little game engine that get input, and lay the foundation for your game.  In Exercise
