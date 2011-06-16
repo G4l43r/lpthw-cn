@@ -1,13 +1,17 @@
-from flask import Flask
-from flask import render_template
+import web
 
-app = Flask(".")
-app.debug = True
+urls = (
+  '/', 'index'
+)
 
-@app.route("/")
-def hello():
-    greeting = "Hello World"
-    return render_template("index.html", greeting=greeting)
+app = web.application(urls, globals())
+
+render = web.template.render('templates/')
+
+class index:
+    def GET(self):
+        greeting = "Hello World"
+        return render.index(greeting = greeting)
 
 if __name__ == "__main__":
     app.run()

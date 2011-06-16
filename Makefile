@@ -95,3 +95,6 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+sync: clean html
+	rsync -azv _build/html/* $(USER)@learnpythonthehardway.org:/var/www/learnpythonthehardway.org/book/

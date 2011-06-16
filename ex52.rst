@@ -1,4 +1,7 @@
 Exercise 52: Testing The Web Application
 ****************************************
 
+In our final exercise, we will write tests for your game using a variety
+of methods, completing your fully functioning web application.
+
 
