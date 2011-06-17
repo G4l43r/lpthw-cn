@@ -1,6 +1,11 @@
 Exercise 50: Your First Website
 *******************************
 
+.. warning::
+
+    This is a DRAFT of the exercise for the 2nd Edition of the book,
+    it is not ready to be used yet but feel free to review it.
+
 In this exercise you will build a simple web version of one of your games.  These
 final three exercises will be very hard and you should take your time with them.
 Before you attempt this exercise you *must* have complete Exercise 46 successfully

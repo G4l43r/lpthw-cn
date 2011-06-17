@@ -1,6 +1,11 @@
 Exercise 51: Getting Input From A Browser
 *****************************************
 
+.. warning::
+
+    This is a DRAFT of the exercise for the 2nd Edition of the book,
+    it is not ready to be used yet but feel free to review it.
+
 While it's exciting to see the browser display "Hello World", it's even
 more exciting to let the user submit text to your application from
 a form.  In this exercise we will improve our starter web application
@@ -16,16 +21,133 @@ but it is accurate and will help you figure out what might be going wrong
 with your application.  It will also make it easier for you to create
 forms if you know what they do.
 
+Obviously you have two main components:
+
+1. A *browser*, which is usually Firefox, Chrome, Internet Explorer, or a few
+   others, and which *connects* and sends *requests* to...
+2. A *server*, which accepts *connections* from a *browser*, takes *requests* a 
+   browser gives, and returns *responses* which are usually *web pages*.
+
+This is a very overloaded couple of points, but let's break it down word by
+word to see what pieces are involved, then we'll put them all back together
+into a cohesive picture that will make even more sense.
+
+Browser
+    The software that you are probably using every day.  Most people don't
+    know what it really does, they just call it "the internet".  It's job is to
+    take addresses (like http://learnpythonthehardway.org) you type into the URL
+    bar, and then use that information to make requests to the server at
+    that address.
+
+Address
+    This is normally a URL (Uniform Resource Locator) like http://learnpythonthehardway.org/
+    and which indicates where a browser should go.  The first part ``http`` indicates
+    the protocol you want to use, in this case "Hyper-Text Transport Protocol".  You can
+    also try ftp://ibiblio.org/ to see how "File Transport Protocol" works.  The ``learnpythonthehardway.org``
+    part is the "hostname", or a human readable address you can remember and which maps
+    to a number called an IP address, similar to a telephone number for a computer on the
+    Internet.  Finally, URLs can have a trailing ``path`` like the ``/book/`` part of
+    http://learnpythonthehardway.org/book/ and which indicates a file or some resource
+    *on* the server to retrieve with a request.  There's many other parts, but those are
+    the main ones.
+
+Connection
+    Once a browser knows what protocol you want to use (http), what server you want to 
+    talk to (learnpythonthehardway.org), and what resource on that server to get, it
+    must make a connection.  The browser simply asks your Operating System (OS) to open
+    an "port" to the computer, usually port 80, and then when it works the OS hands
+    back to your program something that works like a file, but is actually sending
+    and receiving bytes over the network wires between your computer and the
+    other computer at "learnpythonthehardway.org".  This is also the same thing
+    that happens with http://localhost:8080/ but in this case you are telling
+    the browser to connect to your own computer (localhost) and use port 8080
+    rather than the default of 80.  You could also do http://learnpythonthehardway.org:80/
+    and get the same result, except you're explicitly saying to use port 80 instead of
+    letting it be that by default.
+
+Request
+    Your browser is connected using the address you gave, and now it needs to
+    ask for the resource it wants (or you want) on the remote server.  If you
+    gave ``/book/`` at the end of the URL then you want the file (resource)
+    at /book/, and most servers will use the real file /book/index.html but
+    pretend it doesn't exist.  What the browser does to get this resource is
+    send a *request* to the server, over the connection, asking for it.  I won't
+    get into exactly how it does this, but just understand that it has to 
+    send something to query the server for it.  The interesting thing is that
+    these "resources" don't have to be files, as is the case with your 
+    application where the browser asks for something, but the server is
+    returning something your Python code generated.
+
+Server
+    Now we get to the server, which is the computer at the end of a browser's
+    connection that knows how to answer your browsers requests for files/resources.
+    Most web servers just send files, and that's actually the majority of traffic.
+    But you're actually building a server in Python that knows how to take 
+    requests for resources, and then return strings that you craft using Python.
+    When you do this crafting *you* are pretending to be a file to the browser,
+    but really it's just code.  As you can see from Ex. 50, it also doesn't
+    take much code to create a response.
+
+Response
+    This is your HTML (css, javascript, or images) that your server wants to
+    send back to the browser as the answer to the browser's request.  In the case
+    of files, it just reads them off the disk and sends them to the browser, but
+    it wraps the contents of the disk in a special "header" so the browser knows
+    what it's getting.  In the case of your application, you're still sending 
+    the same thing, including the header, but you generate that data on the fly
+    with your Python code.
+
+Those are all the components of how a web application answers a browser, so now
+we can put them together into a conversation so you can see it more clearly:
+
+** Diagram Here Showing the Request Flow **
 
 
 How Forms Work
 ==============
 
+You now have the very simple description of how your browser is talking to 
+your server, so let's take a look at how a form works.  Originally when
+browsers came out they only read content on servers, they couldn't send
+much to them.  Very quickly though people started giving browsers the ability
+to submit forms to servers as an extended form of query.  Instead of just
+querying the server for a simple file path, they could start doing queries
+like this:
+
+1. http://localhost:8080/person?name=Frank&age=20&hair=Brown&eyes=Blue
+2. http://localhost:8080/login?username=frankjoe&password=stuff
+
+You'll notice that this kind of looks like you're taking a dictionary
+of key=value data and converting it to be combinations of each key
+and value, separated by an & (ampersand).  That's basically how it works,
+and once you put that formatted dictionary after a ? on a URL the
+browser will send it to the server in a way that the server understands it.
+
+However, this wasn't quite good enough, because URLs have a limit on their
+size and the types of data you can put in them.  These kinds of URLs are
+also rather ugly, so the people making browsers then came up with another
+kind of form called a "POST form".  In this type of request, the browser
+tells the server it's sending a POST instead of a GET, and then puts
+the same paramters in the *body* of the request, rather than on the URL.
+That means your URLs can look smaller but you can still submit data.
+
+It might be too much information, but here's what these two types of
+requests actually look like to the server:
+
+*Two Simple Examples Here*
 
 
 Your First Form Application
 ===========================
 
+After blasting your brain with a fast crash course in how your browser
+talks to your server, we can now augment your simple application from
+Ex. 50 so that it accepts input from a form, and then then says hello
+to you directly.
+
+
+Testing It With Curl
+====================
 
 
 Writing A Unit Test For Your Form
@@ -54,4 +176,11 @@ Extra Credit
    implement it with HTML.
 4. This one is hard, but try to figure out how you'd do a file upload form so that you can
    upload an image and save it to the disk.
+5. This is even more mind numbing, but go find the HTTP RFC (which is the document that
+   describes how HTTP works) and read as much of it as you can.  It is really boring, 
+   but comes in handy once in a while.
+6. This will also be really difficult, but see if you can find someone to help you setup
+   a web server like Apache, Nginx, or thttpd.  Try to serve a couple of your .html
+   and .css files with it just to see if you can.  Don't worry if you can't, web servers
+   kind of suck.
 
