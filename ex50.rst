@@ -10,7 +10,7 @@ to do this go back to Exercise 46 and do it all over again.
 
 
 Installing lpthw.web
---------------------
+====================
 
 The first thing you need to do before you can create your first web application
 is install the "web framework" called ``lpthw.web``.  The term "framework" generally
@@ -57,7 +57,7 @@ and make sure you can do it reliably.
 
 
 Make A Simple "Hello World" Project
------------------------------------
+===================================
 
 Now you're going to make an initial very simple "Hello World" web application and
 project directory using ``lpthw.web``.  First you'll need to make your project directory:
@@ -109,7 +109,7 @@ I'm going to have you break your lpthw.web application in various ways and then 
 so that you know how it's setup.
 
 What's Going On?
-----------------
+================
 
 Here's what's happening when your browser hits your application:
 
@@ -133,7 +133,7 @@ is flowing from your browser, to ``lpthw.web``, then to ``index.GET`` and back t
 
 
 Fixing Errors
--------------
+=============
 
 First, delete line 11 where you assign the ``greeting`` variable, then hit refresh in your
 browser.  You should see an error page now that gives you lots of information on how your
@@ -152,7 +152,7 @@ of the following things with this page:
 
 
 Create Basic Templates
-----------------------
+======================
 
 You can break your lpthw.web application, but did you notice that "Hello World" isn't a very
 good HTML page?  This is a web application people, and as such it needs a proper HTML 
@@ -205,19 +205,12 @@ instead of ``render.index()`` like before. This will show you how the name of th
 call on ``render`` is just matched to a ``.html`` file in ``templates/``.
 
 
-Next Steps: Input, Better Templates, Games
-------------------------------------------
+Extra Credit
+============
 
-You should spend a good week really diving into the http://webpy.org/ documentation and trying
-everything you can find there to try.  Rework this initial project directory to add anything
-you can think up and explore.  You should also be learning about HTML5 and CSS3 and trying
-to get a good understanding of how to write those kinds of files.  We'll be making a very
-pathetic set of HTML5 and CSS3 files in the last two exercises, but for now you should be
-exploring and learning.
-
-In Exercises 51 you will reorganize the web application, get some better templates, setup
-a little game engine that get input, and lay the foundation for your game.  In Exercise
-52 you'll finally put your game together and learn to unit test it so that you can work
-faster and make sure it keeps working.
-
+1. Read the documentation at http://webpy.org/ which is the same as the ``lpthw.web`` project.
+2. Try experimenting with everything you can find there, including their example code.
+3. Go read about HTML5 and CSS3 and try to make some other .html and .css files for practice.
+4. If you have a friend who knows Django and is willing to help you, then consider doing
+   Ex 50, 51, and 52 in Django instead to see what that's like.
 

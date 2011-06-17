@@ -1,6 +1,57 @@
 Exercise 51: Getting Input From A Browser
 *****************************************
 
-Now that you have the basics of a web based application we'll now put some 
-flesh on the bones and put the "Gothons of Percal #25" game into it.
+While it's exciting to see the browser display "Hello World", it's even
+more exciting to let the user submit text to your application from
+a form.  In this exercise we will improve our starter web application
+using forms and storing information about the user into their "session"
+so we can work with it.
+
+How The Web Works
+=================
+
+Before you can make a form it helps to understand a little bit about
+how the world wide web actually works.  This description isn't complete,
+but it is accurate and will help you figure out what might be going wrong
+with your application.  It will also make it easier for you to create
+forms if you know what they do.
+
+
+
+How Forms Work
+==============
+
+
+
+Your First Form Application
+===========================
+
+
+
+Writing A Unit Test For Your Form
+=================================
+
+
+
+Creating A Layout Template
+==========================
+
+
+
+A Single Room Game
+==================
+
+
+
+Extra Credit
+============
+
+1. Create a separate new project and make a simple number guessing game that creates a
+   random number, and then asks the person until they get the number right or give up.
+2. Write unit tests for this game too, as practice for doing the unit testing.
+3. Read even more about HTML, and try to make the single room game have a better or
+   at least different layout.  It helps to draw what you want to do on paper and *then*
+   implement it with HTML.
+4. This one is hard, but try to figure out how you'd do a file upload form so that you can
+   upload an image and save it to the disk.
 
