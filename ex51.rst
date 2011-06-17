@@ -119,9 +119,22 @@ like this:
 
 You'll notice that this kind of looks like you're taking a dictionary
 of key=value data and converting it to be combinations of each key
-and value, separated by an & (ampersand).  That's basically how it works,
-and once you put that formatted dictionary after a ? on a URL the
-browser will send it to the server in a way that the server understands it.
+and value, separated by an & (ampersand).  That's basically how it works, and
+in fact we can write a little bit of Python to do just that:
+
+
+.. code-block:: python
+
+    params = {"name": "Frank", "age": 20, "hair": "Brown", "eyes": "Blue"}
+    req = []
+    for k,v in params.items():
+        req.append("%s=%s" % (k, v))
+    print "http://localhost:8080/person?" + "&".join(req)
+
+You could probably find many different ways to do this, and maybe you
+should, but this is the basics of crafting this type of query.  Keep
+in mind that there's some details to really get it right, like you have to
+URL encode each parameter and other fun stuff.
 
 However, this wasn't quite good enough, because URLs have a limit on their
 size and the types of data you can put in them.  These kinds of URLs are
