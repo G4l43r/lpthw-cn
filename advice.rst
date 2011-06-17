@@ -10,7 +10,9 @@ I have been programming for a very long time.  So long that it is incredibly
 boring to me.  At the time that I wrote this book I knew about 20 programming
 languages and could learn new ones in about a day to a week depending on how
 weird they were.  Eventually though this just became boring and couldn't hold
-my interest.
+my interest anymore.  This doesn't mean I think programming *is* boring, or
+that *you* will think it's boring, only that *I* find it uninteresting
+at this point in my journey.
 
 What I discovered after this journey of learning is that the languages did not
 matter, it's what you do with them.  Actually, I always knew that, but I'd
