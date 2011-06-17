@@ -196,4 +196,6 @@ Extra Credit
    a web server like Apache, Nginx, or thttpd.  Try to serve a couple of your .html
    and .css files with it just to see if you can.  Don't worry if you can't, web servers
    kind of suck.
+7. Make the sample python code that crafts GET requests in "How Forms Work" properly URL
+   encode the URL.
 
