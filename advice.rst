@@ -20,7 +20,7 @@ get distracted by the languages and forget it periodically.  Now I never forget
 it, and neither should you.
 
 Which programming language you learn and use does not matter.  Do *not* get
-sucked into the religion surrounding programing languages as that will only
+sucked into the religion surrounding programming languages as that will only
 blind you to their true purpose of being your tool for doing interesting
 things.
 
