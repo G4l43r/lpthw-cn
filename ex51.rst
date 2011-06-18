@@ -22,16 +22,30 @@ accurate and will help you figure out what might be going wrong with your
 application.  It will also make it easier for you to create forms if you know
 what they do.
 
-Obviously you have two main components:
+I'll start with a simple diagram that shows you the different parts of a web
+request and how the information flows:
 
-1. A *browser*, which is usually Firefox, Chrome, Internet Explorer, or a few
-   others, and which *connects* and sends *requests* to...
-2. A *server*, which accepts *connections* from a *browser*, takes *requests* a 
-   browser gives, and returns *responses* which are usually *web pages*.
+.. figure:: _static/http_request_diagram.png
+    :align: center
 
-This is a very overloaded couple of points, but let's break it down word by
-word to see what pieces are involved, then we'll put them all back together
-into a cohesive picture that will make even more sense.
+I've labeled the lines with letters so I can walk you through a regular request process:
+
+1. You type in the url ``http://learnpythonthehardway.org/`` into your browser and it
+   sends the request out on ``line A`` to your computer's network card.
+2. Your request goes out over the internet on ``line B`` and then to the remote
+   computer on ``line C`` where my server accepts the request.
+3. Once my computer accepts it, my web application gets it on ``line D``, and my
+   Python code runs the ``index.GET`` handler.
+4. The response comes out of my Python server when I ``return`` it, and goes back
+   to your browser over ``line D`` again.
+5. The server running this site takes the response off ``line D`` then sends it back
+   over the internet on ``line C``.
+6. The response from the server then comes off the internet on ``line B``, and your
+   computer's network interface hands it to your browser on ``line A``.
+7. Finally, your browser then displays the response.
+
+In this description there's a few terms you should know so that you have a common
+vocabulary to work with when talking about your web application:
 
 Browser
     The software that you are probably using every day.  Most people don't
@@ -98,10 +112,13 @@ Response
     the same thing, including the header, but you generate that data on the fly
     with your Python code.
 
-While this description works, it is much easier to see what's going on with
-a picture:
+That is the fastest crash course in how a web browser accesses information on servers
+on the internet.  It should work well enough for you to understand this exercise, but
+if not then I suggest going out and reading about it as much as you can until you get
+it.  A really good way to do that is to take the diagram, and then break different parts
+of the web application you did in Exercise 50.  If you can break your web application
+in predictable ways using the diagram, then you'll start to understand how it works.
 
-.. note:: Diagram of browser talking to server here.
 
 How Forms Work
 ==============
