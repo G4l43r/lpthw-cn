@@ -15,11 +15,12 @@ so we can work with it.
 How The Web Works
 =================
 
-Before you can make a form it helps to understand a little bit about
-how the world wide web actually works.  This description isn't complete,
-but it is accurate and will help you figure out what might be going wrong
-with your application.  It will also make it easier for you to create
-forms if you know what they do.
+Time for some boring stuff. You need to understand a bit more about how the web
+works before you can make a form it helps to understand a little bit about how
+the world wide web actually works.  This description isn't complete, but it is
+accurate and will help you figure out what might be going wrong with your
+application.  It will also make it easier for you to create forms if you know
+what they do.
 
 Obviously you have two main components:
 
@@ -97,70 +98,69 @@ Response
     the same thing, including the header, but you generate that data on the fly
     with your Python code.
 
-Those are all the components of how a web application answers a browser, so now
-we can put them together into a conversation so you can see it more clearly:
+While this description works, it is much easier to see what's going on with
+a picture:
 
-** Diagram Here Showing the Request Flow **
-
+.. note:: Diagram of browser talking to server here.
 
 How Forms Work
 ==============
 
-You now have the very simple description of how your browser is talking to 
-your server, so let's take a look at how a form works.  Originally when
-browsers came out they only read content on servers, they couldn't send
-much to them.  Very quickly though people started giving browsers the ability
-to submit forms to servers as an extended form of query.  Instead of just
-querying the server for a simple file path, they could start doing queries
-like this:
+The best way to play with forms is to write some code that accepts
+form data, and then see what you can do.  Take your ``bin/app.py``
+file and make it look like this:
 
-1. http://localhost:8080/person?name=Frank&age=20&hair=Brown&eyes=Blue
-2. http://localhost:8080/login?username=frankjoe&password=stuff
+.. literalinclude:: ex/ex51/gothonweb/form_test.py
+    :linenos:
 
-You'll notice that this kind of looks like you're taking a dictionary
-of key=value data and converting it to be combinations of each key
-and value, separated by an & (ampersand).  That's basically how it works, and
-in fact we can write a little bit of Python to do just that:
+Restart it (hit CTRL-c and then run it again) to make sure it loads
+again, then go to this with your browser go to ``http://localhost:8080/hello``
+which should display, "I just wanted to say Hello, Nobody."  Next, change
+the URL in your browser to ``http://localhost:8080/hello?name=Frank`` and
+you'll see it say "Hello, Frank."  Finally, change the ``name=Frank`` part
+to be your name.  Now it's saying hello to you.
 
+Let's break down the changes I made to your script to show you what's going on.
+
+1. Instead of just a string for ``greeting`` I'm now using ``web.input`` to
+   get data from the browser.  This function takes a key=value set of defaults,
+   parses the ``?name=Frank`` part of the URL you give it, and then returns
+   a nice object for you to work with that represents those values.
+2. I then construct the ``greeting`` from the new ``form.name`` attribute of
+   the ``form`` object, which should be very familiar to you by now.
+3. Everything else about the file is the same as before.
+
+You are also not restricted to just one parameter on the URL, try changing this
+example to give two variables like this:
+``http://localhost:8080/hello?name=Frank&greet=Hola``.  Then change the code to
+get ``form.name`` and ``form.greet`` like this:
 
 .. code-block:: python
 
-    params = {"name": "Frank", "age": 20, "hair": "Brown", "eyes": "Blue"}
-    req = []
-    for k,v in params.items():
-        req.append("%s=%s" % (k, v))
-    print "http://localhost:8080/person?" + "&".join(req)
+    greeting = "%s, %s" % (form.greet, form.name)
 
-You could probably find many different ways to do this, and maybe you
-should, but this is the basics of crafting this type of query.  Keep
-in mind that there's some details to really get it right, like you have to
-URL encode each parameter and other fun stuff.
+After that change try the URL, and then also try leaving out the ``&greet=Hola``
+part so that you can see the error you get.  Since ``greet`` doesn't have
+a default value in ``web.input(name="Nobody")`` then it is a required field.
+Now go back and make it have a default in the ``web.input`` call to see
+how you fix this.  Another thing you can do is set its default to ``greet=None``
+so that you can check if it exists and then give a better error message, like this:
 
-However, this wasn't quite good enough, because URLs have a limit on their
-size and the types of data you can put in them.  These kinds of URLs are
-also rather ugly, so the people making browsers then came up with another
-kind of form called a "POST form".  In this type of request, the browser
-tells the server it's sending a POST instead of a GET, and then puts
-the same paramters in the *body* of the request, rather than on the URL.
-That means your URLs can look smaller but you can still submit data.
+.. code-block:: python
+    
+    form = web.input(name="Nobody", greet=None)
 
-It might be too much information, but here's what these two types of
-requests actually look like to the server:
-
-*Two Simple Examples Here*
+    if form.greet:
+        greeting = "%s, %s" % (form.greet, form.name)
+        return render.index(greeting = greeting)
+    else:
+        return "ERROR: greet is required."
 
 
-Your First Form Application
-===========================
-
-After blasting your brain with a fast crash course in how your browser
-talks to your server, we can now augment your simple application from
-Ex. 50 so that it accepts input from a form, and then then says hello
-to you directly.
+Creating HTML Forms
+===================
 
 
-Testing It With Curl
-====================
 
 
 Writing A Unit Test For Your Form
