@@ -8,34 +8,47 @@
 重新复习一遍。
 
 
-安装 Flask
+安装 lpthw.web
 -----------------
 
-在创建你的第一个网页应用程序之前，你需要安装一个“网页框架”，它的名字叫 ``flask``\。\
+在创建你的第一个网页应用程序之前，你需要安装一个“Web 框架”，它的名字叫 ``lpthw.web``\。\
 所谓的“框架”通常是指“让某件事情做起来更容易的软件包”。在网页应用的世界里，人们创建\
 了各种各样的“网页框架”，用来解决他们在创建网站时碰到的问题，然后把这些解决方案用\
 软件包的方式发布出来，这样你就可以利用它们引导创建你自己的项目了。
 
-可选的框架类型有很多很多，不过在这里我们将使用 ``flask`` 框架。你可以先学会它，\
-等到差不多的时候再去接触其它的框架，不过 ``flask`` 本身挺不错的，所以就算你一直使用\
+可选的框架类型有很多很多，不过在这里我们将使用 ``lpthw.web`` 框架。你可以先学会它，\
+等到差不多的时候再去接触其它的框架，不过 ``lpthw.web`` 本身挺不错的，所以就算你一直使用\
 也没关系。
 
-使用 ``pip`` 安装 ``flask``\：
+使用 ``pip`` 安装 ``lpthw.web``\：
 
 .. code-block:: console
 
-    $ sudo pip install flask
+    $ sudo pip install lpthw.web
     [sudo] password for zedshaw: 
-    Downloading/unpacking flask
-    ...
-    Successfully installed flask
+    Downloading/unpacking lpthw.web
+      Running setup.py egg_info for package lpthw.web
+        
+    Installing collected packages: lpthw.web
+      Running setup.py install for lpthw.web
+        
+    Successfully installed lpthw.web
     Cleaning up...
 
 以上是 Linux 和 Mac OSX 系统下的安装命令，如果你使用的是 Windows，那你只要把
 ``sudo`` 去掉就可以了。如果你无法正常安装，请回到《习题 46》，确认自己学会了\
 里边的内容。
 
-
+.. warning::
+    
+    其他 Python 程序员会警告你说 ``lpthw.web`` 只是另外一个叫做 ``web.py`` 的
+    Web 框架的代码分支(fork)，而 ``web.py`` 又包含了太多的“魔法(magic)”在里边。\
+    如果他们这么说的话，你告诉他们 Google App Engine 最早用的就是 ``web.py``\，\
+    但没有一个 Python 程序员抱怨过它里边包含了太多的魔法，因为 Google 用它也没\
+    啥问题。如果 Google 觉得它可以，那它对你来说也不会差。所以还是回去继续学习\
+    吧，他们这些说法与其说是教导你，不如说是拿他们自己的教条束缚你，你还是忽略\
+    这些说法好了。
+    
 写一个简单的“Hello World”项目
 -----------------------------------
 
@@ -51,7 +64,7 @@
     $ touch tests/__init__.py
 
 你最终的目的是把《习题 42》中的游戏做成一个 web 应用，所以你的项目名称叫做
-``gothonweb``\，不过在此之前，你需要创建一个最基本的 ``flask`` 应用，将下面\
+``gothonweb``\，不过在此之前，你需要创建一个最基本的 ``lpthw.web`` 应用，将下面\
 的代码放到 ``bin/app.py`` 中：
 
 .. literalinclude:: ex/ex50.py
@@ -62,11 +75,10 @@
 .. code-block:: console
 
     $ python bin/app.py
-    * Running on http://127.0.0.1:5000/
-    * Restarting with reloader...
+    http://0.0.0.0:8080/
 
 
-最后，使用你的网页浏览器，打开 URL ``http://localhost:5000/``\，你应该看到两样\
+最后，使用你的网页浏览器，打开 URL ``http://localhost:8080/``\，你应该看到两样\
 东西，首先是浏览器里显示了 ``Hello, world!``\，然后是你的命令行终端显示了如下\
 的输出：
 
@@ -78,15 +90,15 @@
     127.0.0.1 - - [13/Jun/2011 17:18:03] "GET / HTTP/1.1" 200 -
     127.0.0.1 - - [13/Jun/2011 17:18:03] "GET /favicon.ico HTTP/1.1" 404 -
 
-这些是 ``flask`` 打印出的 log 信息，从这些信息你可以看出服务器有在运行，而且能\
+这些是 ``lpthw.web`` 打印出的 log 信息，从这些信息你可以看出服务器有在运行，而且能\
 了解到程序在浏览器背后做了些什么事情。这些信息还有助于你发现程序的问题。例如在\
 最后一行它告诉你浏览器试图获取 ``/favicon.ico``\，但是这个文件并不存在，因此它\
 返回的状态码是 ``404 Not Found``\。
 
 到这里，我还没有讲到任何 web 相关的工作原理，因为首先你需要完成准备工作，以\
 便后面的学习能顺利进行，接下来的两节习题中会有详细的解释。我会要求你用各种方法\
-把你的 flask 应用程序弄坏，然后再将其重新构建起来：这样做的目的是让你明白运行\
-``flask`` 程序需要准备好哪些东西。
+把你的 lpthw.web 应用程序弄坏，然后再将其重新构建起来：这样做的目的是让你明白运行\
+``lpthw.web`` 程序需要准备好哪些东西。
 
 
 发生了什么事情？
@@ -99,57 +111,57 @@
    ``localhost`` 来访问。它使用到的网络端口是 ``5000``\。
 2. 连接成功以后，浏览器对 ``bin/app.py`` 这个应用程序发出了 HTTP 请求(request)，\
    要求访问 URL ``/``\，这通常是一个网站的第一个 URL。
-3. 你在 ``bin/app.py`` 里创建了一个应用(app)，将其设为调试(debugging)状态，然后\
-   你用了这个魔法般的 ``@app.route("/")``\，它告诉了 ``flask`` 你下面定义的函\
-   将作为针对 ``/`` URL 的回应。这种语句的名称是“修饰器(decorator)”，这个概念\
-   现在解释起来有点复杂，你目前只要知道把它放在函数定义的上一行，这样它就可以\
-   做到修改这个函数的目的了。
-4. 现在 ``flask`` 找到了 ``def hello`` 这个函数定义，它就调用了这个函数来处理\
-   浏览器的请求，这个函数返回了一个简单的字符串，以供 ``flask`` 将其传递给\
-   浏览器。
-5. 最后 ``flask`` 完成了对于浏览器请求的处理，将响应(response)回传给浏览器，\
+3. 在 ``bin/app.py`` 里，我们有一个列表，里边包含了 URL 和类的匹配关系。我们这里\
+   只定义了一组匹配，那就是 ``'/', 'index'`` 的匹配。它的含义是：如果有人使用浏览\
+   器访问 ``/`` 这一级目录，\ ``lpthw.web`` 将找到并加载 ``class index``\，从而\
+   用它处理这个浏览器请求。
+4. 现在 ``lpthw.web`` 找到了 ``class index``\，然后针对这个类的一个实例调用了
+   ``index.GET`` 这个方法函数。该函数运行后返回了一个字符串，以供 ``lpthw.web``
+   将其传递给浏览器。
+5. 最后 ``lpthw.web`` 完成了对于浏览器请求的处理，将响应(response)回传给浏览器，\
    于是你就看到了现在的页面。
 
 确定你真的弄懂了这些，你需要画一个示意图，来理清信息是如何从浏览器传递到
-``flask``\，再到 ``def hello``\，再回到你的浏览器的。
+``lpthw.web``\，再到 ``index.GET``\，再回到你的浏览器的。
 
 
 修正错误
 -------------
 
-First, delete line 11 where you assign the ``greeting`` variable, then hit refresh in your
-browser.  You should see an error page now that gives you lots of information on how your
-application just exploded.  You know that the variable ``greeting`` is now missing, but
-``flask`` gives you this nice error page to track down exactly where.  Try doing each
-of the following things with this page:
+第一步，把第 11 行的 ``greeting`` 变量赋值删掉，然后刷新浏览器。你应该会看到一个\
+错误页面，你可以通过这一页丰富的错误信息看出你的程序崩溃的原因是什么。当然你已经\
+知道出错的原因是 ``greeting`` 的赋值丢失了，不过 ``lpthw.web`` 还是会给你一个挺好\
+的错误页面，让你能找到出错的具体位置。试试在这个错误页面上做以下操作：
 
-1. Look at each of the outputs (click on them) and see if you can follow what
-   variables it's talking about and where they are.
-2. Try breaking this simple application in other ways and explore what happens.  Don't forget to also
-   look at the logs being printed into your terminal as ``flask`` will put other stack traces
-   and information there too.
+1. 检查每一段 ``Local vars``（用鼠标点击它们），追踪里边提到的变量名称，\
+   以及它们是在哪些代码文件中用到的。
+2. 查看
+3. 试着把这个小程序的别的位置改错，探索一下会发生什么事情。\``lpthw.web`` 的错误信息\
+   在命令行终端也会出现，所以别忘了检查命令行终端。
 
 
-Create Basic Templates
+创建基本的模板文件
 ----------------------
 
-You can break your flask application, but did you notice that "Hello World" isn't a very
-good HTML page?  This is a web application people, and as such it needs a proper HTML 
-response.  To do that you will create a simple template that says "Hello World"
-in a big green font.
+你已经试过用各种方法把这个 lpthw.web 程序改错，不过你有没有注意到“Hello World”不是\
+一个好 HTML 网页呢？这是一个 web 应用，所以需要一个合适的 HTML 响应页面才对。为了\
+达到这个目的，下一步你要做的是将“Hello World”以较大的绿色字体显示出来。
 
-The first step is to create a ``templates/index.html`` file that looks like this:
+第一步是创建一个 ``templates/index.html`` 文件，内容如下：
 
 .. literalinclude:: ex/ex50/gothonweb/templates/index.html
     :linenos:
 
+如果你学过 HTML 的话，这些内容你看上去应该很熟悉。如果你没学过 HTML，那你应该\
+去研究一下，试着用 HTML 写几个网页，从而知道它的工作原理。不过我们这里的 HTML
+文件其实是一个“模板(template)”，
 If you know what HTML is then this should look fairly familiar, if not then you might need to go research
 HTML and try writing a few web pages by hand so you know how it works.  This HTML file
-however is a *template*, which means that ``flask`` will fill in "holes" in the text
+however is a *template*, which means that ``lpthw.web`` will fill in "holes" in the text
 depending on variables you pass in to the template.  Every place you see ``$greeting`` will be
 a variable you'll pass to the template that alters its contents.
 
-To make your ``bin/app.py`` do this, you need to add some code to tell flask where to
+To make your ``bin/app.py`` do this, you need to add some code to tell lpthw.web where to
 load the template and to render it.  Take that file and change it like this:
 
 .. literalinclude:: ex/ex50/gothonweb/bin/app.py
@@ -170,8 +182,8 @@ This may have flown by you very fast, so let me explain how a template works:
 4. This ``render_template`` function is kind of a *magic* function where it
    sees that you're asking for ``index.html``, goes into the ``templates/``
    directory, looks for a page named ``index.html``, and then "renders" it, or
-   converts it.  If figures out where ``templates/`` is based on the ``Flask(".")`` call
-   which says, "Run flask in the current directory."
+   converts it.  If figures out where ``templates/`` is based on the ``lpthw.web(".")`` call
+   which says, "Run lpthw.web in the current directory."
 5. In the ``templates/index.html`` file you see what looks like regular HTML, but then there's
    these ``if``, ``else``, and ``endif`` statements that look nothing like Python.  This is called
    Jinja2 Templates, and they're a different language from Python, but they should be easy for you
@@ -189,7 +201,7 @@ call on ``render`` is just matched to a ``.html`` file in ``templates/``.
 Next Steps: Input, Better Templates, Games
 ------------------------------------------
 
-You should spend a good week really diving into the http://flask.pocoo.org
+You should spend a good week really diving into the http://lpthw.web.pocoo.org
 documentation and trying everything you can find there to try.  Rework this
 initial project directory to add anything you can think up and explore.  You
 should also be learning about HTML5 and CSS3 and trying to get a good
