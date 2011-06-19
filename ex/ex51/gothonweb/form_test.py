@@ -9,7 +9,7 @@ app = web.application(urls, globals())
 
 render = web.template.render('templates/')
 
-class index:
+class index(object):
     def GET(self):
         form = web.input(name="Nobody")
         greeting = "Hello, %s" % form.name

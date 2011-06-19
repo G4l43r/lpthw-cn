@@ -8,7 +8,7 @@ app = web.application(urls, globals())
 
 render = web.template.render('templates/')
 
-class index:
+class index(object):
     def GET(self):
         greeting = "Hello World"
         return render.index(greeting = greeting)

@@ -15,9 +15,8 @@ so we can work with it.
 How The Web Works
 =================
 
-Time for some boring stuff. You need to understand a bit more about how the web
-works before you can make a form it helps to understand a little bit about how
-the world wide web actually works.  This description isn't complete, but it is
+Time for some boring stuff.  You need to understand a bit more about how the web
+works before you can make a form.  This description isn't complete, but it is
 accurate and will help you figure out what might be going wrong with your
 application.  It will also make it easier for you to create forms if you know
 what they do.
@@ -31,17 +30,17 @@ request and how the information flows:
 I've labeled the lines with letters so I can walk you through a regular request process:
 
 1. You type in the url ``http://learnpythonthehardway.org/`` into your browser and it
-   sends the request out on ``line A`` to your computer's network card.
-2. Your request goes out over the internet on ``line B`` and then to the remote
-   computer on ``line C`` where my server accepts the request.
-3. Once my computer accepts it, my web application gets it on ``line D``, and my
+   sends the request out on ``line (A)`` to your computer's network card.
+2. Your request goes out over the internet on ``line (B)`` and then to the remote
+   computer on ``line (C)`` where my server accepts the request.
+3. Once my computer accepts it, my web application gets it on ``line (D)``, and my
    Python code runs the ``index.GET`` handler.
 4. The response comes out of my Python server when I ``return`` it, and goes back
-   to your browser over ``line D`` again.
-5. The server running this site takes the response off ``line D`` then sends it back
-   over the internet on ``line C``.
-6. The response from the server then comes off the internet on ``line B``, and your
-   computer's network interface hands it to your browser on ``line A``.
+   to your browser over ``line (D)`` again.
+5. The server running this site takes the response off ``line (D)`` then sends it back
+   over the internet on ``line (C)``.
+6. The response from the server then comes off the internet on ``line (B)``, and your
+   computer's network interface hands it to your browser on ``line (A)``.
 7. Finally, your browser then displays the response.
 
 In this description there's a few terms you should know so that you have a common
@@ -177,23 +176,122 @@ so that you can check if it exists and then give a better error message, like th
 Creating HTML Forms
 ===================
 
+Passing the parameters on the URL works, but it's kind of ugly and 
+not easy to use for regular people.  What you really want is a what's
+called a "POST form".  This is a special HTML file that has a ``<form>``
+tag in it.  This form will collect information from the user, then
+send it to your web application just like you did above.
 
+Let's make a quick one so you can see how it works.  Here's the new HTML
+file you need to create, in ``templates/hello_form.html``:
 
+.. literalinclude:: ex/ex51/gothonweb/templates/hello_form.html
+    :linenos:
 
-Writing A Unit Test For Your Form
-=================================
+You should then change ``bin/app.py`` to look like this:
 
+.. literalinclude:: ex/ex51/gothonweb/post_form.py
+    :linenos:
+
+Once you've got those written up, simply restart the web application
+again and hit it with your browser like before.
+
+This time you'll get a form asking you for "A Greeting" and "Your Name".
+When you hit the ``Submit`` button on the form, it will give you the
+same greeting you normally get, but this time look at the URL in your
+browser.  See how it's ``http://localhost:8080/hello`` even though
+you sent in parameters.
+
+The part of the ``hello_form.html`` file that makes this work is the
+line with ``<form action="/hello" method="POST">``.  This tells your
+browser to:
+
+1. Collect data from the user using the form fields inside the form.
+2. Send them to the server using a ``POST`` type of request, which is
+   just another browser request that "hides" the form fields.
+3. Send that to the ``/hello`` URL (as shown in the ``action="/hello"`` part).
+
+You can then see how the two ``<input>`` tags match the names of the variables
+in your new code.  What you should also notice about this code is instead
+of just a ``GET`` method inside ``class index``, I have another method ``POST``.
+
+How this new application works is:
+
+1. The browser first hits the web application at ``/hello`` but it sends a 
+   ``GET``, so our ``index.GET`` function runs and returns the ``hello_form``.
+2. You fill out the form in the browser, and the browser does what the ``<form>``
+   says and sends the data as a ``POST``.
+3. The web application then runs the ``index.POST`` method rather than the
+   ``index.GET`` method to handle this request.
+4. This ``index.POST`` method then does what it normally does to send 
+   back the hello page like before.  There's really nothing new in 
+   here, it's just moved into a new function.
+
+As an exercise, go into the ``templates/index.html`` file and add a
+link *back* to just ``/hello`` so that you can keep filling out the form
+and seeing the results.  Try to make sure you can explain how this link
+works and how it's letting you cycle between ``templates/index.html`` and
+``templates/hello_form.html`` and what is being run inside this latest
+Python code.
 
 
 Creating A Layout Template
 ==========================
 
+When you work on your game in the next Exercise, you'll need to make a
+bunch of little HTML pages.  It will quickly become tedious to write a
+full web page every time, so there's a way to create a "layout" template.
+This layout template is kind of a shell that will wrap all your other pages
+with common headers and footers that your HTML pages need.  Good programmers
+try to reduce repetition, so layouts are essential for being a good programmer.
+
+Change ``templates/index.html`` to be like this:
+
+.. literalinclude:: ex/ex51/gothonweb/templates/index_laid_out.html
+    :linenos:
+
+Then change ``templates/hello_form.html`` to be like this:
+
+.. literalinclude:: ex/ex51/gothonweb/templates/hello_form_laid_out.html
+    :linenos:
+
+All we're doing is stripping out the "boilerplate" at the top and the
+bottom which is always on every page.  We'll put that back into a
+single ``templates/layout.html`` file that handles it for us from
+now on.
+
+Once you have those changes, create a ``templates/layout.html`` file
+with this in it:
+
+.. literalinclude:: ex/ex51/gothonweb/templates/layout.html
+    :linenos:
+
+This file looks like a regular template, except that it's going to be
+passed the *contents* of the other templates and used to *wrap* them.
+Anything you put in here doesn't need to be in the other templates.
+You should also pay attention to how ``$:content`` is written, since
+it's a little different from the other template variables.
+
+The *final* step is to change the line that makes the ``render`` object to
+be this:
+
+.. code-block:: python
+
+    render = web.template.render('templates/', base="layout")
+
+Which tells ``lpthw.web`` to use the ``templates/layout.html`` file as the
+*base* template for all the other templates.  Restart your application and
+then try to change the layout in interesting ways, but without changing the
+other templates.
 
 
-A Single Room Game
-==================
+Writing Unit Tests For Forms
+============================
 
-
+It's easy to test a web application with your browser by just hitting refresh,
+but come on, we're programmers here.  Why do some repetitive task when we can
+just write some code to test our application?  What you're going to do next is
+write a small little test that tests your web application form
 
 Extra Credit
 ============
