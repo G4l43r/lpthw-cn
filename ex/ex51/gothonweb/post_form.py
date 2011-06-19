@@ -1,14 +1,14 @@
 import web
 
 urls = (
-  '/hello', 'index'
+  '/hello', 'Index'
 )
 
 app = web.application(urls, globals())
 
 render = web.template.render('templates/')
 
-class index(object):
+class Index(object):
     def GET(self):
         return render.hello_form()
 
