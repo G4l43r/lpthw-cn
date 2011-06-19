@@ -24,7 +24,7 @@ what they do.
 I'll start with a simple diagram that shows you the different parts of a web
 request and how the information flows:
 
-.. figure:: _static/http_request_diagram.png
+.. figure:: _static/http_request_diagram.*
     :align: center
     
 
