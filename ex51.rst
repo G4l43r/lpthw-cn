@@ -26,11 +26,13 @@ request and how the information flows:
 
 .. figure:: _static/http_request_diagram.png
     :align: center
+    :width: 325pt
+    
 
 I've labeled the lines with letters so I can walk you through a regular request process:
 
 1. You type in the url ``http://learnpythonthehardway.org/`` into your browser and it
-   sends the request out on ``line (A)`` to your computer's network card.
+   sends the request out on ``line (A)`` to your computer's network interface.
 2. Your request goes out over the internet on ``line (B)`` and then to the remote
    computer on ``line (C)`` where my server accepts the request.
 3. Once my computer accepts it, my web application gets it on ``line (D)``, and my
