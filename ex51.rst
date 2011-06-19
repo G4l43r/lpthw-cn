@@ -291,7 +291,9 @@ Writing Unit Tests For Forms
 It's easy to test a web application with your browser by just hitting refresh,
 but come on, we're programmers here.  Why do some repetitive task when we can
 just write some code to test our application?  What you're going to do next is
-write a small little test that tests your web application form
+write a small little test that tests your web application form...
+
+.. note:: Coming soon. I have to figure out how to teach this.
 
 Extra Credit
 ============
