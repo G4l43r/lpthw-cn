@@ -81,11 +81,11 @@ Extra Credit
 2. Translate these two ways to view the function calls in English.  For example, ``' '.join(things)``
    reads as, "Join things with ' ' between them."  Meanwhile, ``join(' ', things)`` means,
    "Call join with ' ' and things."  Understand how they are really the same thing.
-2. Go read about "Object Oriented Programming" online.  Confused?  Yeah I was too.  Do not worry.
+3. Go read about "Object Oriented Programming" online.  Confused?  Yeah I was too.  Do not worry.
    You will learn enough to be dangerous, and you can slowly learn more later.
-3. Read up on what a "class" is in Python.  *Do not read about how other languages use the word "class".* That will only mess you up.
-4. What's the relationship between ``dir(something)`` and the "class" of ``something``?
-5. If you do not have any idea what I'm talking about do not worry.  Programmers like to feel smart
+4. Read up on what a "class" is in Python.  *Do not read about how other languages use the word "class".* That will only mess you up.
+5. What's the relationship between ``dir(something)`` and the "class" of ``something``?
+6. If you do not have any idea what I'm talking about do not worry.  Programmers like to feel smart
    so they invented Object Oriented Programming, named it OOP, and then used it way too much.  If you
    think that's hard, you should try to use "functional programming".
 
