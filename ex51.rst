@@ -286,34 +286,102 @@ then try to change the layout in interesting ways, but without changing the
 other templates.
 
 
-Writing Unit Tests For Forms
-============================
+Writing Automated Tests For Forms
+=================================
 
 It's easy to test a web application with your browser by just hitting refresh,
 but come on, we're programmers here.  Why do some repetitive task when we can
 just write some code to test our application?  What you're going to do next is
-write a small little test that tests your web application form...
+write a small little test that tests your web application form based on what
+you learned in Exercise 47.  If you don't remember Exercise 47 then go back
+and read it again.
 
-.. note:: Coming soon. I have to figure out how to teach this.
+You need to do a bit of setup to make Python let you load your ``bin/app.py``
+file for testing.  When we get to Exercise 52 you'll change this, but for now
+create an empty ``bin/__init__.py`` file so Python thinks ``bin/`` is a directory.
+
+I've also created a simple little function for ``lpthw.web`` that lets you
+assert things about your web application's response, aptly named ``assert_response``.
+Create the file ``tests/tools.py`` with these contents:
+
+.. literalinclude:: ex/ex51/gothonweb/tests/tools.py
+    :linenos:
+
+Once that's in place you can write your automated test for the last version of the
+``bin/app.py`` file you created.  Create a new file named ``tests/app_tests.py``
+with this:
+
+.. literalinclude:: ex/ex51/gothonweb/tests/app_tests.py
+    :linenos:
+
+Finally, use nosetests to run this test setup and test your web application:
+
+.. code-block:: console
+
+    $ nosetests
+    .
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.059s
+
+    OK
+
+What I'm doing here is I'm actually *importing* the whole application from the
+``bin/app.py`` module, and then running it manually.  The ``lpthw.web`` framework
+has a very simple API for processing requests, which looks like this:
+
+.. code-block:: python
+
+    app.request(localpart='/', method='GET', data=None, host='0.0.0.0:8080',
+                headers=None, https=False)
+
+Which means you can pass in the URL as the first parameter, then you can change the 
+method of the request, and what form data you send, even the host and the headers.
+This works without running an actual web server so you can do tests with automated tests
+and also use your browser to test a running server.
+
+To validate responses from this function, you use the ``assert_response`` function
+from ``tests.tools`` which has:
+
+
+.. code-block:: python
+
+   assert_response(resp, contains=None, matches=None, headers=None, status="200")
+
+You just pass in the response you get from calling ``app.request`` and then 
+add things you want checked.  You can use the ``contains`` parameter to make 
+sure that the response contains certain values.  You can use the ``status``
+parameter to check for certain responses.  There's actually quite a lot of
+information in this small little function so it would be good for you to
+study it.
+
+In the ``tests/app_tests.py`` automated test I'm first making sure the ``/`` URL
+returns a "404 Not Found" response, since it actually doesn't exist.  Then I'm
+checking that ``/hello`` works with both a ``GET`` and ``POST`` form.  Following
+the test should be fairly simple, even if you might not totally know what's going on.
+
+Your next task should be to spend some time studying this latest application
+and especially how the automated testing works.  Make sure you understand how I 
+imported the application from ``bin/app.py`` and ran it directly for the automated
+test.  This is an important trick you should understand and will lead to 
+more learning.
+
 
 Extra Credit
 ============
 
-1. Create a separate new project and make a simple number guessing game that creates a
-   random number, and then asks the person until they get the number right or give up.
-2. Write unit tests for this game too, as practice for doing the unit testing.
-3. Read even more about HTML, and try to make the single room game have a better or
-   at least different layout.  It helps to draw what you want to do on paper and *then*
+1. Read even more about HTML, and give the simple form a better layout.
+   It helps to draw what you want to do on paper and *then*
    implement it with HTML.
-4. This one is hard, but try to figure out how you'd do a file upload form so that you can
+2. This one is hard, but try to figure out how you'd do a file upload form so that you can
    upload an image and save it to the disk.
-5. This is even more mind numbing, but go find the HTTP RFC (which is the document that
+3. This is even more mind numbing, but go find the HTTP RFC (which is the document that
    describes how HTTP works) and read as much of it as you can.  It is really boring, 
    but comes in handy once in a while.
-6. This will also be really difficult, but see if you can find someone to help you setup
+4. This will also be really difficult, but see if you can find someone to help you setup
    a web server like Apache, Nginx, or thttpd.  Try to serve a couple of your .html
    and .css files with it just to see if you can.  Don't worry if you can't, web servers
    kind of suck.
-7. Make the sample python code that crafts GET requests in "How Forms Work" properly URL
-   encode the URL.
+5. Take a break after this and just try making as many different web applications as
+   you can.  You should *definitely* read about sessions in ``web.py`` (which is
+   the same as ``lpthw.web``) so you can understand how to keep state for a user.
 
