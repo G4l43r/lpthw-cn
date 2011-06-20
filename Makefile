@@ -98,3 +98,4 @@ doctest:
 
 sync: clean html
 	rsync -azv _build/html/* $(USER)@learnpythonthehardway.org:/var/www/learnpythonthehardway.org/book/
+	rsync -azv site/* $(USER)@learnpythonthehardway.org:/var/www/learnpythonthehardway.org/
