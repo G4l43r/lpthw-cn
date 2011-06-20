@@ -1,7 +1,163 @@
-Exercise 52: Testing The Web Application
-****************************************
+Exercise 52: The Start Of Your Web Game
+***************************************
 
-In our final exercise, we will write tests for your game using a variety
-of methods, completing your fully functioning web application.
+.. warning:: This is a DRAFT of the exercise for the 2nd Edition of the book.
+
+We're coming to the end of the book, and in this exercise I'm going to
+really challenge you.  When you're done with this exercise you'll be a reasonably
+competent Python beginner.  You still will need to go through a few more
+books and write a couple more projects, but you'll have the skills to complete them.
+The only thing in your way will be time, motivation, and resources.
+
+In this exercise, we won't make a complete game, but instead we'll make an
+"engine" that can run the game from Exercise 42 in the browser.  This will
+involve ``refactoring`` Exercise 42, mixing in the structure from Exercise 47,
+adding automated tests, and finally creating a web engine that can run the
+games.
+
+This exercise will be *huge*, and I predict you could spend months on it or
+just a week before you move on.  It's best to attack it in little chunks and
+do a bit a night, taking your time to make everything work before moving on.
+
+
+Refactoring The Exercise 42 Game
+================================
+
+You've been altering the ``gothonweb`` project for two exercises and you'll
+do it one more time in this exercise.  The skill you're learning is called
+"refactoring", or as I like to call it, "fixing stuff".  Refactoring is
+a term programmers use to describe the process of taking old code, and changing
+it to have new features or just to clean it up.  You've been doing this 
+without even knowing it, as it's really just second nature to building software.
+
+What you'll do in this part is take the ideas from Exercise 47 of a testable
+"map" of Rooms, and the game from Exercise 42, and combine them together to
+create a new game structure.  It will have the same content, just "refactored"
+to have a better structure.
+
+First step is to grab the code from ``ex47/game.py`` and just copy it to 
+``gothonweb/map.py`` and copy ``tests/ex47_tests.py`` file to ``tests/map_tests.py``
+and run ``nosetests`` again to make sure it keeps working.
+
+.. note:: 
+
+    From now on I won't show you the output of a test run, just assume that you should
+    be doing it and it'll look like the above unless you have an error.
+
+
+Once you have the code from Exercise 47 copied over, it's time to refactor it to
+have the Exercise *42* map in it.  I'm going to start off by laying down the basic
+structure, and then you'll have an assignment to make the ``map.py`` file and the
+``map_tests.py`` file complete.
+
+First thing to do is lay out the basic structure of the map using the ``Room`` class
+as it is now:
+
+.. literalinclude:: ex/ex52/gothonweb/gothonweb/map.py
+    :linenos:
+
+You'll notice that there's a couple of problems with our ``Room`` class and this
+map:
+
+1. We have to put the text that was in the ``if-else`` clauses that got
+   printed *before* entering a room as part of each room.  This means you can't
+   shuffle the map around which would be nice.  You'll be fixing that up
+   in this exercise.
+2. There's parts in the original game where we ran code that determined
+   things like the bomb's keypad code, or the right pod.  In this game
+   we just pick some defaults and go with it, but later you'll be
+   given extra credit to make this work again.
+3. I've just made a ``generic_death`` ending for all of the bad decisions, which
+   you'll have to finish for me.  You'll need to go back through and add in all
+   the original endings and make sure they work.
+4. I've got a new kind of transition labeled ``"*"`` that will be used for
+   a "catch-all" action in the engine.
+
+Once you've got that basically written out, here's the new automated test
+``tests/map_test.py`` that you should have to get yourself started:
+
+.. literalinclude:: ex/ex52/gothonweb/tests/map_tests.py
+    :linenos:
+
+Your task in this part of the exercise is to complete the map, and make the
+automated test completely validate the whole map.  This includes fixing all
+the ``generic_death`` objects to be real endings.  Make sure this works
+really well and that your test is as complete as possible because we'll be
+changing this map later and you'll use the tests to make sure it keeps working.
+
+
+Sessions And Tracking Users
+===========================
+
+At a certain point in your web application you'll need to keep track of some information
+and associate it with the user's browser.  The web (because of HTTP) is what we like
+to call "stateless", which means each request you make is independent of any other requests
+being made.  If you request page A, put in some data, then click a link to page B, all
+the data you sent to page A just disappears.
+
+The solution to this is to create a little data store (usually in a database or on 
+the disk) that uses a number unique to each browser to keep track of what that
+browser was doing.  In the little ``lpthw.web`` framework it's fairly easy, and there's
+an example showing how it's done:
+
+.. literalinclude:: ex/ex52/gothonweb/session_sample.py
+    :linenos:
+
+To make this work, you need to create a ``sessions/`` directory where the
+application can put session storage.  Do that,  run this application and
+go to ``/count``, you can hit refresh and watch the counter go up.  Close
+the browser and it *forgets* who you are, which is what we want for the game.
+There is a way to make the browser remember forever, but that makes testing
+and development harder.  If you then go to ``/reset``, and back to ``/count``
+you can see your counter reset because you've killed the session.
+
+Take the time to understand this code so you can see how the session starts
+off with the ``count`` equal to 0.  Also try looking at the files in 
+``sessions/`` to see if you can open them up.  Here's a Python session where I
+open up one and decode it:
+
+
+.. code-block:: pycon
+
+    >>> import pickle
+    >>> import base64
+    >>> base64.b64decode(open("sessions/XXXXX").read())
+    "(dp1\nS'count'\np2\nI1\nsS'ip'\np3\nV127.0.0.1\np4\nsS'session_id'\np5\nS'XXXX'\np6\ns."
+    >>> 
+    >>> x = base64.b64decode(open("sessions/XXXXX").read())
+    >>> 
+    >>> pickle.loads(x)
+    {'count': 1, 'ip': u'127.0.0.1', 'session_id': 'XXXXX'}
+
+The sessions are really just dictionaries that get written to disk using ``pickle`` and 
+``base64`` libraries.  There's probably as many ways to store and manage sessions as
+there are web frameworks, so it's not too important to know how these work.  It does
+help if you need to debug the session or potentially clean them out.
+
+
+Creating An Engine
+==================
+
+You should have your game map working and a good unit test for it.  I now want
+to make a simple little game engine that will run the rooms, collect input from
+the player, and keep track of where a play is in the game.  We'll be using the
+sessions you just learned about to make a simple game engine that will:
+
+1. Start a new game for new users.
+2. Present the room to the user.
+3. Take input from the user.
+4. Run their input through the game.
+5. Display the results and keep going until they die.
+
+
+
+
+Engine Screen Flow
+------------------
+
+
+
+Your Final Exercise
+===================
 
 
