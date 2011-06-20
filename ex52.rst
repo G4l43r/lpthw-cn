@@ -149,15 +149,72 @@ sessions you just learned about to make a simple game engine that will:
 4. Run their input through the game.
 5. Display the results and keep going until they die.
 
+To do this, you're going to take the trusty ``bin/app.py`` you've been hacking on
+and create a fully working, session based, game engine.  The catch though, is I'm
+going to make a very simple one with *basic HTML* files, and it'll be up to you to
+complete it.   Here's the base engine:
+
+.. literalinclude:: ex/ex52/gothonweb/bin/app.py
+    :linenos:
+
+There are even more new things in this script, but amazingly it is an entire
+web based game engine in a small file.  The biggest "hack" in the script are
+the lines that bring the sessions back, which is needed so that debug mode
+reloading works.  Otherwise, each time you hit refresh the sessions would
+disappear and the game wouldn't work.
 
 
+You should next delete ``templates/hello_form.html`` and ``templates/index.html`` and
+create the two templates mentioned in the above code.  Here's a *very* simple 
+``templates/show_room.html``:
 
-Engine Screen Flow
-------------------
+.. literalinclude:: ex/ex52/gothonweb/templates/show_room.html
+    :linenos:
+
+That is the template to show a room as you travel through the game, and next
+you need one to tell someone they died in the case that they got to the end
+of the map on accident, which is ``templates/you_died.html``:
+
+.. literalinclude:: ex/ex52/gothonweb/templates/you_died.html
+    :linenos:
+
+With those in place, you should now be able to do the following:
+
+1. Get the test ``tests/app_tests.py`` working again so that you are testing
+   the game.  You won't be able to do much more than a few clicks in the 
+   game because of sessions, but you should be able to do some basics.
+2. Remove the ``sessions/*`` files and make sure you've started over.
+3. Run the ``python bin/app.py`` script and test out the game.
+
+You should be able to refresh and fix the game like normal, and work with 
+the game HTML and engine until it does all the things you want it to do.
 
 
+Your Final Exam
+===============
 
-Your Final Exercise
-===================
+Do you feel like this was a huge amount of information thrown at you all at once?
+Good, I want you to have something to tinker with while you build your skills.
+To complete this exercise, I'm going to give you a final set of exercises that
+you are to complete on your own.  You'll notice that what you've written so far
+isn't very well built, it is just a first version of the code.  Your task
+is to now make the game more complete by doing these things:
 
+1. Fix all the bugs I mention in the code, and any that I didn't mention.
+   If you find new bugs then let me know.
+2. Improve all of the automated tests so that you test more of the application
+   and get to a point where you use a test rather than your browser to check
+   the application while you work.
+3. Make the HTML look better than it does right now.
+4. Research logins and create a signup system for the application, so people
+   can have logins and high scores.
+5. Complete the game map, making it as large and feature complete as possible.
+6. Give people a "help" system that let's them ask what they can do at each
+   room in the game.
+7. Add any other features you can think of to the game.
+8. Finally, create several "maps" and let people choose a game they want
+   to run.  Your ``bin/app.py`` engine should be able to run any map of
+   rooms you give it, so you can support multiple games.
+
+Good luck!
 
