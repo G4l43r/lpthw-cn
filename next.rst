@@ -12,7 +12,8 @@ through the 2nd Edition of *The Django Book*.  Even if you never plan on doing
 Python web programming, going through the book will cement your skills in
 Python using an actual practical activity.  It is also a better framework than
 the ``lpthw.web`` you were using, but all of the concepts you've learned so far
-apply to the ``Django`` web framework.
+apply to the ``Django`` web framework.  Just take your time, ask questions, and
+you'll get through it.
 
 You could probably start hacking away at some programs right now, and if you
 have that itch, go ahead.  Just understand, anything you write will probably
