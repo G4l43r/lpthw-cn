@@ -67,7 +67,7 @@ should install, and then tell you to figure it out and get it working.  This
 will be really good for you since it will open a whole world of software
 you can use that other people have released to the world.
 
-Next, nstall the following python packages:
+Next, install the following python packages:
 
 1. pip from http://pypi.python.org/pypi/pip
 2. distribute from http://pypi.python.org/pypi/distribute
@@ -84,7 +84,7 @@ Yak shaving is any activity that is mind numblingly irritatingly boring and tedi
 that you have to do before you can do something else that's more fun.  You want to
 create cool Python projects, but you can't do that until you setup a skeleton 
 directory, but you can't setup a skeleton directory until you install some packages,
-but you can't install pacakages until you install package installers, and you can't
+but you can't install packages until you install package installers, and you can't
 install package installers until you figure out how your system installs software
 in general, and so on.
 

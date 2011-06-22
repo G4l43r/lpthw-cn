@@ -13,23 +13,17 @@ the extra credit right?
    you make one choice, and another if you go a different direction.  The
    ``if-statement`` tells your script, "If this boolean expression is True,
    then run the code under it, otherwise skip it."
-
-
 2. Why does the code under the ``if`` need to be indented 4 spaces?
    A colon at the end of a line is how you tell Python you are going to 
    create a new "block" of code, and then indenting 4 spaces tells Python
    what lines of code are in that block.  This is *exactly* the same thing
    you did when you made functions in the first half of the book.
-
 3. What happens if it isn't indented?
    If it isn't indented, you will most likely create a Python error.  Python
    expects you to indent *something* after you end a line with a ``:`` (colon).
-
-
-4. Can you put other boolean expressions from Ex. 26 in the ``if`` statement?  Try it.
+4. Can you put other boolean expressions from Ex. 27 in the ``if`` statement?  Try it.
    Yes you can, and they can be as complex as you like, although really complex 
    things generally are bad style.
-
 5. What happens if you change the initial variables for ``people``, ``cats``,
    and ``dogs``?  Because you are comparing numbers, if you change the numbers,
    different ``if-statements`` will evaluate to ``True`` and the blocks of code
@@ -52,6 +46,7 @@ What You Should See
 ===================
 
 .. literalinclude:: ex/ex30.txt
+    :language: console
 
 
 Extra Credit

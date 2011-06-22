@@ -43,13 +43,14 @@ What You Should See
 ===================
 
 .. literalinclude:: ex/ex33.txt
+    :language: console
 
 
 Extra Credit
 ============
 
 1. Convert this while loop to a function that you can call, and
-   replace ``10`` in the test (``i < 10``) with a variable.
+   replace ``6`` in the test (``i < 6``) with a variable.
 2. Now use this function to rewrite the script to try different numbers.
 3. Add another variable to the function arguments that you can pass in that
    lets you change the ``+ 1`` on line 8 so you can change how much it 

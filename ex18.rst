@@ -58,6 +58,7 @@ What You Should See
 If you run the above script you should see:
 
 .. literalinclude:: ex/ex18.txt
+    :language: console
 
 Right away you can see how a function works.  Notice that you used your
 functions the way you use things like ``exists``, ``open``, and other

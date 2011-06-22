@@ -34,7 +34,7 @@ After that we just print them out like normal.
 Hold Up! Features Have Another Name
 ===================================
 
-I call them "features here" (these little things you ``import`` to make
+I call them "features" here (these little things you ``import`` to make
 your Python program do more) but nobody else calls them features. I just 
 used that name because I needed to trick you into learning what they
 are without jargon.  Before you can continue, you need to learn
@@ -49,7 +49,7 @@ modules.
 What You Should See
 ===================
 
-Run the program like this:
+Run the program like this (and you *must* pass *three* command line arguments):
 
 .. code-block:: console
 
@@ -59,6 +59,7 @@ This is what you should see when you do a few different runs
 with different arguments:
 
 .. literalinclude:: ex/ex13.txt
+    :language: console
 
 You can actually replace "first", "2nd", and "3rd" with any three things.
 You do not have to give these parameters either, you can give any 3 strings

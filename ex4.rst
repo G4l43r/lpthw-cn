@@ -31,6 +31,7 @@ What You Should See
 
 
 .. literalinclude:: ex/ex4.txt
+    :language: console
 
 
 Extra Credit

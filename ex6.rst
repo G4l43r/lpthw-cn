@@ -37,6 +37,7 @@ What You Should See
 ===================
 
 .. literalinclude:: ex/ex6.txt
+    :language: console
     :linenos:
 
 

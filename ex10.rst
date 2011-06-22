@@ -21,7 +21,7 @@ then Python will get confused since it will think the ``"`` around ``"understand
 actually *ends* the string.  You need a way to tell Python that the ``"`` inside
 the string isn't a *real* double-quote.
 
-To solve this problem you *escape* double-quotes and single-quites so Python
+To solve this problem you *escape* double-quotes and single-quotes so Python
 knows to include in the string.  Here's an example:
 
 .. code-block:: python
@@ -30,7 +30,7 @@ knows to include in the string.  Here's an example:
     'I am 6\'2" tall.'  # escape single-quote inside string
 
 The second way is by using triple-quotes, which is just ``"""`` and works
-like a string, but does you also can put as many lines of text you as want
+like a string, but you also can put as many lines of text you as want
 until you type ``"""`` again.  We'll also play with these.
 
 
@@ -46,6 +46,7 @@ Look for the tab characters that you made.  In this exercise the spacing is
 important to get right.
 
 .. literalinclude:: ex/ex10.txt
+    :language: console
 
 
 Extra Credit

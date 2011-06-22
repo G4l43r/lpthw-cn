@@ -35,6 +35,7 @@ There are actually two things you will see, first the output of your new
 script:
 
 .. literalinclude:: ex/ex16.txt
+    :language: console
 
 Now, open up the file you made (in my case ``test.txt``) in your
 editor and check it out.  Neat right?

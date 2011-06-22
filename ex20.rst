@@ -15,6 +15,7 @@ What You Should See
 ===================
 
 .. literalinclude:: ex/ex20.txt
+    :language: console
     
 
 

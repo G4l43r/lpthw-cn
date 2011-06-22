@@ -84,6 +84,7 @@ What You Should See
 ===================
 
 .. literalinclude:: ex/ex47.txt
+    :language: console
 
 That's what you should see if everything is working right.  Try causing an error to see what
 that looks like and then fix it.

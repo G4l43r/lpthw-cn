@@ -28,6 +28,7 @@ What You Should See
 
 
 .. literalinclude:: ex/ex12.txt
+    :language: console
 
 
 Extra Credit

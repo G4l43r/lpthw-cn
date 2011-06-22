@@ -33,7 +33,7 @@ What You Should See
 
 
 .. literalinclude:: ex/ex11.txt
-
+    :language: console
 
 
 Extra Credit

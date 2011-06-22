@@ -9,6 +9,7 @@ What You Should See
 ===================
 
 .. literalinclude:: ex/ex9.txt
+    :language: console
 
 
 Extra Credit

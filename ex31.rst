@@ -31,6 +31,7 @@ What You Should See
 Here is me playing this little adventure game.  I do not do so well.
 
 .. literalinclude:: ex/ex31.txt
+    :language: console
 
 
 Extra Credit

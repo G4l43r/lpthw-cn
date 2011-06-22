@@ -12,9 +12,10 @@ doing.
 What You Should See
 ===================
 
-Here's me taking too much gold:
+Here's me playing the game:
 
 .. literalinclude:: ex/ex35.txt
+    :language: console
 
 
 Extra Credit

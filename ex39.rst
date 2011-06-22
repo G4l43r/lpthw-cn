@@ -71,6 +71,7 @@ What You Should See
 ===================
 
 .. literalinclude:: ex/ex39.txt
+    :language: console
 
 
 Extra Credit

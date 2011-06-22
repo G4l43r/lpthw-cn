@@ -21,11 +21,11 @@ The best way to explain why is by showing you the difference between how
 you use numbers and how programmers use numbers.
 
 Imagine you are watching the four animals in our list above
-(``['bear', 'tiger', 'penguin', 'zeebra']``) run in a race.  They win in the *order* we have
+(``['bear', 'tiger', 'penguin', 'zebra']``) run in a race.  They win in the *order* we have
 them in this list.  The race was really exciting because, the animals
 didn't eat each other and somehow managed to run a race.  Your friend however
 shows up late and wants to know who won.  Does your friend say, 
-"Hey, who came in *zeroth*?"  No, he says, "Hey says, hey who came in *first*?"
+"Hey, who came in *zeroth*?"  No, he says, "Hey, who came in *first*?"
 
 This is because the *order* of the animals is important.  You can't have the second
 animal without the first animal, and can't have the third without the second.  It's
@@ -35,7 +35,7 @@ numbers "ordinal" numbers, because they indicate an ordering of things.
 
 Programmers, however, can't think this way because they can pick any element
 out of a list at any point.  To a programmer, the above list is more like a deck
-of cards.  If they want the tiger, they grab it.  If they want the zeebra, they
+of cards.  If they want the tiger, they grab it.  If they want the zebra, they
 can take it too.  This need to pull elements out of lists at random means that
 they need a way to indicate elements consistently by an address, or an "index", and
 the best way to do that is to start the indices at 0.  Trust me on this, the math

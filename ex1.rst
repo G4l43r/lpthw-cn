@@ -35,6 +35,7 @@ What You Should See
 ===================
 
 .. literalinclude:: ex/ex1.txt
+    :language: console
 
 You may see the name of your directory before the ``$`` which is fine,
 but if your output is not exactly the same, find out why and fix it.

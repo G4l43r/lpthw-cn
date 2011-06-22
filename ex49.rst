@@ -104,7 +104,7 @@ A Word On Exceptions
 ====================
 
 You briefly learned about exceptions, but not how to raise them.  This code
-demonstrates how to do that with the ``ParserException`` at the top.  Notice
+demonstrates how to do that with the ``ParserError`` at the top.  Notice
 that it uses classes to give it the type of ``Exception``.  Also notice the use
 of ``raise`` keyword to raise the exception.
 

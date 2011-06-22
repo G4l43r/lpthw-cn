@@ -27,6 +27,7 @@ When you run this, remember that you have to give the script your
 name for the ``argv`` arguments.
 
 .. literalinclude:: ex/ex14.txt
+    :language: console
 
 
 Extra Credit

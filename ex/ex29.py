@@ -20,10 +20,10 @@ if people > dogs:
 dogs += 5
 
 if people >= dogs:
-    print "People are greater than equal to dogs."
+    print "People are greater than or equal to dogs."
 
 if people <= dogs:
-    print "People are less than equal to dogs."
+    print "People are less than or equal to dogs."
 
 
 if people == dogs:

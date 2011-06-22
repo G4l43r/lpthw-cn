@@ -53,7 +53,7 @@ Extra Credit
    you get help for your module, and how the help is those odd ``"""``
    strings you put after each function in ex25?  Those special strings are called
    ``documentation comments`` and we'll be seeing more of them.
-3. Type ``ex25.`` is annoying.  A shortcut is to do your import like 
+3. Typing ``ex25.`` is annoying.  A shortcut is to do your import like 
    this:  ``from ex25 import *`` which is like saying, "Import everything
    from ex25."  Programmers like saying things backwards.  Start a new 
    session and see how all your functions are right there.

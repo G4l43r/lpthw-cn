@@ -81,6 +81,7 @@ What You Should See
 Here's me playing the game.
 
 .. literalinclude:: ex/ex41.txt
+    :language: console
 
 
 
@@ -89,7 +90,8 @@ Extra Credit
 
 1.  Explain how returning the next room works.
 2.  Add cheat codes to the game so you can get past the more difficult rooms.
-3.  Instead of having each function print itself, learn about "doc comments".  Write the room description as doc comments, and change the runner to print them.
+3.  Instead of having each function print itself, learn about "doc string" style comments.
+    Write the room description as doc comments, and change the runner to print them.
 4.  Once you have doc comments as the room description, do you need to have the
     function prompt even?  Have the runner prompt the user, and pass that in to
     each function.  Your functions should just be if-statements printing the

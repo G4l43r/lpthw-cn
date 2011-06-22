@@ -27,6 +27,7 @@ You should study the output of this script and compare it with what you
 think you should get for each of the examples in the script.
 
 .. literalinclude:: ex/ex19.txt
+    :language: console
 
 
 Extra Credit

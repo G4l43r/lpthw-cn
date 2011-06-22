@@ -41,6 +41,12 @@ To complete this exercise, complete the following tasks:
     newly created file.  Search online for how to list a directory.
 
 
+.. note::
+
+    If you have problems with gedit, which is possible with non-English
+    keyboard layouts, then I suggest you try Textwrangler found
+    at http://www.barebones.com/products/textwrangler/ instead.
+
 
 OSX: What You Should See
 ------------------------
@@ -218,7 +224,7 @@ depending on your familiarity with your computer.  If it is difficult,
 take the time to read and study and get through it, because until you can do
 these very basic things you will find it difficult to get much programming done.
 
-If a programmer tells you to use ``vim`` or ``emacs``, tell them no.  These
+If a programmer tells you to use ``vim`` or ``emacs``, tell them, "No."  These
 editors are for when you are a better programmer.  All you need right now
 is an editor that lets you put text into a file.  We will use ``gedit`` because
 it is simple and the same on all computers.  Professional programmers use
