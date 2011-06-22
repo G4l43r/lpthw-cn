@@ -1,11 +1,6 @@
 Exercise 50: Your First Website
 *******************************
 
-.. warning::
-
-    This is a DRAFT of the exercise for the 2nd Edition of the book,
-    it is not ready to be used yet but feel free to review it.
-
 These final three exercises will be very hard and you should take your time with them.
 In this first one you'll build a simple web version of one of your games.  Before you attempt this exercise you *must* have completed Exercise 46 successfully
 and have a working ``pip`` installed such that you can install packages and
