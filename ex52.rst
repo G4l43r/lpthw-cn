@@ -212,9 +212,12 @@ is to now make the game more complete by doing these things:
 6. Give people a "help" system that let's them ask what they can do at each
    room in the game.
 7. Add any other features you can think of to the game.
-8. Finally, create several "maps" and let people choose a game they want
+8. Create several "maps" and let people choose a game they want
    to run.  Your ``bin/app.py`` engine should be able to run any map of
    rooms you give it, so you can support multiple games.
+9. Finally, use what you learned in Exercises 48 and 49 to create a better
+   input processor. You have most of the code necessary, you just need to
+   improve the grammar and hook it up to your input form and the ``GameEngine``.
 
 Good luck!
 
