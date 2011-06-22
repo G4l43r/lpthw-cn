@@ -24,6 +24,7 @@
           <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
         {%- endfor %}
         {%- block relbaritems %} {% endblock %}
+        | <li class="right"><a href="search.html" title="search">search</a></li>
       </ul>
     </div>
 {%- endmacro %}
@@ -54,7 +55,7 @@
           {%- if next %}
             <h4>{{ _('Next topic') }}</h4>
             <p class="topless"><a href="{{ next.link|e }}"
-                                  title="{{ _('next chapter') }}">{{ next.title }}</a></p>
+                title="{{ _('next chapter') }}">{{ next.title }}</a></p>
           {%- endif %}
           {%- endblock %}
           {%- block sidebarsourcelink %}

@@ -1,13 +1,10 @@
-.. Learn Python The Hard Way documentation master file, created by
-   sphinx-quickstart on Fri Apr 23 11:04:27 2010.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Learn Python The Hard Way, 2nd Edition
 ======================================
 
-This is the HTML preview of *Learn Python The Hard Way, 2nd Edition*. It is a work in
-progress and will most likely have some errors as I work on the full release of the 2nd Edition.
+Welcome to the 2nd Edition of Learn Python the hard way.  You can visit the companion
+site to the book at http://learnpythonthehardway.org/ where you can
+purchase PDF and paper versions of the book. The free HTML version of
+the book is available at http://learnpythonthehardway.org/book/.
 
 
 .. toctree::
@@ -69,11 +66,4 @@ progress and will most likely have some errors as I work on the full release of 
    ex52
    next
    advice
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 

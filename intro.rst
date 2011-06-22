@@ -123,5 +123,23 @@ License
 This book is Copyright (C) 2010 by Zed A. Shaw.  You are free to distribute
 this book to anyone you want, so long as you do *not* charge anything for it,
 *and* it is not altered.  You must give away the book in its entirety, or not at
-all.
+all.  This means it's alright for you to teach a class using the book, so long
+as you aren't charging students for the *book* and you give them the whole book
+unmodified.
 
+
+Special Thanks
+==============
+
+I'd like to thank a few people who helped with this edition of the book.  First
+is my editor at *Pretty Girl Editing Services* who help me edit the book and is
+just lovely all by herself.  Then there's *Greg Newman*, who did the cover jacket
+and artwork, plus reviewed copies of the book.  His artwork made the book look
+like a real book, and didn't mind that I totally forgot to give him credit in
+the first edition.  I'd also like to thank *Brian Shumate* for doing the website
+landing page and other site design help, which I need a lot of help on.
+
+Finally, I'd like to thank the hundreds of thousands of people who read the first
+edition and especially the ones who submitted bug reports and comments to improve
+the book.  It really made this edition solid and I couldn't have done it without 
+all of you.  Thank you.
