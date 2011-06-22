@@ -8,17 +8,16 @@ Exercise 51: Getting Input From A Browser
 
 While it's exciting to see the browser display "Hello World", it's even
 more exciting to let the user submit text to your application from
-a form.  In this exercise we will improve our starter web application
-using forms and storing information about the user into their "session"
-so we can work with it.
+a form.  In this exercise we'll improve our starter web application
+using forms and storing information about the user into their "session".
 
 How The Web Works
 =================
 
 Time for some boring stuff.  You need to understand a bit more about how the web
-works before you can make a form.  This description isn't complete, but it is
+works before you can make a form.  This description isn't complete, but it's
 accurate and will help you figure out what might be going wrong with your
-application.  It will also make it easier for you to create forms if you know
+application.  Also, creating forms will be easier if you know
 what they do.
 
 I'll start with a simple diagram that shows you the different parts of a web
@@ -44,67 +43,67 @@ I've labeled the lines with letters so I can walk you through a regular request 
    computer's network interface hands it to your browser on ``line (A)``.
 7. Finally, your browser then displays the response.
 
-In this description there's a few terms you should know so that you have a common
+In this description there are a few terms you should know so that you have a common
 vocabulary to work with when talking about your web application:
 
 Browser
-    The software that you are probably using every day.  Most people don't
-    know what it really does, they just call it "the internet".  It's job is to
+    The software that you're probably using every day.  Most people don't
+    know what it really does, they just call it "the internet".  Its job is to
     take addresses (like http://learnpythonthehardway.org) you type into the URL
-    bar, and then use that information to make requests to the server at
+    bar, then use that information to make requests to the server at
     that address.
 
 Address
     This is normally a URL (Uniform Resource Locator) like http://learnpythonthehardway.org/
-    and which indicates where a browser should go.  The first part ``http`` indicates
+    and indicates where a browser should go.  The first part ``http`` indicates
     the protocol you want to use, in this case "Hyper-Text Transport Protocol".  You can
     also try ftp://ibiblio.org/ to see how "File Transport Protocol" works.  The ``learnpythonthehardway.org``
     part is the "hostname", or a human readable address you can remember and which maps
     to a number called an IP address, similar to a telephone number for a computer on the
     Internet.  Finally, URLs can have a trailing ``path`` like the ``/book/`` part of
-    http://learnpythonthehardway.org/book/ and which indicates a file or some resource
-    *on* the server to retrieve with a request.  There's many other parts, but those are
+    http://learnpythonthehardway.org/book/ which indicates a file or some resource
+    *on* the server to retrieve with a request.  There are many other parts, but those are
     the main ones.
 
 Connection
     Once a browser knows what protocol you want to use (http), what server you want to 
     talk to (learnpythonthehardway.org), and what resource on that server to get, it
     must make a connection.  The browser simply asks your Operating System (OS) to open
-    an "port" to the computer, usually port 80, and then when it works the OS hands
+    a "port" to the computer, usually port 80. When it works the OS hands
     back to your program something that works like a file, but is actually sending
     and receiving bytes over the network wires between your computer and the
     other computer at "learnpythonthehardway.org".  This is also the same thing
-    that happens with http://localhost:8080/ but in this case you are telling
+    that happens with http://localhost:8080/ but in this case you're telling
     the browser to connect to your own computer (localhost) and use port 8080
     rather than the default of 80.  You could also do http://learnpythonthehardway.org:80/
     and get the same result, except you're explicitly saying to use port 80 instead of
     letting it be that by default.
 
 Request
-    Your browser is connected using the address you gave, and now it needs to
+    Your browser is connected using the address you gave. Now it needs to
     ask for the resource it wants (or you want) on the remote server.  If you
-    gave ``/book/`` at the end of the URL then you want the file (resource)
+    gave ``/book/`` at the end of the URL, then you want the file (resource)
     at /book/, and most servers will use the real file /book/index.html but
     pretend it doesn't exist.  What the browser does to get this resource is
-    send a *request* to the server, over the connection, asking for it.  I won't
+    send a *request* to the server.  I won't
     get into exactly how it does this, but just understand that it has to 
-    send something to query the server for it.  The interesting thing is that
-    these "resources" don't have to be files, as is the case with your 
-    application where the browser asks for something, but the server is
+    send something to query the server for the request.  The interesting thing is that
+    these "resources" don't have to be files. For instance, when the browser in your 
+    application asks for something, the server is
     returning something your Python code generated.
 
 Server
-    Now we get to the server, which is the computer at the end of a browser's
-    connection that knows how to answer your browsers requests for files/resources.
+    The server is the computer at the end of a browser's
+    connection that knows how to answer your browser's requests for files/resources.
     Most web servers just send files, and that's actually the majority of traffic.
     But you're actually building a server in Python that knows how to take 
     requests for resources, and then return strings that you craft using Python.
-    When you do this crafting *you* are pretending to be a file to the browser,
+    When you do this crafting, *you* are pretending to be a file to the browser,
     but really it's just code.  As you can see from Ex. 50, it also doesn't
     take much code to create a response.
 
 Response
-    This is your HTML (css, javascript, or images) that your server wants to
+    This is the HTML (css, javascript, or images) your server wants to
     send back to the browser as the answer to the browser's request.  In the case
     of files, it just reads them off the disk and sends them to the browser, but
     it wraps the contents of the disk in a special "header" so the browser knows
@@ -113,11 +112,10 @@ Response
     with your Python code.
 
 That is the fastest crash course in how a web browser accesses information on servers
-on the internet.  It should work well enough for you to understand this exercise, but
-if not then I suggest going out and reading about it as much as you can until you get
-it.  A really good way to do that is to take the diagram, and then break different parts
+on the internet.  It should work well enough for you to understand this exercise, but if not, read about it as much as you can until you get
+it.  A really good way to do that is to take the diagram, and break different parts
 of the web application you did in Exercise 50.  If you can break your web application
-in predictable ways using the diagram, then you'll start to understand how it works.
+in predictable ways using the diagram, you'll start to understand how it works.
 
 
 How Forms Work
@@ -131,13 +129,13 @@ file and make it look like this:
     :linenos:
 
 Restart it (hit CTRL-c and then run it again) to make sure it loads
-again, then go to this with your browser go to ``http://localhost:8080/hello``
+again, then with your browser go to ``http://localhost:8080/hello``
 which should display, "I just wanted to say Hello, Nobody."  Next, change
 the URL in your browser to ``http://localhost:8080/hello?name=Frank`` and
 you'll see it say "Hello, Frank."  Finally, change the ``name=Frank`` part
 to be your name.  Now it's saying hello to you.
 
-Let's break down the changes I made to your script to show you what's going on.
+Let's break down the changes I made to your script.
 
 1. Instead of just a string for ``greeting`` I'm now using ``web.input`` to
    get data from the browser.  This function takes a key=value set of defaults,
@@ -147,7 +145,7 @@ Let's break down the changes I made to your script to show you what's going on.
    the ``form`` object, which should be very familiar to you by now.
 3. Everything else about the file is the same as before.
 
-You are also not restricted to just one parameter on the URL, try changing this
+You're also not restricted to just one parameter on the URL.  Change this
 example to give two variables like this:
 ``http://localhost:8080/hello?name=Frank&greet=Hola``.  Then change the code to
 get ``form.name`` and ``form.greet`` like this:
@@ -156,7 +154,7 @@ get ``form.name`` and ``form.greet`` like this:
 
     greeting = "%s, %s" % (form.greet, form.name)
 
-After that change try the URL, and then also try leaving out the ``&greet=Hola``
+After that, try the URL. Next, leave out the ``&greet=Hola``
 part so that you can see the error you get.  Since ``greet`` doesn't have
 a default value in ``web.input(name="Nobody")`` then it is a required field.
 Now go back and make it have a default in the ``web.input`` call to see
@@ -178,8 +176,7 @@ Creating HTML Forms
 ===================
 
 Passing the parameters on the URL works, but it's kind of ugly and 
-not easy to use for regular people.  What you really want is a what's
-called a "POST form".  This is a special HTML file that has a ``<form>``
+not easy to use for regular people.  What you really want is a "POST form", which is a special HTML file that has a ``<form>``
 tag in it.  This form will collect information from the user, then
 send it to your web application just like you did above.
 
@@ -213,7 +210,7 @@ browser to:
 3. Send that to the ``/hello`` URL (as shown in the ``action="/hello"`` part).
 
 You can then see how the two ``<input>`` tags match the names of the variables
-in your new code.  What you should also notice about this code is instead
+in your new code.  Also notice that instead
 of just a ``GET`` method inside ``class index``, I have another method ``POST``.
 
 How this new application works is:
@@ -230,9 +227,9 @@ How this new application works is:
 
 As an exercise, go into the ``templates/index.html`` file and add a
 link *back* to just ``/hello`` so that you can keep filling out the form
-and seeing the results.  Try to make sure you can explain how this link
+and seeing the results.  Make sure you can explain how this link
 works and how it's letting you cycle between ``templates/index.html`` and
-``templates/hello_form.html`` and what is being run inside this latest
+``templates/hello_form.html`` and what's being run inside this latest
 Python code.
 
 
@@ -240,10 +237,8 @@ Creating A Layout Template
 ==========================
 
 When you work on your game in the next Exercise, you'll need to make a
-bunch of little HTML pages.  It will quickly become tedious to write a
-full web page every time, so there's a way to create a "layout" template.
-This layout template is kind of a shell that will wrap all your other pages
-with common headers and footers that your HTML pages need.  Good programmers
+bunch of little HTML pages.  Writing a full web page each time will quickly become tedious. Luckily you can create a "layout" template, or a kind of shell that will wrap all your other pages
+with common headers and footers.  Good programmers
 try to reduce repetition, so layouts are essential for being a good programmer.
 
 Change ``templates/index.html`` to be like this:
@@ -290,11 +285,9 @@ Writing Automated Tests For Forms
 =================================
 
 It's easy to test a web application with your browser by just hitting refresh,
-but come on, we're programmers here.  Why do some repetitive task when we can
-just write some code to test our application?  What you're going to do next is
-write a small little test that tests your web application form based on what
-you learned in Exercise 47.  If you don't remember Exercise 47 then go back
-and read it again.
+but come on, we're programmers here.  Why do some repetitive task when we can write some code to test our application?  What you're going to do next is
+write a little test for your web application form based on what
+you learned in Exercise 47.  If you don't remember Exercise 47, read it again.
 
 You need to do a bit of setup to make Python let you load your ``bin/app.py``
 file for testing.  When we get to Exercise 52 you'll change this, but for now
@@ -326,7 +319,7 @@ Finally, use nosetests to run this test setup and test your web application:
     OK
 
 What I'm doing here is I'm actually *importing* the whole application from the
-``bin/app.py`` module, and then running it manually.  The ``lpthw.web`` framework
+``bin/app.py`` module, then running it manually.  The ``lpthw.web`` framework
 has a very simple API for processing requests, which looks like this:
 
 .. code-block:: python
@@ -334,12 +327,12 @@ has a very simple API for processing requests, which looks like this:
     app.request(localpart='/', method='GET', data=None, host='0.0.0.0:8080',
                 headers=None, https=False)
 
-Which means you can pass in the URL as the first parameter, then you can change the 
-method of the request, and what form data you send, even the host and the headers.
+This means you can pass in the URL as the first parameter, then change the 
+method of the request, as wellas what form data you send, including the host and headers.
 This works without running an actual web server so you can do tests with automated tests
 and also use your browser to test a running server.
 
-To validate responses from this function, you use the ``assert_response`` function
+To validate responses from this function, use the ``assert_response`` function
 from ``tests.tools`` which has:
 
 
@@ -347,11 +340,11 @@ from ``tests.tools`` which has:
 
    assert_response(resp, contains=None, matches=None, headers=None, status="200")
 
-You just pass in the response you get from calling ``app.request`` and then 
-add things you want checked.  You can use the ``contains`` parameter to make 
-sure that the response contains certain values.  You can use the ``status``
+Pass in the response you get from calling ``app.request`` then 
+add things you want checked.  Use the ``contains`` parameter to make 
+sure that the response contains certain values.  Use the ``status``
 parameter to check for certain responses.  There's actually quite a lot of
-information in this small little function so it would be good for you to
+information in this little function so it would be good for you to
 study it.
 
 In the ``tests/app_tests.py`` automated test I'm first making sure the ``/`` URL
@@ -359,10 +352,9 @@ returns a "404 Not Found" response, since it actually doesn't exist.  Then I'm
 checking that ``/hello`` works with both a ``GET`` and ``POST`` form.  Following
 the test should be fairly simple, even if you might not totally know what's going on.
 
-Your next task should be to spend some time studying this latest application
-and especially how the automated testing works.  Make sure you understand how I 
+Take some time studying this latest application, especially how the automated testing works.  Make sure you understand how I 
 imported the application from ``bin/app.py`` and ran it directly for the automated
-test.  This is an important trick you should understand and will lead to 
+test.  This is an important trick that will lead to 
 more learning.
 
 
@@ -374,7 +366,7 @@ Extra Credit
    implement it with HTML.
 2. This one is hard, but try to figure out how you'd do a file upload form so that you can
    upload an image and save it to the disk.
-3. This is even more mind numbing, but go find the HTTP RFC (which is the document that
+3. This is even more mind-numbing, but go find the HTTP RFC (which is the document that
    describes how HTTP works) and read as much of it as you can.  It is really boring, 
    but comes in handy once in a while.
 4. This will also be really difficult, but see if you can find someone to help you setup

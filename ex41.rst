@@ -2,7 +2,7 @@ Exercise 41: Gothons From Planet Percal #25
 *******************************************
 
 Did you figure out the secret of the function in the dict from the
-last exercise?  Can you explain it to yourself?  Let me explain it
+last exercise?  Can you explain it to yourself?  I'll explain it
 and you can compare your explanation with mine.  Here are the lines of
 code we are talking about:
 
@@ -15,7 +15,7 @@ Remember that functions can be variables too.  The ``def find_city`` just makes
 another variable name in your current module that you can use anywhere.  In
 this code first we are putting the function ``find_city`` into the dict ``cities``
 as ``'_find'``.  This is the same as all the others where we set states to some
-cities, but in this case it's actually the function we put in there.
+cities, but in this case it's actually the function.
 
 Alright, so once we know that ``find_city`` is in the dict at ``_find``, that means
 we can do work with it.  The 2nd line of code (used later in the previous 
@@ -34,8 +34,8 @@ exercise) can be broken down like this:
 7. Python takes what ``find_city`` returned, and *finally* that is what is assigned
    to ``city_found`` all the way at the beginning.
 
-I'm going to teach you a trick.  Sometimes these things read better in English
-if you read the code backwards, so let's try that.  Here's how I would do
+Here's a trick.  Sometimes these things read better in English
+if you read the code backwards.  This is how I would do
 it for that same line (remember *backwards*):
 
 1. ``state`` and ``city`` are...
@@ -54,8 +54,8 @@ Here's another way to read it, this time "inside-out".
 4. The parameters are passed to the function, and that returns a result.  Go counter-clock-wise again.
 5. Finally, we are at the ``city_found =`` assignment, and we have our end result.
 
-After decades of programming I do not even think about these three ways to read
-code.  I just glance at it and know what it means, and I can even glance at a whole
+After decades of programming I don't even think about these three ways to read
+code.  I just glance at it and know what it means. I can even glance at a whole
 screen of code, and all the bugs and errors jump out at me.  That took an incredibly
 long time and quite a bit more study than is sane.  To get that way, I learned these
 three ways of reading most any programming language:
@@ -66,7 +66,7 @@ three ways of reading most any programming language:
 
 Try them out when you have a difficult statement to figure out.
 
-Let's now type in your next exercise, and then go over after that.
+Now type in your next exercise, then go over it.
 This one is gonna be fun.
 
 .. literalinclude:: ex/ex41.py
@@ -78,7 +78,7 @@ It's a lot of code, but go through it, make sure it works, play it.
 What You Should See
 ===================
 
-Here's me playing the game.  Bears are cool.
+Here's me playing the game.
 
 .. literalinclude:: ex/ex41.txt
 
@@ -89,13 +89,11 @@ Extra Credit
 
 1.  Explain how returning the next room works.
 2.  Add cheat codes to the game so you can get past the more difficult rooms.
-3.  Instead of having each function print itself, learn about "doc comments".  See if you 
-    can write the room description as doc comments, and change the runner to print
-    them.
+3.  Instead of having each function print itself, learn about "doc comments".  Write the room description as doc comments, and change the runner to print them.
 4.  Once you have doc comments as the room description, do you need to have the
     function prompt even?  Have the runner prompt the user, and pass that in to
-    each function.  You functions should just be if-statements printing the
+    each function.  Your functions should just be if-statements printing the
     result and returning the next room.
 5.  This is actually a small version of something called a "finite state machine".
-    Go read about them.  They might not make sense but try anyway.
+    Read about them.  They might not make sense but try anyway.
 
