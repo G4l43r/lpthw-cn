@@ -81,7 +81,7 @@ exclude_trees = ['_build']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'bw'
+pygments_style = 'tango'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -188,6 +188,13 @@ latex_documents = [
 
 # Additional stuff for the LaTeX preamble.
 latex_preamble = r"""
+\usepackage[vcentering,dvips]{geometry}
+\geometry{papersize={8.25in,10.75in}}
+
+\setlength{\pdfpagewidth}{8.25in}
+\setlength{\pdfpageheight}{10.75in}
+\special{papersize=8.25in,10.75in}
+
 \setcounter{secnumdepth}{-1} 
 \setcounter{page}{1}
 \setcounter{chapter}{1}
