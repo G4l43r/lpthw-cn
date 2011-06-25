@@ -55,4 +55,5 @@ Extra Credit
    command instead of 6.
 4. Find out why we had to pass a ``'w'`` as an extra parameter to ``open``.  Hint:
    ``open`` tries to be safe by making you explicitly say you want to write a file.
-
+5. If you open the file with ``'w'`` mode, then do you really need the ``target.truncate()``?
+   Go read the docs for Python's ``open`` function and see if that's true.
