@@ -1,10 +1,10 @@
 Learn Python The Hard Way, 2nd Edition
 ======================================
 
-Welcome to the 2nd Edition of Learn Python the hard way.  You can visit the companion
-site to the book at http://learnpythonthehardway.org/ where you can
-purchase PDF and paper versions of the book. The free HTML version of
-the book is available at http://learnpythonthehardway.org/book/.
+Welcome to the 2nd Edition of Learn Python the hard way.  You can visit the
+companion site to the book at http://learnpythonthehardway.org/ where you can
+purchase digital downloads and paper versions of the book. The free HTML
+version of the book is available at http://learnpythonthehardway.org/book/.
 
 
 .. toctree::

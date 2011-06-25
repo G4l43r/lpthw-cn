@@ -200,17 +200,17 @@ Linux: What You Should See
 
 .. code-block:: console
 
-    [~]$ python
+    $ python
     Python 2.6.5 (r265:79063, Apr  1 2010, 05:28:39)
     [GCC 4.4.3 20100316 (prerelease)] on linux2
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
-    [~]$ mkdir mystuff
-    [~]$ cd mystuff
+    $ mkdir mystuff
+    $ cd mystuff
     # ... Use gedit here to edit test.txt ...
-    [mystuff]$ ls
+    $ ls
     test.txt
-    [mystuff]$ 
+    $ 
 
 You will probably see a very different prompt, Python information, and other stuff but this is
 the general idea.

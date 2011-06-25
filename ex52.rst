@@ -160,6 +160,24 @@ the lines that bring the sessions back, which is needed so that debug mode
 reloading works.  Otherwise, each time you hit refresh the sessions will
 disappear and the game won't work.
 
+Before you run bin/app.py you need to change your PYTHONPATH environment variable.
+Don't know what that is?  I know, it's kind of dumb you have to learn what this
+is to run even basic Python programs, but that's how Python people like things.
+
+In your terminal, type:
+
+.. code-block:: console
+
+    export PYTHONPATH=$PYTHONPATH:.
+
+On Windows do:
+
+.. code-block:: console
+
+    set PYTHONPATH=%PYTHONPATH%;.
+
+You should only have to do it once per shell session, but if you get an import error,
+then you probably need to do this or you did it wrong.
 
 You should next delete ``templates/hello_form.html`` and ``templates/index.html`` and
 create the two templates mentioned in the above code.  Here's a *very* simple 
