@@ -34,7 +34,7 @@ be careful you do not blast an important file.
 .. warning::
 
     Did you see that trick I did with ``cat``? It only works on Linux or OSX,
-    sorry Windows people!
+    on Windows use ``type`` to do the same thing.
 
 
 Extra Credit
