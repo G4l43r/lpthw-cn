@@ -43,7 +43,7 @@ but if your output is not exactly the same, find out why and fix it.
 If you have an error it will look like this:
 
 .. literalinclude:: ex/ex1.err
-    :language: python
+    :language: console
     :linenos:
 
 It's important that you can read these since you will be making many of 
