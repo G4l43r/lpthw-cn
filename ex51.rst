@@ -170,115 +170,102 @@ URL 中该还可以包含多个参数。将本例的 URL 改成这样子：
 等你输入完后点击“提交(Submit)”按钮，它就会输出一个正常的问候页面，不过这一次你的\
 URL 还是 ``http://localhost:8080/hello``\，并没有添加参数进去。
 
+在 ``hello_form.html`` 里面关键的一行是 ``<form action="/hello" method="POST">``
+，它告诉你的浏览器以下内容：
 
-The part of the ``hello_form.html`` file that makes this work is the
-line with ``<form action="/hello" method="POST">``.  This tells your
-browser to:
+1. 从表单中的各个栏位收集用户输入的数据。
+2. 让浏览器使用一种 ``POST`` 类型的请求，将这些数据发送给服务器。这是另外一种\
+浏览器请求，它会将表单栏位“隐藏”起来。
+3. 将这个请求发送至 ``/hello`` URL，这是由 ``action="/hello"`` 告诉浏览器的。
 
-1. Collect data from the user using the form fields inside the form.
-2. Send them to the server using a ``POST`` type of request, which is
-   just another browser request that "hides" the form fields.
-3. Send that to the ``/hello`` URL (as shown in the ``action="/hello"`` part).
+你可以看到两段 ``<input>`` 标签的名字属性(name)和代码中的变量是对应的，另外我们\
+在 ``class index`` 中使用的不再只是 ``GET`` 方法，而是另一个 ``POST`` 方法。
 
-You can then see how the two ``<input>`` tags match the names of the variables
-in your new code.  Also notice that instead
-of just a ``GET`` method inside ``class index``, I have another method ``POST``.
+这个新程序的工作原理如下：
 
-How this new application works is:
-
-1. The browser first hits the web application at ``/hello`` but it sends a 
-   ``GET``, so our ``index.GET`` function runs and returns the ``hello_form``.
-2. You fill out the form in the browser, and the browser does what the ``<form>``
-   says and sends the data as a ``POST``.
-3. The web application then runs the ``index.POST`` method rather than the
-   ``index.GET`` method to handle this request.
-4. This ``index.POST`` method then does what it normally does to send 
-   back the hello page like before.  There's really nothing new in 
-   here, it's just moved into a new function.
-
-As an exercise, go into the ``templates/index.html`` file and add a
-link *back* to just ``/hello`` so that you can keep filling out the form
-and seeing the results.  Make sure you can explain how this link
-works and how it's letting you cycle between ``templates/index.html`` and
-``templates/hello_form.html`` and what's being run inside this latest
-Python code.
+1. 浏览器访问到 web 程序的 ``/hello`` 目录，它发送了一个 ``GET`` 请求，于是我们\
+   的 ``index.GET`` 函数就运行并返回了 ``hello_form``\。
+2. 你填好了浏览器的表单，然后浏览器依照 ``<form>`` 中的要求，将数据通过 ``POST``
+   请求的方式发给 web 程序。
+3. Web 程序运行了 ``index.POST`` 方法（不是 ``index.GET`` 方法）来处理这个请求。
+4. 这个 ``index.POST`` 方法完成了它正常的功能，将 hello 页面返回，这里并没有新的\
+   东西，只是一个新函数名称而已。
+   
+作为练习，在 ``templates/index.html`` 中添加一个链接，让它指向 ``/hello``\，这样\
+你可以反复填写并提交表单查看结果。确认你可以解释清楚这个链接的工作原理，以及它是如何\
+让你实现在 ``templates/index.html`` 和 ``templates/hello_form.html`` 之间循环\
+跳转的，还有就是要明白你新修改过的 Python 代码，你需要知道在什么情况下会运行到哪\
+一部分代码。
 
 
-Creating A Layout Template
-==========================
+创建布局模板(layout template)
+==============================
 
-When you work on your game in the next Exercise, you'll need to make a
-bunch of little HTML pages.  Writing a full web page each time will quickly become tedious. Luckily you can create a "layout" template, or a kind of shell that will wrap all your other pages
-with common headers and footers.  Good programmers
-try to reduce repetition, so layouts are essential for being a good programmer.
+在你下一节练习创建游戏的过程中，你需要创建很多的小 HTML 页面。如果你每次都写一个\
+完整的网页，你会很快感觉到厌烦的。幸运的 是你可以创建一个“布局模板”，也就是一种\
+提供了通用的头文件和脚注的外壳模板，你可以用它将你所有的其他网页包裹起来。好程序员\
+会尽可能减少重复动作，所以要做一个好程序员，使用布局模板是很重要的。
 
-Change ``templates/index.html`` to be like this:
+将 ``templates/index.html`` 修改成这样：
 
 .. literalinclude:: ex/ex51/gothonweb/templates/index_laid_out.html
     :linenos:
 
-Then change ``templates/hello_form.html`` to be like this:
+然后把 ``templates/hello_form.html`` 修改成这样：
 
 .. literalinclude:: ex/ex51/gothonweb/templates/hello_form_laid_out.html
     :linenos:
 
-All we're doing is stripping out the "boilerplate" at the top and the
-bottom which is always on every page.  We'll put that back into a
-single ``templates/layout.html`` file that handles it for us from
-now on.
+上面这些修改的目的，是将每一个页面顶部和底部的反复用到的“boilerplate”代码剥掉。\
+这些被剥掉的代码会被放到一个单独的 ``templates/layout.html`` 文件中，从此以后，\
+这些反复用到的代码就由 layout.html 来提供了。
 
-Once you have those changes, create a ``templates/layout.html`` file
-with this in it:
+上面的都改好以后，创建一个 ``templates/layout.html`` 文件，内容如下：
 
 .. literalinclude:: ex/ex51/gothonweb/templates/layout.html
     :linenos:
 
-This file looks like a regular template, except that it's going to be
-passed the *contents* of the other templates and used to *wrap* them.
-Anything you put in here doesn't need to be in the other templates.
-You should also pay attention to how ``$:content`` is written, since
-it's a little different from the other template variables.
+这个文件和普通的模板文件类似，不过其它的模板的内容将被传递给它，然后它会将其它
+模板的内容“包裹”起来。任何写在这里的内容多无需写在别的模板中了。你需要注意\
+``$:content`` 的用法，这和其它的模板变量有些不同。
 
-The *final* step is to change the line that makes the ``render`` object to
-be this:
+最后一步，就是将 ``render`` 对象改成这样：
 
 .. code-block:: python
 
     render = web.template.render('templates/', base="layout")
 
-Which tells ``lpthw.web`` to use the ``templates/layout.html`` file as the
-*base* template for all the other templates.  Restart your application and
-then try to change the layout in interesting ways, but without changing the
-other templates.
+这会告诉 ``lpthw.web`` 让它去使用 ``templates/layout.html`` 作为其它模板的基础\
+模板。重启你的程序观察一下，然后试着用各种方法修改你的 layout 模板，不要修改你\
+别的模板，看看输出会有什么样的变化。
 
 
-Writing Automated Tests For Forms
+为表单撰写自动测试代码
 =================================
 
-It's easy to test a web application with your browser by just hitting refresh,
-but come on, we're programmers here.  Why do some repetitive task when we can write some code to test our application?  What you're going to do next is
-write a little test for your web application form based on what
-you learned in Exercise 47.  If you don't remember Exercise 47, read it again.
+使用浏览器测试 web 程序是很容易的，只要点刷新按钮就可以了。不过毕竟我们是程序员嘛，\
+如果我们可以写一些代码来测试我们的程序，为什么还要重复手动测试呢？接下来你要做的，\
+就是为你的 web 程序写一个小测试。这会用到你在《习题 47》学过的一些东西，如果你不\
+记得的话，可以回去复习一下。
 
-You need to do a bit of setup to make Python let you load your ``bin/app.py``
-file for testing.  When we get to Exercise 52 you'll change this, but for now
-create an empty ``bin/__init__.py`` file so Python thinks ``bin/`` is a directory.
+为了让 Python 加载 ``bin/app.py`` 并进行测试，你需要先做一点准备工作。首先创建一个
+``bin/__init__.py`` 空文件，这样 Python 就会将 ``bin/`` 当作一个目录了。（在《习题
+52》中你会去修改 __init__.py，不过这是后话。）
 
-I've also created a simple little function for ``lpthw.web`` that lets you
-assert things about your web application's response, aptly named ``assert_response``.
-Create the file ``tests/tools.py`` with these contents:
+我还为 ``lpthw.web`` 创建了一个简单的小函数，让你判断(assert) web 程序的响应，\
+这个函数有一个很合适的名字，就叫 ``assert_response``\。创建一个 ``tests/tools.py``
+文件，内容如下：
 
 .. literalinclude:: ex/ex51/gothonweb/tests/tools.py
     :linenos:
 
-Once that's in place you can write your automated test for the last version of the
-``bin/app.py`` file you created.  Create a new file named ``tests/app_tests.py``
-with this:
+准备好这个文件以后，你就可以为你的 ``bin/app.py`` 写自动测试代码了。创建一个新文件，\
+叫做 ``tests/app_tests.py``\，内容如下：
 
 .. literalinclude:: ex/ex51/gothonweb/tests/app_tests.py
     :linenos:
 
-Finally, use nosetests to run this test setup and test your web application:
+最后，使用 nosetests 运行测试脚本，然后测试你的 web 程序。
 
 .. code-block:: console
 
@@ -289,62 +276,52 @@ Finally, use nosetests to run this test setup and test your web application:
 
     OK
 
-What I'm doing here is I'm actually *importing* the whole application from the
-``bin/app.py`` module, then running it manually.  The ``lpthw.web`` framework
-has a very simple API for processing requests, which looks like this:
+这里我所做的，是将 ``bin/app.py`` 这个模块中的整个 web 程序都 import 进来，然后\
+手动运行这个 web 程序。\ ``lpthw.web`` 有一个非常简单的 API 用来处理请求，看上去\
+大致是这样子的：
 
 .. code-block:: python
 
     app.request(localpart='/', method='GET', data=None, host='0.0.0.0:8080',
                 headers=None, https=False)
 
-This means you can pass in the URL as the first parameter, then change the 
-method of the request, as wellas what form data you send, including the host and headers.
-This works without running an actual web server so you can do tests with automated tests
-and also use your browser to test a running server.
+你可以将 URL 作为第一个参数，然后你可以修改修改 request 的方法、form 的数据、以及
+header 的内容，这样你无须启动 web 服务器，就可以使用自动测试来测试你的 web 程序了。
 
-To validate responses from this function, use the ``assert_response`` function
-from ``tests.tools`` which has:
-
+为了验证函数的响应，你需要使用 ``tests.tools`` 中定义的 ``assert_response`` 函数，\
+用法属下：
 
 .. code-block:: python
 
    assert_response(resp, contains=None, matches=None, headers=None, status="200")
 
-Pass in the response you get from calling ``app.request`` then 
-add things you want checked.  Use the ``contains`` parameter to make 
-sure that the response contains certain values.  Use the ``status``
-parameter to check for certain responses.  There's actually quite a lot of
-information in this little function so it would be good for you to
-study it.
+把你调用 ``app.request`` 得到的响应传递给这个函数，然后将你要检查的内容作为参数\
+传递给诶这个函数。你可以使用 ``contains`` 参数来检查响应中是否包含指定的值，使用\
+``status`` 参数可以检查指定的响应状态。这个小函数其实包含了很多的信息，所以你还是\
+自己研究一下的比较好。
 
-In the ``tests/app_tests.py`` automated test I'm first making sure the ``/`` URL
-returns a "404 Not Found" response, since it actually doesn't exist.  Then I'm
-checking that ``/hello`` works with both a ``GET`` and ``POST`` form.  Following
-the test should be fairly simple, even if you might not totally know what's going on.
+在 ``tests/app_tests.py`` 自动测试脚本中，我首先确认 ``/`` 返回了一个“404 Not Found”\
+响应，因为这个 URL 其实是不存在的。然后我检查了 ``/hello`` 在 ``GET`` 和 ``POST``
+两种请求的情况下都能正常工作。就算你没有弄明白测试的原理，这些测试代码应该是很好读懂的。
 
-Take some time studying this latest application, especially how the automated testing works.  Make sure you understand how I 
-imported the application from ``bin/app.py`` and ran it directly for the automated
-test.  This is an important trick that will lead to 
-more learning.
+花一些时间研究一下这个最新版的 web 程序，重点研究一下自动测试的工作原理。确认你\
+理解了将 ``bin/app.py`` 做为一个模块导入，然后进行自动化测试的流程。这是一个很重要\
+的技巧，它会引导你学到更多东西。
 
 
-Extra Credit
+加分习题
 ============
 
-1. Read even more about HTML, and give the simple form a better layout.
-   It helps to draw what you want to do on paper and *then*
-   implement it with HTML.
-2. This one is hard, but try to figure out how you'd do a file upload form so that you can
-   upload an image and save it to the disk.
-3. This is even more mind-numbing, but go find the HTTP RFC (which is the document that
-   describes how HTTP works) and read as much of it as you can.  It is really boring, 
-   but comes in handy once in a while.
-4. This will also be really difficult, but see if you can find someone to help you setup
-   a web server like Apache, Nginx, or thttpd.  Try to serve a couple of your .html
-   and .css files with it just to see if you can.  Don't worry if you can't, web servers
-   kind of suck.
-5. Take a break after this and just try making as many different web applications as
-   you can.  You should *definitely* read about sessions in ``web.py`` (which is
-   the same as ``lpthw.web``) so you can understand how to keep state for a user.
-
+1. 阅读和 HTML 相关的更多资料，然后为你的表单设计一个更好的输出格式。你可以先在\
+   纸上设计出来，然后用 HTML 去实现它。
+2. 这是一道难题，试着研究一下如何进行文件上传，通过网页上传一张图像，然后将其保存\
+   到磁盘中。
+3. 更难的难题，找到 HTTP RFC 文件（讲述 HTTP 工作原理的技术文件），然后努力阅读\
+   一下。这是一篇很无趣的文档，不过偶尔你会用到里边的一些知识。
+4. 又是一道难题，找人帮你设置一个 web 服务器，例如 Apache、Nginx、或者 thttpd。\
+   试着让服务器伺服一下你创建的 .html 和 .css 文件。如果失败了也没关系，web 服务器\
+   本来就都有点挫。
+5. 完成上面的任务后休息一下，然后试着多创建一些 web 程序出来。你应该仔细阅读
+   ``web.py`` (它和 lpthw.web 是同一个程序)中关于会话(session)的内容，这样你可以
+   明白如何保持用户的状态信息。
+   
