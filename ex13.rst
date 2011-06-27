@@ -18,7 +18,7 @@ give you all the features at once, Python asks you to say what
 you plan to use.  This keeps your programs small, but it also acts
 as documentation for other programmers who read your code later.
 
-The ``argv`` is the "argument variable", a very standard name in programming.
+The ``argv`` is the "argument variable", a very standard name in programming,
 that you will find used in many other languages.  This variable *holds* the
 arguments you pass to your Python script when you run it.  In the exercises you
 will get to play with this more and see what happens.
