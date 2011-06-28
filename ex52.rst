@@ -86,20 +86,12 @@
 创建好以后运行这个程序，然后检查 ``/count`` 页面，刷新一下这个页面，看计数会不会累加\
 上去。关掉浏览器后，程序就会“忘掉”之前的位置，这也是我们的游戏所需的功能。\
 有一种方法可以让浏览器永远记住一些信息，不过这会让测试和开发变得更难。如果你\
-回到 ``/reset/`` 页面，然后再访问 
-To make this work, you need to create a ``sessions/`` directory where the
-application can put session storage.  Do that,  run this application and
-go to ``/count``. Hit refresh and watch the counter go up.  Close
-the browser and it *forgets* who you are, which is what we want for the game.
-There's a way to make the browser remember forever, but that makes testing
-and development harder.  If you then go to ``/reset``, and back to ``/count``
-you can see your counter reset because you've killed the session.
+回到 ``/reset/`` 页面，然后再访问 ``/count`` 页面，你可以看到你的计数器被重置了，\
+因为你已经把会话杀掉了。
 
-Take the time to understand this code so you can see how the session starts
-off with the ``count`` equal to 0.  Also try looking at the files in 
-``sessions/`` to see if you can open them up.  Here's a Python session where I
-open up one and decode it:
-
+你需要花点时间弄懂这段代码，注意会话开始时 ``count`` 的值是如何设为 0 的。另外\
+再看看 ``sessions/`` 下面的文件，看你能不能把它们打开。下面是我把一个 Python
+会话打开并且解码的过程：
 
 .. code-block:: pycon
 
@@ -113,113 +105,100 @@ open up one and decode it:
     >>> pickle.loads(x)
     {'count': 1, 'ip': u'127.0.0.1', 'session_id': 'XXXXX'}
 
-The sessions are really just dictionaries that get written to disk using ``pickle`` and 
-``base64`` libraries.  There are probably as many ways to store and manage sessions as
-there are web frameworks, so it's not too important to know how these work.  It does
-help if you need to debug the session or potentially clean them out.
-
+所以会话其实就是使用 ``pickle`` 和 ``base64`` 这些库写到磁盘上的字典。存储和管理\
+会话的方法很多，大概和 Python 的 web 框架那么多，所以了解它们的工作原理并不重要。\
+当然如果你需要调试或者清空会话时，知道点原理还是有用的。
 
 创建引擎
 ==================
 
-You should have your game map working and a good unit test for it.  I now want
-to make a simple little game engine that will run the rooms, collect input from
-the player, and keep track of where a play is in the game.  We'll be using the
-sessions you just learned to make a simple game engine that will:
+你应该已经写好了游戏地图和它的单元测试代码。现在我要求你制作一个简单的游戏引擎，\
+用来让游戏中的各个房间运转起来，从玩家收集输入，并且记住玩家到了那一幕。我们将\
+用到你刚学过的会话来制作一个简单的引擎，让它可以：
 
-1. Start a new game for new users.
-2. Present the room to the user.
-3. Take input from the user.
-4. Run their input through the game.
-5. Display the results and keep going until they die.
+1. 为新用户启动新的游戏。
+2. 将房间展示给用户。
+3. 接受用户的输入。
+4. 在游戏中处理用户的输入。
+5. 显示游戏的结果，继续游戏的下一幕，知道玩家角色死亡为止。
 
-To do this, you're going to take the trusty ``bin/app.py`` you've been hacking on
-and create a fully working, session based, game engine.  The catch is I'm
-going to make a very simple one with *basic HTML* files, and it'll be up to you to
-complete it.   Here's the base engine:
+为了创建这个引擎，你需要将我们久经考验的 ``bin/app.py`` 搬过来，创建一个功能完备的、\
+基于会话的游戏引擎。这里的难点是我会先使用基本的 HTML 文件创建一个非常简单的版本，\
+接下来将由你完成它，基本的引擎是这个样子的：
 
 .. literalinclude:: ex/ex52/gothonweb/bin/app.py
     :linenos:
 
-There are even more new things in this script, but amazingly it's an entire
-web based game engine in a small file.  The biggest "hack" in the script are
-the lines that bring the sessions back, which is needed so that debug mode
-reloading works.  Otherwise, each time you hit refresh the sessions will
-disappear and the game won't work.
+这个脚本里你可以看到更多的新东西，不过了不起的事情是，整个基于网页的游戏引擎只要\
+一个小文件就可以做到了。这段脚本里最有技术含量的事情就是将会话带回来的那几行，\
+这对于调试模式下的代码重载是必须的，否则每次你刷新网页，会话就会消失，游戏也不会\
+再继续了。
 
-Before you run bin/app.py you need to change your PYTHONPATH environment variable.
-Don't know what that is?  I know, it's kind of dumb you have to learn what this
-is to run even basic Python programs, but that's how Python people like things.
+在你运行 bin/app.py 之前，你需要修改 PYTHONPATH 环境变量。不知道什么是环境变量？\
+为了运行一个最基本的 Python 程序，你就得学会环境变量，Python 的这一点确实有点挫。\
+不过没办法，用 Python 的人就喜欢这样：
 
-In your terminal, type:
+在你的命令行终端，输入下面的内容：
 
 .. code-block:: console
 
     export PYTHONPATH=$PYTHONPATH:.
 
-On Windows do:
+如果你用的是 Windows，那就输入以下内容:
 
 .. code-block:: console
 
     set PYTHONPATH=%PYTHONPATH%;.
 
-You should only have to do it once per shell session, but if you get an import error,
-then you probably need to do this or you did it wrong.
+你只要针对每一个命令行会话界面输入一次就可以了，不过如果你运行 Python 代码时\
+看到了 import 错误，那你就需要去执行一下上面的命令，或者也许是因为你上次执行的
+有错才导致 import 错误的。
 
-You should next delete ``templates/hello_form.html`` and ``templates/index.html`` and
-create the two templates mentioned in the above code.  Here's a *very* simple 
-``templates/show_room.html``:
+接下来你需要删掉 ``templates/hello_form.html`` 和 ``templates/index.html``\，\
+然后重新创建上面代码中提到的两个模板。这里是一个非常简单的 ``templates/show_room.html``
+供你参考：
 
 .. literalinclude:: ex/ex52/gothonweb/templates/show_room.html
     :linenos:
 
-That is the template to show a room as you travel through the game. Next
-you need one to tell someone they died in the case that they got to the end
-of the map on accident, which is ``templates/you_died.html``:
+这就用来显示游戏中的房间的模板。接下来，你需要在用户跑到地图的边界时，用一个
+模板告诉用户他的角色的死亡信息，也就是 ``templates/you_died.html`` 这个模板：
 
 .. literalinclude:: ex/ex52/gothonweb/templates/you_died.html
     :linenos:
 
-With those in place, you should now be able to do the following:
+准备好了这些文件，你现在可以做下面的事情了：
 
-1. Get the test ``tests/app_tests.py`` working again so that you are testing
-   the game.  You won't be able to do much more than a few clicks in the 
-   game because of sessions, but you should be able to do some basics.
-2. Remove the ``sessions/*`` files and make sure you've started over.
-3. Run the ``python bin/app.py`` script and test out the game.
+1. 让测试代码 ``tests/app_tests.py`` 再次运行起来，这样你就可以去测试这个游戏。\
+   由于会话的存在，你可能顶多只能实现几次点击，不过你应该可以做出一些基本的测试来。
+2. 删除 ``sessions/*`` 下的文件，再重新运行一遍游戏，确认游戏是从一开始运行起来的。
+3. 执行 ``python bin/app.py`` 脚本，试玩一下你的游戏。
 
-You should be able to refresh and fix the game like normal, and work with 
-the game HTML and engine until it does all the things you want it to do.
+你需要和往常一样刷新和修正你的游戏，慢慢修改游戏的 HTML 文件和引擎，直到你实现\
+游戏需要的所有功能为止。
 
-
-Your Final Exam
+你的期末考试
 ===============
 
-Do you feel like this was a huge amount of information thrown at you all at once?
-Good, I want you to have something to tinker with while you build your skills.
-To complete this exercise, I'm going to give you a final set of exercises for
-you to complete on your own.  You'll notice that what you've written so far
-isn't very well built, it is just a first version of the code.  Your task now
-is to make the game more complete by doing these things:
+你有没有觉着我一下子给了你超多的信息呢？那就对了，我想要你在学习技能的同时可以\
+有一些可以用来鼓捣的东西。为了完成这节习题，我将给你最后一套需要你自己完成的练习。\
+你将注意到，到目前为止你写的游戏并不是很好，这只是你的第一版代码而已。你现在的\
+任务是让游戏更加完善，实现下面的这些功能：
 
-1. Fix all the bugs I mention in the code, and any that I didn't mention.
-   If you find new bugs, let me know.
-2. Improve all of the automated tests so that you test more of the application
-   and get to a point where you use a test rather than your browser to check
-   the application while you work.
-3. Make the HTML look better.
-4. Research logins and create a signup system for the application, so people
-   can have logins and high scores.
-5. Complete the game map, making it as large and feature complete as possible.
-6. Give people a "help" system that lets them ask what they can do at each
-   room in the game.
-7. Add any other features you can think of to the game.
-8. Create several "maps" and let people choose a game they want
-   to run.  Your ``bin/app.py`` engine should be able to run any map of
-   rooms you give it, so you can support multiple games.
-9. Finally, use what you learned in Exercises 48 and 49 to create a better
-   input processor. You have most of the code necessary, you just need to
-   improve the grammar and hook it up to your input form and the ``GameEngine``.
-
-Good luck!
+1. 修正代码中所有我提到和没提到的 bug，如果你发现了新的 bug，你可以告诉我。
+2. 改进所有的自动测试，让你可以测试更多的内容，直到你可以不用浏览器就能测到所有\
+   的内容为止。
+3. 让 HTML 页面看上去更美观一些。
+4. 研究一下网页登录系统，为这个程序创建一个登录界面，这样人们就可以登录这个游戏，\
+   并且可以保存游戏高分。
+5. 完成游戏地图，尽可能地把游戏做大，功能做全。
+6. 给用户一个“帮助系统”，让他们可以查询每个房间里可以执行哪些命令。
+7. 为你的游戏添加新功能，想到什么功能就添加什么功能。
+8. 创建多个地图，让用户可以选择他们想要玩的一张来进行游戏。你的  ``bin/app.py`` 
+   应该可以运行提供给它的任意的地图，这样你的引擎就可以支持多个不同的游戏。
+9. 最后，使用你在习题 48 和 49 中学到的东西来创建一个更好的输入处理器。你手头\
+   已经有了大部分必要的代码，你只需要改进语法，让它和你的输入表单以及游戏引擎\
+   挂钩即可。
+   
+祝你好运！
 
