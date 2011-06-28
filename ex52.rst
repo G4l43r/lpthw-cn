@@ -14,7 +14,7 @@
 每晚上完成一点，在进行下一步之前确认上一步有正确完成。
 
 
-重构习题 42 的游戏
+重构《习题 42》的游戏
 =========================
 
 你已经在两个练习中修改了 ``gothonweb`` 项目，这节习题中你会再修改一次。这种修改\
@@ -49,46 +49,44 @@
 1. 在进入一个房间以前会打印出一段文字作为房间的描述，我们需要将这些描述和每个房间\
    关联起来，这样房间的次序就不会被打乱了，这对我们的游戏是一件好事。这些描述本来\
    是在 ``if-else`` 结构中的，这是我们后面要修改的东西。
-2. There are parts in the original game where we ran code that determined
-   things like the bomb's keypad code, or the right pod.  In this game
-   we just pick some defaults and go with it, but later you'll be
-   given extra credit to make this work again.
-3. I've just made a ``generic_death`` ending for all of the bad decisions, which
-   you'll have to finish for me.  You'll need to go back through and add in all
-   the original endings and make sure they work.
-4. I've got a new kind of transition labeled ``"*"`` that will be used for
-   a "catch-all" action in the engine.
+2. 原版游戏中我们使用了专门的代码来生成一些内容，例如炸弹的激活键码，舰舱的选择等，\
+   这次我们做游戏时就先使用默认值好了，不过后面的加分习题里，我会要求你把这些功能\
+   再加到游戏中。
+3. 我为所有的游戏中的失败结尾写了一个 ``generic_death``\，你需要去补全这个函数。\
+   你需要把原版游戏中所有的失败结尾都加进去，并确保代码能正确运行。 
+4. 我添加了一种新的转换模式，以 ``"*"`` 为标记，用来在游戏引擎中实现“catch-all”动作。
 
-Once you've got that basically written out, here's the new automated test
-``tests/map_test.py`` that you should have to get yourself started:
+等你把上面的代码基本写好以后，接下来就是引导你继续写下去的自动测试的内容
+``tests/map_test.py`` 了：
 
 .. literalinclude:: ex/ex52/gothonweb/tests/map_tests.py
     :linenos:
 
-Your task in this part of the exercise is to complete the map, and make the
-automated test completely validate the whole map.  This includes fixing all
-the ``generic_death`` objects to be real endings.  Make sure this works
-really well and that your test is as complete as possible because we'll be
-changing this map later and you'll use the tests to make sure it keeps working.
+你在这部分练习中的任务是完成地图，并且让自动测试可以完整地检查过整个地图。\
+这包括将所有的 ``generic_death`` 对象修正为游戏中实际的失败结尾。让你的代码成功\
+运行起来，并让你的测试越全面越好。后面我们会对地图做一些修改，到时候这些测试\
+将保证修改后的代码还可以正常工作。
 
-
-Sessions And Tracking Users
+会话(session)和用户跟踪
 ===========================
 
-At a certain point in your web application you'll need to keep track of some information
-and associate it with the user's browser.  The web (because of HTTP) is what we like
-to call "stateless", which means each request you make is independent of any other requests
-being made.  If you request page A, put in some data, and click a link to page B, all
-the data you sent to page A just disappears.
+在你的 web 程序运行的某个位置，你需要追踪一些信息，并将这些信息和用户的浏览器关联\
+起来。在 HTTP 协议的框架中，web 环境是“无状态(stateless)”的，这意味着你的每一次请求\
+和你其它的请求都是相互独立的。如果你请求了页面 A，输入了一些数据，然后点了一个页面 B
+的链接，那你在页面 A 输入的数据就全部消失了。
 
-The solution to this is to create a little data store (usually in a database or on 
-the disk) that uses a number unique to each browser to keep track of what that
-browser was doing.  In the little ``lpthw.web`` framework it's fairly easy, and there's
-an example showing how it's done:
+解决这个问题的方法是为 web 程序建立一个很小的数据存储功能，给每个浏览器进程赋予一个\
+独一无二的数字，用来跟踪浏览器所作的事情。这个存储通常用数据库或者存储在磁盘上的文件\
+来实现。在 ``lpthw.web`` 这个小框架中实现这样的功能是很容易的，以下就是一个这样的例子：
 
 .. literalinclude:: ex/ex52/gothonweb/session_sample.py
     :linenos:
 
+为了实现这个功能，你需要创建一个 ``sessions/`` 文件夹作为程序的会话存储位置，\
+创建好以后运行这个程序，然后检查 ``/count`` 页面，刷新一下这个页面，看计数会不会累加\
+上去。关掉浏览器后，程序就会“忘掉”之前的位置，这也是我们的游戏所需的功能。\
+有一种方法可以让浏览器永远记住一些信息，不过这会让测试和开发变得更难。如果你\
+回到 ``/reset/`` 页面，然后再访问 
 To make this work, you need to create a ``sessions/`` directory where the
 application can put session storage.  Do that,  run this application and
 go to ``/count``. Hit refresh and watch the counter go up.  Close
@@ -121,7 +119,7 @@ there are web frameworks, so it's not too important to know how these work.  It 
 help if you need to debug the session or potentially clean them out.
 
 
-Creating An Engine
+创建引擎
 ==================
 
 You should have your game map working and a good unit test for it.  I now want
