@@ -7,7 +7,8 @@ urls = (
     "/reset", "reset"
 )
 app = web.application(urls, locals())
-session = web.session.Session(app, web.session.DiskStore('sessions'), initializer={'count': 0})
+store = web.session.DiskStore('sessions')
+session = web.session.Session(app, store, initializer={'count': 0})
 
 class count:
     def GET(self):
