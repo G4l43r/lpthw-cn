@@ -198,6 +198,7 @@ latex_documents = [
 
 # Additional stuff for the LaTeX preamble.
 latex_preamble = r"""
+\documentclass[UTF8]{ctexart}
 \setcounter{secnumdepth}{-1} 
 \setcounter{page}{1}
 \setcounter{chapter}{1}
