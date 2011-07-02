@@ -18,14 +18,14 @@
           {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
         {%- endfor %}
         {%- block rootrellink %}
-        <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+        <li><a href="http://learnpythonthehardway.org/">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
         {%- endblock %}
         {%- for parent in parents %}
           <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
         {%- endfor %}
         {%- block relbaritems %} {% endblock %}
         <li class="right"><a href="search.html" title="search">search</a> | </li>
-        <li class="right"><b><a href="http://learnpythonthehardway.org/" title="Buy LPTHW in PDF or ePub for $1">Buy The PDF or ePub For $1</a></b> | </li>
+        <li class="right"><b><a href="https://getdpd.com/cart/buy/8273/19969/19293?gateway=paypal" title="Buy LPTHW in PDF or ePub for $2.99">Buy The PDF or ePub For $2.99</a></b> | </li>
       </ul>
     </div>
 {%- endmacro %}
