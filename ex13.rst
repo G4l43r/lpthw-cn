@@ -83,7 +83,7 @@ If you do not run it correctly, then you will get an error like this:
 
 This happens when you do not put enough arguments on the command when you
 run it (in this case just ``first 2nd``).  Notice when I run it I give it
-``first 2nd 3rd``, which caused it to give an error about "need more than 3
+``first 2nd``, which caused it to give an error about "need more than 3
 values to unpack" telling you that you didn't give it enough parameters.
 
 
