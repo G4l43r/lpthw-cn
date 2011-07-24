@@ -73,7 +73,7 @@ Windows
 6. 在 Terminal 程序里边运行 ``python``\。运行的方法是输入程序的名字再敲一下回车。
     a. 如果你运行 ``python`` 发现它不存在(``系统找不到python云云``)。你需要访问 http://python.org/download 并且安装 Python。
     b. 确认你安装的是 Python 2 而不是 Python 3。
-    c. 你应该不需要安装 ActiveState Python，尤其是没有管理员权限的时候。
+    c. 你也可以试试 ActiveState Python，尤其是你没有管理员权限的时候。
 7. 敲击 CTRL-Z (^Z)，再敲回车以退出 ``python``\。
 8. 这样你就应该退回到敲 ``python`` 前的提示界面了。如果没有的话自己研究一下为什么。
 9. 学着使用 Terminal 创建一个目录，你可以上网搜索怎样做。
