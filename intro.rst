@@ -132,7 +132,7 @@ Special Thanks
 ==============
 
 I'd like to thank a few people who helped with this edition of the book.  First
-is my editor at *Pretty Girl Editing Services* who help me edit the book and is
+is my editor at *Pretty Girl Editing Services* who helped me edit the book and is
 just lovely all by herself.  Then there's *Greg Newman*, who did the cover jacket
 and artwork, plus reviewed copies of the book.  His artwork made the book look
 like a real book, and didn't mind that I totally forgot to give him credit in
