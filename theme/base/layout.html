@@ -9,6 +9,17 @@
 
 {%- macro relbar() %}
     <div class="related">
+        <ul>
+        <li class="right"><a style="color: #C40B46;" href="http://learncodethehardway.org/contact.html" title="Need Help?">Need Help?</a></li>
+        <li class="right"><a style="color: #C40B46;" href="http://regex.learncodethehardway.org" title="Learn C">Learn Regex</a> | </li>
+        <li class="right"><a style="color: #C40B46;" href="http://sql.learncodethehardway.org" title="Learn C">Learn SQL</a> | </li>
+        <li class="right"><a style="color: #C40B46;" href="http://c.learncodethehardway.org" title="Learn C">Learn C</a> | </li>
+        <li class="right"><a style="color: #C40B46;" href="http://ruby.learncodethehardway.org" title="Learn C">Learn Ruby</a> | </li>
+        <li><a style="color: #C40B46;" href="https://getdpd.com/cart/buy/8273/19969/19293?gateway=paypal" title="PDF/ePub for $2.99"><b>Buy PDF or ePub For $2.99</b></a></li>
+        </ul>
+    </div>
+
+    <div class="related">
       <h3>{{ _('Navigation') }}</h3>
       <ul>
         {%- for rellink in rellinks %}
@@ -25,7 +36,6 @@
         {%- endfor %}
         {%- block relbaritems %} {% endblock %}
         <li class="right"><a href="search.html" title="search">search</a> | </li>
-        <li class="right"><b><a href="https://getdpd.com/cart/buy/8273/19969/19293?gateway=paypal" title="Buy LPTHW in PDF or ePub for $2.99">Buy The PDF or ePub For $2.99</a></b> | </li>
       </ul>
     </div>
 {%- endmacro %}
