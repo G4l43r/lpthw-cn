@@ -211,3 +211,5 @@ latex_preamble = r"""
 latex_use_modindex = False
 
 latex_domain_indices = False
+
+epub_uid = "745659BF-9A85-4EED-8A65-BD06146EE4FE"
