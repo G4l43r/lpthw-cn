@@ -19,7 +19,7 @@ def divide(a, b):
 print "Let's do some math with just functions!"
 
 age = add(30, 5)
-height = subtract(78,4)
+height = subtract(78, 4)
 weight = multiply(90, 2)
 iq = divide(100, 2)
 

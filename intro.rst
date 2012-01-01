@@ -117,6 +117,30 @@ little more and it didn't work out, but at least you tried.  You can be proud
 of that.
 
 
+A Warning For The Smarties
+==========================
+
+Sometimes people who can already code or who already know everything will read
+this book and feel I'm insulting them.  There is nothing in this book that is
+intended to be interpreted as condescending, insulting, or belittling.  I simply
+know more about programming than my *intended* readers.  If you think you are
+smarter than me then you will feel talked down to and there's nothing I can do
+about that because you are not my *intended* reader.
+
+If you are reading this book and flipping out at every third sentence
+because you feel I'm insulting your intelligence, then I have three points of
+advice for you:
+
+1. Stop reading my book.  I didn't write it for you.  I wrote it for people
+   who don't already know everything.
+2. Empty before you fill.  You will have a hard time learning from someone
+   with more knowledge if you already know everything.
+3. Go learn Lisp.  I hear people who know everything really like Lisp.
+
+For everyone else who's here to learn, just read everything as if I'm smiling
+and I have a mischievous little twinkle in my eye.
+
+
 License
 =======
 
