@@ -120,9 +120,9 @@ of that.
 A Warning For The Smarties
 ==========================
 
-Sometimes people who can already code will read this book and feel I'm
-insulting them.  There is nothing in this book that is intended to be
-interpreted as condescending, insulting, or belittling.  I simply know more
+Sometimes people who already know a programming language will read this book
+and feel I'm insulting them.  There is nothing in this book that is intended to
+be interpreted as condescending, insulting, or belittling.  I simply know more
 about programming than my *intended* readers.  If you think you are smarter
 than me then you will feel talked down to and there's nothing I can do about
 that because you are not my *intended* reader.
