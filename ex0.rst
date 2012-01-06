@@ -6,6 +6,14 @@ to get your computer setup to run Python.   You should follow these instructions
 as exactly as possible.  For example, Mac OSX computers already have Python 2, so
 do not install Python 3 (or any Python).
 
+.. warning::
+
+    If you do not know how to use PowerShell on Windows or the Terminal on
+    OSX or "bash" on Linux then you need to go learn that first.  I have a
+    quick crash course at http://cli.learncodethehardway.org/ which is free
+    and will teach you the basics of PowerShell and Terminal quickly.  Go
+    through that then come back here.
+
 
 Mac OSX
 =======
@@ -88,7 +96,7 @@ Windows
    e. Turn on "Automatic indentation" as well.
    f. Open the ``View`` tab turn on "Display line numbers".
 
-3. Find your "Terminal" program.  It's called ``Command Prompt``. Alternatively just run ``cmd``. 
+3. Run "powershell" from the start menu.  Search for it and you can just hit enter to run it.
 4. Make a shortcut to it on your desktop and/or ``Quick Launch`` for your convenience.
 5. Run your Terminal program.  It won't look like much.
 6. In your Terminal program, run ``python``.  You run things in Terminal by just typing their 
@@ -97,6 +105,11 @@ Windows
    a. If you run ``python`` and it's not there (``python is not recognized..``).  Install it from http://python.org/download 
    b. *Make sure you install Python 2 not Python 3.*
    c. You may be better off with ActiveState Python especially when you miss Administrative rights
+   d. If after you install it ``python`` still isn't recognized then in powershell enter this: 
+   
+        ``[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27", "User")``
+   
+   e. Close powershell and then start it again to make sure python now runs.  If it doesn't restart may be required.
 
 7. Hit CTRL-Z (^Z), ``Enter`` and get out of ``python``.
 8. You should be back at a prompt similar to what you had before you typed ``python``.  If not find out why.
@@ -111,32 +124,34 @@ Windows
 
 .. warning::
 
-    Windows is a big problem for Python.  Sometimes you install Python and one
-    computer will have no problems, and another computer will be missing important
-    features.  If you have problems, please visit: http://docs.python.org/faq/windows.html
+    If you missed it, sometimes you install Python on Windows and it doesn't configure the path correctly.
+    Make sure you enter ``[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27", "User")``
+    in ``powershell`` to configure it correctly.  You also have to either restart powershell or your
+    whole computer to get it to really be fixed.
+
 
 Windows: What You Should See
 ----------------------------
 
 
-.. code-block:: bat
+.. code-block:: console
 
-    C:\Documents and Settings\you>python
+    > python
     ActivePython 2.6.5.12 (ActiveState Software Inc.) based on
     Python 2.6.5 (r265:79063, Mar 20 2010, 14:22:52) [MSC v.1500 32 bit (Intel)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
     >>> ^Z
 
 
-    C:\Documents and Settings\you>mkdir mystuff
+    > mkdir mystuff
 
-    C:\Documents and Settings\you>cd mystuff
+    > cd mystuff
 
     ... Here you would use gedit to make test.txt in mystuff ...
 
-    C:\Documents and Settings\you\mystuff>
+    >
        <bunch of unimportant errors if you istalled it as non-admin - ignore them - hit Enter>
-    C:\Documents and Settings\you\mystuff>dir
+    > dir
      Volume in drive C is
      Volume Serial Number is 085C-7E02
 
@@ -148,7 +163,7 @@ Windows: What You Should See
                    1 File(s)              6 bytes
                    2 Dir(s)  14 804 623 360 bytes free
 
-    C:\Documents and Settings\you\mystuff> 
+    > 
 
 You will probably see a very different prompt, Python information, and other stuff but this is
 the general idea.  If your system is different let us know at http://learnpythonthehardway.org
