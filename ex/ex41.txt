@@ -1,4 +1,4 @@
-$ python ex/ex41.py 
+$ python ex41.py 
 
 --------
 The Gothons of Planet Percal #25 have invaded your ship and destroyed
