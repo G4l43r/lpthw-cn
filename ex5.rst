@@ -20,6 +20,11 @@ exactly the same.
     :linenos:
 
 
+.. warning::
+
+    Remember to put ``# -- coding: utf-8 --`` at the top if you use non-ASCII
+    characters and get an encoding error.
+
 What You Should See
 ===================
 

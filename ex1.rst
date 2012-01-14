@@ -60,6 +60,14 @@ line-by-line.
    a search engine, you will find someone else who's had that error and you can probably
    figure out how to fix it.
 
+.. warning::
+
+    If you are from another country, and you get errors about ASCII encodings, then
+    put this at the top of your python scripts:
+
+      # -*- coding: utf-8 -*-
+
+    It will fix them so that you can use unicode UTF-8 in your scripts without a problem.
 
 Extra Credit
 ============
