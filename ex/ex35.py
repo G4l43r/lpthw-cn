@@ -39,8 +39,8 @@ def bear_room():
             print "I got no idea what that means."
 
 
-def cthulu_room():
-    print "Here you see the great evil Cthulu."
+def cthulhu_room():
+    print "Here you see the great evil Cthulhu."
     print "He, it, whatever stares at you and you go insane."
     print "Do you flee for your life or eat your head?"
 
@@ -51,7 +51,7 @@ def cthulu_room():
     elif "head" in next:
         dead("Well that was tasty!")
     else:
-        cthulu_room()
+        cthulhu_room()
 
 
 def dead(why):
@@ -68,7 +68,7 @@ def start():
     if next == "left":
         bear_room()
     elif next == "right":
-        cthulu_room()
+        cthulhu_room()
     else:
         dead("You stumble around the room until you starve.")
 
