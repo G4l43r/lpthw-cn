@@ -177,7 +177,7 @@ Linux is a varied operating system with a bunch of different ways to install sof
 I'm assuming if you are running Linux then you know how to install packages so here are
 your instructions:
 
-1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
+1. Go to http://learnpythonthehardway.org/exercise0.html with your browser, get
    the ``gedit`` text editor, and install it.
 2. Make sure you can get to ``gedit`` easily
    by putting it in your window manager's menu.
