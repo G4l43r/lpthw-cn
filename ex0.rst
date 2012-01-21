@@ -84,7 +84,7 @@ Windows
 
 .. note:: Contributed by zhmark.
 
-1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get
+1. Go to http://learnpythonthehardway.org/exercise0.html with your browser, get
    the ``gedit`` text editor, and install it. You do not need to be administrator to do this.
 2. Make sure you can get to ``gedit`` easily by putting it on your desktop and/or in
    ``Quick Launch``. Both options are available during setup.
