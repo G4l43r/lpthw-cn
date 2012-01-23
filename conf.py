@@ -81,7 +81,7 @@ exclude_trees = ['_build']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'bw'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -211,5 +211,3 @@ latex_preamble = r"""
 latex_use_modindex = False
 
 latex_domain_indices = False
-
-epub_uid = "745659BF-9A85-4EED-8A65-BD06146EE4FE"
