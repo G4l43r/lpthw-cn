@@ -24,7 +24,7 @@ the extra credit right?
 4. Can you put other boolean expressions from Ex. 27 in the ``if`` statement?  Try it.
    Yes you can, and they can be as complex as you like, although really complex 
    things generally are bad style.
-5. What happens if you change the initial variables for ``people``, ``cats``,
+5. What happens if you change the initial values for ``people``, ``cats``,
    and ``dogs``?  Because you are comparing numbers, if you change the numbers,
    different ``if-statements`` will evaluate to ``True`` and the blocks of code
    under them will run.  Go back and put different numbers in and see if you
