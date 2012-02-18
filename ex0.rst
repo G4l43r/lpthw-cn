@@ -67,7 +67,7 @@ Windows
     d. 选择 (确认有勾选到该选项) ``Insert spaces instead of tabs``\。
     e. 然后打开 “Automatic indentation” 选项。
     f. 转到 ``View`` 页面，打开 “Display line numbers” 选项。
-3. 找到 “Terminal” 程序。它的名字是 ``Command Prompt``\，或者你可以直接运行 ``cmd``\。 
+3. 找到 “Terminal” 程序。它的名字是 ``命令提示符``\，或者你也可以直接运行 ``cmd``\。 
 4. 为它创建一个快捷方式，放到桌面或者快速启动栏中以方便使用。
 5. 运行 Terminal 程序，这个程序看上去不怎么地。
 6. 在 Terminal 程序里边运行 ``python``\。运行的方法是输入程序的名字再敲一下回车。
