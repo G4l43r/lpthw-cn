@@ -48,7 +48,7 @@ LPTHW的风格和别的书差异很大。它没有像一般的入门书籍一样
 
 
 .. _`Zed Shaw`: http://zedshaw.com/
-.. _`英文原版`: http://learnpythonthehardway.org/index
+.. _`英文原版`: http://learnpythonthehardway.org/
 .. _`How To Think Like A Computer Scientist`: http://www.greenteapress.com/thinkpython/
 .. _`A Byte Of Python`: http://www.swaroopch.com/notes/Python
 .. _中译版: http://linux.chinaitlab.com/manual/python_chinese/
