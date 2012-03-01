@@ -87,7 +87,7 @@ def laser_weapon_armory():
 
 
 def the_bridge():
-    print "You burst onto the Bridge with the netron destruct bomb"
+    print "You burst onto the Bridge with the neutron destruct bomb"
     print "under your arm and surprise 5 Gothons who are trying to"
     print "take control of the ship.  Each of them has an even uglier"
     print "clown costume than the last.  They haven't pulled their"
