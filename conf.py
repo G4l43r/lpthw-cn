@@ -198,7 +198,9 @@ latex_documents = [
 
 # Additional stuff for the LaTeX preamble.
 latex_preamble = r"""
-\documentclass[UTF8]{ctexart}
+\usepackage{ctexutf8}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
 \setcounter{secnumdepth}{-1} 
 \setcounter{page}{1}
 \setcounter{chapter}{1}
