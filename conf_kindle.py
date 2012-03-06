@@ -81,7 +81,7 @@ exclude_patterns = ['_build']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-# pygments_style = 'bw'
+pygments_style = 'bw'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -178,8 +178,8 @@ latex_font_size = '10pt'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'LearnPythonTheHardWay.tex', u'笨办法学 Python',
-   u'作者：Zed A. Shaw, 翻译：Wang Dingwei', 'manual'),
+  ('index', 'LearnPythonTheHardWay.tex', u'Learn Python The Hard Way',
+   u'Zed A. Shaw, Wang Dingwei', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -215,6 +215,43 @@ latex_preamble = r"""
 \fi
 #1\par\nobreak\vspace{40 pt}}}
 \makeatother
+
+% ------------ Kindle Settings --------------
+% Ripped from http://tex.stackexchange.com/questions/16735/latex-options-for-kindle
+
+\usepackage{fontspec}      % font selection
+%\setmainfont{Cambria}
+\usepackage{breqn}         % automatic equation breaking
+\usepackage{microtype}     % microtypography, reduces hyphenation
+%\usepackage{polyglossia}   % language selection
+%\setmainlanguage{english}
+
+\usepackage{graphicx}      % graphics support
+
+\usepackage[font=small,labelformat=simple,]{caption}   % customizing captions
+
+\usepackage{titlesec}      % customizing section titles
+\titleformat{\section}{\itshape\large}{}{0em}{}
+\titlespacing{\section}{0pt}{8pt}{4pt}
+\titleformat{\subsection}{\itshape}{}{0em}{}
+\titlespacing{\subsection}{0pt}{4pt}{2pt}
+\titleformat{\subsubsection}[runin]{\bf\scshape}{}{0em}{}
+\titlespacing{\subsubsection}{0pt}{5pt}{5pt}
+
+\usepackage[papersize={3.6in,4.8in},hmargin=0.1in,vmargin={0.1in,0.1in}]{geometry}  % page geometry
+
+\usepackage{fancyhdr}   % headers and footers
+\pagestyle{fancy}
+\fancyhead{}            % clear page header
+\fancyfoot{}            % clear page footer
+
+\setlength{\abovecaptionskip}{2pt} % space above captions 
+\setlength{\belowcaptionskip}{0pt} % space below captions
+\setlength{\textfloatsep}{2pt}     % space between last top float or first bottom float and the text
+\setlength{\floatsep}{2pt}         % space left between floats
+\setlength{\intextsep}{2pt}        % space left on top and bottom of an in-text float
+
+% -------------------------------------------
 """
 
 # Documents to append as an appendix to all manuals.

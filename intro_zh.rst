@@ -1,13 +1,13 @@
 译者前言
 ==========
 
-《笨办法学 Python》(Learn Python The Hard Way)是 `Zed Shaw`_ 编写的一本 Python 
+《笨办法学 Python》(Learn Python The Hard Way，简称 LPTHW)是 `Zed Shaw`_ 编写的一本 Python 
 入门书籍。适合对计算机了解不多，没有学过编程，但对编程感兴趣的朋友学习使用。这本\
-书以习题的方式引导读者一步一\步学习编程，从简单的打印一直讲到完整项目的实现。\
+书以习题的方式引导读者一步一步学习编程，从简单的打印一直讲到完整项目的实现。\
 也许读完这本书并不意味着你已经学会了编程，但至少你会对编程语言以及编程这个行业有\
 一个初步的了解。
 
-笔者认为本书区别于其它入门书籍的特点如下：
+本书区别于其它入门书籍的特点如下：
 
 * 注重实践。本书提供了足够的练习代码，如果你完成了所有的练习（包括加分习题），那你\
   已经写了上万行的代码。要知道很多职业程序员一年也就写几万行代码而已。
@@ -16,7 +16,7 @@
 * 注重好习惯的养成。本书详细地讲解了怎样写出好的代码、好的注释、好的项目。这会让你\
   在后续的学习中少走很多弯路。
 
-本书结构非常简单，其实就是 52 个习题而已。其中 26 个覆盖了输入输出、变量、以及函数\
+本书结构非常简单，其实就是 52 个习题。其中 26 个覆盖了输入输出、变量、以及函数\
 三个课题，另外 26 个覆盖了一些比较高级的话题，如条件判断、循环、类和对象、代码测试、\
 以及项目的实现等。每一章节的格式基本都是一样的，以代码练习题开始，读者照着说明编写\
 代码（不允许复制粘贴），运行并检查结果，然后再做一下加分习题就可以了。当然如果你觉得\
@@ -30,27 +30,28 @@
 如果你对自己的英文能力比较有信心，译者强烈推荐你直接去下载阅读\ `英文原版`_\。这本书\
 代码较多，文字内容较少，因此英文原版的阅读理解也比较容易。
 
-LPTHW的风格和别的书差异很大。它没有像一般的入门书籍一样通过讨好读者以激发读者\
+LPTHW 的风格和别的书差异很大。它没有像一般的入门书籍一样通过讨好读者以激发读者\
 兴趣，而是直截了当地告诉你你需要做什么，需要注意什么。这种风格可能会让人觉得枯\
-燥乏味，读者姑且把这也当做 Hard Way 的一部分把。所以如果你觉得有些看不下去，Zed 推荐你\
+燥乏味，读者姑且把这也当做 Hard Way 的一部分把。所以如果你觉得实在不能适应这种风格，Zed 推荐你\
 看下面两本书:
 
 * `How To Think Like A Computer Scientist`_
 * `A Byte Of Python`_ 这本书有 中译版_ 
 
-如果你对本书的翻译有任何意见和建议，请发邮件给 wangdingwei82@gmail.com ，\
-或者在 `bitbucket 仓库`_ 里提出 issue report。
+本书的电子版会随时跟着作者更新。你可以通过 `Read The Docs`_ 读到最新的网页版内容，也可以到
+`bitbucket 代码仓库`_\下载 PDF 文件。如果你对本书的翻译有任何意见和建议，你可以通过 bitbucket
+进行反馈。
 
 你可以访问 lulu.com 购买本书的英文印刷版，这也是对原作者的支持。
 
-原书版权为 Zed Shaw 所，译文版权为 Zed Shaw 和译者共有。译文遵循原书的版权
+原书版权为 Zed Shaw 所有，译文版权为 Zed Shaw 和译者共有。译文遵循原书的版权\
 规定：只允许完整转载，禁止商业用途。
-
 
 .. _`Zed Shaw`: http://zedshaw.com/
 .. _`英文原版`: http://learnpythonthehardway.org/
 .. _`How To Think Like A Computer Scientist`: http://www.greenteapress.com/thinkpython/
 .. _`A Byte Of Python`: http://www.swaroopch.com/notes/Python
 .. _中译版: http://linux.chinaitlab.com/manual/python_chinese/
-.. _`bitbucket 仓库`: https://bitbucket.org/gastlygem/lpthw/
+.. _`bitbucket 代码仓库`: https://bitbucket.org/gastlygem/lpthw/
+.. _`Read The Docs`: http://readthedocs.org/docs/learn-python-the-hard-way-zh_cn-translation/
 
