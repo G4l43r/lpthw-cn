@@ -43,7 +43,7 @@ def parse_verb(word_list):
     if peek(word_list) == 'verb':
         return match(word_list, 'verb')
     else:
-        raise ParseError("Expected a verb next.")
+        raise ParserError("Expected a verb next.")
 
 
 def parse_object(word_list):
@@ -55,7 +55,7 @@ def parse_object(word_list):
     if next == 'direction':
         return match(word_list, 'direction')
     else:
-        raise ParseError("Expected a noun or direction next.")
+        raise ParserError("Expected a noun or direction next.")
 
 
 def parse_subject(word_list, subj):

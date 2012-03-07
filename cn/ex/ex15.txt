@@ -5,7 +5,7 @@ It is really cool stuff.
 Lots and lots of fun to have in here.
 
 
-I'll also ask you to type it again:
+Type the filename again:
 > ex15_sample.txt
 This is stuff I typed into a file.
 It is really cool stuff.

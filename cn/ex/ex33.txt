@@ -1,4 +1,4 @@
-$ python ex.py
+$ python ex33.py
 At the top i is 0
 Numbers now:  [0]
 At the bottom i is 1
