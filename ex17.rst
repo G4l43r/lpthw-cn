@@ -1,0 +1,55 @@
+Exercise 17: More Files
+***********************
+
+Now let's do a few more things with files.  We're going to actually write a 
+Python script to copy one file to another.  It'll be very short but will give
+you some ideas about other things you can do with files.
+
+.. literalinclude:: ex/ex17.py
+    :linenos:
+
+You should immediately notice that we ``import`` another handy command
+named ``exists``.  This returns ``True`` if a file exists, based on its
+name in a string as an argument.  It returns ``False`` if not.  We'll be using
+this function in the second half of this book to do lots of things, but
+right now you should see how you can import it.
+
+Using ``import`` is a way to get tons of free code other better (well, usually)
+programmers have written so you do not have to write it.
+
+
+What You Should See
+===================
+
+Just like your other scripts, run this one with two arguments, the file to copy
+from and the file to copy it to.  If we use your ``test.txt`` file from before
+we get this:
+
+.. literalinclude:: ex/ex17.txt
+    :language: console
+
+It should work with any file.  Try a bunch more and see what happens.  Just
+be careful you do not blast an important file.
+
+.. warning::
+
+    Did you see that trick I did with ``cat``? It only works on Linux or OSX,
+    on Windows use ``type`` to do the same thing.
+
+
+Extra Credit
+============
+
+1. Go read up on Python's ``import`` statement, and start ``python`` to try
+   it out.  Try importing some things and see if you can get it right.  It's 
+   alright if you do not.
+2. This script is *really* annoying.  There's no need to ask you before 
+   doing the copy, and it prints too much out to the screen.  Try to make it
+   more friendly to use by removing features.
+3. See how short you can make the script.  I could make this 1 line long.
+4. Notice at the end of the WYSS I used something called `cat`?  It's an old
+   command that "con*cat*enates" files together, but mostly it's just an
+   easy way to print a file to the screen.  Type ``man cat`` to read about it.
+5. Windows people, find the alternative to ``cat`` that Linux/OSX
+   people have.  Do not worry about ``man`` since there is nothing like that.
+6. Find out why you had to do ``output.close()`` in the code.

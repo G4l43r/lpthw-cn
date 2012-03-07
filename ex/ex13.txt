@@ -1,0 +1,17 @@
+$ python ex13.py first 2nd 3rd
+The script is called: ex13.py
+Your first variable is: first
+Your second variable is: 2nd
+Your third variable is: 3rd
+
+$ python ex13.py cheese apples bread
+The script is called: ex13.py
+Your first variable is: cheese
+Your second variable is: apples
+Your third variable is: bread
+
+$ python ex13.py Zed A. Shaw
+The script is called: ex13.py
+Your first variable is: Zed
+Your second variable is: A.
+Your third variable is: Shaw

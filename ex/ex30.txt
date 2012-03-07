@@ -1,0 +1,5 @@
+$ python ex30.py
+We should take the cars.
+Maybe we could take the buses.
+Alright, let's just take the buses.
+$
